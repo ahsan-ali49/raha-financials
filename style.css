@@ -83,3 +83,217 @@ body::-webkit-scrollbar {
     border-radius: 15px;
 
 }
+
+.iamm{
+    /* I am a */
+
+    height: 25px;
+
+    /* font-family: 'Uncut Sans'; */
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    /* identical to box height */
+    letter-spacing: -0.02em;
+
+    /* Black */
+    color: #000000;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+
+.hero-indv-btn{
+    /* Frame 7 */
+
+    box-sizing: border-box;
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px;
+    gap: 10px;
+
+    width: 237px;
+    height: 50px;
+
+    /* White */
+    background: #FFFFFF;
+    border: 1.5px solid #1445C2;
+    border-radius: 31px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+
+
+}
+
+.hero-indv-btn-text{
+    /* Individual/Small Business */
+
+    width: 207px;
+    height: 23px;
+
+    /* font-family: 'Uncut Sans'; */
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    letter-spacing: -0.02em;
+
+    /* Main Radial */
+    background: radial-gradient(46.19% 50.94% at 50% 100%, #587EDB 0%, #1445C2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    /* text-fill-color: transparent; */
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+
+.hero-entr-btn{
+    /* Frame 1000003054 */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 10px;
+
+    width: 124px;
+    height: 50px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    letter-spacing: -0.02em;
+    color: white;
+
+    /* Main Radial */
+    background: radial-gradient(46.19% 50.94% at 50% 100%, #587EDB 0%, #1445C2 100%);
+    border-radius: 100px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.hero-primary-heading{
+    /* Financial team that’s */
+
+    height: 100px;
+
+    /* font-family: 'Uncut Sans'; */
+    font-style: normal;
+    font-weight: 600;
+    font-size: 95px;
+    line-height: 100px;
+    /* identical to box height, or 105% */
+    text-align: center;
+    letter-spacing: -0.06em;
+
+    /* Black */
+    color: #000000;
+}
+
+.hero-secondary-heading{
+    /* naunced */
+
+    height: 100px;
+
+    /* font-family: 'Uncut Sans'; */
+    font-style: normal;
+    font-weight: 600;
+    font-size: 95px;
+    line-height: 100px;
+    /* identical to box height, or 105% */
+    text-align: center;
+    letter-spacing: -0.06em;
+
+    /* Main Radial */
+    background: radial-gradient(46.19% 50.94% at 50% 100%, #587EDB 0%, #1445C2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    /* text-fill-color: transparent; */
+
+
+}
+
+.hero-para{
+    /* Let us take care of your books, taxes, and payroll while you focus on growing your business. Our expert accountants specialize in helping small businesses thrive. */
+
+    width: 634px;
+    height: 46px;
+
+    /* font-family: 'Uncut Sans'; */
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: -0.03em;
+
+    /* Black */
+    color: #000000;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+}
+
+.hero-btn{
+    /* Frame 4 */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px 25px;
+    gap: 10px;
+
+    /* width: 171px; */
+    height: 55px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    /* identical to box height */
+    letter-spacing: -0.02em;
+    color: white;
+
+    /* Main Radial */
+    background: radial-gradient(46.19% 50.94% at 50% 100%, #587EDB 0%, #1445C2 100%);
+    border-radius: 10px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+
+}
