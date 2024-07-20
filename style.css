@@ -296,3 +296,295 @@ body::-webkit-scrollbar {
     flex-grow: 0;
 
 }
+
+.accounting-solution-div{
+    /* Frame 10 */
+
+    /* Auto layout */
+    padding: 35px 75px;
+    isolation: isolate;
+
+    background: radial-gradient(46.19% 50.94% at 50% 100%, rgba(88, 126, 219, 0.9) 0%, rgba(20, 69, 194, 0.9) 100%), radial-gradient(46.19% 50.94% at 50% 100%, #587EDB 0%, #1445C2 100%), url(.jpg);
+    background-blend-mode: normal, lighten, normal;
+    border-radius: 25px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+
+}
+
+.accounting-heading{
+    /* Our Suite of Business and Accounting Solutions */
+
+    width: 857px;
+    /* height: 160px; */
+
+    /* font-family: 'Uncut Sans'; */
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 80px;
+    text-align: center;
+    letter-spacing: -0.05em;
+
+    /* White */
+    color: #FFFFFF;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+
+.accounting-para{
+    /* Full-service accounting solutions for enterprises and small businesses. Tax, bookkeeping, payroll, and more. */
+
+    width: 634px;
+    height: 50px;
+
+    /* font-family: 'Uncut Sans'; */
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: -0.03em;
+
+    /* White */
+    color: #FFFFFF;
+}
+
+.flex-item-div-primary{
+
+    box-sizing: border-box;
+
+    /* Auto layout */
+    padding: 10px;
+
+    width: 363px;
+    height: 239px;
+
+    background: rgba(255, 255, 255, 0.2);
+    border: 2.5px solid #FFFFFF;
+    box-shadow: inset 0px 4px 15.9px rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(4.5px);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 15px;
+
+}
+
+.flex-item-div-secondary{
+
+    /* Frame 1000003020 */
+
+    box-sizing: border-box;
+
+    padding: 25px;
+
+    width: 363px;
+    height: 239px;
+
+    background: rgba(255, 255, 255, 0.1);
+    border: 1.5px solid rgba(255, 255, 255, 0.25);
+    box-shadow: inset 0px 4px 15.9px rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(4.5px);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 15px;
+
+}
+
+.flex-item-inner-div{
+    /* Frame 1000003079 */
+
+    /* Auto layout */
+    padding: 15px;
+
+    height: 100%;
+
+    /* White */
+    background: #FFFFFF;
+    border-radius: 7.5px;
+
+}
+
+.div-item-span{
+    /* Bookkeeping */
+
+    width: 313.33px;
+    height: 28px;
+
+    /* font-family: 'Uncut Sans'; */
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 28px;
+    /* identical to box height */
+    letter-spacing: -0.03em;
+
+    /* Black */
+    color: #000000;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+
+}
+
+.div-item-span-secondary{
+
+    /* Software Selection and Setup */
+
+    width: 313.33px;
+    height: 28px;
+
+    /* font-family: 'Uncut Sans'; */
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 28px;
+    /* identical to box height */
+    letter-spacing: -0.03em;
+
+    /* White */
+    color: #FFFFFF;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+
+
+}
+
+.div-item-para{
+    /* This is the foundation of good financial management, tracking income and expenses. */
+
+    width: 313.33px;
+    height: 69px;
+
+    /* font-family: 'Uncut Sans'; */
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: -0.03em;
+
+    /* Black */
+    color: #000000;
+
+    opacity: 0.7;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+
+}
+
+.div-item-para-secondary{
+    /* Choosing and implementing accounting software that meets the specific needs of the business. */
+
+    width: 313.33px;
+    height: 69px;
+
+    /* font-family: 'Uncut Sans'; */
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: -0.03em;
+
+    /* White */
+    color: #FFFFFF;
+
+    opacity: 0.7;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+
+}
+
+.request-consultation-btn{
+    /* Frame 4 */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 25px;
+    gap: 10px;
+
+    width: 246px;
+    height: 55px;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    /* identical to box height */
+    letter-spacing: -0.02em;
+
+    /* Black */
+    color: #000000;
+
+    /* White */
+    background: #FFFFFF;
+    border-radius: 10px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+
+.call-us-btn{
+    /* Frame 1000003023 */
+
+    box-sizing: border-box;
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px 25px;
+    gap: 10px;
+
+    width: 114px;
+    height: 55px;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    /* identical to box height */
+    letter-spacing: -0.02em;
+
+    /* White */
+    color: #FFFFFF;
+
+    /* White */
+    border: 2px solid #FFFFFF;
+    border-radius: 10px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+}
