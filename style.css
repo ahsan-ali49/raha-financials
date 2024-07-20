@@ -813,3 +813,91 @@ body::-webkit-scrollbar {
     background-clip: text;
     /* text-fill-color: transparent; */
 }
+
+.outsourced-accounting{
+    height: 810px;
+}
+
+#background-video {
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+ }
+
+ /* Add some content at the bottom of the video/page */
+.content {    
+    color: black;
+    z-index: 10;
+    background-color: rgba(0, 0, 0,0.5);
+}
+
+.foreground-heading{
+    /* Why Outsourced Accounting Makes a Difference */
+
+    width: 786.56px;
+    height: 160px;
+
+    /* font-family: 'Uncut Sans'; */
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 80px;
+    text-align: center;
+    letter-spacing: -0.05em;
+
+    /* White */
+    color: #FFFFFF;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+
+.foreground-para{
+    /* In today’s fast-paced business landscape, staying ahead demands focus, innovation, and agility. However, managing your financial operations can become a time-consuming and complex endeavor that diverts your attention from what truly matters – growing your business. This is where outsourced accounting steps in to create a tailor made financial strategy for your business.` */
+
+    width: 848.63px;
+    height: 126px;
+
+    /* font-family: 'Uncut Sans'; */
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: -0.03em;
+
+    /* White */
+    color: #FFFFFF;
+
+}
+
+.foreground-btn{
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px 25px;
+    gap: 10px;
+
+    height: 55px;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    /* identical to box height */
+    letter-spacing: -0.02em;
+
+    /* Black */
+    color: #000000;
+
+    background: #F6F6F6;
+    border-radius: 10px;
+}
