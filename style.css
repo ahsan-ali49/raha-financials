@@ -963,7 +963,7 @@ body::-webkit-scrollbar {
     padding: 5px 5px 20px;
     gap: 15px;
 
-    width: 380px;
+    width: 372px;
     height: 348px;
 
     background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), radial-gradient(46.19% 50.94% at 50% 100%, rgba(88, 126, 219, 0.1) 0%, rgba(20, 69, 194, 0.1) 100%);
@@ -991,7 +991,7 @@ body::-webkit-scrollbar {
     padding: 5px 5px 20px;
     gap: 15px;
 
-    width: 380px;
+    width: 372px;
     height: 348px;
 
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
@@ -1135,3 +1135,221 @@ z-index: 1;
     /* text-fill-color: transparent; */
 }
 
+.financials-heading{
+    /* Transforming Finances: RAHA Financials Client Experiences */
+
+    /* width: 1028px; */
+    height: 160px;
+
+    /* font-family: 'Uncut Sans'; */
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 80px;
+    text-align: center;
+    letter-spacing: -0.05em;
+
+    color: black;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+
+.financials-heading-secondary{
+
+    /* Main Radial */
+    background: radial-gradient(46.19% 50.94% at 50% 100%, #587EDB 0%, #1445C2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    /* text-fill-color: transparent; */
+
+}
+
+.financials-para{
+    /* Don't just take our word for it. See what our satisfied customers have to say about our services. */
+
+    width: 600px;
+    height: 50px;
+
+    /* font-family: 'Uncut Sans'; */
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: -0.03em;
+
+    /* Black */
+    color: #000000;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+}
+
+.financial-div{
+
+    padding: 0px;
+
+    width: 370px;
+    height: 220px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+}
+
+.financial-inner-div{
+    /* Frame 1000003020 */
+
+    box-sizing: border-box;
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 15px;
+
+    width: 370px;
+    height: 155px;
+
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+    border: 1px solid #DADADA;
+    filter: drop-shadow(0px 100px 40px rgba(176, 176, 176, 0.01)) drop-shadow(0px 56px 34px rgba(176, 176, 176, 0.05)) drop-shadow(0px 25px 25px rgba(176, 176, 176, 0.09)) drop-shadow(0px 6px 14px rgba(176, 176, 176, 0.1));
+    border-radius: 15px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+
+.financial-inner-div-text{
+    /* We've been working with Raha Financials for years and they've always provided us with top-notch service. Their expertise and attention to detail have been invaluable to our business. */
+
+    width: 330px;
+    height: 115px;
+
+    /* font-family: 'Uncut Sans'; */
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: -0.03em;
+
+    /* Black */
+    color: #000000;
+
+    opacity: 0.89;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.financial-inner-div-2{
+    /* Frame 1000003042 */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 15px;
+
+    width: 370px;
+    height: 50px;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+
+}
+
+.financial-inner-div-2-inner{
+    /* Frame 1000003041 */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+
+    width: 305px;
+    height: 45px;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 1;
+
+}
+
+.financial-span-1{
+    /* Cody Fisher */
+
+    width: 150px;
+    height: 25px;
+
+    /* font-family: 'Uncut Sans'; */
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    /* identical to box height */
+    letter-spacing: -0.03em;
+
+    /* Black */
+    color: #000000;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+
+.financial-span-2{
+    /* Deloitte */
+
+    width: 305px;
+    height: 20px;
+
+    /* font-family: 'Uncut Sans'; */
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */
+    letter-spacing: -0.03em;
+
+    /* Black */
+    color: #000000;
+
+    opacity: 0.7;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+
+}
