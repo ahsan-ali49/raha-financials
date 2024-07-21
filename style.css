@@ -1108,8 +1108,50 @@ z-index: 1;
     width: 114px;
     height: 55px;
 
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    /* identical to box height */
+    letter-spacing: -0.02em;
+    color: #1445C2;
+
     border-radius: 10px;
     background-color: white;
+    border: 1.3px solid #1445C2;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+}
+
+.request-call-btn:hover{
+    /* Frame 1000003096 */
+
+    box-sizing: border-box;
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px 25px;
+    gap: 10px;
+
+    width: 114px;
+    height: 55px;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    /* identical to box height */
+    letter-spacing: -0.02em;
+    color: white;
+
+    border-radius: 10px;
+    background-color: #1445C2;
     border: 1.3px solid #1445C2;
 
     /* Inside auto layout */
