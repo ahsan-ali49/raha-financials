@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const attachEventListeners = () => {
         const enterpriseButton = document.querySelector('.hero-entr-btn');
         if (enterpriseButton) {
-            enterpriseButton.addEventListener('click', () => {                
+            enterpriseButton.addEventListener('click', () => {
                 loadPage('enterprise');
             });
         }
