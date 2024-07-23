@@ -43,5 +43,5 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     // Initial page load
-    loadPage('enterprise');
+    loadPage('services');
 });
