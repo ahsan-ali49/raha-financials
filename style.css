@@ -1,15 +1,16 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 body{
     width: 100vw;
     background-color: #F7F9FD;
     ;
 }
 
-body::-webkit-scrollbar {
+body::-webkit-scrollbar, .carousel-container::-webkit-scrollbar {
     display: none;
+}
+
+.carousel-container {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
 }
 
 .contact-btn{
@@ -106,6 +107,13 @@ body::-webkit-scrollbar {
     order: 0;
     flex-grow: 0;
 
+}
+
+.hero-btn-div{
+    padding: 5px;
+    border-radius: 39px;
+    opacity: 0px;
+    background: #ECECEC;
 }
 
 .hero-indv-btn{
@@ -833,29 +841,29 @@ body::-webkit-scrollbar {
     position: relative;
     overflow: hidden;
     height: 810px;;
-  }
+}
   
-  #background-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-  }
+#background-video {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+z-index: -1;
+}
   
-  .content {
-    position: relative;
-    z-index: 1;
-    /* padding: 20px; */
-    background-color: rgba(0, 0, 0, 0.5);
-  }
+.content {
+position: relative;
+z-index: 1;
+/* padding: 20px; */
+background-color: rgba(0, 0, 0, 0.5);
+}
   
-  .foreground-heading {
+.foreground-heading {
     margin: 0;
     padding: 0;
-  }
+}
   
 .foreground-para {
     /* In today’s fast-paced business landscape, staying ahead demands focus, innovation, and agility. However, managing your financial operations can become a time-consuming and complex endeavor that diverts your attention from what truly matters – growing your business. This is where outsourced accounting steps in to create a tailor made financial strategy for your business.` */
@@ -909,7 +917,6 @@ background-color: #000;
 color: #fff;
 }
   
-
 .industry-heading{
         /* Where We Make Waves: Our Industry Spectrum */
 
@@ -960,65 +967,31 @@ color: #fff;
 }
 
 .carousel-item-div-primary{
-    /* Frame 1000003019 */
-
-    box-sizing: border-box;
-
-    /* Auto layout */
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 5px 5px 20px;
-    gap: 15px;
-
-    /* width: 372px; */
-    height: 348px;
 
     background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), radial-gradient(46.19% 50.94% at 50% 100%, rgba(88, 126, 219, 0.1) 0%, rgba(20, 69, 194, 0.1) 100%);
     box-shadow: 0px 100px 40px rgba(176, 176, 176, 0.01), 0px 56px 34px rgba(176, 176, 176, 0.05), 0px 25px 25px rgba(176, 176, 176, 0.09), 0px 6px 14px rgba(176, 176, 176, 0.1);
     border: 1.5px solid  #1445C2;
     border-radius: 15px;
 
-    /* Inside auto layout */
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-    z-index: 1;
-
 }
 
 .carousel-item-div-secondary{
-    /* Frame 1000003020 */
-
-    box-sizing: border-box;
-
-    /* Auto layout */
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 5px 5px 20px;
-    gap: 15px;
-
-    width: 372px;
-    height: 348px;
 
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
     border: 1px solid #DADADA;
     filter: drop-shadow(0px 100px 40px rgba(176, 176, 176, 0.01)) drop-shadow(0px 56px 34px rgba(176, 176, 176, 0.05)) drop-shadow(0px 25px 25px rgba(176, 176, 176, 0.09)) drop-shadow(0px 6px 14px rgba(176, 176, 176, 0.1));
     border-radius: 15px;
+}
 
-    /* Inside auto layout */
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-z-index: 1;
+.carousel-item {
+    min-width: 360px; /* Adjust the width as per your design */
 }
 
 .corousel-item-heading-primary{
     /* Hospitality and Food Sector */
 
     /* width: 330px; */
-    height: 28px;
+    /* height: 28px; */
 
     /* font-family: 'Uncut Sans'; */
     font-style: normal;
@@ -1031,21 +1004,12 @@ z-index: 1;
     /* Black */
     color: #000000;
 
-
-    /* Inside auto layout */
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
-
 }
 
-.corousel-item-heading-secondary{
+.carousel-item-heading-secondary{
 
-    /* In hospitality and food services, where guest experiences meet delectable creations, financial finesse is a must. */
-
-    width: 330px;
-    height: 69px;
+/* In hospitality and food services, where guest experiences meet delectable creations, financial finesse is a must. */
+    /* height: 69px; */
 
     /* font-family: 'Uncut Sans'; */
     font-style: normal;
@@ -1058,13 +1022,6 @@ z-index: 1;
     color: #000000;
 
     opacity: 0.7;
-
-    /* Inside auto layout */
-    flex: none;
-    order: 1;
-    align-self: stretch;
-    flex-grow: 0;
-
 
 }
 
