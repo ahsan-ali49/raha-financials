@@ -58,5 +58,5 @@ contenLoader = () => {
 }
 
 // Initial page load
-loadPage('pricing');
+loadPage('services');
 document.addEventListener('DOMContentLoaded', contenLoader);

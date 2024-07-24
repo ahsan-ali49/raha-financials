@@ -1,0 +1,99 @@
+.information-heading{
+
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 95px;
+    line-height: 100px;
+    text-align: center;
+    letter-spacing: -0.06em;
+
+    color: #000000;
+
+}
+
+.information-form{
+
+    width: 100%;
+
+    border: 2px solid #1445C2;
+
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%);
+    filter: drop-shadow(0px 100px 40px rgba(176, 176, 176, 0.01)) drop-shadow(0px 56px 34px rgba(176, 176, 176, 0.05)) drop-shadow(0px 25px 25px rgba(176, 176, 176, 0.09)) drop-shadow(0px 6px 14px rgba(176, 176, 176, 0.1));
+    border-radius: 15px;
+
+}
+
+.information-form-div{
+
+    width: 70%;
+
+
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%);
+    filter: drop-shadow(0px 100px 40px rgba(176, 176, 176, 0.01)) drop-shadow(0px 56px 34px rgba(176, 176, 176, 0.05)) drop-shadow(0px 25px 25px rgba(176, 176, 176, 0.09)) drop-shadow(0px 6px 14px rgba(176, 176, 176, 0.1));
+    border-radius: 15px;
+
+}
+
+.information-form-span{
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 33px;
+    line-height: 41px;
+    letter-spacing: -0.03em;
+
+    color: #000000;
+}
+
+.information-name-field{
+
+    padding: 15px 20px;
+
+    width: 48%;
+    height: 58px;
+
+    border: 1px solid #1445C2;
+
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), radial-gradient(46.19% 50.94% at 50% 100%, rgba(88, 126, 219, 0.1) 0%, rgba(20, 69, 194, 0.1) 100%);
+    box-shadow: 0px 100px 40px rgba(176, 176, 176, 0.01), 0px 56px 34px rgba(176, 176, 176, 0.05), 0px 25px 25px rgba(176, 176, 176, 0.09), 0px 6px 14px rgba(176, 176, 176, 0.1);
+    border-radius: 15px;
+
+}
+
+.information-secondary-field{
+    padding: 15px 20px;
+
+    width: 48%;
+    height: 58px;
+
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), radial-gradient(46.19% 50.94% at 50% 100%, rgba(88, 126, 219, 0.1) 0%, rgba(20, 69, 194, 0.1) 100%);
+    box-shadow: 0px 100px 40px rgba(176, 176, 176, 0.01), 0px 56px 34px rgba(176, 176, 176, 0.05), 0px 25px 25px rgba(176, 176, 176, 0.09), 0px 6px 14px rgba(176, 176, 176, 0.1);
+    border-radius: 15px;
+}
+
+.information-tertiary-field{
+    padding: 15px 20px;
+
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), radial-gradient(46.19% 50.94% at 50% 100%, rgba(88, 126, 219, 0.1) 0%, rgba(20, 69, 194, 0.1) 100%);
+    box-shadow: 0px 100px 40px rgba(176, 176, 176, 0.01), 0px 56px 34px rgba(176, 176, 176, 0.05), 0px 25px 25px rgba(176, 176, 176, 0.09), 0px 6px 14px rgba(176, 176, 176, 0.1);
+    border-radius: 15px;
+}
+
+.form-fields-div{
+    display: flex;
+    direction: row;
+    justify-content: space-between;
+}
+
+.form-step-div{
+   
+    padding: 35px;
+
+    border: 1px solid #1445C2;
+
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%);
+    filter: drop-shadow(0px 100px 40px rgba(176, 176, 176, 0.01)) drop-shadow(0px 56px 34px rgba(176, 176, 176, 0.05)) drop-shadow(0px 25px 25px rgba(176, 176, 176, 0.09)) drop-shadow(0px 6px 14px rgba(176, 176, 176, 0.1));
+    border-radius: 15px;
+
+}
