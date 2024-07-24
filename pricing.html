@@ -90,9 +90,9 @@
 <!-- Pricing Cards -->
 <div class="px-20">
   <div
-    class="flex flex-col items-center justify-center px-20 py-10 pricing-cards-div"
+    class="flex flex-col items-center justify-center gap-5 px-20 py-10 pricing-cards-div relative"
   >
-    <div class="w-full flex flex-row justify-between">
+    <div class="w-full flex flex-row justify-between gap-5">
       <div class="pricing-card-pricing">
         <div
           class="h-full flex flex-col items-between justify-between gap-5 p-4 rounded-lg hover:bg-white text-white hover:text-black pricing-card-child"
@@ -211,6 +211,107 @@
         </div>
       </div>
     </div>
-    <div></div>
+    <div class="w-full h-full flex flex-row gap-5 pricing-card-pricing">
+      <div class="w-2/5 flex flex-col justify-between">
+        <div class="flex flex-col items-start gap-5">
+          <div class="img-box w-fit p-2.5 rounded-lg">
+            <img src="./assets/images/enterprise/database2.png" alt="" />
+          </div>
+          <span class="pricing-card-span-1 text-white">Enterprise Plan</span>
+        </div>
+        <button class="pricing-card-btn">Speak with a consultant</button>
+      </div>
+      <div class="w-3/5 text-white">
+        <ul class="flex flex-col gap-2.5">
+          <li class="pricing-card-list-item">
+            <i class="fa fa-check-circle"></i>CFO-Level Advisory
+          </li>
+          <li class="pricing-card-list-item">
+            <i class="fa fa-check-circle"></i>Financial Training
+          </li>
+          <li class="pricing-card-list-item">
+            <i class="fa fa-check-circle"></i>International Tax Planning
+          </li>
+          <li class="pricing-card-list-item">
+            <i class="fa fa-check-circle"></i>Mergers and Acquisitions Support
+          </li>
+          <li class="pricing-card-list-item">
+            <i class="fa fa-check-circle"></i>Staff Outsourcing
+          </li>
+          <li class="pricing-card-list-item">
+            <i class="fa fa-check-circle"></i>Financial Software Integration
+          </li>
+          <li class="pricing-card-list-item">
+            <i class="fa fa-check-circle"></i>Budget Forecasting
+          </li>
+          <li class="pricing-card-list-item">
+            <i class="fa fa-check-circle"></i>Custom Financial Solutions
+          </li>
+        </ul>
+      </div>
+    </div>
+    <img
+      src="./assets/images/enterprise/pricingAbsoluteImage.png"
+      alt=""
+      class="absolute right-0 top-64"
+    />
+  </div>
+</div>
+
+<!-- Consultation Section -->
+<div class="px-20 pb-20">
+  <div class="flex flex-row justify-between px-7 mt-20">
+    <div class="w-5/12 flex flex-col gap-2.5">
+      <span class="text-gray-950 consultation-span"
+        >Book your free
+        <span class="consultation-span-secondary">Consultation today</span>
+      </span>
+      <p class="consultation-para">
+        Schedule your consultation with us, and rest assured that our Customer
+        Support team will promptly return your call within 24 hours
+      </p>
+    </div>
+    <div class="w-5/12">
+      <form class="w-full flex flex-col gap-5">
+        <div class="w-full flex flex-row gap-5">
+          <input
+            type="text"
+            placeholder="Full Name*"
+            class="w-5/12 name-form-field"
+            required
+          />
+          <input
+            type="text"
+            placeholder="Email*"
+            class="w-5/12 email-form-field"
+            required
+          />
+        </div>
+        <div class="w-full flex flex-row gap-5">
+          <input
+            type="text"
+            placeholder="Subject*"
+            class="w-5/12 subject-form-field"
+            required
+          />
+          <input
+            type="text"
+            placeholder="Phone Number"
+            class="w-5/12 phone-form-field"
+            required
+          />
+        </div>
+        <textarea
+          name="message"
+          id="message"
+          placeholder="Message*"
+          class="w-full message-form-field"
+          required
+        ></textarea>
+        <button type="submit" class="consultation-form-field">
+          Submit Now
+        </button>
+      </form>
+    </div>
   </div>
 </div>
