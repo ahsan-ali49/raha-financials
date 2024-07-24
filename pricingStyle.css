@@ -46,16 +46,21 @@
 
     width: 100%;
 
-    /* Main Radial */
-    background: radial-gradient(46.19% 50.94% at 50% 100%, #587EDB 0%, #1445C2 100%);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: -0.02em;
+
+    background: white;
+    color: #1445C2;
     border-radius: 12.5px;
 
 }
 
-
 .pricing-card-pricing{
 
-    width: 30%;
+    width: 33%;
     padding: 10px;
 
     background: rgba(255, 255, 255, 0.1);
@@ -66,8 +71,20 @@
 
 }
 
-.pricing-card-child:hover  button {
-    background-color: white;
+.pricing-card-child:hover .pricing-card-btn{
+    background: radial-gradient(46.19% 50.94% at 50% 100%, #587EDB 0%, #1445C2 100%);
+    color: white;
+}
+
+.pricing-card-child:hover .pricing-card-span-3{
+    color: #1445C2;
+}
+
+.pricing-card-span-33{
+    color: white;
+}
+
+.pricing-card-child:hover .pricing-card-span-33{
     color: black;
 }
 
@@ -79,6 +96,22 @@
     line-height: 28px;
     letter-spacing: -0.03em;
 
+}
+
+.img-box{
+    background-color: white;
+}
+
+.pricing-card-child:hover .img-box{
+    background-color: white;
+}
+
+.img-box-primary{
+    background-color: #1445C2;
+}
+
+.img-box-secondary{
+    background-color: white;
 }
 
 
@@ -96,6 +129,7 @@
     font-size: 33px;
     line-height: 41px;
     letter-spacing: -0.03em;
+    color: white;
 }
 
 .pricing-card-list-item{
@@ -107,4 +141,17 @@
     /* identical to box height */
     letter-spacing: -0.03em;
 
+}
+
+.fa{
+    font-size: 24px;
+    margin-right: 8px;
+}
+
+.pricing-card-child:hover{
+    color: black;
+}
+
+.pricing-card-child:hover .fa{
+    color: #1445C2;
 }
