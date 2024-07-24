@@ -1,0 +1,293 @@
+<!-- Navbar -->
+<div class="px-20 py-2.5 navbar-background" id="pricing">
+  <div
+    class="flex flex-wrap items-center justify-between mx-auto rounded-xl w-full pl-6 pr-2.5 py-2.5 navbar-link"
+  >
+    <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+      <img src="./assets/images/navbarLogo.svg" alt="raha Financials logo" />
+    </a>
+    <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+      <button
+        type="button"
+        class="hidden md:block hover:bg-blue-800 dark:hover:bg-blue-500 contact-btn"
+      >
+        Contact Us
+      </button>
+      <button
+        data-collapse-toggle="navbar-sticky"
+        type="button"
+        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+        aria-controls="navbar-sticky"
+        aria-expanded="false"
+      >
+        <span class="sr-only">Open main menu</span>
+        <svg
+          class="w-5 h-5"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 17 14"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M1 1h15M1 7h15M1 13h15"
+          />
+        </svg>
+      </button>
+    </div>
+    <div
+      class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+      id="navbar-sticky"
+    >
+      <ul
+        class="flex flex-col gap-x-9 font-medium rounded-lg rtl:space-x-reverse md:flex-row md:mt-0"
+      >
+        <li>
+          <a href="#" class="block navlink" data-page="services" data-section=""
+            >Services</a
+          >
+        </li>
+        <li>
+          <a
+            href="#industry"
+            class="block navlink"
+            data-page="services"
+            data-section="industry"
+            >Industries</a
+          >
+        </li>
+
+        <li>
+          <a href="#" class="block navlink" data-page="insights">Insights</a>
+        </li>
+        <li>
+          <a href="#" class="block navlink" data-page="pricing">Pricing</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Hero Section -->
+<div class="flex flex-col items-center justify-center gap-2.5 py-20">
+  <h2 class="hero-heading-pricing">
+    Our <span class="hero-secondary-heading">Pricing</span> Plans
+  </h2>
+  <p class="hero-para-pricing w-1/2">
+    Our pricing plans provide affordable and flexible options to access expert
+    financial support that streamlines operations and boosts productivity. We
+    offer customizable packages for businesses of all sizes, with transparent
+    pricing and no hidden fees. From accounting and payroll to strategic
+    financial planning, we offer a range of services designed to drive your
+    success
+  </p>
+  <button class="hero-btn">Book A Demo</button>
+</div>
+
+<!-- Pricing Cards -->
+<div class="px-20">
+  <div
+    class="flex flex-col items-center justify-center px-20 py-10 pricing-cards-div"
+  >
+    <div class="w-full flex flex-row justify-between">
+      <div class="pricing-card-pricing">
+        <div
+          class="h-full flex flex-col items-between justify-between gap-5 p-4 rounded-lg hover:bg-white text-white hover:text-black pricing-card-child"
+        >
+          <div class="flex flex-col items-start gap-5">
+            <div class="bg-blue-100 w-fit p-2.5 rounded-lg">
+              <img src="./assets/images/enterprise/database1.png" alt="" />
+            </div>
+            <div class="flex flex-col gap-2">
+              <span class="pricing-card-span-1">Personal Plan</span>
+              <span class="pricing-card-span-2">Starting From</span>
+              <span class="pricing-card-span-3">$79/mo</span>
+            </div>
+            <ul>
+              <li class="pricing-card-list-item">
+                <span
+                  ><img
+                    src="./assets/images/enterprise/listIcon.png"
+                    alt=""
+                    class="inline-block mr-2" /></span
+                >Personal monetary evaluation
+              </li>
+              <li class="pricing-card-list-item">
+                <span
+                  ><img
+                    src="./assets/images/enterprise/listIcon.png"
+                    alt=""
+                    class="inline-block mr-2" /></span
+                >Bookkeeping
+              </li>
+              <li class="pricing-card-list-item">
+                <span
+                  ><img
+                    src="./assets/images/enterprise/listIcon.png"
+                    alt=""
+                    class="inline-block mr-2" /></span
+                >Financial statements preparation
+              </li>
+              <li class="pricing-card-list-item">
+                <span
+                  ><img
+                    src="./assets/images/enterprise/listIcon.png"
+                    alt=""
+                    class="inline-block mr-2" /></span
+                >Budgeting and cashflow
+              </li>
+              <li class="pricing-card-list-item">
+                <span
+                  ><img
+                    src="./assets/images/enterprise/listIcon.png"
+                    alt=""
+                    class="inline-block mr-2" /></span
+                >Financial Planning
+              </li>
+            </ul>
+          </div>
+          <button class="pricing-card-btn">Learn more</button>
+        </div>
+      </div>
+
+      <div class="pricing-card-pricing">
+        <div
+          class="h-full flex flex-col items-between justify-between gap-5 p-4 rounded-lg hover:bg-white text-white hover:text-black"
+        >
+          <div class="flex flex-col items-start gap-5">
+            <div class="bg-blue-100 w-fit p-2.5 rounded-lg">
+              <img src="./assets/images/enterprise/database4.png" alt="" />
+            </div>
+            <div class="flex flex-col gap-2">
+              <span class="pricing-card-span-1">Standard Plan</span>
+              <span class="pricing-card-span-2">Starting From</span>
+              <span class="pricing-card-span-3">$149/mo</span>
+            </div>
+            <ul>
+              <li class="pricing-card-list-item">
+                <span
+                  ><img
+                    src="./assets/images/enterprise/listIcon.png"
+                    alt=""
+                    class="inline-block mr-2" /></span
+                >Bookkeeping
+              </li>
+              <li class="pricing-card-list-item">
+                <span
+                  ><img
+                    src="./assets/images/enterprise/listIcon.png"
+                    alt=""
+                    class="inline-block mr-2" /></span
+                >Accounts receivable
+              </li>
+              <li class="pricing-card-list-item">
+                <span
+                  ><img
+                    src="./assets/images/enterprise/listIcon.png"
+                    alt=""
+                    class="inline-block mr-2" /></span
+                >Accounts payable
+              </li>
+              <li class="pricing-card-list-item">
+                <span
+                  ><img
+                    src="./assets/images/enterprise/listIcon.png"
+                    alt=""
+                    class="inline-block mr-2" /></span
+                >Monthly financials
+              </li>
+            </ul>
+          </div>
+          <button class="pricing-card-btn">Learn more</button>
+        </div>
+      </div>
+      <div class="pricing-card-pricing">
+        <div
+          class="h-full flex flex-col items-between gap-5 p-4 rounded-lg hover:bg-white text-white hover:text-black"
+        >
+          <div class="flex flex-col items-start gap-5">
+            <div class="bg-blue-100 w-fit p-2.5 rounded-lg">
+              <img src="./assets/images/enterprise/database3.png" alt="" />
+            </div>
+            <div class="flex flex-col gap-2">
+              <span class="pricing-card-span-1">Advanced Plan</span>
+              <span class="pricing-card-span-2">Starting From</span>
+              <span class="pricing-card-span-3">$79/mo</span>
+            </div>
+            <ul>
+              <li class="pricing-card-list-item">
+                <span
+                  ><img
+                    src="./assets/images/enterprise/listIcon.png"
+                    alt=""
+                    class="inline-block mr-2" /></span
+                >Bookkeeping
+              </li>
+              <li class="pricing-card-list-item">
+                <span
+                  ><img
+                    src="./assets/images/enterprise/listIcon.png"
+                    alt=""
+                    class="inline-block mr-2" /></span
+                >Payroll services
+              </li>
+              <li class="pricing-card-list-item">
+                <span
+                  ><img
+                    src="./assets/images/enterprise/listIcon.png"
+                    alt=""
+                    class="inline-block mr-2" /></span
+                >Sales tax
+              </li>
+              <li class="pricing-card-list-item">
+                <span
+                  ><img
+                    src="./assets/images/enterprise/listIcon.png"
+                    alt=""
+                    class="inline-block mr-2" /></span
+                >Annual/ Quaterly/ Monthly filing
+              </li>
+              <li class="pricing-card-list-item">
+                <span
+                  ><img
+                    src="./assets/images/enterprise/listIcon.png"
+                    alt=""
+                    class="inline-block mr-2" /></span
+                >Monthly financials
+              </li>
+              <li class="pricing-card-list-item">
+                <span
+                  ><img
+                    src="./assets/images/enterprise/listIcon.png"
+                    alt=""
+                    class="inline-block mr-2" /></span
+                >Financial Analysis / KPI
+              </li>
+              <li class="pricing-card-list-item">
+                <span
+                  ><img
+                    src="./assets/images/enterprise/listIcon.png"
+                    alt=""
+                    class="inline-block mr-2" /></span
+                >VAT
+              </li>
+              <li class="pricing-card-list-item">
+                <span
+                  ><img
+                    src="./assets/images/enterprise/listIcon.png"
+                    alt=""
+                    class="inline-block mr-2" /></span
+                >IRS, HMRC etc notices
+              </li>
+            </ul>
+          </div>
+          <button class="pricing-card-btn">Learn more</button>
+        </div>
+      </div>
+    </div>
+    <div></div>
+  </div>
+</div>

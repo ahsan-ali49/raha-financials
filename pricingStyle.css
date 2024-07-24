@@ -1,0 +1,110 @@
+.hero-heading-pricing{
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 95px;
+    line-height: 100px;
+
+    text-align: center;
+    letter-spacing: -0.06em;
+
+    color: #000000;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.hero-para-pricing{
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: -0.03em;
+
+    color: #000000;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+}
+
+.pricing-cards-div{
+    
+    background: radial-gradient(46.19% 50.94% at 50% 100%, rgba(88, 126, 219, 0.9) 0%, rgba(20, 69, 194, 0.9) 100%), radial-gradient(46.19% 50.94% at 50% 100%, #587EDB 0%, #1445C2 100%), url(.jpg);
+    background-blend-mode: normal, lighten, normal;
+    border-radius: 25px;
+}
+
+
+.pricing-card-btn{
+
+    padding: 15px 25px;
+
+    width: 100%;
+
+    /* Main Radial */
+    background: radial-gradient(46.19% 50.94% at 50% 100%, #587EDB 0%, #1445C2 100%);
+    border-radius: 12.5px;
+
+}
+
+
+.pricing-card-pricing{
+
+    width: 30%;
+    padding: 10px;
+
+    background: rgba(255, 255, 255, 0.1);
+    border: 2.5px solid #FFFFFF;
+    box-shadow: inset 0px 4px 15.9px rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(4.5px);
+    border-radius: 20px;
+
+}
+
+.pricing-card-child:hover  button {
+    background-color: white;
+    color: black;
+}
+
+.pricing-card-span-1{
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: -0.03em;
+
+}
+
+
+.pricing-card-span-2{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: -0.03em;
+}
+
+.pricing-card-span-3{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 33px;
+    line-height: 41px;
+    letter-spacing: -0.03em;
+}
+
+.pricing-card-list-item{
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    letter-spacing: -0.03em;
+
+}
