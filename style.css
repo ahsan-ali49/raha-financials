@@ -840,24 +840,23 @@ body::-webkit-scrollbar, .carousel-container::-webkit-scrollbar {
 .outsourced-accounting {
     position: relative;
     overflow: hidden;
-    height: 810px;;
+    height: 810px;
 }
   
 #background-video {
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-object-fit: cover;
-z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
 }
   
 .content {
-position: relative;
-z-index: 1;
-/* padding: 20px; */
-background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
 }
   
 .foreground-heading {
@@ -866,45 +865,38 @@ background-color: rgba(0, 0, 0, 0.5);
 }
   
 .foreground-para {
-    /* In today’s fast-paced business landscape, staying ahead demands focus, innovation, and agility. However, managing your financial operations can become a time-consuming and complex endeavor that diverts your attention from what truly matters – growing your business. This is where outsourced accounting steps in to create a tailor made financial strategy for your business.` */
 
     font-style: normal;
     font-weight: 400;
     line-height: 25px;
     text-align: center;
 
-    /* White */
     color: #FFFFFF;
 
 }
   
 .foreground-btn {
-    /* Frame 4 */
-    /* Auto layout */
+
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 15px 25px;
     gap: 10px;
 
-    /* width: 153px; */
     height: 55px;
 
     background: #F6F6F6;
     border-radius: 10px;
 
-
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
     line-height: 25px;
-    /* identical to box height */
+
     letter-spacing: -0.02em;
 
-    /* Black */
     color: #000000;
 
-    /* Inside auto layout */
     flex: none;
     order: 0;
     flex-grow: 0;
@@ -913,8 +905,79 @@ background-color: rgba(0, 0, 0, 0.5);
 }
 
 .foreground-btn:hover {
-background-color: #000;
-color: #fff;
+    background-color: #000;
+    color: #fff;
+}
+  
+
+/*  */
+
+/* Ensure clearfix is applied */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+  
+  /* Additional styles */
+.outsourced-accounting-enterprise {
+    position: relative;
+    margin-top: 20px; /* Ensure there is some space above the video section */
+}
+  
+.outsourced-accounting-enterprise video {
+    display: block;
+}
+  
+.content-enterprise {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+  
+.foreground-heading-enterprise {
+    font-size: 3rem;
+    font-weight: bold;
+}
+  
+.foreground-para-enterprise {
+    font-size: 1.25rem;
+}
+  
+.foreground-btn-enterprise {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px 25px;
+    gap: 10px;
+
+    height: 55px;
+
+    background: #F6F6F6;
+    border-radius: 10px;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+
+    letter-spacing: -0.02em;
+
+    color: #000000;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+    transition: background-color 0.3s, color 0.3s;
+}
+  
+.foreground-btn-enterprise:hover {
+    background-color: #000;
+    color: #fff;
 }
   
 .industry-heading{
