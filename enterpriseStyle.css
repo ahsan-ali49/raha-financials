@@ -374,3 +374,75 @@ flex-grow: 0;
     border-radius: 15px;
 
 }
+
+.market-expansion-div{
+
+    /* Main Radial */
+    background: radial-gradient(46.19% 50.94% at 50% 100%, #587EDB 0%, #1445C2 100%);
+    border-radius: 22px;
+
+
+}
+
+.market-expansion-heading{
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 70px;
+    text-align: center;
+    letter-spacing: -0.05em;
+
+    color: #FFFFFF;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+
+.market-expansion-para{
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: -0.03em;
+
+    color: #FFFFFF;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+}
+
+.market-expansion-btn{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 25px;
+    gap: 10px;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+
+    text-align: center;
+    letter-spacing: -0.02em;
+
+    color: #000000;
+
+
+    background: #F6F6F6;
+    border-radius: 10px;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+}

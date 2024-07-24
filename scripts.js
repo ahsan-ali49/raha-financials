@@ -34,13 +34,22 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const attachEventListeners = () => {
-        const enterpriseButton = document.querySelector('.hero-entr-btn');
+        const enterpriseButton = document.querySelector('.hero-indv-btn-enterprise');
         if (enterpriseButton) {
             enterpriseButton.addEventListener('click', () => {
+                loadPage('services');
+            });
+        }
+
+        const individualButton = document.querySelector('.hero-entr-btn');
+        if (individualButton) {
+            individualButton.addEventListener('click', () => {
                 loadPage('enterprise');
             });
         }
     };
+
+    
 
     // Initial page load
     loadPage('services');
