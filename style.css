@@ -8,7 +8,7 @@ body::-webkit-scrollbar, .carousel-container::-webkit-scrollbar {
     display: none;
 }
 
-#content, #pricing, #information1, #information2, #information3, #enterprise, #services {
+#content, #pricing, #information1, #information2, #information3, #enterprise, #services, #bookKeeping {
     animation: slide 1s linear;
 }
 
@@ -262,9 +262,6 @@ body::-webkit-scrollbar, .carousel-container::-webkit-scrollbar {
 
 .hero-para{
     /* Let us take care of your books, taxes, and payroll while you focus on growing your business. Our expert accountants specialize in helping small businesses thrive. */
-
-    width: 634px;
-    height: 46px;
 
     /* font-family: 'Uncut Sans'; */
     font-style: normal;

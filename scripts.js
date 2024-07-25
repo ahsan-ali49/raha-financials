@@ -25,6 +25,20 @@ const loadPage = (page, section) => {
             }
 
             contenLoader();
+            console.log(page);
+            if(page == "services"){
+                console.log(page);
+                const serviceListItems = document.querySelectorAll('.flex-item-inner-div');
+                serviceListItems.forEach((item) => {
+                    item.addEventListener('click', () => {
+                        const serviceId = item.getAttribute('id');
+                        console.log(serviceId);
+                        loadPage(serviceId, `${serviceId}-section`);
+                        // const serviceDescription = document.querySelector(`#${serviceId}-description`);
+                        // serviceDescription.classList.toggle('hidden');
+                    });
+                });
+            }
             
             if(page == "information3") {
 
