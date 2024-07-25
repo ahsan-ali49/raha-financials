@@ -1,4 +1,6 @@
 let contenLoader;
+let clientName;
+let companyName;
 
 const loadPage = (page, section) => {
     fetch(`${page}.html`)
@@ -37,6 +39,9 @@ const loadPage = (page, section) => {
                 var signaturePad = new SignaturePad(canvas, {
                     backgroundColor: 'rgb(250,250,250)'
                 });
+
+                const clientNameSpan = document.querySelector('.client-name-span');
+                clientNameSpan.innerHTML = clientName;
             }
         })
         .catch(error => {
@@ -65,6 +70,10 @@ const attachEventListeners = () => {
     const information1Button = document.querySelector('#info-1-btn');
     if (information1Button) {
         information1Button.addEventListener('click', () => {
+            clientName = document.querySelector('.information-name-field').value;
+            console.log(clientName);
+            companyName = document.querySelector('#information-company-name').value;
+            console.log(companyName);  
             loadPage('information2', "privacy-agreement");
         });
     }
@@ -72,6 +81,7 @@ const attachEventListeners = () => {
     const information2Button = document.querySelector('#info-2-btn');
     if (information2Button) {
         information2Button.addEventListener('click', () => {
+            // const formValue = document.getElementById('privacy-agreement-form').elements["privacy-agreement"].value;
             loadPage('information3', "engagement-form");
         });
     }

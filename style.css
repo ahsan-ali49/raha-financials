@@ -8,21 +8,10 @@ body::-webkit-scrollbar, .carousel-container::-webkit-scrollbar {
     display: none;
 }
 
-#content {
+#content, #pricing, #information1, #information2, #information3, #enterprise, #services {
     animation: slide 1s linear;
 }
-#pricing {
-    animation: slide 1s linear;
-}
-#information1 {
-    animation: slide 1s linear;
-}
-#information2 {
-    animation: slide 1s linear;
-}
-#information3 {
-    animation: slide 1s linear;
-}
+
   
 @keyframes slide {
     from { transform: translateX(-100%); }
