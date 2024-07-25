@@ -20,12 +20,30 @@ const loadPage = (page, section) => {
             }
 
             contenLoader();
- 
+            
+            if(page == "information3") {
+
+                var canvas = document.getElementById("signature-pad");
+
+                function resizeCanvas() {
+                    var ratio = Math.max(window.devicePixelRatio || 1, 1);
+                    canvas.width = canvas.offsetWidth * ratio;
+                    canvas.height = canvas.offsetHeight * ratio;
+                    canvas.getContext("2d").scale(ratio, ratio);
+                }
+                window.onresize = resizeCanvas;
+                resizeCanvas();
+
+                var signaturePad = new SignaturePad(canvas, {
+                    backgroundColor: 'rgb(250,250,250)'
+                });
+            }
         })
         .catch(error => {
             content.innerHTML = '<p>Sorry, the content could not be loaded.</p>';
             console.error('Error loading page:', error);
         });
+        
 
 };
 
@@ -62,6 +80,13 @@ const attachEventListeners = () => {
     if (information2PreviousButton) {
         information2PreviousButton.addEventListener('click', () => {
             loadPage('information1', "information1");
+        });
+    }
+
+    const information3PreviousButton = document.querySelector('#info-3-previous-btn');
+    if (information3PreviousButton) {
+        information3PreviousButton.addEventListener('click', () => {
+            loadPage('information2', "information2");
         });
     }
 };
