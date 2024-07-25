@@ -28,45 +28,6 @@ const loadPage = (page, section) => {
         });
 
 };
-// const loadPage = (page, section) => {
-//     // Add the fade-out class
-//     content.classList.add('fade-out');
-
-//     // Wait for the fade-out transition to complete
-//     setTimeout(() => {
-//         fetch(`${page}.html`)
-//             .then(response => response.text())
-//             .then(data => {
-//                 content.innerHTML = data;
-
-//                 // Re-attach the event listener after content is loaded
-//                 attachEventListeners();
-
-//                 if (section) {
-//                     const sectionElement = document.getElementById(section);
-//                     if (sectionElement) {
-//                         sectionElement.scrollIntoView({ behavior: 'smooth' });
-//                     }
-//                 }
-
-                // // Remove the fade-out class and add the fade-in class
-                // content.classList.remove('fade-out');
-                // content.classList.add('fade-in');
-//             })
-//             .catch(error => {
-//                 content.innerHTML = '<p>Sorry, the content could not be loaded.</p>';
-//                 console.error('Error loading page:', error);
-//             });
-//     }, 500); // Match this delay with the CSS transition duration
-// };
-
-// Initial page load
-// document.addEventListener('DOMContentLoaded', () => {
-//     loadPage('services');
-//     attachEventListeners();
-// });
-
-
 
 const attachEventListeners = () => {
     const enterpriseButton = document.querySelector('.hero-indv-btn-enterprise');
@@ -80,6 +41,27 @@ const attachEventListeners = () => {
     if (individualButton) {
         individualButton.addEventListener('click', () => {
             loadPage('enterprise');
+        });
+    }
+
+    const information1Button = document.querySelector('#info-1-btn');
+    if (information1Button) {
+        information1Button.addEventListener('click', () => {
+            loadPage('information2', "privacy-agreement");
+        });
+    }
+    
+    const information2Button = document.querySelector('#info-2-btn');
+    if (information2Button) {
+        information2Button.addEventListener('click', () => {
+            loadPage('information3', "engagement-form");
+        });
+    }
+
+    const information2PreviousButton = document.querySelector('#info-2-previous-btn');
+    if (information2PreviousButton) {
+        information2PreviousButton.addEventListener('click', () => {
+            loadPage('information1', "information1");
         });
     }
 };
@@ -99,5 +81,5 @@ contenLoader = () => {
 }
 
 // Initial page load
-loadPage('services');
+loadPage('information3');
 document.addEventListener('DOMContentLoaded', contenLoader);

@@ -1,6 +1,7 @@
 <div id="information1">
   <!-- Navbar -->
   <div class="px-20 py-2.5 navbar-background">
+    <!-- Navbar -->
     <div
       class="flex flex-wrap items-center justify-between mx-auto rounded-xl w-full pl-6 pr-2.5 py-2.5 navbar-link"
     >
@@ -48,10 +49,10 @@
         >
           <li>
             <a
-              href="#"
+              href="#services"
               class="block navlink"
               data-page="services"
-              data-section=""
+              data-section="services"
               >Services</a
             >
           </li>
@@ -66,10 +67,22 @@
           </li>
 
           <li>
-            <a href="#" class="block navlink" data-page="insights">Insights</a>
+            <a
+              href="#information1"
+              class="block navlink"
+              data-page="information1"
+              data-section="information1"
+              >Insights</a
+            >
           </li>
           <li>
-            <a href="#" class="block navlink" data-page="pricing">Pricing</a>
+            <a
+              href="#pricing"
+              class="block navlink"
+              data-page="pricing"
+              data-section="pricing"
+              >Pricing</a
+            >
           </li>
         </ul>
       </div>
@@ -83,8 +96,8 @@
     <h2 class="information-heading">
       Client <span class="hero-secondary-heading">Information</span>
     </h2>
-    <div class="w-full flex flex-row justify-between gap-9">
-      <div class="w-full information-form-div flex flex-col gap-7">
+    <div class="w-full flex flex-row justify-between">
+      <div class="w-3/5 information-form-div flex flex-col gap-7">
         <form class="information-form py-5 px-9 flex flex-col gap-5">
           <span class="information-form-span">1. Client Information</span>
           <div class="form-fields-div">
@@ -225,9 +238,7 @@
             class="information-tertiary-field w-full"
             rows="4"
           ></textarea>
-          <button type="submit" class="hero-btn w-fit" id="info-1-btm">
-            Next
-          </button>
+          <button class="hero-btn w-fit" id="info-1-btn">Next</button>
         </form>
         <div class="form-step-div">
           <span class="font-bold">2. Privary Agreement</span>
@@ -236,7 +247,11 @@
           <span class="font-bold">3. Engagement Letter</span>
         </div>
       </div>
-      <div class="w-1/4"></div>
+      <div class="w-1/3 flex flex-col gap-5">
+        <div class="client-information-primary-bar">Client Information</div>
+        <div class="client-information-secondary-bar">Privacy Agreement</div>
+        <div class="client-information-secondary-bar">Engagement Letter</div>
+      </div>
     </div>
   </div>
 </div>

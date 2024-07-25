@@ -8,33 +8,6 @@ body::-webkit-scrollbar, .carousel-container::-webkit-scrollbar {
     display: none;
 }
 
-/* CSS for smooth transitions */
-/* #content {
-    opacity: 1;
-    transition: opacity 2s ease-in-out;
-}
-
-.fade-out {
-    opacity: 0;
-}
-
-.fade-in {
-    opacity: 1;
-} */
-
-/* @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  
-#content {
-    animation: fadeIn 2s;
-} */
-
 #content {
     animation: slide 1s linear;
 }
@@ -49,22 +22,6 @@ body::-webkit-scrollbar, .carousel-container::-webkit-scrollbar {
     from { transform: translateX(-100%); }
     to { transform: translateX(0); }
 }
-
-
-/* CSS for slide-in animation */
-/* #content { */
-    /* animation: none; Initial state with no animation */
-/* } */
-
-/* .slide-in {
-    animation: slide 2s linear;
-} */
-
-/* @keyframes slide {
-    from { transform: translateX(-100%); }
-    to { transform: translateX(0); }
-} */
-
 
 .carousel-container {
     -ms-overflow-style: none;  /* Internet Explorer 10+ */
@@ -966,9 +923,6 @@ body::-webkit-scrollbar, .carousel-container::-webkit-scrollbar {
     background-color: #000;
     color: #fff;
 }
-  
-
-/*  */
 
 /* Ensure clearfix is applied */
 .clearfix::after {
