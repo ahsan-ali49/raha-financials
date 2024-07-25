@@ -46,7 +46,7 @@ const loadPage = (page, section) => {
                 const clientNameSpan = document.querySelector('.client-name-span');
                 clientNameSpan.innerHTML = clientName;
                 isChecked.forEach((checkbox) => {
-                    console.log(checkbox.value);
+                    console.log(checkbox.id);
                 })
             }
         })
@@ -83,7 +83,8 @@ const attachEventListeners = () => {
             isChecked = document.querySelectorAll('input[type="checkbox"]:checked');
 
             isChecked.forEach((checkbox) => {
-                console.log(selectedServices[checkbox.value]);
+                console.log(checkbox.id);
+                console.log(selectedServices[checkbox.id]);
             })
             
             loadPage('information2', "privacy-agreement");
