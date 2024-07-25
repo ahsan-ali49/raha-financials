@@ -17,6 +17,12 @@ body::-webkit-scrollbar, .carousel-container::-webkit-scrollbar {
 #information1 {
     animation: slide 1s linear;
 }
+#information2 {
+    animation: slide 1s linear;
+}
+#information3 {
+    animation: slide 1s linear;
+}
   
 @keyframes slide {
     from { transform: translateX(-100%); }

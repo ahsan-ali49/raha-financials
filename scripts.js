@@ -106,5 +106,5 @@ contenLoader = () => {
 }
 
 // Initial page load
-loadPage('information3');
+loadPage('services');
 document.addEventListener('DOMContentLoaded', contenLoader);
