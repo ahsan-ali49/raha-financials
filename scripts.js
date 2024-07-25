@@ -1,6 +1,9 @@
 let contenLoader;
 let clientName;
 let companyName;
+let isChecked;
+const selectedServices = { bk: 'Bookkeeping', fs: 'Financial Statements', tpf: 'Tax Preparation & Filing', ad: 'Auditing', pp: 'Payroll Processing', br: 'Business Registration', itin: 'ITIN Registration', nwe: 'Net Worth Evaluation' };
+
 
 const loadPage = (page, section) => {
     fetch(`${page}.html`)
@@ -42,6 +45,9 @@ const loadPage = (page, section) => {
 
                 const clientNameSpan = document.querySelector('.client-name-span');
                 clientNameSpan.innerHTML = clientName;
+                isChecked.forEach((checkbox) => {
+                    console.log(checkbox.value);
+                })
             }
         })
         .catch(error => {
@@ -73,7 +79,13 @@ const attachEventListeners = () => {
             clientName = document.querySelector('.information-name-field').value;
             console.log(clientName);
             companyName = document.querySelector('#information-company-name').value;
-            console.log(companyName);  
+            console.log(companyName);
+            isChecked = document.querySelectorAll('input[type="checkbox"]:checked');
+
+            isChecked.forEach((checkbox) => {
+                console.log(selectedServices[checkbox.value]);
+            })
+            
             loadPage('information2', "privacy-agreement");
         });
     }
