@@ -8,7 +8,7 @@ body::-webkit-scrollbar, .carousel-container::-webkit-scrollbar {
     display: none;
 }
 
-#content, #pricing, #information1, #information2, #information3, #enterprise, #services, #bookKeeping-section, #payrollProcessing-section {
+#content, #pricing, #information1, #information2, #information3, #enterprise, #services, #bookKeeping-section, #payrollProcessing-section, #llcRegistration-section, #itin-section, #taxFiling-section {
     animation: slide 1s linear;
 }
 
@@ -381,7 +381,7 @@ body::-webkit-scrollbar, .carousel-container::-webkit-scrollbar {
     /* Auto layout */
     padding: 10px;
 
-    width: 30%;
+    width: 32%;
     /* height: 239px; */
 
     background: rgba(255, 255, 255, 0.1);

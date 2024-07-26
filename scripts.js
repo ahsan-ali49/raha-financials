@@ -143,5 +143,5 @@ contenLoader = () => {
 }
 
 // Initial page load
-loadPage('services');
+loadPage('bookKeeping');
 document.addEventListener('DOMContentLoaded', contenLoader);
