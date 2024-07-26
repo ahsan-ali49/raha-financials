@@ -8,7 +8,7 @@ body::-webkit-scrollbar, .carousel-container::-webkit-scrollbar {
     display: none;
 }
 
-#content, #pricing, #information1, #information2, #information3, #enterprise, #services, #bookKeeping-section, #payrollProcessing-section, #llcRegistration-section, #itin-section, #taxFiling-section {
+#content, #pricing, #information1, #information2, #information3, #enterprise, #services, #bookKeeping-section, #payrollProcessing-section, #llcRegistration-section, #itin-section, #taxFiling-section, #businessBudgeting-section {
     animation: slide 1s linear;
 }
 
