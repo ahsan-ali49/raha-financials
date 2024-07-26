@@ -74,10 +74,38 @@
 }
 
 .service-card-para{
-    color: rgba(0, 0, 0, 0.7);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: -0.03em;
+
+    /* Black */
+    color: #000000;
+
+    opacity: 0.7;
+
 }
 
 .service-img-cards-2:hover .service-card-para{
+    color: white;
+}
+
+.service-card-head{
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 28px;
+    /* identical to box height */
+    letter-spacing: -0.03em;
+
+    /* Black */
+    color: #000000;
+
+}
+
+.service-img-cards-2:hover .service-card-head{
     color: white;
 }
 
@@ -157,6 +185,4 @@
 
     /* White */
     color: #FFFFFF;
-
-
 }
