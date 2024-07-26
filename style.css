@@ -8,7 +8,7 @@ body::-webkit-scrollbar, .carousel-container::-webkit-scrollbar {
     display: none;
 }
 
-#content, #pricing, #information1, #information2, #information3, #enterprise, #services, #bookKeeping {
+#content, #pricing, #information1, #information2, #information3, #enterprise, #services, #bookKeeping-section, #payrollProcessing-section {
     animation: slide 1s linear;
 }
 
@@ -1093,17 +1093,8 @@ body::-webkit-scrollbar, .carousel-container::-webkit-scrollbar {
 }
 
 .request-consultation-btn{
-    /* Frame 4 */
-
-    /* Auto layout */
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    
     padding: 15px 25px;
-    gap: 10px;
-
-    width: 246px;
-    height: 55px;
 
     font-style: normal;
     font-weight: 600;
@@ -1119,10 +1110,6 @@ body::-webkit-scrollbar, .carousel-container::-webkit-scrollbar {
     background: radial-gradient(46.19% 50.94% at 50% 100%, #587EDB 0%, #1445C2 100%);
     border-radius: 10px;
 
-    /* Inside auto layout */
-    flex: none;
-    order: 0;
-    flex-grow: 0;
 }
 
 .request-call-btn{

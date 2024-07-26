@@ -20,3 +20,63 @@
     border-radius: 15px;
     border: 1.5px solid #1445C2;
 }
+
+.service-info-h3{
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 70px;
+    letter-spacing: -0.05em;
+}
+
+.service-info-h3-blue{
+    
+    /* Main Radial */
+    background: radial-gradient(46.19% 50.94% at 50% 100%, #587EDB 0%, #1445C2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.service-info-para{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: -0.03em;
+
+    /* Black */
+    color: #000000;
+}
+
+.service-img-cards-2{
+
+    padding: 25px;
+    width: 48%;
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+    border: 1px solid #DADADA;
+    filter: drop-shadow(0px 100px 40px rgba(176, 176, 176, 0.01)) drop-shadow(0px 56px 34px rgba(176, 176, 176, 0.05)) drop-shadow(0px 25px 25px rgba(176, 176, 176, 0.09)) drop-shadow(0px 6px 14px rgba(176, 176, 176, 0.1));
+    border-radius: 15px;
+}
+
+.service-img-cards-2:hover {
+    
+
+    color:white;
+
+    /* Main Radial */
+    background: radial-gradient(46.19% 50.94% at 50% 100%, #587EDB 0%, #1445C2 100%);
+    box-shadow: inset 0px 4px 15.9px rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(4.5px);
+    
+
+}
+
+.service-card-para{
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.service-img-cards-2:hover .service-card-para{
+    color: white;
+}
