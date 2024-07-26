@@ -34,13 +34,9 @@ const loadPage = (page, section) => {
                         const serviceId = item.getAttribute('id');
                         console.log(serviceId);
                         loadPage(serviceId, `${serviceId}-section`);
-                        // const serviceDescription = document.querySelector(`#${serviceId}-description`);
-                        // serviceDescription.classList.toggle('hidden');
                     });
                 });
-            }
-            
-            if(page == "information3") {
+            }else if(page == "information3") {
 
                 var canvas = document.getElementById("signature-pad");
 
