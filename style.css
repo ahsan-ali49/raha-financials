@@ -381,8 +381,8 @@ body::-webkit-scrollbar, .carousel-container::-webkit-scrollbar {
     /* Auto layout */
     padding: 10px;
 
-    width: 363px;
-    height: 239px;
+    width: 30%;
+    /* height: 239px; */
 
     background: rgba(255, 255, 255, 0.1);
     border: 1.5px solid rgba(255, 255, 255, 0.25);
@@ -445,8 +445,7 @@ body::-webkit-scrollbar, .carousel-container::-webkit-scrollbar {
 .div-item-span{
     /* Bookkeeping */
 
-    width: 313.33px;
-    height: 28px;
+    width: 100%;
 
     /* font-family: 'Uncut Sans'; */
     font-style: normal;
@@ -472,8 +471,7 @@ body::-webkit-scrollbar, .carousel-container::-webkit-scrollbar {
 
     /* Software Selection and Setup */
 
-    width: 313.33px;
-    height: 28px;
+    width: 100%;
 
     /* font-family: 'Uncut Sans'; */
     font-style: normal;
@@ -499,8 +497,7 @@ body::-webkit-scrollbar, .carousel-container::-webkit-scrollbar {
 .div-item-para{
     /* This is the foundation of good financial management, tracking income and expenses. */
 
-    width: 313.33px;
-    height: 69px;
+    width: 100%;
 
     /* font-family: 'Uncut Sans'; */
     font-style: normal;
@@ -525,8 +522,7 @@ body::-webkit-scrollbar, .carousel-container::-webkit-scrollbar {
 .div-item-para-secondary{
     /* Choosing and implementing accounting software that meets the specific needs of the business. */
 
-    width: 313.33px;
-    height: 69px;
+    width: 100%;
 
     /* font-family: 'Uncut Sans'; */
     font-style: normal;
