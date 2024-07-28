@@ -148,5 +148,5 @@ contenLoader = () => {
 }
 
 // Initial page load
-loadPage('blogs');
+loadPage('services');
 document.addEventListener('DOMContentLoaded', contenLoader);
