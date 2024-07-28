@@ -10,11 +10,28 @@
     color: #000000;
 }
 
+.blog-hero-primary-heading{
+    
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 80px;
+    text-align: center;
+    letter-spacing: -0.06em;
+    
+    /* Black */
+    color: #000000;
+
+}
+
 .blog-hero-secondary-heading{
+
     background: radial-gradient(46.19% 50.94% at 50% 100%, #587EDB 0%, #1445C2 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    
+    
 }
 
 .blog-flex-item{
@@ -113,6 +130,44 @@
     font-size: 20px;
     line-height: 25px;
     letter-spacing: -0.03em;
+
+    /* Black */
+    color: #000000;
+
+}
+
+.blog-list-span{
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: -0.03em;
+
+    /* Black */
+    color: #000000;
+
+}
+
+.blog-previous-btn{
+    /* Frame 4 */
+
+box-sizing: border-box;
+
+    padding: 15px 25px;
+
+
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+    border: 1px solid #DADADA;
+    filter: drop-shadow(0px 100px 40px rgba(176, 176, 176, 0.01)) drop-shadow(0px 56px 34px rgba(176, 176, 176, 0.05)) drop-shadow(0px 25px 25px rgba(176, 176, 176, 0.09)) drop-shadow(0px 6px 14px rgba(176, 176, 176, 0.1));
+    border-radius: 10px;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    /* identical to box height */
+    letter-spacing: -0.02em;
 
     /* Black */
     color: #000000;

@@ -33,9 +33,9 @@ body::-webkit-scrollbar, .carousel-container::-webkit-scrollbar {
     padding: 15px 25px;
     gap: 10px;
 
-    margin: 0 auto;
+    /* margin: 0 auto;
     width: 152px;
-    height: 55px;
+    height: 55px; */
     
     /* font-family: 'Uncut Sans'; */
     font-style: normal;
@@ -55,6 +55,11 @@ body::-webkit-scrollbar, .carousel-container::-webkit-scrollbar {
     flex: none;
     order: 2;
     flex-grow: 0;
+}
+
+.contact-btn:hover{
+    background-color: #1445C2;
+    color: white;
 }
 
 .navlink{
@@ -1154,8 +1159,8 @@ body::-webkit-scrollbar, .carousel-container::-webkit-scrollbar {
     padding: 15px 25px;
     gap: 10px;
 
-    width: 114px;
-    height: 55px;
+    /* width: 114px;
+    height: 55px; */
 
     font-style: normal;
     font-weight: 600;
@@ -1167,7 +1172,7 @@ body::-webkit-scrollbar, .carousel-container::-webkit-scrollbar {
 
     border-radius: 10px;
     background-color: #1445C2;
-    border: 1.3px solid #1445C2;
+    border: 1.5px solid #1445C2;
 
     /* Inside auto layout */
     flex: none;
