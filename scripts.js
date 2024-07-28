@@ -36,6 +36,15 @@ const loadPage = (page, section) => {
                         loadPage(serviceId, `${serviceId}-section`);
                     });
                 });
+            }else if(page == "blogs"){
+                const blogListItems = document.querySelectorAll('.blog-flex-item');
+                blogListItems.forEach((item) => {
+                    item.addEventListener('click', () => {
+                        const blogId = item.getAttribute('id');
+                        console.log(blogId);
+                        loadPage(blogId, blogId);
+                    });
+                });
             }else if(page == "information3") {
 
                 var canvas = document.getElementById("signature-pad");
