@@ -36,6 +36,31 @@ const loadPage = (page, section) => {
                         loadPage(serviceId, `${serviceId}-section`);
                     });
                 });
+                const links = document.querySelectorAll('.navlink');
+                console.log(links);
+                const modal = document.getElementById('navbar-modal');
+                console.log(modal)  
+                  
+                links.forEach(link => {
+                    link.addEventListener('mouseenter', (e) => {
+                    modal.classList.remove('hidden');
+                    });
+                
+                    link.addEventListener('mouseleave', () => {
+                    modal.classList.add('hidden');
+                    });
+                });
+                
+                // modal.addEventListener('mouseenter', () => {
+                //     modal.classList.remove('hidden');
+                // });
+                
+                // modal.addEventListener('mouseleave', () => {
+                //     modal.classList.add('hidden');
+                // });
+                    
+                
+                  
             }else if(page == "blogs"){
                 console.log(page)
                 const blogListItems = document.querySelectorAll('.blog-flex-item');
@@ -193,3 +218,5 @@ contenLoader = () => {
 // Initial page load
 loadPage('services');
 document.addEventListener('DOMContentLoaded', contenLoader);
+
+

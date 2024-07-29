@@ -1748,3 +1748,17 @@ body::-webkit-scrollbar, .carousel-container::-webkit-scrollbar {
     flex-grow: 0;
 
 }
+
+#navbar-modal {
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .modal-content {
+    height: 50vh;
+    width: 80%;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
