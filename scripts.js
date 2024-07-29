@@ -36,20 +36,27 @@ const loadPage = (page, section) => {
                         loadPage(serviceId, `${serviceId}-section`);
                     });
                 });
-                const links = document.querySelectorAll('.navlink');
-                console.log(links);
-                const modal = document.getElementById('navbar-modal');
-                console.log(modal)  
+                // const links = document.querySelectorAll('.navlink');
+                // console.log(links);
+                // const serviceModal = document.getElementById('navbar-modal');
+                // const IndustryModal = document.getElementById('industry-modal');  
                   
-                links.forEach(link => {
-                    link.addEventListener('mouseenter', (e) => {
-                    modal.classList.remove('hidden');
-                    });
-                
-                    link.addEventListener('mouseleave', () => {
-                    modal.classList.add('hidden');
-                    });
-                });
+                // links[0].addEventListener('mouseenter', (e) => {
+                //     serviceModal.classList.remove('hidden');
+                // });
+            
+                // links[0].addEventListener('mouseleave', () => {
+                //     serviceModal.classList.add('hidden');
+                // });
+
+
+                // links[1].addEventListener('mouseenter', (e) => {
+                //     IndustryModal.classList.remove('hidden');
+                // });
+            
+                // links[1].addEventListener('mouseleave', () => {
+                //     IndustryModal.classList.add('hidden');
+                // });
                 
                 // modal.addEventListener('mouseenter', () => {
                 //     modal.classList.remove('hidden');
@@ -94,6 +101,27 @@ const loadPage = (page, section) => {
                     console.log(checkbox.id);
                 })
             }
+            const links = document.querySelectorAll('.navlink');
+                console.log(links);
+                const serviceModal = document.getElementById('navbar-modal');
+                const IndustryModal = document.getElementById('industry-modal');  
+                  
+                links[0].addEventListener('mouseenter', (e) => {
+                    serviceModal.classList.remove('hidden');
+                });
+            
+                links[0].addEventListener('mouseleave', () => {
+                    serviceModal.classList.add('hidden');
+                });
+
+
+                links[1].addEventListener('mouseenter', (e) => {
+                    IndustryModal.classList.remove('hidden');
+                });
+            
+                links[1].addEventListener('mouseleave', () => {
+                    IndustryModal.classList.add('hidden');
+                });
         })
         .catch(error => {
             content.innerHTML = '<p>Sorry, the content could not be loaded.</p>';
