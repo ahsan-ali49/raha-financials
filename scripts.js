@@ -97,8 +97,9 @@ const loadPage = (page, section) => {
 
                 const clientNameSpan = document.querySelector('.client-name-span');
                 clientNameSpan.innerHTML = clientName;
+                const  servicesListRender = document.querySelector('.services-list-render');
                 isChecked.forEach((checkbox) => {
-                    console.log(checkbox.id);
+                    servicesListRender.innerHTML += `<li>${selectedServices[checkbox.id]}</li>`;
                 })
             }
             const links = document.querySelectorAll('.navlink');
@@ -227,6 +228,13 @@ const attachEventListeners = () => {
             loadPage('blogItem1', "blogItem1");
         });
     }
+
+    const contactBtns = document.querySelectorAll('.contact-btn');
+    contactBtns.forEach((btn) => {
+        btn.addEventListener('click', () => {
+            loadPage('information1', "information1");
+        });
+    });
 };
 
 contenLoader = () => {
@@ -244,7 +252,7 @@ contenLoader = () => {
 }
 
 // Initial page load
-loadPage('services');
+loadPage('blogItem3');
 document.addEventListener('DOMContentLoaded', contenLoader);
 
 
