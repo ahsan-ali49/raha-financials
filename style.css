@@ -24,20 +24,14 @@ body::-webkit-scrollbar, .carousel-container::-webkit-scrollbar {
 }
 
 .contact-btn{
-    /* Frame 4 */
 
-    /* Auto layout */
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 15px 25px;
     gap: 10px;
 
-    /* margin: 0 auto;
-    width: 152px;
-    height: 55px; */
     
-    /* font-family: 'Uncut Sans'; */
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
@@ -58,7 +52,8 @@ body::-webkit-scrollbar, .carousel-container::-webkit-scrollbar {
 }
 
 .contact-btn:hover{
-    background-color: #1445C2;
+    border-radius: 10px;
+    background: var(--Main-Radial, radial-gradient(46.19% 50.94% at 50% 100%, #587EDB 0%, #1445C2 100%));
     color: white;
 }
 
@@ -1148,37 +1143,9 @@ body::-webkit-scrollbar, .carousel-container::-webkit-scrollbar {
 }
 
 .request-call-btn:hover{
-    /* Frame 1000003096 */
-
-    box-sizing: border-box;
-
-    /* Auto layout */
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 15px 25px;
-    gap: 10px;
-
-    /* width: 114px;
-    height: 55px; */
-
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 25px;
-    /* identical to box height */
-    letter-spacing: -0.02em;
-    color: white;
-
     border-radius: 10px;
-    background-color: #1445C2;
-    border: 1.5px solid #1445C2;
-
-    /* Inside auto layout */
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-
+    background: var(--Main-Radial, radial-gradient(46.19% 50.94% at 50% 100%, #587EDB 0%, #1445C2 100%));
+    color: white;
 }
 
 .request-call-btn-text{
@@ -1749,11 +1716,16 @@ body::-webkit-scrollbar, .carousel-container::-webkit-scrollbar {
 
 }
 
-#navbar-modal {
-    transition: opacity 0.3s ease-in-out;
+#navbar-modal, #industry-modal {
+    position: absolute;
+    top: 96px; /* Adjust as needed to match the top offset */
+    left: 0;
+    right: 0;
+    z-index: 50;
   }
   
   .modal-content {
+    position: relative;
     width: 80%;
   }
   
