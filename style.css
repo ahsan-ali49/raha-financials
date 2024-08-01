@@ -1,1735 +1,1738 @@
-body{
-    width: 100vw;
-    background-color: #F7F9FD;
-    ;
+body {
+  width: 100vw;
+  background-color: #f7f9fd;
 }
 
-body::-webkit-scrollbar, .carousel-container::-webkit-scrollbar {
-    display: none;
+body::-webkit-scrollbar,
+.carousel-container::-webkit-scrollbar {
+  display: none;
 }
 
 /* #content, #pricing, #information1, #information2, #information3, #enterprise, #services, #bookKeeping-section, #payrollProcessing-section, #llcRegistration-section, #itin-section, #taxFiling-section, #businessBudgeting-section {
     animation: slide 1s linear;
 } */
 
-  
 @keyframes slide {
-    from { transform: translateX(-100%); }
-    to { transform: translateX(0); }
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
 }
 
 .carousel-container {
-    -ms-overflow-style: none;  /* Internet Explorer 10+ */
-    scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
 }
 
-.contact-btn{
+.contact-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 15px 25px;
+  gap: 10px;
 
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 15px 25px;
-    gap: 10px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
+  /* identical to box height */
+  letter-spacing: -0.02em;
 
-    
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 25px;
-    /* identical to box height */
-    letter-spacing: -0.02em;
+  /* Black */
+  color: #000000;
 
-    /* Black */
-    color: #000000;
+  background: #f6f6f6;
+  border-radius: 10px;
 
-    background: #F6F6F6;
-    border-radius: 10px;
-
-    /* Inside auto layout */
-    flex: none;
-    order: 2;
-    flex-grow: 0;
+  /* Inside auto layout */
+  flex: none;
+  order: 2;
+  flex-grow: 0;
 }
 
-.contact-btn:hover{
-    border-radius: 10px;
-    background: var(--Main-Radial, radial-gradient(46.19% 50.94% at 50% 100%, #587EDB 0%, #1445C2 100%));
-    color: white;
+.contact-btn:hover {
+  border-radius: 10px;
+  background: var(
+    --Main-Radial,
+    radial-gradient(46.19% 50.94% at 50% 100%, #587edb 0%, #1445c2 100%)
+  );
+  color: white;
 }
 
-.navlink{
-    /* Services */
+.navlink {
+  /* Services */
 
-    /* width: 78px; */
-    height: 25px;
+  /* width: 78px; */
+  height: 25px;
 
-    /* font-family: 'Uncut Sans'; */
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 25px;
-    /* identical to box height */
-    letter-spacing: -0.02em;
+  /* font-family: 'Uncut Sans'; */
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+  /* identical to box height */
+  letter-spacing: -0.02em;
 
-    /* Black */
-    color: #000000;
+  /* Black */
+  color: #000000;
 
-
-    /* Inside auto layout */
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 
-.navbar-link{
-    /* Frame 3 */
+.navbar-link {
+  /* Frame 3 */
 
-    box-sizing: border-box;
+  box-sizing: border-box;
 
-    /* White */
-    background: white;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.05);
-    border-radius: 15px;
-
+  /* White */
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.05);
+  border-radius: 15px;
 }
 
-.iamm{
-    /* I am a */
+.iamm {
+  /* I am a */
 
-    height: 25px;
+  height: 25px;
 
-    /* font-family: 'Uncut Sans'; */
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 25px;
-    /* identical to box height */
-    letter-spacing: -0.02em;
+  /* font-family: 'Uncut Sans'; */
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
+  /* identical to box height */
+  letter-spacing: -0.02em;
 
-    /* Black */
-    color: #000000;
+  /* Black */
+  color: #000000;
 
-
-    /* Inside auto layout */
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 
-.hero-btn-div{
-    padding: 5px;
-    border-radius: 39px;
-    opacity: 0px;
-    background: #ECECEC;
+.hero-btn-div {
+  padding: 5px;
+  border-radius: 39px;
+  opacity: 0px;
+  background: #ececec;
 }
 
-.hero-indv-btn{
-    /* Frame 7 */
+.hero-indv-btn {
+  /* Frame 7 */
 
-    box-sizing: border-box;
+  box-sizing: border-box;
 
-    /* Auto layout */
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 15px;
-    gap: 10px;
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 15px;
+  gap: 10px;
 
-    width: 237px;
-    /* height: 50px; */
+  width: 237px;
+  /* height: 50px; */
 
-    /* White */
-    background: #FFFFFF;
-    border: 1.5px solid #1445C2;
-    border-radius: 31px;
+  /* White */
+  background: #ffffff;
+  border: 1.5px solid #1445c2;
+  border-radius: 31px;
 
-    /* Inside auto layout */
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
-
-
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
 }
 
-.hero-indv-btn-text{
-    /* Individual/Small Business */
+.hero-indv-btn-text {
+  /* Individual/Small Business */
 
-    width: 207px;
-    /* height: 23px; */
+  width: 207px;
+  /* height: 23px; */
 
-    /* font-family: 'Uncut Sans'; */
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 22px;
-    /* identical to box height */
-    letter-spacing: -0.02em;
+  /* font-family: 'Uncut Sans'; */
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
+  letter-spacing: -0.02em;
 
-    /* Main Radial */
-    background: radial-gradient(46.19% 50.94% at 50% 100%, #587EDB 0%, #1445C2 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    /* text-fill-color: transparent; */
+  /* Main Radial */
+  background: radial-gradient(
+    46.19% 50.94% at 50% 100%,
+    #587edb 0%,
+    #1445c2 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  /* text-fill-color: transparent; */
 
-
-    /* Inside auto layout */
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 
-.hero-entr-btn{
-    /* Frame 1000003054 */
+.hero-entr-btn {
+  /* Frame 1000003054 */
 
-    /* Auto layout */
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 20px;
-    gap: 10px;
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  gap: 10px;
 
-    width: 124px;
-    height: 50px;
+  width: 124px;
+  height: 50px;
 
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 22px;
-    /* identical to box height */
-    letter-spacing: -0.02em;
-    color: white;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
+  letter-spacing: -0.02em;
+  color: white;
 
-    /* Main Radial */
-    background: radial-gradient(46.19% 50.94% at 50% 100%, #587EDB 0%, #1445C2 100%);
-    border-radius: 100px;
+  /* Main Radial */
+  background: radial-gradient(
+    46.19% 50.94% at 50% 100%,
+    #587edb 0%,
+    #1445c2 100%
+  );
+  border-radius: 100px;
 
-    /* Inside auto layout */
-    flex: none;
-    order: 1;
-    align-self: stretch;
-    flex-grow: 0;
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
 }
 
-.hero-primary-heading{
-    /* Financial team that’s */
+.hero-primary-heading {
+  /* Financial team that’s */
 
-    /* height: 100px; */
+  /* height: 100px; */
 
-    /* font-family: 'Uncut Sans'; */
-    font-style: normal;
-    font-weight: 600;
-    font-size: 95px;
-    line-height: 100px;
-    /* identical to box height, or 105% */
-    text-align: center;
-    letter-spacing: -0.06em;
+  /* font-family: 'Uncut Sans'; */
+  font-style: normal;
+  font-weight: 600;
+  font-size: 95px;
+  line-height: 100px;
+  /* identical to box height, or 105% */
+  text-align: center;
+  letter-spacing: -0.06em;
 
-    /* Black */
-    color: #000000;
+  /* Black */
+  color: #000000;
 }
 
-.hero-secondary-heading{
-    /* naunced */
+.hero-secondary-heading {
+  /* naunced */
 
-    /* height: 100px; */
+  /* height: 100px; */
 
-    /* font-family: 'Uncut Sans'; */
-    font-style: normal;
-    font-weight: 600;
-    font-size: 95px;
-    line-height: 100px;
-    /* identical to box height, or 105% */
-    text-align: center;
-    letter-spacing: -0.06em;
+  /* font-family: 'Uncut Sans'; */
+  font-style: normal;
+  font-weight: 600;
+  font-size: 95px;
+  line-height: 100px;
+  /* identical to box height, or 105% */
+  text-align: center;
+  letter-spacing: -0.06em;
 
-    /* Main Radial */
-    background: radial-gradient(46.19% 50.94% at 50% 100%, #587EDB 0%, #1445C2 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    /* text-fill-color: transparent; */
-
-
+  /* Main Radial */
+  background: radial-gradient(
+    46.19% 50.94% at 50% 100%,
+    #587edb 0%,
+    #1445c2 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  /* text-fill-color: transparent; */
 }
 
-.hero-para{
-    /* Let us take care of your books, taxes, and payroll while you focus on growing your business. Our expert accountants specialize in helping small businesses thrive. */
+.hero-para {
+  /* Let us take care of your books, taxes, and payroll while you focus on growing your business. Our expert accountants specialize in helping small businesses thrive. */
 
-    /* font-family: 'Uncut Sans'; */
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 22px;
-    text-align: center;
-    letter-spacing: -0.03em;
+  /* font-family: 'Uncut Sans'; */
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: -0.03em;
 
-    /* Black */
-    color: #000000;
+  /* Black */
+  color: #000000;
 
-
-    /* Inside auto layout */
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
 }
 
-.hero-btn{
-    /* Frame 4 */
+.hero-btn {
+  /* Frame 4 */
 
-    /* Auto layout */
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 15px 25px;
-    gap: 10px;
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 15px 25px;
+  gap: 10px;
 
-    height: 55px;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    /* line-height: 25px; */
-    /* identical to box height */
-    letter-spacing: -0.02em;
-    color: white;
+  height: 55px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  /* line-height: 25px; */
+  /* identical to box height */
+  letter-spacing: -0.02em;
+  color: white;
 
-    /* Main Radial */
-    background: radial-gradient(46.19% 50.94% at 50% 100%, #587EDB 0%, #1445C2 100%);
-    border-radius: 10px;
+  /* Main Radial */
+  background: radial-gradient(
+    46.19% 50.94% at 50% 100%,
+    #587edb 0%,
+    #1445c2 100%
+  );
+  border-radius: 10px;
 
-    /* Inside auto layout */
-    flex: none;
-    order: 2;
-    flex-grow: 0;
-
+  /* Inside auto layout */
+  flex: none;
+  order: 2;
+  flex-grow: 0;
 }
 
-.accounting-solution-div{
-    /* Frame 10 */
+.accounting-solution-div {
+  /* Frame 10 */
 
-    /* Auto layout */
-    padding: 35px 75px;
-    isolation: isolate;
+  /* Auto layout */
+  padding: 35px 75px;
+  isolation: isolate;
 
-    background: radial-gradient(46.19% 50.94% at 50% 100%, rgba(88, 126, 219, 0.9) 0%, rgba(20, 69, 194, 0.9) 100%), radial-gradient(46.19% 50.94% at 50% 100%, #587EDB 0%, #1445C2 100%), url(.jpg);
-    background-blend-mode: normal, lighten, normal;
-    border-radius: 25px;
+  background: radial-gradient(
+      46.19% 50.94% at 50% 100%,
+      rgba(88, 126, 219, 0.9) 0%,
+      rgba(20, 69, 194, 0.9) 100%
+    ),
+    radial-gradient(46.19% 50.94% at 50% 100%, #587edb 0%, #1445c2 100%),
+    url(.jpg);
+  background-blend-mode: normal, lighten, normal;
+  border-radius: 25px;
 
-    /* Inside auto layout */
-    flex: none;
-    order: 1;
-    align-self: stretch;
-    flex-grow: 0;
-
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
 }
 
-.accounting-heading{
-    /* Our Suite of Business and Accounting Solutions */
+.accounting-heading {
+  /* Our Suite of Business and Accounting Solutions */
 
-    width: 857px;
-    /* height: 160px; */
+  width: 857px;
+  /* height: 160px; */
 
-    /* font-family: 'Uncut Sans'; */
-    font-style: normal;
-    font-weight: 600;
-    font-size: 64px;
-    line-height: 80px;
-    text-align: center;
-    letter-spacing: -0.05em;
+  /* font-family: 'Uncut Sans'; */
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 80px;
+  text-align: center;
+  letter-spacing: -0.05em;
 
-    /* White */
-    color: #FFFFFF;
+  /* White */
+  color: #ffffff;
 
-
-    /* Inside auto layout */
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 
-.accounting-para{
-    /* Full-service accounting solutions for enterprises and small businesses. Tax, bookkeeping, payroll, and more. */
+.accounting-para {
+  /* Full-service accounting solutions for enterprises and small businesses. Tax, bookkeeping, payroll, and more. */
 
-    width: 634px;
-    height: 50px;
+  width: 634px;
+  height: 50px;
 
-    /* font-family: 'Uncut Sans'; */
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 25px;
-    text-align: center;
-    letter-spacing: -0.03em;
+  /* font-family: 'Uncut Sans'; */
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: -0.03em;
 
-    /* White */
-    color: #FFFFFF;
+  /* White */
+  color: #ffffff;
 }
 
-.flex-item-div-primary{
+.flex-item-div-primary {
+  box-sizing: border-box;
 
-    box-sizing: border-box;
+  /* Auto layout */
+  padding: 10px;
 
-    /* Auto layout */
-    padding: 10px;
+  width: 32%;
+  /* height: 239px; */
 
-    width: 32%;
-    /* height: 239px; */
-
-    background: rgba(255, 255, 255, 0.1);
-    border: 1.5px solid rgba(255, 255, 255, 0.25);
-    box-shadow: inset 0px 4px 15.9px rgba(255, 255, 255, 0.25);
-    backdrop-filter: blur(4.5px);
-    /* Note: backdrop-filter has minimal browser support */
-    border-radius: 15px;
-    transition: all 1s ease;
-
+  background: rgba(255, 255, 255, 0.1);
+  border: 1.5px solid rgba(255, 255, 255, 0.25);
+  box-shadow: inset 0px 4px 15.9px rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(4.5px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 15px;
+  transition: all 1s ease;
 }
 
-.flex-item-div-primary:hover{
-    border: 1.5px solid white;
+.flex-item-div-primary:hover {
+  border: 1.5px solid white;
 }
 
-.flex-item-div-secondary{
+.flex-item-div-secondary {
+  /* Frame 1000003020 */
 
-    /* Frame 1000003020 */
+  box-sizing: border-box;
 
-    box-sizing: border-box;
+  padding: 25px;
 
-    padding: 25px;
+  width: 363px;
+  height: 239px;
 
-    width: 363px;
-    height: 239px;
-
-    background: rgba(255, 255, 255, 0.1);
-    border: 1.5px solid rgba(255, 255, 255, 0.25);
-    box-shadow: inset 0px 4px 15.9px rgba(255, 255, 255, 0.25);
-    backdrop-filter: blur(4.5px);
-    /* Note: backdrop-filter has minimal browser support */
-    border-radius: 15px;
-
+  background: rgba(255, 255, 255, 0.1);
+  border: 1.5px solid rgba(255, 255, 255, 0.25);
+  box-shadow: inset 0px 4px 15.9px rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(4.5px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 15px;
 }
 
-.flex-item-inner-div{
-    /* Frame 1000003079 */
+.flex-item-inner-div {
+  /* Frame 1000003079 */
 
-    /* Auto layout */
-    padding: 15px;
+  /* Auto layout */
+  padding: 15px;
 
-    height: 100%;
+  height: 100%;
 
-    /* White */
-    background: transparent;
-    color: white;
-    border-radius: 7.5px;
-    transition: all 1s ease;
-
+  /* White */
+  background: transparent;
+  color: white;
+  border-radius: 7.5px;
+  transition: all 1s ease;
 }
 
-.flex-item-inner-div:hover{
-    /* Frame 1000003079 */
+.flex-item-inner-div:hover {
+  /* Frame 1000003079 */
 
-    background: white;
-    color: black;
-
+  background: white;
+  color: black;
 }
 
-.div-item-span{
-    /* Bookkeeping */
+.div-item-span {
+  /* Bookkeeping */
 
-    width: 100%;
+  width: 100%;
 
-    /* font-family: 'Uncut Sans'; */
-    font-style: normal;
-    font-weight: 600;
-    font-size: 22px;
-    line-height: 28px;
-    /* identical to box height */
-    letter-spacing: -0.03em;
+  /* font-family: 'Uncut Sans'; */
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 28px;
+  /* identical to box height */
+  letter-spacing: -0.03em;
 
-    /* Black */
-    /* color: white; */
+  /* Black */
+  /* color: white; */
 
-
-    /* Inside auto layout */
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
-
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
 }
 
-.div-item-span-secondary{
+.div-item-span-secondary {
+  /* Software Selection and Setup */
 
-    /* Software Selection and Setup */
+  width: 100%;
 
-    width: 100%;
+  /* font-family: 'Uncut Sans'; */
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 28px;
+  /* identical to box height */
+  letter-spacing: -0.03em;
 
-    /* font-family: 'Uncut Sans'; */
-    font-style: normal;
-    font-weight: 600;
-    font-size: 22px;
-    line-height: 28px;
-    /* identical to box height */
-    letter-spacing: -0.03em;
+  /* White */
+  /* color: #FFFFFF; */
 
-    /* White */
-    /* color: #FFFFFF; */
-
-
-    /* Inside auto layout */
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
-
-
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
 }
 
-.div-item-para{
-    /* This is the foundation of good financial management, tracking income and expenses. */
+.div-item-para {
+  /* This is the foundation of good financial management, tracking income and expenses. */
 
-    width: 100%;
+  width: 100%;
 
-    /* font-family: 'Uncut Sans'; */
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 22px;
-    letter-spacing: -0.03em;
+  /* font-family: 'Uncut Sans'; */
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: -0.03em;
 
-    /* Black */
-    /* color: white; */
+  /* Black */
+  /* color: white; */
 
-    opacity: 0.7;
+  opacity: 0.7;
 
-    /* Inside auto layout */
-    flex: none;
-    order: 1;
-    align-self: stretch;
-    flex-grow: 0;
-
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
 }
 
-.div-item-para-secondary{
-    /* Choosing and implementing accounting software that meets the specific needs of the business. */
+.div-item-para-secondary {
+  /* Choosing and implementing accounting software that meets the specific needs of the business. */
 
-    width: 100%;
+  width: 100%;
 
-    /* font-family: 'Uncut Sans'; */
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 22px;
-    letter-spacing: -0.03em;
+  /* font-family: 'Uncut Sans'; */
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: -0.03em;
 
-    /* White */
-    /* color: #FFFFFF; */
+  /* White */
+  /* color: #FFFFFF; */
 
-    opacity: 0.7;
+  opacity: 0.7;
 
-    /* Inside auto layout */
-    flex: none;
-    order: 1;
-    align-self: stretch;
-    flex-grow: 0;
-
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
 }
 
-.request-consultation-btn{
-    /* Frame 4 */
+.request-consultation-btn {
+  /* Frame 4 */
 
-    /* Auto layout */
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 15px 25px;
-    gap: 10px;
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 25px;
+  gap: 10px;
 
-    width: 246px;
-    height: 55px;
+  width: 246px;
+  height: 55px;
 
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 25px;
-    /* identical to box height */
-    letter-spacing: -0.02em;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
+  /* identical to box height */
+  letter-spacing: -0.02em;
 
-    /* Black */
-    color: #000000;
+  /* Black */
+  color: #000000;
 
-    /* White */
-    background: #FFFFFF;
-    border-radius: 10px;
+  /* White */
+  background: #ffffff;
+  border-radius: 10px;
 
-    /* Inside auto layout */
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 
-.call-us-btn{
-    /* Frame 1000003023 */
+.call-us-btn {
+  /* Frame 1000003023 */
 
-    box-sizing: border-box;
+  box-sizing: border-box;
 
-    /* Auto layout */
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 15px 25px;
-    gap: 10px;
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 15px 25px;
+  gap: 10px;
 
-    width: 114px;
-    height: 55px;
+  width: 114px;
+  height: 55px;
 
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 25px;
-    /* identical to box height */
-    letter-spacing: -0.02em;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
+  /* identical to box height */
+  letter-spacing: -0.02em;
 
-    /* White */
-    color: #FFFFFF;
+  /* White */
+  color: #ffffff;
 
-    /* White */
-    border: 2px solid #FFFFFF;
-    border-radius: 10px;
+  /* White */
+  border: 2px solid #ffffff;
+  border-radius: 10px;
 
-    /* Inside auto layout */
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
 }
 
-.consultation-span{
-    /* Book your free Consultation today */
+.consultation-span {
+  /* Book your free Consultation today */
 
-    width: 521px;
-    height: 160px;
+  width: 521px;
+  height: 160px;
 
-    /* font-family: 'Uncut Sans'; */
-    font-style: normal;
-    font-weight: 600;
-    font-size: 64px;
-    line-height: 80px;
-    letter-spacing: -0.05em;
+  /* font-family: 'Uncut Sans'; */
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 80px;
+  letter-spacing: -0.05em;
 
-    /* Black */
-    /* color: #000000; */
+  /* Black */
+  /* color: #000000; */
 
-
-    /* Inside auto layout */
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 
-.consultation-span-secondary{
-        /* Main Radial */
-        background: radial-gradient(46.19% 50.94% at 50% 100%, #587EDB 0%, #1445C2 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        /* text-fill-color: transparent; */
+.consultation-span-secondary {
+  /* Main Radial */
+  background: radial-gradient(
+    46.19% 50.94% at 50% 100%,
+    #587edb 0%,
+    #1445c2 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  /* text-fill-color: transparent; */
 }
 
-.consultation-para{
-    /* Schedule your consultation with us, and rest assured that our Customer Support team will promptly return your call within 24 hours */
+.consultation-para {
+  /* Schedule your consultation with us, and rest assured that our Customer Support team will promptly return your call within 24 hours */
 
-    width: 451px;
-    height: 75px;
+  width: 451px;
+  height: 75px;
 
-    /* font-family: 'Uncut Sans'; */
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 25px;
-    letter-spacing: -0.03em;
+  /* font-family: 'Uncut Sans'; */
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: -0.03em;
 
-    /* Black */
-    color: #000000;
+  /* Black */
+  color: #000000;
 
-
-    /* Inside auto layout */
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
 }
 
-.name-form-field{
-    /* Frame 1000003019 */
+.name-form-field {
+  /* Frame 1000003019 */
 
-    box-sizing: border-box;
+  box-sizing: border-box;
 
-    /* Auto layout */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 15px 20px;
-    gap: 15px;
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 15px 20px;
+  gap: 15px;
 
-    /* width: 294px; */
-    height: 58px;
+  /* width: 294px; */
+  height: 58px;
 
-    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), radial-gradient(46.19% 50.94% at 50% 100%, rgba(88, 126, 219, 0.1) 0%, rgba(20, 69, 194, 0.1) 100%);
-    box-shadow: 0px 100px 40px rgba(176, 176, 176, 0.01), 0px 56px 34px rgba(176, 176, 176, 0.05), 0px 25px 25px rgba(176, 176, 176, 0.09), 0px 6px 14px rgba(176, 176, 176, 0.1);
-    border: 2px solid #1445C2;
-    border-radius: 15px;
+  background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%),
+    radial-gradient(
+      46.19% 50.94% at 50% 100%,
+      rgba(88, 126, 219, 0.1) 0%,
+      rgba(20, 69, 194, 0.1) 100%
+    );
+  box-shadow: 0px 100px 40px rgba(176, 176, 176, 0.01),
+    0px 56px 34px rgba(176, 176, 176, 0.05),
+    0px 25px 25px rgba(176, 176, 176, 0.09),
+    0px 6px 14px rgba(176, 176, 176, 0.1);
+  border: 2px solid #1445c2;
+  border-radius: 15px;
 
-    /* Inside auto layout */
-    flex: none;
-    order: 0;
-    flex-grow: 1;
-
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 1;
 }
 
-.email-form-field{
-    /* Frame 1000003020 */
+.email-form-field {
+  /* Frame 1000003020 */
 
-    box-sizing: border-box;
+  box-sizing: border-box;
 
-    /* Auto layout */
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 15px 20px;
-    gap: 20px;
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 15px 20px;
+  gap: 20px;
 
-    /* width: 294px; */
-    height: 58px;
+  /* width: 294px; */
+  height: 58px;
 
-    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
-    border: 1px solid #DADADA;
-    filter: drop-shadow(0px 100px 40px rgba(176, 176, 176, 0.01)) drop-shadow(0px 56px 34px rgba(176, 176, 176, 0.05)) drop-shadow(0px 25px 25px rgba(176, 176, 176, 0.09)) drop-shadow(0px 6px 14px rgba(176, 176, 176, 0.1));
-    border-radius: 15px;
+  background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+  border: 1px solid #dadada;
+  filter: drop-shadow(0px 100px 40px rgba(176, 176, 176, 0.01))
+    drop-shadow(0px 56px 34px rgba(176, 176, 176, 0.05))
+    drop-shadow(0px 25px 25px rgba(176, 176, 176, 0.09))
+    drop-shadow(0px 6px 14px rgba(176, 176, 176, 0.1));
+  border-radius: 15px;
 
-    /* Inside auto layout */
-    flex: none;
-    order: 1;
-    flex-grow: 1;
-
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 1;
 }
 
-.subject-form-field{
-    /* Frame 1000003021 */
+.subject-form-field {
+  /* Frame 1000003021 */
 
-    box-sizing: border-box;
+  box-sizing: border-box;
 
-    /* Auto layout */
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 15px 20px;
-    gap: 20px;
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 15px 20px;
+  gap: 20px;
 
-    /* width: 294px; */
-    height: 58px;
+  /* width: 294px; */
+  height: 58px;
 
-    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
-    border: 1px solid #DADADA;
-    filter: drop-shadow(0px 100px 40px rgba(176, 176, 176, 0.01)) drop-shadow(0px 56px 34px rgba(176, 176, 176, 0.05)) drop-shadow(0px 25px 25px rgba(176, 176, 176, 0.09)) drop-shadow(0px 6px 14px rgba(176, 176, 176, 0.1));
-    border-radius: 15px;
+  background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+  border: 1px solid #dadada;
+  filter: drop-shadow(0px 100px 40px rgba(176, 176, 176, 0.01))
+    drop-shadow(0px 56px 34px rgba(176, 176, 176, 0.05))
+    drop-shadow(0px 25px 25px rgba(176, 176, 176, 0.09))
+    drop-shadow(0px 6px 14px rgba(176, 176, 176, 0.1));
+  border-radius: 15px;
 
-    /* Inside auto layout */
-    flex: none;
-    order: 0;
-    flex-grow: 1;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 1;
 }
 
-.phone-form-field{
-    /* Frame 1000003020 */
+.phone-form-field {
+  /* Frame 1000003020 */
 
-    box-sizing: border-box;
+  box-sizing: border-box;
 
-    /* Auto layout */
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 15px 20px;
-    gap: 20px;
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 15px 20px;
+  gap: 20px;
 
-    /* width: 294px; */
-    height: 58px;
+  /* width: 294px; */
+  height: 58px;
 
-    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
-    border: 1px solid #DADADA;
-    filter: drop-shadow(0px 100px 40px rgba(176, 176, 176, 0.01)) drop-shadow(0px 56px 34px rgba(176, 176, 176, 0.05)) drop-shadow(0px 25px 25px rgba(176, 176, 176, 0.09)) drop-shadow(0px 6px 14px rgba(176, 176, 176, 0.1));
-    border-radius: 15px;
+  background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+  border: 1px solid #dadada;
+  filter: drop-shadow(0px 100px 40px rgba(176, 176, 176, 0.01))
+    drop-shadow(0px 56px 34px rgba(176, 176, 176, 0.05))
+    drop-shadow(0px 25px 25px rgba(176, 176, 176, 0.09))
+    drop-shadow(0px 6px 14px rgba(176, 176, 176, 0.1));
+  border-radius: 15px;
 
-    /* Inside auto layout */
-    flex: none;
-    order: 1;
-    flex-grow: 1;
-
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 1;
 }
 
-.message-form-field{
-    /* Frame 1000003021 */
+.message-form-field {
+  /* Frame 1000003021 */
 
-    box-sizing: border-box;
+  box-sizing: border-box;
 
-    /* Auto layout */
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 15px 20px;
-    gap: 20px;
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 15px 20px;
+  gap: 20px;
 
-    /* width: 608px; */
-    height: 143px;
+  /* width: 608px; */
+  height: 143px;
 
-    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
-    border: 1px solid #DADADA;
-    filter: drop-shadow(0px 100px 40px rgba(176, 176, 176, 0.01)) drop-shadow(0px 56px 34px rgba(176, 176, 176, 0.05)) drop-shadow(0px 25px 25px rgba(176, 176, 176, 0.09)) drop-shadow(0px 6px 14px rgba(176, 176, 176, 0.1));
-    border-radius: 15px;
-
+  background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+  border: 1px solid #dadada;
+  filter: drop-shadow(0px 100px 40px rgba(176, 176, 176, 0.01))
+    drop-shadow(0px 56px 34px rgba(176, 176, 176, 0.05))
+    drop-shadow(0px 25px 25px rgba(176, 176, 176, 0.09))
+    drop-shadow(0px 6px 14px rgba(176, 176, 176, 0.1));
+  border-radius: 15px;
 }
 
-.consultation-form-field{
-    /* Frame 4 */
+.consultation-form-field {
+  /* Frame 4 */
 
-    /* Auto layout */
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 15px 25px;
-    gap: 10px;
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 15px 25px;
+  gap: 10px;
 
-    width: 162px;
-    height: 55px;
+  width: 162px;
+  height: 55px;
 
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 25px;
-    /* identical to box height */
-    letter-spacing: -0.02em;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
+  /* identical to box height */
+  letter-spacing: -0.02em;
 
-    /* White */
-    color: #FFFFFF;
+  /* White */
+  color: #ffffff;
 
-    /* Main Radial */
-    background: radial-gradient(46.19% 50.94% at 50% 100%, #587EDB 0%, #1445C2 100%);
-    border-radius: 10px;
-
+  /* Main Radial */
+  background: radial-gradient(
+    46.19% 50.94% at 50% 100%,
+    #587edb 0%,
+    #1445c2 100%
+  );
+  border-radius: 10px;
 }
 
-.testimony-span{
-    /* Main Radial */
-    background: radial-gradient(46.19% 50.94% at 50% 100%, #587EDB 0%, #1445C2 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    /* text-fill-color: transparent; */
+.testimony-span {
+  /* Main Radial */
+  background: radial-gradient(
+    46.19% 50.94% at 50% 100%,
+    #587edb 0%,
+    #1445c2 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  /* text-fill-color: transparent; */
 }
 
 .outsourced-accounting {
-    position: relative;
-    overflow: hidden;
-    height: 810px;
+  position: relative;
+  overflow: hidden;
+  height: 810px;
 }
-  
+
 #background-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
 }
-  
+
 .content {
-    position: relative;
-    z-index: 1;
-    background-color: rgba(0, 0, 0, 0.5);
+  position: relative;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
 }
-  
+
 .foreground-heading {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
-  
+
 .foreground-para {
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+  text-align: center;
 
-    font-style: normal;
-    font-weight: 400;
-    line-height: 25px;
-    text-align: center;
-
-    color: #FFFFFF;
-
+  color: #ffffff;
 }
-  
+
 .foreground-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 15px 25px;
+  gap: 10px;
 
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 15px 25px;
-    gap: 10px;
+  height: 55px;
 
-    height: 55px;
+  background: #f6f6f6;
+  border-radius: 10px;
 
-    background: #F6F6F6;
-    border-radius: 10px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
 
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 25px;
+  letter-spacing: -0.02em;
 
-    letter-spacing: -0.02em;
+  color: #000000;
 
-    color: #000000;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-
-    transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .foreground-btn:hover {
-    background-color: #000;
-    color: #fff;
+  background-color: #000;
+  color: #fff;
 }
 
 /* Ensure clearfix is applied */
 .clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
+  content: "";
+  clear: both;
+  display: table;
 }
-  
-  /* Additional styles */
+
+/* Additional styles */
 .outsourced-accounting-enterprise {
-    position: relative;
-    margin-top: 20px; /* Ensure there is some space above the video section */
+  position: relative;
+  margin-top: 20px; /* Ensure there is some space above the video section */
 }
-  
+
 .outsourced-accounting-enterprise video {
-    display: block;
+  display: block;
 }
-  
+
 .content-enterprise {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
 }
-  
+
 .foreground-heading-enterprise {
-    font-size: 3rem;
-    font-weight: bold;
+  font-size: 3rem;
+  font-weight: bold;
 }
-  
+
 .foreground-para-enterprise {
-    font-size: 1.25rem;
+  font-size: 1.25rem;
 }
-  
+
 .foreground-btn-enterprise {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 15px 25px;
-    gap: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 15px 25px;
+  gap: 10px;
 
-    height: 55px;
+  height: 55px;
 
-    background: #F6F6F6;
-    border-radius: 10px;
+  background: #f6f6f6;
+  border-radius: 10px;
 
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 25px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
 
-    letter-spacing: -0.02em;
+  letter-spacing: -0.02em;
 
-    color: #000000;
+  color: #000000;
 
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 
-    transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.3s, color 0.3s;
 }
-  
+
 .foreground-btn-enterprise:hover {
-    background-color: #000;
-    color: #fff;
-}
-  
-.industry-heading{
-        /* Where We Make Waves: Our Industry Spectrum */
-
-    width: 638px;
-    height: 160px;
-
-    /* font-family: 'Uncut Sans'; */
-    font-style: normal;
-    font-weight: 600;
-    font-size: 64px;
-    line-height: 80px;
-    text-align: center;
-    letter-spacing: -0.05em;
-
-    /* Black */
-    color: #000000;
-
-
-    /* Inside auto layout */
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+  background-color: #000;
+  color: #fff;
 }
 
-.industry-para{
-    /* Industry-specific accounting services for construction, healthcare, hospitality, and non-profit organizations. */
+.industry-heading {
+  /* Where We Make Waves: Our Industry Spectrum */
 
-    width: 634px;
-    height: 50px;
+  width: 638px;
+  height: 160px;
 
-    /* font-family: 'Uncut Sans'; */
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 25px;
-    text-align: center;
-    letter-spacing: -0.03em;
+  /* font-family: 'Uncut Sans'; */
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 80px;
+  text-align: center;
+  letter-spacing: -0.05em;
 
-    /* Black */
-    color: #000000;
+  /* Black */
+  color: #000000;
 
-
-    /* Inside auto layout */
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 
-.carousel-item-div-primary{
+.industry-para {
+  /* Industry-specific accounting services for construction, healthcare, hospitality, and non-profit organizations. */
 
-    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), radial-gradient(46.19% 50.94% at 50% 100%, rgba(88, 126, 219, 0.1) 0%, rgba(20, 69, 194, 0.1) 100%);
-    box-shadow: 0px 100px 40px rgba(176, 176, 176, 0.01), 0px 56px 34px rgba(176, 176, 176, 0.05), 0px 25px 25px rgba(176, 176, 176, 0.09), 0px 6px 14px rgba(176, 176, 176, 0.1);
-    border: 1.5px solid  #1445C2;
-    border-radius: 15px;
+  width: 634px;
+  height: 50px;
 
+  /* font-family: 'Uncut Sans'; */
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: -0.03em;
+
+  /* Black */
+  color: #000000;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
 }
 
-.carousel-item-div-secondary{
+.carousel-item-div-primary {
+  background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%),
+    radial-gradient(
+      46.19% 50.94% at 50% 100%,
+      rgba(88, 126, 219, 0.1) 0%,
+      rgba(20, 69, 194, 0.1) 100%
+    );
+  box-shadow: 0px 100px 40px rgba(176, 176, 176, 0.01),
+    0px 56px 34px rgba(176, 176, 176, 0.05),
+    0px 25px 25px rgba(176, 176, 176, 0.09),
+    0px 6px 14px rgba(176, 176, 176, 0.1);
+  border: 1.5px solid #1445c2;
+  border-radius: 15px;
+}
 
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
-    border: 1px solid #DADADA;
-    filter: drop-shadow(0px 100px 40px rgba(176, 176, 176, 0.01)) drop-shadow(0px 56px 34px rgba(176, 176, 176, 0.05)) drop-shadow(0px 25px 25px rgba(176, 176, 176, 0.09)) drop-shadow(0px 6px 14px rgba(176, 176, 176, 0.1));
-    border-radius: 15px;
+.carousel-item-div-secondary {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
+  border: 1px solid #dadada;
+  filter: drop-shadow(0px 100px 40px rgba(176, 176, 176, 0.01))
+    drop-shadow(0px 56px 34px rgba(176, 176, 176, 0.05))
+    drop-shadow(0px 25px 25px rgba(176, 176, 176, 0.09))
+    drop-shadow(0px 6px 14px rgba(176, 176, 176, 0.1));
+  border-radius: 15px;
 }
 
 .carousel-item {
-    min-width: 360px; /* Adjust the width as per your design */
+  min-width: 360px; /* Adjust the width as per your design */
 }
 
-.corousel-item-heading-primary{
-    /* Hospitality and Food Sector */
+.corousel-item-heading-primary {
+  /* Hospitality and Food Sector */
 
-    /* width: 330px; */
-    /* height: 28px; */
+  /* width: 330px; */
+  /* height: 28px; */
 
-    /* font-family: 'Uncut Sans'; */
-    font-style: normal;
-    font-weight: 600;
-    font-size: 22px;
-    line-height: 28px;
-    /* identical to box height */
-    letter-spacing: -0.03em;
+  /* font-family: 'Uncut Sans'; */
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 28px;
+  /* identical to box height */
+  letter-spacing: -0.03em;
 
-    /* Black */
-    color: #000000;
-
+  /* Black */
+  color: #000000;
 }
 
-.carousel-item-heading-secondary{
+.carousel-item-heading-secondary {
+  /* In hospitality and food services, where guest experiences meet delectable creations, financial finesse is a must. */
+  /* height: 69px; */
 
-/* In hospitality and food services, where guest experiences meet delectable creations, financial finesse is a must. */
-    /* height: 69px; */
+  /* font-family: 'Uncut Sans'; */
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: -0.03em;
 
-    /* font-family: 'Uncut Sans'; */
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 22px;
-    letter-spacing: -0.03em;
+  /* Black */
+  color: #000000;
 
-    /* Black */
-    color: #000000;
-
-    opacity: 0.7;
-
+  opacity: 0.7;
 }
 
-.request-consultation-btn{
-    
-    padding: 15px 25px;
+.request-consultation-btn {
+  padding: 15px 25px;
 
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 25px;
-    /* identical to box height */
-    letter-spacing: -0.02em;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
+  /* identical to box height */
+  letter-spacing: -0.02em;
 
-    /* White */
-    color: #FFFFFF;
+  /* White */
+  color: #ffffff;
 
-    /* Main Radial */
-    background: radial-gradient(46.19% 50.94% at 50% 100%, #587EDB 0%, #1445C2 100%);
-    border-radius: 10px;
-
+  /* Main Radial */
+  background: radial-gradient(
+    46.19% 50.94% at 50% 100%,
+    #587edb 0%,
+    #1445c2 100%
+  );
+  border-radius: 10px;
 }
 
-.request-call-btn{
-    /* Frame 1000003096 */
+.request-call-btn {
+  /* Frame 1000003096 */
 
-    box-sizing: border-box;
+  box-sizing: border-box;
 
-    /* Auto layout */
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 15px 25px;
-    gap: 10px;
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 15px 25px;
+  gap: 10px;
 
-    width: 114px;
-    height: 55px;
+  width: 114px;
+  height: 55px;
 
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 25px;
-    /* identical to box height */
-    letter-spacing: -0.02em;
-    color: #1445C2;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
+  /* identical to box height */
+  letter-spacing: -0.02em;
+  color: #1445c2;
 
-    border-radius: 10px;
-    background-color: white;
-    border: 1.3px solid #1445C2;
+  border-radius: 10px;
+  background-color: white;
+  border: 1.3px solid #1445c2;
 
-    /* Inside auto layout */
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
 }
 
-.request-call-btn:hover{
-    border-radius: 10px;
-    background: var(--Main-Radial, radial-gradient(46.19% 50.94% at 50% 100%, #587EDB 0%, #1445C2 100%));
-    color: white;
+.request-call-btn:hover {
+  border-radius: 10px;
+  background: var(
+    --Main-Radial,
+    radial-gradient(46.19% 50.94% at 50% 100%, #587edb 0%, #1445c2 100%)
+  );
+  color: white;
 }
 
-.request-call-btn-text{
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 25px;
-    /* identical to box height */
-    letter-spacing: -0.02em;
+.request-call-btn-text {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
+  /* identical to box height */
+  letter-spacing: -0.02em;
 
-    /* Main Radial */
-    background: radial-gradient(46.19% 50.94% at 50% 100%, #587EDB 0%, #1445C2 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    /* text-fill-color: transparent; */
+  /* Main Radial */
+  background: radial-gradient(
+    46.19% 50.94% at 50% 100%,
+    #587edb 0%,
+    #1445c2 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  /* text-fill-color: transparent; */
 }
 
-.financials-heading{
-    /* Transforming Finances: RAHA Financials Client Experiences */
+.financials-heading {
+  /* Transforming Finances: RAHA Financials Client Experiences */
 
-    /* width: 1028px; */
-    height: 160px;
+  /* width: 1028px; */
+  height: 160px;
 
-    /* font-family: 'Uncut Sans'; */
-    font-style: normal;
-    font-weight: 600;
-    font-size: 64px;
-    line-height: 80px;
-    text-align: center;
-    letter-spacing: -0.05em;
+  /* font-family: 'Uncut Sans'; */
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 80px;
+  text-align: center;
+  letter-spacing: -0.05em;
 
-    color: black;
+  color: black;
 
-
-    /* Inside auto layout */
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 
-.financials-heading-secondary{
-
-    /* Main Radial */
-    background: radial-gradient(46.19% 50.94% at 50% 100%, #587EDB 0%, #1445C2 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    /* text-fill-color: transparent; */
-
+.financials-heading-secondary {
+  /* Main Radial */
+  background: radial-gradient(
+    46.19% 50.94% at 50% 100%,
+    #587edb 0%,
+    #1445c2 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  /* text-fill-color: transparent; */
 }
 
-.financials-para{
-    /* Don't just take our word for it. See what our satisfied customers have to say about our services. */
+.financials-para {
+  /* Don't just take our word for it. See what our satisfied customers have to say about our services. */
 
-    width: 600px;
-    height: 50px;
+  width: 600px;
+  height: 50px;
 
-    /* font-family: 'Uncut Sans'; */
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 25px;
-    text-align: center;
-    letter-spacing: -0.03em;
+  /* font-family: 'Uncut Sans'; */
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: -0.03em;
 
-    /* Black */
-    color: #000000;
+  /* Black */
+  color: #000000;
 
-    /* Inside auto layout */
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
 }
 
-.financial-div{
+.financial-div {
+  padding: 0px;
 
-    padding: 0px;
+  width: 370px;
+  height: 220px;
 
-    width: 370px;
-    height: 220px;
-
-    /* Inside auto layout */
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
 }
 
-.financial-inner-div{
-    /* Frame 1000003020 */
+.financial-inner-div {
+  /* Frame 1000003020 */
 
-    box-sizing: border-box;
+  box-sizing: border-box;
 
-    /* Auto layout */
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 20px;
-    gap: 15px;
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  gap: 15px;
 
-    width: 370px;
-    height: 155px;
+  width: 370px;
+  height: 155px;
 
-    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
-    border: 1px solid #DADADA;
-    filter: drop-shadow(0px 100px 40px rgba(176, 176, 176, 0.01)) drop-shadow(0px 56px 34px rgba(176, 176, 176, 0.05)) drop-shadow(0px 25px 25px rgba(176, 176, 176, 0.09)) drop-shadow(0px 6px 14px rgba(176, 176, 176, 0.1));
-    border-radius: 15px;
+  background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+  border: 1px solid #dadada;
+  filter: drop-shadow(0px 100px 40px rgba(176, 176, 176, 0.01))
+    drop-shadow(0px 56px 34px rgba(176, 176, 176, 0.05))
+    drop-shadow(0px 25px 25px rgba(176, 176, 176, 0.09))
+    drop-shadow(0px 6px 14px rgba(176, 176, 176, 0.1));
+  border-radius: 15px;
 
-    /* Inside auto layout */
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 
-.financial-inner-div-text{
-    /* We've been working with Raha Financials for years and they've always provided us with top-notch service. Their expertise and attention to detail have been invaluable to our business. */
+.financial-inner-div-text {
+  /* We've been working with Raha Financials for years and they've always provided us with top-notch service. Their expertise and attention to detail have been invaluable to our business. */
 
-    width: 330px;
-    height: 115px;
+  width: 330px;
+  height: 115px;
 
-    /* font-family: 'Uncut Sans'; */
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 22px;
-    letter-spacing: -0.03em;
+  /* font-family: 'Uncut Sans'; */
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: -0.03em;
 
-    /* Black */
-    color: #000000;
+  /* Black */
+  color: #000000;
 
-    opacity: 0.89;
+  opacity: 0.89;
 
-    /* Inside auto layout */
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
 }
 
-.financial-inner-div-2{
-    /* Frame 1000003042 */
+.financial-inner-div-2 {
+  /* Frame 1000003042 */
 
-    /* Auto layout */
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0px;
-    gap: 15px;
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 15px;
 
-    width: 370px;
-    height: 50px;
+  width: 370px;
+  height: 50px;
 
-
-    /* Inside auto layout */
-    flex: none;
-    order: 1;
-    align-self: stretch;
-    flex-grow: 0;
-
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
 }
 
-.financial-inner-div-2-inner{
-    /* Frame 1000003041 */
+.financial-inner-div-2-inner {
+  /* Frame 1000003041 */
 
-    /* Auto layout */
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
 
-    width: 305px;
-    height: 45px;
+  width: 305px;
+  height: 45px;
 
-
-    /* Inside auto layout */
-    flex: none;
-    order: 1;
-    flex-grow: 1;
-
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 1;
 }
 
-.financial-span-1{
-    /* Cody Fisher */
+.financial-span-1 {
+  /* Cody Fisher */
 
-    width: 150px;
-    height: 25px;
+  width: 150px;
+  height: 25px;
 
-    /* font-family: 'Uncut Sans'; */
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 25px;
-    /* identical to box height */
-    letter-spacing: -0.03em;
+  /* font-family: 'Uncut Sans'; */
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
+  /* identical to box height */
+  letter-spacing: -0.03em;
 
-    /* Black */
-    color: #000000;
+  /* Black */
+  color: #000000;
 
-
-    /* Inside auto layout */
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 
-.financial-span-2{
-    /* Deloitte */
+.financial-span-2 {
+  /* Deloitte */
 
-    width: 305px;
-    height: 20px;
+  width: 305px;
+  height: 20px;
 
-    /* font-family: 'Uncut Sans'; */
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    /* identical to box height */
-    letter-spacing: -0.03em;
+  /* font-family: 'Uncut Sans'; */
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height */
+  letter-spacing: -0.03em;
 
-    /* Black */
-    color: #000000;
+  /* Black */
+  color: #000000;
 
-    opacity: 0.7;
+  opacity: 0.7;
 
-    /* Inside auto layout */
-    flex: none;
-    order: 1;
-    align-self: stretch;
-    flex-grow: 0;
-
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
 }
 
-.footer-div{
-    /* Frame 1000003030 */
+.footer-div {
+  /* Frame 1000003030 */
 
-    box-sizing: border-box;
+  box-sizing: border-box;
 
-    /* Auto layout */
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 50px 0px 20px 0px;
-    gap: 25px;
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 50px 0px 20px 0px;
+  gap: 25px;
 
-    height: 406px;
+  height: 406px;
 
-    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
-    border-top: 1px solid #DADADA;
-    filter: drop-shadow(0px 100px 40px rgba(176, 176, 176, 0.01)) drop-shadow(0px 56px 34px rgba(176, 176, 176, 0.05)) drop-shadow(0px 25px 25px rgba(176, 176, 176, 0.09)) drop-shadow(0px 6px 14px rgba(176, 176, 176, 0.1));
+  background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+  border-top: 1px solid #dadada;
+  filter: drop-shadow(0px 100px 40px rgba(176, 176, 176, 0.01))
+    drop-shadow(0px 56px 34px rgba(176, 176, 176, 0.05))
+    drop-shadow(0px 25px 25px rgba(176, 176, 176, 0.09))
+    drop-shadow(0px 6px 14px rgba(176, 176, 176, 0.1));
 
-    /* Inside auto layout */
-    flex: none;
-    order: 7;
-    flex-grow: 0;
-
+  /* Inside auto layout */
+  flex: none;
+  order: 7;
+  flex-grow: 0;
 }
 
-.footer-inner-div{
-    /* Frame 1000003052 */
+.footer-inner-div {
+  /* Frame 1000003052 */
 
-    /* Auto layout */
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    /* gap: 109px; */
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  /* gap: 109px; */
 
-    /* height: 268px; */
-
+  /* height: 268px; */
 }
 
-.footer-span{
-    /* ©️ 2017 - 2023 RAHA Financials LLC All rights reserved. RAHA Financials refers to the RAHA Financials network and/or one or more of its member firms, each of which is a separate legal entity. */
+.footer-span {
+  /* ©️ 2017 - 2023 RAHA Financials LLC All rights reserved. RAHA Financials refers to the RAHA Financials network and/or one or more of its member firms, each of which is a separate legal entity. */
 
-    width: 1280px;
-    height: 18px;
+  width: 1280px;
+  height: 18px;
 
-    /* font-family: 'Uncut Sans'; */
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
-    /* identical to box height */
-    letter-spacing: -0.03em;
+  /* font-family: 'Uncut Sans'; */
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  /* identical to box height */
+  letter-spacing: -0.03em;
 
-    /* Black */
-    color: #000000;
+  /* Black */
+  color: #000000;
 
-    opacity: 0.5;
+  opacity: 0.5;
 
-    /* Inside auto layout */
-    flex: none;
-    order: 2;
-    align-self: stretch;
-    flex-grow: 0;
-
-
+  /* Inside auto layout */
+  flex: none;
+  order: 2;
+  align-self: stretch;
+  flex-grow: 0;
 }
 
-.footer-col-1{
-    /* Frame 1000003045 */
+.footer-col-1 {
+  /* Frame 1000003045 */
 
-    /* Auto layout */
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 15px;
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 15px;
 
-    margin: 0 auto;
-    /* width: 453px; */
-    height: 232.49px;
+  margin: 0 auto;
+  /* width: 453px; */
+  height: 232.49px;
 
-
-    /* Inside auto layout */
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 
-.footer-col-2{
-    /* Frame 1000003047 */
+.footer-col-2 {
+  /* Frame 1000003047 */
 
-    /* Auto layout */
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 10px;
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
 
-    margin: 0 auto;
-    /* width: 112px; */
-    height: 183px;
+  margin: 0 auto;
+  /* width: 112px; */
+  height: 183px;
 
-
-    /* Inside auto layout */
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
 }
 
-.footer-col-3{
-    /* Frame 1000003048 */
+.footer-col-3 {
+  /* Frame 1000003048 */
 
-    /* Auto layout */
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 10px;
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
 
-    margin: 0 auto;
-    /* width: 498px; */
-    height: 268px;
+  margin: 0 auto;
+  /* width: 498px; */
+  height: 268px;
 
-
-    /* Inside auto layout */
-    flex: none;
-    order: 2;
-    flex-grow: 0;
-
+  /* Inside auto layout */
+  flex: none;
+  order: 2;
+  flex-grow: 0;
 }
 
-.footer-para{
-    /* Our team at RAHA is dedicated to ensuring your books are accurate, compliance is maintained, and your financial decisions are backed by strategic insights. */
+.footer-para {
+  /* Our team at RAHA is dedicated to ensuring your books are accurate, compliance is maintained, and your financial decisions are backed by strategic insights. */
 
-    width: 453px;
-    height: 100px;
+  width: 453px;
+  height: 100px;
 
-    /* font-family: 'Uncut Sans'; */
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 25px;
-    letter-spacing: -0.03em;
+  /* font-family: 'Uncut Sans'; */
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: -0.03em;
 
-    /* Black */
-    color: #000000;
+  /* Black */
+  color: #000000;
 
-
-    /* Inside auto layout */
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
 }
 
-.footer-link-heading{
-    /* Quick Links */
+.footer-link-heading {
+  /* Quick Links */
 
-    width: 112px;
-    height: 28px;
+  width: 112px;
+  height: 28px;
 
-    /* font-family: 'Uncut Sans'; */
-    font-style: normal;
-    font-weight: 500;
-    font-size: 22px;
-    line-height: 28px;
-    /* identical to box height */
-    letter-spacing: -0.03em;
+  /* font-family: 'Uncut Sans'; */
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 28px;
+  /* identical to box height */
+  letter-spacing: -0.03em;
 
-    /* Black */
-    color: #000000;
+  /* Black */
+  color: #000000;
 
-
-    /* Inside auto layout */
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 
-.footer-link-item{
-    /* Services */
+.footer-link-item {
+  /* Services */
 
-    width: 76px;
-    height: 25px;
+  width: 76px;
+  height: 25px;
 
-    /* font-family: 'Uncut Sans'; */
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 25px;
-    /* identical to box height */
-    letter-spacing: -0.03em;
+  /* font-family: 'Uncut Sans'; */
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  /* identical to box height */
+  letter-spacing: -0.03em;
 
-    /* Black */
-    color: #000000;
+  /* Black */
+  color: #000000;
 
-
-    /* Inside auto layout */
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 
-.footer-form-heading{
-    /* Reach out to us */
+.footer-form-heading {
+  /* Reach out to us */
 
-    width: 148px;
-    height: 28px;
+  width: 148px;
+  height: 28px;
 
-    /* font-family: 'Uncut Sans'; */
-    font-style: normal;
-    font-weight: 500;
-    font-size: 22px;
-    line-height: 28px;
-    /* identical to box height */
-    letter-spacing: -0.03em;
+  /* font-family: 'Uncut Sans'; */
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 28px;
+  /* identical to box height */
+  letter-spacing: -0.03em;
 
-    /* Black */
-    color: #000000;
+  /* Black */
+  color: #000000;
 
-
-    /* Inside auto layout */
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 
-.footer-form-div{
-    /* Frame 1000003051 */
+.footer-form-div {
+  /* Frame 1000003051 */
 
-    /* Auto layout */
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 10px;
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
 
-    /* width: 498px; */
-    height: 55px;
-
+  /* width: 498px; */
+  height: 55px;
 }
 
-.footer-name-field{
-    /* Frame 1000003049 */
+.footer-name-field {
+  /* Frame 1000003049 */
 
-    /* Auto layout */
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 15px;
-    gap: 10px;
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 15px;
+  gap: 10px;
 
-    /* width: 244px; */
-    height: 55px;
+  /* width: 244px; */
+  height: 55px;
 
-    background: #E8E8E8;
-    border-radius: 11px;
-
+  background: #e8e8e8;
+  border-radius: 11px;
 }
 
-.footer-email-field{
-    /* Frame 1000003050 */
+.footer-email-field {
+  /* Frame 1000003050 */
 
-    /* Auto layout */
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 15px;
-    gap: 10px;
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 15px;
+  gap: 10px;
 
-    /* width: 244px; */
-    height: 55px;
+  /* width: 244px; */
+  height: 55px;
 
-    background: #E8E8E8;
-    border-radius: 11px;
-
+  background: #e8e8e8;
+  border-radius: 11px;
 }
 
-.footer-message-field{
-    /* Frame 1000003049 */
+.footer-message-field {
+  /* Frame 1000003049 */
 
-    /* Auto layout */
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 15px;
-    gap: 10px;
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 15px;
+  gap: 10px;
 
-    height: 112px;
+  height: 112px;
 
-    background: #E8E8E8;
-    border-radius: 11px;
-
+  background: #e8e8e8;
+  border-radius: 11px;
 }
 
-.footer-submit-btn{
-    /* Frame 4 */
+.footer-submit-btn {
+  /* Frame 4 */
 
-    /* Auto layout */
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 10px 20px;
-    gap: 10px;
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 20px;
+  gap: 10px;
 
-    width: 100px;
-    height: 43px;
+  width: 100px;
+  height: 43px;
 
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 22px;
-    /* identical to box height */
-    letter-spacing: -0.02em;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
+  letter-spacing: -0.02em;
 
-    /* White */
-    color: #FFFFFF;
+  /* White */
+  color: #ffffff;
 
-    /* Main Radial */
-    background: radial-gradient(46.19% 50.94% at 50% 100%, #587EDB 0%, #1445C2 100%);
-    border-radius: 10px;
+  /* Main Radial */
+  background: radial-gradient(
+    46.19% 50.94% at 50% 100%,
+    #587edb 0%,
+    #1445c2 100%
+  );
+  border-radius: 10px;
 
-    /* Inside auto layout */
-    flex: none;
-    order: 3;
-    flex-grow: 0;
-
+  /* Inside auto layout */
+  flex: none;
+  order: 3;
+  flex-grow: 0;
 }
 
-#navbar-modal, #industry-modal {
-    position: absolute;
-    top: 96px; /* Adjust as needed to match the top offset */
-    left: 0;
-    right: 0;
-    z-index: 50;
-  }
-  
-  .modal-content {
-    position: relative;
-    width: 80%;
-  }
-  
-  .hidden {
-    display: none;
-  }
-  
+#navbar-modal,
+#industry-modal {
+  position: absolute;
+  top: 96px; /* Adjust as needed to match the top offset */
+  left: 0;
+  right: 0;
+  z-index: 50;
+  width: 80%;
+  margin-left: auto;
+  margin: auto;
+}
+
+.modal-content {
+  position: relative;
+  width: 100%;
+}
+
+.hidden {
+  display: none;
+}
