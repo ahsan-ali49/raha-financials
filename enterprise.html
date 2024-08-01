@@ -1,418 +1,512 @@
-<div id="enterprise">
-  <div class="px-20 py-2.5 navbar-background-enterprise">
-    <!-- Navbar -->
-    <div
-      class="flex flex-wrap items-center justify-between mx-auto rounded-xl w-full pl-6 pr-2.5 py-2.5 navbar-link-enterprise"
-    >
-      <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-        <img
-          src="./assets/images/enterprise/navbarLogo.png"
-          alt="raha Financials logo"
-        />
-      </a>
-      <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-        <button
-          type="button"
-          class="hidden md:block hover:bg-blue-800 dark:hover:bg-blue-500 contact-btn-enterprise"
-        >
-          Contact Us
-        </button>
-        <button
-          data-collapse-toggle="navbar-sticky"
-          type="button"
-          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-          aria-controls="navbar-sticky"
-          aria-expanded="false"
-        >
-          <span class="sr-only">Open main menu</span>
-          <svg
-            class="w-5 h-5"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 17 14"
-          >
-            <path
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M1 1h15M1 7h15M1 13h15"
-            />
-          </svg>
-        </button>
-      </div>
-      <div
-        class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
-        id="navbar-sticky"
-      >
-        <ul
-          class="flex flex-col gap-x-9 font-medium rounded-lg rtl:space-x-reverse md:flex-row md:mt-0"
-        >
-          <li>
-            <a
-              href="#"
-              class="block navlink navlink-enterprise"
-              data-page="services"
-              aria-current="page"
-              >Services</a
-            >
-          </li>
-          <li>
-            <a
-              href="#"
-              class="block navlink navlink-enterprise"
-              data-page="services"
-              data-section="industry"
-              >Industries</a
-            >
-          </li>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Raha for Enterprises</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="enterpriseStyle.css" />
+    <link rel="stylesheet" href="pricingStyle.css" />
+    <link rel="stylesheet" href="informationStyle.css" />
+    <link rel="stylesheet" href="servicesStyle.css" />
+    <link rel="stylesheet" href="blog.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 
-          <li>
-            <a
-              href="#blogs"
-              class="block navlink navlink-enterprise"
-              data-page="blogs"
-              data-section="blogs"
-              >Insights</a
-            >
-          </li>
-          <li>
-            <a
-              href="#"
-              class="block navlink navlink-enterprise"
-              data-page="pricing"
-              >Pricing</a
-            >
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-  <!-- Hero Section -->
-  <div
-    class="w-full relative flex flex-col items-center gap-5 pt-20 pb-40 hero-div-enterprise"
-  >
-    <div class="flex flex-col items-center gap-2.5">
-      <span class="iam-enterprise">I am a</span>
-      <div
-        class="w-full flex flex-row justify-center gap-2.5 hero-btn-div-enterprise"
-      >
-        <button class="hero-indv-btn-enterprise">
-          <span class="hero-indv-btn-text-enterprise"
-            >Individual/Small Business</span
-          >
-        </button>
-        <button class="hero-entr-btn-enterpise">Enterprise</button>
-      </div>
-    </div>
-    <div class="flex flex-col items-center gap-3 w-3/5">
-      <span class="hero-primary-heading-enterprise"
-        >What we Provide for the Success of your Business</span
-      >
-      <p class="hero-para-enterpise w-8/12">
-        From consolidated reporting to industry expertise, we deliver
-        data-driven insights and actionable strategies for success.
-      </p>
-      <button class="hero-btn-enterprise">Book A Demo</button>
-    </div>
-    <img
-      src="./assets/images/enterprise/absoluteImage.png"
-      alt=""
-      class="absolute right-0 top-8"
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-  </div>
-
-  <!-- Cards Section -->
-  <div class="relative z-10 px-20 -mt-32">
-    <div class="cards-background">
-      <div class="flex flex-row justify-center gap-5 flex-wrap pb-20">
-        <div class="card-enterprise w-1/4">
-          <div class="flex flex-col gap-y-2.5">
-            <span class="card-span">Audit and Assurance</span>
-            <p class="card-para">
-              Set up your accounting software in a day through our checklist,
-              for converting a client from your legacy software to Xero.
-            </p>
-          </div>
-          <div class="card-image-div h-full">
-            <img
-              src="./assets/images/enterprise/cardImage1.png"
-              alt=""
-              class="mt-auto"
-            />
-          </div>
-        </div>
-        <div class="card-enterprise w-1/4">
-          <div class="flex flex-col gap-y-2.5">
-            <span class="card-span">Business Payment Collection</span>
-            <p class="card-para">
-              Set up your accounting software in a day through our checklist,
-              for converting a client from your legacy software to Xero.
-            </p>
-          </div>
-          <div class="card-image-div h-full">
-            <img
-              src="./assets/images/enterprise/cardImage2.png"
-              alt=""
-              class="mt-auto"
-            />
-          </div>
-        </div>
-        <div class="card-enterprise w-1/4">
-          <div class="flex flex-col gap-y-2.5">
-            <span class="card-span">HR Management & Outsourcing</span>
-            <p class="card-para">
-              Set up your accounting software in a day through our checklist,
-              for converting a client from your legacy software to Xero.
-            </p>
-          </div>
-          <div class="card-image-div h-full">
-            <img
-              src="./assets/images/enterprise/cardImage3.png"
-              alt=""
-              class="mt-auto"
-            />
-          </div>
-        </div>
-        <div class="card-enterprise w-1/4">
-          <div class="flex flex-col gap-y-2.5">
-            <span class="card-span">Payroll Advisory</span>
-            <p class="card-para">
-              Set up your accounting software in a day through our checklist,
-              for converting a client from your legacy software to Xero.
-            </p>
-          </div>
-          <div class="card-image-div h-full">
-            <img
-              src="./assets/images/enterprise/cardImage4.png"
-              alt=""
-              class="mt-auto"
-            />
-          </div>
-        </div>
-        <div class="card-enterprise w-1/4">
-          <div class="flex flex-col gap-y-2.5">
-            <span class="card-span">Company restructuring</span>
-            <p class="card-para">
-              Set up your accounting software in a day through our checklist,
-              for converting a client from your legacy software to Xero.
-            </p>
-          </div>
-          <div class="card-image-div h-full">
-            <img
-              src="./assets/images/enterprise/cardImage5.png"
-              alt=""
-              class="mt-auto"
-            />
-          </div>
-        </div>
-        <div class="card-enterprise w-1/4">
-          <div class="flex flex-col gap-y-2.5">
-            <span class="card-span">Budget forecasting</span>
-            <p class="card-para">
-              Set up your accounting software in a day through our checklist,
-              for converting a client from your legacy software to Xero.
-            </p>
-          </div>
-          <div class="card-image-div h-full">
-            <img
-              src="./assets/images/enterprise/cardImage6.png"
-              alt=""
-              class="mt-auto"
-            />
-          </div>
-        </div>
-        <div class="opacity-0 card-enterprise w-1/4">
-          <div class="flex flex-col gap-y-2.5">
-            <span class="card-span">Risk Advisory</span>
-            <p class="card-para">
-              Set up your accounting software in a day through our checklist,
-              for converting a client from your legacy software to Xero.
-            </p>
-          </div>
-          <div class="card-image-div h-full">
-            <img
-              src="./assets/images/enterprise/cardImage7.png"
-              alt=""
-              class="mt-auto"
-            />
-          </div>
-        </div>
-        <div class="card-enterprise w-1/4">
-          <div class="flex flex-col gap-y-2.5">
-            <span class="card-span">Risk Advisory</span>
-            <p class="card-para">
-              Set up your accounting software in a day through our checklist,
-              for converting a client from your legacy software to Xero.
-            </p>
-          </div>
-          <div class="card-image-div h-full">
-            <img
-              src="./assets/images/enterprise/cardImage7.png"
-              alt=""
-              class="mt-auto"
-            />
-          </div>
-        </div>
-        <div class="opacity-0 card-enterprise w-1/4">
-          <div class="flex flex-col gap-y-2.5">
-            <span class="card-span">Risk Advisory</span>
-            <p class="card-para">
-              Set up your accounting software in a day through our checklist,
-              for converting a client from your legacy software to Xero.
-            </p>
-          </div>
-          <div class="card-image-div h-full">
-            <img
-              src="./assets/images/enterprise/cardImage7.png"
-              alt=""
-              class="mt-auto"
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Video Section -->
-  <div class="w-full outsourced-accounting-enterprise mt-10">
-    <video autoplay loop muted class="w-full h-full object-cover">
-      <source
-        src="./assets/videos/enterprise/backgroundVideo.mp4"
-        type="video/mp4"
-      />
-    </video>
-    <div
-      class="w-full h-full flex flex-col items-center justify-center gap-3 content-enterprise text-center text-white"
-    >
-      <h2 class="w-2/5 foreground-heading-enterprise text-6xl font-bold">
-        Connecting the dots. It's what we do.
-      </h2>
-      <p class="w-1/2 foreground-para-enterprise text-xl">
-        Since the beginning, we have been about creating connections. With our
-        clients, our team, and our communities. Connecting accounting has, for
-        and, been changing the world's leading enterprises into partners.
-      </p>
-      <div class="flex flex-row justify-center gap-5 mt-3">
-        <button class="foreground-btn-enterprise">Who we are</button>
-        <button class="foreground-btn-enterprise">Our Services</button>
-        <button class="foreground-btn-enterprise">Contact us</button>
-      </div>
-    </div>
-  </div>
-
-  <!-- Client Experience -->
-  <div class="flex flex-col items-center gap-12 py-20">
-    <div class="flex flex-col items-center gap-2.5">
-      <h2 class="financials-heading">
-        Transforming Finances: <br />
-        <span class="financials-heading-secondary"
-          >RAHA Financials Client Experiences</span
+  </head>
+  <body>
+    <div id="enterprise">
+      <div class="px-20 py-2.5 navbar-background-enterprise">
+        <!-- Navbar -->
+        <div
+          class="flex flex-wrap items-center justify-between mx-auto rounded-xl w-full pl-6 pr-2.5 py-2.5 navbar-link-enterprise"
         >
-      </h2>
+          <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img
+              src="./assets/images/enterprise/navbarLogo.png"
+              alt="raha Financials logo"
+            />
+          </a>
+          <div
+            class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse"
+          >
+            <button
+              type="button"
+              class="hidden md:block hover:bg-blue-800 dark:hover:bg-blue-500 contact-btn-enterprise"
+            >
+              Contact Us
+            </button>
+            <button
+              data-collapse-toggle="navbar-sticky"
+              type="button"
+              class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+              aria-controls="navbar-sticky"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Open main menu</span>
+              <svg
+                class="w-5 h-5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 17 14"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 1h15M1 7h15M1 13h15"
+                />
+              </svg>
+            </button>
+          </div>
+          <div
+            class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+            id="navbar-sticky"
+          >
+            <ul
+              class="flex flex-col gap-x-9 font-medium rounded-lg rtl:space-x-reverse md:flex-row md:mt-0"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="block navlink navlink-enterprise"
+                  data-page="services"
+                  aria-current="page"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block navlink navlink-enterprise"
+                  data-page="services"
+                  data-section="industry"
+                  >Industries</a
+                >
+              </li>
 
-      <p class="financials-para">
-        Don't just take our word for it. See what our satisfied customers have
-        to say about our services.
-      </p>
-    </div>
-    <div class="w-full flex flex-row justify-center px-2 gap-1">
-      <div class="flex flex-col gap-3.5 financial-div">
-        <div class="financial-inner-div">
-          <p class="financial-inner-div-text">
-            We've been working with Raha Financials for years and they've always
-            provided us with top-notch service. Their expertise and attention to
-            detail have been invaluable to our business.
-          </p>
-        </div>
-        <div class="financial-inner-div-2">
-          <img src="./assets/images/financialDivImage1.png" alt="" />
-          <div class="financial-inner-div-2-inner">
-            <span class="financial-span-1">Cody Fisher</span>
-            <span class="financial-span-2">Deloitte</span>
+              <li>
+                <a
+                  href="#blogs"
+                  class="block navlink navlink-enterprise"
+                  data-page="blogs"
+                  data-section="blogs"
+                  >Insights</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block navlink navlink-enterprise"
+                  data-page="pricing"
+                  >Pricing</a
+                >
+              </li>
+            </ul>
           </div>
         </div>
       </div>
-      <div class="flex flex-col gap-3.5 financial-div">
-        <div class="financial-inner-div">
-          <p class="financial-inner-div-text">
-            We've been working with Raha Financials for years and they've always
-            provided us with top-notch service. Their expertise and attention to
-            detail have been invaluable to our business.
-          </p>
-        </div>
-        <div class="financial-inner-div-2">
-          <img src="./assets/images/financialDivImage2.png" alt="" />
-          <div class="financial-inner-div-2-inner">
-            <span class="financial-span-1">Jenny Wilson</span>
-            <span class="financial-span-2">Behance</span>
-          </div>
-        </div>
-      </div>
-      <div class="flex flex-col gap-3.5 financial-div">
-        <div class="financial-inner-div">
-          <p class="financial-inner-div-text">
-            We've been working with Raha Financials for years and they've always
-            provided us with top-notch service. Their expertise and attention to
-            detail have been invaluable to our business.
-          </p>
-        </div>
-        <div class="financial-inner-div-2">
-          <img src="./assets/images/financialDivImage3.png" alt="" />
-          <div class="financial-inner-div-2-inner">
-            <span class="financial-span-1">Ronald Richards</span>
-            <span class="financial-span-2">Razer</span>
-          </div>
-        </div>
-      </div>
-      <div class="flex flex-col gap-3.5 financial-div">
-        <div class="financial-inner-div">
-          <p class="financial-inner-div-text">
-            We've been working with Raha Financials for years and they've always
-            provided us with top-notch service. Their expertise and attention to
-            detail have been invaluable to our business.
-          </p>
-        </div>
-        <div class="financial-inner-div-2">
-          <img src="./assets/images/financialDivImage4.png" alt="" />
-          <div class="financial-inner-div-2-inner">
-            <span class="financial-span-1">Eleanor Pena</span>
-            <span class="financial-span-2">Eleanor Pena</span>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="flex flex-row justify-center gap-2.5">
-      <button class="request-consultation-btn">Request Consulation</button>
-      <button class="request-call-btn">Call Us</button>
-    </div>
-  </div>
 
-  <!-- Market Expansion -->
-  <div class="px-20 pb-20">
-    <div
-      class="relative flex flex-col items-center justify-center gap-5 p-16 market-expansion-div"
-    >
-      <h2 class="market-expansion-heading w-1/2">
-        Expansion and Market Infiltration Services
-      </h2>
-      <p class="market-expansion-para w-2/5">
-        If you’re an international company considering expanding or diversifying
-        into the US, or vice versa, and require assistance, reach out to us.
-      </p>
-      <button class="market-expansion-btn">Contact Us</button>
-      <img
-        src="./assets/images/enterprise/marketImage1.png"
-        alt=""
-        class="absolute right-0"
-      />
-      <img
-        src="./assets/images/enterprise/marketImage2.png"
-        alt=""
-        class="absolute left-0 top-0"
-      />
+      <!-- Hero Section -->
+      <div
+        class="w-full relative flex flex-col items-center gap-5 pt-20 pb-40 hero-div-enterprise"
+      >
+        <div class="flex flex-col items-center gap-2.5">
+          <span class="iam-enterprise">I am a</span>
+          <div
+            class="w-full flex flex-row justify-center gap-2.5 hero-btn-div-enterprise"
+          >
+            <a href="./index.html" class="hero-indv-btn-enterprise">
+              <span class="hero-indv-btn-text-enterprise"
+                >Individual/Small Business</span
+              >
+            </a>
+            <a href="./enterprise.html" class="hero-entr-btn-enterpise"
+              >Enterprise</a
+            >
+          </div>
+        </div>
+        <div class="flex flex-col items-center gap-3 w-3/5">
+          <span class="hero-primary-heading-enterprise"
+            >What we Provide for the Success of your Business</span
+          >
+          <p class="hero-para-enterpise w-8/12">
+            From consolidated reporting to industry expertise, we deliver
+            data-driven insights and actionable strategies for success.
+          </p>
+          <button class="hero-btn-enterprise">Book A Demo</button>
+        </div>
+        <img
+          src="./assets/images/enterprise/absoluteImage.png"
+          alt=""
+          class="absolute right-0 top-8"
+        />
+      </div>
+
+      <!-- Cards Section -->
+      <div class="relative z-10 px-20 -mt-32">
+        <div class="cards-background">
+          <div class="flex flex-row justify-center gap-5 flex-wrap pb-20">
+            <div class="card-enterprise w-1/4">
+              <div class="flex flex-col gap-y-2.5">
+                <span class="card-span">Audit and Assurance</span>
+                <p class="card-para">
+                  Set up your accounting software in a day through our
+                  checklist, for converting a client from your legacy software
+                  to Xero.
+                </p>
+              </div>
+              <div class="card-image-div h-full">
+                <img
+                  src="./assets/images/enterprise/cardImage1.png"
+                  alt=""
+                  class="mt-auto"
+                />
+              </div>
+            </div>
+            <div class="card-enterprise w-1/4">
+              <div class="flex flex-col gap-y-2.5">
+                <span class="card-span">Business Payment Collection</span>
+                <p class="card-para">
+                  Set up your accounting software in a day through our
+                  checklist, for converting a client from your legacy software
+                  to Xero.
+                </p>
+              </div>
+              <div class="card-image-div h-full">
+                <img
+                  src="./assets/images/enterprise/cardImage2.png"
+                  alt=""
+                  class="mt-auto"
+                />
+              </div>
+            </div>
+            <div class="card-enterprise w-1/4">
+              <div class="flex flex-col gap-y-2.5">
+                <span class="card-span">HR Management & Outsourcing</span>
+                <p class="card-para">
+                  Set up your accounting software in a day through our
+                  checklist, for converting a client from your legacy software
+                  to Xero.
+                </p>
+              </div>
+              <div class="card-image-div h-full">
+                <img
+                  src="./assets/images/enterprise/cardImage3.png"
+                  alt=""
+                  class="mt-auto"
+                />
+              </div>
+            </div>
+            <div class="card-enterprise w-1/4">
+              <div class="flex flex-col gap-y-2.5">
+                <span class="card-span">Payroll Advisory</span>
+                <p class="card-para">
+                  Set up your accounting software in a day through our
+                  checklist, for converting a client from your legacy software
+                  to Xero.
+                </p>
+              </div>
+              <div class="card-image-div h-full">
+                <img
+                  src="./assets/images/enterprise/cardImage4.png"
+                  alt=""
+                  class="mt-auto"
+                />
+              </div>
+            </div>
+            <div class="card-enterprise w-1/4">
+              <div class="flex flex-col gap-y-2.5">
+                <span class="card-span">Company restructuring</span>
+                <p class="card-para">
+                  Set up your accounting software in a day through our
+                  checklist, for converting a client from your legacy software
+                  to Xero.
+                </p>
+              </div>
+              <div class="card-image-div h-full">
+                <img
+                  src="./assets/images/enterprise/cardImage5.png"
+                  alt=""
+                  class="mt-auto"
+                />
+              </div>
+            </div>
+            <div class="card-enterprise w-1/4">
+              <div class="flex flex-col gap-y-2.5">
+                <span class="card-span">Budget forecasting</span>
+                <p class="card-para">
+                  Set up your accounting software in a day through our
+                  checklist, for converting a client from your legacy software
+                  to Xero.
+                </p>
+              </div>
+              <div class="card-image-div h-full">
+                <img
+                  src="./assets/images/enterprise/cardImage6.png"
+                  alt=""
+                  class="mt-auto"
+                />
+              </div>
+            </div>
+            <div class="opacity-0 card-enterprise w-1/4">
+              <div class="flex flex-col gap-y-2.5">
+                <span class="card-span">Risk Advisory</span>
+                <p class="card-para">
+                  Set up your accounting software in a day through our
+                  checklist, for converting a client from your legacy software
+                  to Xero.
+                </p>
+              </div>
+              <div class="card-image-div h-full">
+                <img
+                  src="./assets/images/enterprise/cardImage7.png"
+                  alt=""
+                  class="mt-auto"
+                />
+              </div>
+            </div>
+            <div class="card-enterprise w-1/4">
+              <div class="flex flex-col gap-y-2.5">
+                <span class="card-span">Risk Advisory</span>
+                <p class="card-para">
+                  Set up your accounting software in a day through our
+                  checklist, for converting a client from your legacy software
+                  to Xero.
+                </p>
+              </div>
+              <div class="card-image-div h-full">
+                <img
+                  src="./assets/images/enterprise/cardImage7.png"
+                  alt=""
+                  class="mt-auto"
+                />
+              </div>
+            </div>
+            <div class="opacity-0 card-enterprise w-1/4">
+              <div class="flex flex-col gap-y-2.5">
+                <span class="card-span">Risk Advisory</span>
+                <p class="card-para">
+                  Set up your accounting software in a day through our
+                  checklist, for converting a client from your legacy software
+                  to Xero.
+                </p>
+              </div>
+              <div class="card-image-div h-full">
+                <img
+                  src="./assets/images/enterprise/cardImage7.png"
+                  alt=""
+                  class="mt-auto"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video Section -->
+      <div class="w-full outsourced-accounting-enterprise mt-10">
+        <video autoplay loop muted class="w-full h-full object-cover">
+          <source
+            src="./assets/videos/enterprise/backgroundVideo.mp4"
+            type="video/mp4"
+          />
+        </video>
+        <div
+          class="w-full h-full flex flex-col items-center justify-center gap-3 content-enterprise text-center text-white"
+        >
+          <h2 class="w-2/5 foreground-heading-enterprise text-6xl font-bold">
+            Connecting the dots. It's what we do.
+          </h2>
+          <p class="w-1/2 foreground-para-enterprise text-xl">
+            Since the beginning, we have been about creating connections. With
+            our clients, our team, and our communities. Connecting accounting
+            has, for and, been changing the world's leading enterprises into
+            partners.
+          </p>
+          <div class="flex flex-row justify-center gap-5 mt-3">
+            <button class="foreground-btn-enterprise">Who we are</button>
+            <button class="foreground-btn-enterprise">Our Services</button>
+            <button class="foreground-btn-enterprise">Contact us</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Client Experience -->
+      <div class="flex flex-col items-center gap-12 py-20">
+        <div class="flex flex-col items-center gap-2.5">
+          <h2 class="financials-heading">
+            Transforming Finances: <br />
+            <span class="financials-heading-secondary"
+              >RAHA Financials Client Experiences</span
+            >
+          </h2>
+
+          <p class="financials-para">
+            Don't just take our word for it. See what our satisfied customers
+            have to say about our services.
+          </p>
+        </div>
+        <div class="w-full flex flex-row justify-center px-2 gap-1">
+          <div class="flex flex-col gap-3.5 financial-div">
+            <div class="financial-inner-div">
+              <p class="financial-inner-div-text">
+                We've been working with Raha Financials for years and they've
+                always provided us with top-notch service. Their expertise and
+                attention to detail have been invaluable to our business.
+              </p>
+            </div>
+            <div class="financial-inner-div-2">
+              <img src="./assets/images/financialDivImage1.png" alt="" />
+              <div class="financial-inner-div-2-inner">
+                <span class="financial-span-1">Cody Fisher</span>
+                <span class="financial-span-2">Deloitte</span>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col gap-3.5 financial-div">
+            <div class="financial-inner-div">
+              <p class="financial-inner-div-text">
+                We've been working with Raha Financials for years and they've
+                always provided us with top-notch service. Their expertise and
+                attention to detail have been invaluable to our business.
+              </p>
+            </div>
+            <div class="financial-inner-div-2">
+              <img src="./assets/images/financialDivImage2.png" alt="" />
+              <div class="financial-inner-div-2-inner">
+                <span class="financial-span-1">Jenny Wilson</span>
+                <span class="financial-span-2">Behance</span>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col gap-3.5 financial-div">
+            <div class="financial-inner-div">
+              <p class="financial-inner-div-text">
+                We've been working with Raha Financials for years and they've
+                always provided us with top-notch service. Their expertise and
+                attention to detail have been invaluable to our business.
+              </p>
+            </div>
+            <div class="financial-inner-div-2">
+              <img src="./assets/images/financialDivImage3.png" alt="" />
+              <div class="financial-inner-div-2-inner">
+                <span class="financial-span-1">Ronald Richards</span>
+                <span class="financial-span-2">Razer</span>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col gap-3.5 financial-div">
+            <div class="financial-inner-div">
+              <p class="financial-inner-div-text">
+                We've been working with Raha Financials for years and they've
+                always provided us with top-notch service. Their expertise and
+                attention to detail have been invaluable to our business.
+              </p>
+            </div>
+            <div class="financial-inner-div-2">
+              <img src="./assets/images/financialDivImage4.png" alt="" />
+              <div class="financial-inner-div-2-inner">
+                <span class="financial-span-1">Eleanor Pena</span>
+                <span class="financial-span-2">Eleanor Pena</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-row justify-center gap-2.5">
+          <button class="request-consultation-btn">Request Consulation</button>
+          <button class="request-call-btn">Call Us</button>
+        </div>
+      </div>
+
+      <!-- Market Expansion -->
+      <div class="px-20 pb-20">
+        <div
+          class="relative flex flex-col items-center justify-center gap-5 p-16 market-expansion-div"
+        >
+          <h2 class="market-expansion-heading w-1/2">
+            Expansion and Market Infiltration Services
+          </h2>
+          <p class="market-expansion-para w-2/5">
+            If you’re an international company considering expanding or
+            diversifying into the US, or vice versa, and require assistance,
+            reach out to us.
+          </p>
+          <button class="market-expansion-btn">Contact Us</button>
+          <img
+            src="./assets/images/enterprise/marketImage1.png"
+            alt=""
+            class="absolute right-0"
+          />
+          <img
+            src="./assets/images/enterprise/marketImage2.png"
+            alt=""
+            class="absolute left-0 top-0"
+          />
+        </div>
+      </div>
+
+      <!-- Footer Section -->
+      <div class="w-full footer-div px-20">
+        <div
+          class="w-full border border-t-0 border-r-0 border-l-0 border-b-1 border-gray-300 footer-inner-div pb-5"
+        >
+          <div class="w-1/4 footer-col-1">
+            <img src="./assets/images/footerImage1.png" alt="" />
+            <p>
+              Our team at RAHA is dedicated to ensuring your books are accurate,
+              compliance is maintained, and your financial decisions are backed
+              by strategic insights.
+            </p>
+            <img src="./assets/images/footerImage2.png" alt="" />
+          </div>
+          <div class="w-1/5 footer-col-2">
+            <span class="footer-link-heading">Quick Links</span>
+            <ul>
+              <li class="footer-link-item">Services</li>
+              <li class="footer-link-item">Industries</li>
+              <li class="footer-link-item">Insights</li>
+              <li class="footer-link-item">Pricing</li>
+              <li class="footer-link-item">Contact</li>
+            </ul>
+          </div>
+          <div class="w-5/12 footer-col-3">
+            <span class="footer-form-heading">Reach out to us</span>
+            <div class="w-full footer-form-div">
+              <input
+                type="text"
+                placeholder="Full Name"
+                class="w-1/2 footer-name-field"
+              />
+              <input
+                type="email"
+                placeholder="Email"
+                class="w-1/2 footer-email-field"
+              />
+            </div>
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Message"
+              class="w-full footer-message-field"
+            ></textarea>
+            <button class="footer-submit-btn">Submit</button>
+            <form></form>
+          </div>
+        </div>
+        <span class="footer-span"
+          >©️ 2017 - 2023 RAHA Financials LLC All rights reserved. RAHA
+          Financials refers to the RAHA Financials network and/or one or more of
+          its member firms, each of which is a separate legal entity.</span
+        >
+      </div>
     </div>
-  </div>
-</div>
+
+    <script src="./scripts.js"></script>
+  </body>
+</html>
