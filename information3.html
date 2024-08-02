@@ -1,268 +1,293 @@
-<div id="information3">
-  <!-- Navbar -->
-  <div class="px-20 py-2.5 navbar-background">
-    <!-- Navbar -->
-    <div
-      class="flex flex-wrap items-center justify-between mx-auto rounded-xl w-full pl-6 pr-2.5 py-2.5 navbar-link"
-    >
-      <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-        <img src="./assets/images/navbarLogo.svg" alt="raha Financials logo" />
-      </a>
-      <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-        <button
-          type="button"
-          class="hidden md:block hover:bg-blue-800 dark:hover:bg-blue-500 contact-btn"
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Client Information</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="enterpriseStyle.css" />
+    <link rel="stylesheet" href="pricingStyle.css" />
+    <link rel="stylesheet" href="informationStyle.css" />
+    <link rel="stylesheet" href="servicesStyle.css" />
+    <link rel="stylesheet" href="blog.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div id="information3">
+      <!-- Navbar -->
+      <div class="px-20 py-2.5 navbar-background">
+        <!-- Navbar -->
+        <div
+          class="flex flex-wrap items-center justify-between mx-auto rounded-xl w-full pl-6 pr-2.5 py-2.5 navbar-link"
         >
-          Contact Us
-        </button>
-        <button
-          data-collapse-toggle="navbar-sticky"
-          type="button"
-          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-          aria-controls="navbar-sticky"
-          aria-expanded="false"
-        >
-          <span class="sr-only">Open main menu</span>
-          <svg
-            class="w-5 h-5"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 17 14"
-          >
-            <path
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M1 1h15M1 7h15M1 13h15"
+          <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img
+              src="./assets/images/navbarLogo.svg"
+              alt="raha Financials logo"
             />
-          </svg>
-        </button>
-      </div>
-      <div
-        class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
-        id="navbar-sticky"
-      >
-        <ul
-          class="flex flex-col gap-x-9 font-medium rounded-lg rtl:space-x-reverse md:flex-row md:mt-0"
-        >
-          <li>
+          </a>
+          <div
+            class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse"
+          >
             <a
-              href="#services"
-              class="block navlink"
-              data-page="services"
-              data-section="services"
-              >Services</a
+              href="./information1.html"
+              class="hidden md:block hover:bg-blue-800 dark:hover:bg-blue-500 contact-btn"
             >
-          </li>
-          <li>
-            <a
-              href="#industry"
-              class="block navlink"
-              data-page="services"
-              data-section="industry"
-              >Industries</a
-            >
-          </li>
-
-          <li>
-            <a
-              href="#blogs"
-              class="block navlink"
-              data-page="blogs"
-              data-section="blogs"
-              >Insights</a
-            >
-          </li>
-          <li>
-            <a
-              href="#pricing"
-              class="block navlink"
-              data-page="pricing"
-              data-section="pricing"
-              >Pricing</a
-            >
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-  <div
-    class="w-full px-20 py-20 flex flex-col items-center gap-16"
-    id="insights"
-  >
-    <h2 class="information-heading">
-      Client <span class="hero-secondary-heading">Information</span>
-    </h2>
-    <div class="w-full flex flex-row justify-between">
-      <div class="w-3/5 information-form-div flex flex-col gap-7">
-        <div class="form-step-div">
-          <span class="font-bold">1. Client Information</span>
-        </div>
-
-        <div class="form-step-div">
-          <span class="font-bold">2. Privacy Agreement</span>
-        </div>
-
-        <form
-          class="information-form py-5 px-9 flex flex-col gap-5"
-          id="engagement-form"
-        >
-          <span class="information-form-span">3. Engagement Letter</span>
-          <div class="flex flex-col gap-2.5">
-            <span
-              >Please read the Engagement Letter below and click proceed.</span
-            >
-            <span>
-              This Engagement Letter ("Agreement") outlines the terms and
-              conditions under which RAHA Financials ("the Company") will
-              provide accounting and financial services to
-              <span class="client-name-span">[Client's Name]</span> ("the
-              Client").</span
-            >
-            <span class="font-bold">1. Scope of Services:</span>
-            <span
-              >The Company agrees to provide the Client with comprehensive
-              accounting and financial services, which may include but are not
-              limited to:
-            </span>
-            <ul class="px-6 list-disc services-list-render">
-              <!-- <li>Financial statements</li>
-              <li>Tax Preparation and Filing</li> -->
-            </ul>
-
-            <span class="font-bold">2. Terms and Conditions:</span>
-            <span
-              >2.1 Fees: The Client agrees to compensate the Company for
-              services rendered based on mutually agreed-upon fee arrangements.
-              Details regarding fees, payment terms, and billing frequency are
-              specified in a separate fee agreement.</span
-            >
-            <span
-              >2.2 Confidentiality: The Company is committed to maintaining the
-              confidentiality of all client information and financial records.
-              We will not disclose any client information to third parties
-              without the Client's explicit consent unless required by
-              law.</span
-            >
-            <span
-              >2.3 Conflict of Interest: The Client acknowledges that the
-              Company may have relationships with other clients or entities that
-              could present potential conflicts of interest. The Company will
-              promptly disclose any such conflicts and work with the Client to
-              resolve them in an ethical and professional manner.</span
-            >
-            <span
-              >2.4 Independence: The Company will maintain its independence and
-              exercise professional judgment in providing services to the
-              Client. The Client understands and agrees that the Company will
-              not perform services that compromise its independence or violate
-              ethical standards.</span
-            >
-            <span
-              >2.5 Term: This engagement shall commence on [start date] and will
-              continue until terminated by either party with at least 30 days'
-              written notice. In the event of termination, the Client agrees to
-              compensate the Company for services rendered up to the termination
-              date.</span
-            >
-            <span
-              >2.6 Governing Law: This Agreement shall be governed by and
-              construed in accordance with the laws of the United States. Any
-              disputes arising from or related to this Agreement shall be
-              resolved through arbitration in accordance with the rules of
-              [Arbitration Authority], and the decision of the arbitrator shall
-              be binding and final.</span
-            >
-            <span class="font-bold">3. Deliverables:</span>
-            <span>
-              The Company will provide the Client with regular reports,
-              financial statements, and other deliverables as specified in our
-              service agreement or as requested by the Client.</span
-            >
-            <span class="font-bold">4. Client Responsibilities:</span>
-            <span>The Client agrees to:</span>
-            <ul class="px-6 list-disc">
-              <li>
-                Provide complete and accurate financial records and
-                documentation.
-              </li>
-              <li>
-                Promptly respond to requests for information or clarification.
-              </li>
-              <li>Abide by all applicable tax and financial regulations.</li>
-              <li>
-                Cooperate with the Company in performing services effectively.
-              </li>
-            </ul>
-            <span class="font-bold">5. Limitation of Liability:</span>
-            <span
-              >The Client acknowledges that the Company's liability for any
-              errors, omissions, or other professional misconduct is limited to
-              the fees paid by the Client for the services rendered.</span
-            >
-            <span class="font-bold">6. Amendments:</span>
-            <span
-              >This Agreement may be amended or modified only in writing and
-              signed by both parties.</span
-            >
-            <span
-              >Please indicate your agreement to the terms and conditions of
-              this Engagement Letter by signing and returning it.</span
-            >
-            <span class="font-bold">Privacy Agreement:</span>
-            <span
-              >Please note that this Engagement Letter is subject to our Privacy
-              Agreement, which governs the collection, use, and protection of
-              personal information provided by the Client. By signing this
-              Engagement Letter, you also acknowledge your acceptance of the
-              Privacy Agreement.</span
-            >
-            <span
-              >We appreciate the opportunity to serve your accounting and
-              financial needs. If you have any questions or require further
-              clarification, please do not hesitate to contact us.</span
-            >
-          </div>
-
-          <input
-            type="text"
-            class="information-secondary-field w-full"
-            placeholder="Full Name"
-          />
-
-          <div class="wrapper flex flex-col items-center">
-            <canvas id="signature-pad" height="200"></canvas>
-            <span class="font-bold w-full text-center">Signature</span>
-          </div>
-
-          <fieldset>
-            <div>
-              <input type="checkbox" id="pa" name="pa" />
-              <label for="pa" class="font-medium">
-                I agree to the Engagement Letter</label
-              >
-            </div>
-          </fieldset>
-
-          <div class="flex flex-row justify-between">
+              Contact Us
+            </a>
             <button
-              class="information-previous-btn w-fit"
-              id="info-3-previous-btn"
+              data-collapse-toggle="navbar-sticky"
+              type="button"
+              class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+              aria-controls="navbar-sticky"
+              aria-expanded="false"
             >
-              Previous
+              <span class="sr-only">Open main menu</span>
+              <svg
+                class="w-5 h-5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 17 14"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 1h15M1 7h15M1 13h15"
+                />
+              </svg>
             </button>
-            <button class="hero-btn w-fit" id="info-3-btn">Submit</button>
           </div>
-        </form>
+          <div
+            class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+            id="navbar-sticky"
+          >
+            <ul
+              class="flex flex-col gap-x-9 font-medium rounded-lg rtl:space-x-reverse md:flex-row md:mt-0"
+            >
+              <li>
+                <a href="./index.html#services" class="block navlink"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a href="./index.html#industry" class="block navlink"
+                  >Industries</a
+                >
+              </li>
+              <li>
+                <a href="./blogs.html" class="block navlink">Insights</a>
+              </li>
+              <li>
+                <a href="./pricing.html" class="block navlink">Pricing</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <div class="w-1/3 flex flex-col gap-5">
-        <div class="client-information-secondary-bar">Client Information</div>
-        <div class="client-information-secondary-bar">Privacy Agreement</div>
-        <div class="client-information-primary-bar">Engagement Letter</div>
+
+      <div
+        class="w-full px-20 py-20 flex flex-col items-center gap-16"
+        id="insights"
+      >
+        <h2 class="information-heading">
+          Client <span class="hero-secondary-heading">Information</span>
+        </h2>
+        <div class="w-full flex flex-row justify-between">
+          <div class="w-3/5 information-form-div flex flex-col gap-7">
+            <div class="form-step-div">
+              <span class="font-bold">1. Client Information</span>
+            </div>
+
+            <div class="form-step-div">
+              <span class="font-bold">2. Privacy Agreement</span>
+            </div>
+
+            <form
+              class="information-form py-5 px-9 flex flex-col gap-5"
+              id="engagement-form"
+            >
+              <span class="information-form-span">3. Engagement Letter</span>
+              <div class="flex flex-col gap-2.5">
+                <span
+                  >Please read the Engagement Letter below and click
+                  proceed.</span
+                >
+                <span>
+                  This Engagement Letter ("Agreement") outlines the terms and
+                  conditions under which RAHA Financials ("the Company") will
+                  provide accounting and financial services to
+                  <span class="client-name-span">[Client's Name]</span> ("the
+                  Client").</span
+                >
+                <span class="font-bold">1. Scope of Services:</span>
+                <span
+                  >The Company agrees to provide the Client with comprehensive
+                  accounting and financial services, which may include but are
+                  not limited to:
+                </span>
+                <ul class="px-6 list-disc services-list-render">
+                  <!-- <li>Financial statements</li>
+                  <li>Tax Preparation and Filing</li> -->
+                </ul>
+
+                <span class="font-bold">2. Terms and Conditions:</span>
+                <span
+                  >2.1 Fees: The Client agrees to compensate the Company for
+                  services rendered based on mutually agreed-upon fee
+                  arrangements. Details regarding fees, payment terms, and
+                  billing frequency are specified in a separate fee
+                  agreement.</span
+                >
+                <span
+                  >2.2 Confidentiality: The Company is committed to maintaining
+                  the confidentiality of all client information and financial
+                  records. We will not disclose any client information to third
+                  parties without the Client's explicit consent unless required
+                  by law.</span
+                >
+                <span
+                  >2.3 Conflict of Interest: The Client acknowledges that the
+                  Company may have relationships with other clients or entities
+                  that could present potential conflicts of interest. The
+                  Company will promptly disclose any such conflicts and work
+                  with the Client to resolve them in an ethical and professional
+                  manner.</span
+                >
+                <span
+                  >2.4 Independence: The Company will maintain its independence
+                  and exercise professional judgment in providing services to
+                  the Client. The Client understands and agrees that the Company
+                  will not perform services that compromise its independence or
+                  violate ethical standards.</span
+                >
+                <span
+                  >2.5 Term: This engagement shall commence on [start date] and
+                  will continue until terminated by either party with at least
+                  30 days' written notice. In the event of termination, the
+                  Client agrees to compensate the Company for services rendered
+                  up to the termination date.</span
+                >
+                <span
+                  >2.6 Governing Law: This Agreement shall be governed by and
+                  construed in accordance with the laws of the United States.
+                  Any disputes arising from or related to this Agreement shall
+                  be resolved through arbitration in accordance with the rules
+                  of [Arbitration Authority], and the decision of the arbitrator
+                  shall be binding and final.</span
+                >
+                <span class="font-bold">3. Deliverables:</span>
+                <span>
+                  The Company will provide the Client with regular reports,
+                  financial statements, and other deliverables as specified in
+                  our service agreement or as requested by the Client.</span
+                >
+                <span class="font-bold">4. Client Responsibilities:</span>
+                <span>The Client agrees to:</span>
+                <ul class="px-6 list-disc">
+                  <li>
+                    Provide complete and accurate financial records and
+                    documentation.
+                  </li>
+                  <li>
+                    Promptly respond to requests for information or
+                    clarification.
+                  </li>
+                  <li>
+                    Abide by all applicable tax and financial regulations.
+                  </li>
+                  <li>
+                    Cooperate with the Company in performing services
+                    effectively.
+                  </li>
+                </ul>
+                <span class="font-bold">5. Limitation of Liability:</span>
+                <span
+                  >The Client acknowledges that the Company's liability for any
+                  errors, omissions, or other professional misconduct is limited
+                  to the fees paid by the Client for the services
+                  rendered.</span
+                >
+                <span class="font-bold">6. Amendments:</span>
+                <span
+                  >This Agreement may be amended or modified only in writing and
+                  signed by both parties.</span
+                >
+                <span
+                  >Please indicate your agreement to the terms and conditions of
+                  this Engagement Letter by signing and returning it.</span
+                >
+                <span class="font-bold">Privacy Agreement:</span>
+                <span
+                  >Please note that this Engagement Letter is subject to our
+                  Privacy Agreement, which governs the collection, use, and
+                  protection of personal information provided by the Client. By
+                  signing this Engagement Letter, you also acknowledge your
+                  acceptance of the Privacy Agreement.</span
+                >
+                <span
+                  >We appreciate the opportunity to serve your accounting and
+                  financial needs. If you have any questions or require further
+                  clarification, please do not hesitate to contact us.</span
+                >
+              </div>
+
+              <input
+                type="text"
+                class="information-secondary-field w-full"
+                placeholder="Full Name"
+              />
+
+              <div class="wrapper flex flex-col items-center">
+                <canvas id="signature-pad" height="200"></canvas>
+                <span class="font-bold w-full text-center">Signature</span>
+              </div>
+
+              <fieldset>
+                <div>
+                  <input type="checkbox" id="pa" name="pa" />
+                  <label for="pa" class="font-medium">
+                    I agree to the Engagement Letter</label
+                  >
+                </div>
+              </fieldset>
+
+              <div class="flex flex-row justify-between">
+                <a
+                  href="./information2.html"
+                  class="information-previous-btn w-fit"
+                  id="info-3-previous-btn"
+                >
+                  Previous
+                </a>
+                <button class="hero-btn w-fit" id="info-3-btn">Submit</button>
+              </div>
+            </form>
+          </div>
+          <div class="w-1/3 flex flex-col gap-5">
+            <div class="client-information-secondary-bar">
+              Client Information
+            </div>
+            <div class="client-information-secondary-bar">
+              Privacy Agreement
+            </div>
+            <div class="client-information-primary-bar">Engagement Letter</div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/signature_pad/1.3.5/signature_pad.min.js"
+      integrity="sha512-kw/nRM/BMR2XGArXnOoxKOO5VBHLdITAW00aG8qK4zBzcLVZ4nzg7/oYCaoiwc8U9zrnsO9UHqpyljJ8+iqYiQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./informationScript.js"></script>
+  </body>
+</html>

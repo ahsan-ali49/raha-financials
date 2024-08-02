@@ -1,329 +1,413 @@
-<div id="pricing">
-  <!-- Navbar -->
-  <div class="px-20 py-2.5 navbar-background">
-    <div
-      class="flex flex-wrap items-center justify-between mx-auto rounded-xl w-full pl-6 pr-2.5 py-2.5 navbar-link"
-    >
-      <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-        <img src="./assets/images/navbarLogo.svg" alt="raha Financials logo" />
-      </a>
-      <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-        <button
-          type="button"
-          class="hidden md:block hover:bg-blue-800 dark:hover:bg-blue-500 contact-btn"
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pricing</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="enterpriseStyle.css" />
+    <link rel="stylesheet" href="pricingStyle.css" />
+    <link rel="stylesheet" href="informationStyle.css" />
+    <link rel="stylesheet" href="servicesStyle.css" />
+    <link rel="stylesheet" href="blog.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="./scripts.js"></script>
+  </head>
+  <body>
+    <div id="pricing">
+      <!-- Navbar -->
+      <div class="px-20 py-2.5 navbar-background">
+        <div
+          class="flex flex-wrap items-center justify-between mx-auto rounded-xl w-full pl-6 pr-2.5 py-2.5 navbar-link"
         >
-          Contact Us
-        </button>
-        <button
-          data-collapse-toggle="navbar-sticky"
-          type="button"
-          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-          aria-controls="navbar-sticky"
-          aria-expanded="false"
-        >
-          <span class="sr-only">Open main menu</span>
-          <svg
-            class="w-5 h-5"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 17 14"
-          >
-            <path
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M1 1h15M1 7h15M1 13h15"
+          <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img
+              src="./assets/images/navbarLogo.svg"
+              alt="raha Financials logo"
             />
-          </svg>
-        </button>
+          </a>
+          <div
+            class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse"
+          >
+            <a
+              href="./information1.html"
+              class="hidden md:block hover:bg-blue-800 dark:hover:bg-blue-500 contact-btn"
+            >
+              Contact Us
+            </a>
+            <button
+              data-collapse-toggle="navbar-sticky"
+              type="button"
+              class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+              aria-controls="navbar-sticky"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Open main menu</span>
+              <svg
+                class="w-5 h-5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 17 14"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 1h15M1 7h15M1 13h15"
+                />
+              </svg>
+            </button>
+          </div>
+          <div
+            class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+            id="navbar-sticky"
+          >
+            <ul
+              class="flex flex-col gap-x-9 font-medium rounded-lg rtl:space-x-reverse md:flex-row md:mt-0"
+            >
+              <li>
+                <a href="./index.html#services" class="block navlink"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a href="./index.html#industry" class="block navlink"
+                  >Industries</a
+                >
+              </li>
+              <li>
+                <a href="./blogs.html" class="block navlink">Insights</a>
+              </li>
+              <li>
+                <a href="#" class="block navlink">Pricing</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <div
-        class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
-        id="navbar-sticky"
-      >
-        <ul
-          class="flex flex-col gap-x-9 font-medium rounded-lg rtl:space-x-reverse md:flex-row md:mt-0"
-        >
-          <li>
-            <a
-              href="#"
-              class="block navlink"
-              data-page="services"
-              data-section=""
-              >Services</a
-            >
-          </li>
-          <li>
-            <a
-              href="#industry"
-              class="block navlink"
-              data-page="services"
-              data-section="industry"
-              >Industries</a
-            >
-          </li>
 
-          <li>
-            <a
-              href="#blogs"
-              class="block navlink"
-              data-page="blogs"
-              data-section="blogs"
-              >Insights</a
-            >
-          </li>
-          <li>
-            <a href="#" class="block navlink" data-page="pricing">Pricing</a>
-          </li>
-        </ul>
+      <!-- Hero Section -->
+      <div class="flex flex-col items-center justify-center gap-2.5 py-20">
+        <h2 class="hero-heading-pricing">
+          Our <span class="hero-secondary-heading">Pricing</span> Plans
+        </h2>
+        <p class="hero-para-pricing w-1/2">
+          Our pricing plans provide affordable and flexible options to access
+          expert financial support that streamlines operations and boosts
+          productivity. We offer customizable packages for businesses of all
+          sizes, with transparent pricing and no hidden fees. From accounting
+          and payroll to strategic financial planning, we offer a range of
+          services designed to drive your success
+        </p>
+        <button class="hero-btn">Book A Demo</button>
+      </div>
+
+      <!-- Pricing Cards -->
+      <div class="px-20">
+        <div
+          class="flex flex-col items-center justify-center gap-5 px-20 py-10 pricing-cards-div relative"
+        >
+          <div class="w-full flex flex-row justify-between gap-5">
+            <div class="pricing-card-pricing">
+              <div
+                class="h-full flex flex-col items-between justify-between gap-5 p-4 rounded-lg hover:bg-white text-white hover:text-black pricing-card-child"
+              >
+                <div class="flex flex-col items-start gap-5">
+                  <div class="img-box-primary w-fit p-2.5 rounded-lg">
+                    <img
+                      src="./assets/images/enterprise/database1.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="flex flex-col gap-2">
+                    <span class="pricing-card-span-1">Personal Plan</span>
+                    <span class="pricing-card-span-2">Starting From</span>
+                    <span class="pricing-card-span-3"
+                      >$79<span class="pricing-card-span-33">/mo</span></span
+                    >
+                  </div>
+                  <ul>
+                    <li class="pricing-card-list-item">
+                      <i class="fa fa-check-circle"></i>Personal monetary
+                      evaluation
+                    </li>
+                    <li class="pricing-card-list-item">
+                      <i class="fa fa-check-circle"></i>Bookkeeping
+                    </li>
+                    <li class="pricing-card-list-item">
+                      <i class="fa fa-check-circle"></i>Financial statements
+                      preparation
+                    </li>
+                    <li class="pricing-card-list-item">
+                      <i class="fa fa-check-circle"></i>Budgeting and cashflow
+                    </li>
+                    <li class="pricing-card-list-item">
+                      <i class="fa fa-check-circle"></i>Financial Planning
+                    </li>
+                  </ul>
+                </div>
+                <button class="pricing-card-btn">Learn more</button>
+              </div>
+            </div>
+
+            <div class="pricing-card-pricing">
+              <div
+                class="h-full flex flex-col items-between justify-between gap-5 p-4 rounded-lg hover:bg-white text-white hover:text-black pricing-card-child"
+              >
+                <div class="flex flex-col items-start gap-5">
+                  <div class="img-box-secondary w-fit p-2.5 rounded-lg">
+                    <img
+                      src="./assets/images/enterprise/database4.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="flex flex-col gap-2">
+                    <span class="pricing-card-span-1">Standard Plan</span>
+                    <span class="pricing-card-span-2">Starting From</span>
+                    <span class="pricing-card-span-3"
+                      >$149<span class="pricing-card-span-33">/mo</span></span
+                    >
+                  </div>
+                  <ul>
+                    <li class="pricing-card-list-item">
+                      <i class="fa fa-check-circle"></i>Bookkeeping
+                    </li>
+                    <li class="pricing-card-list-item">
+                      <i class="fa fa-check-circle"></i>Accounts receivable
+                    </li>
+                    <li class="pricing-card-list-item">
+                      <i class="fa fa-check-circle"></i>Accounts payable
+                    </li>
+                    <li class="pricing-card-list-item">
+                      <i class="fa fa-check-circle"></i>Monthly financials
+                    </li>
+                  </ul>
+                </div>
+                <button class="pricing-card-btn">Learn more</button>
+              </div>
+            </div>
+            <div class="pricing-card-pricing">
+              <div
+                class="h-full flex flex-col items-between gap-5 p-4 rounded-lg hover:bg-white text-white pricing-card-child"
+              >
+                <div class="flex flex-col items-start gap-5">
+                  <div class="img-box w-fit p-2.5 rounded-lg">
+                    <img
+                      src="./assets/images/enterprise/database3.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="flex flex-col gap-2">
+                    <span class="pricing-card-span-1">Advanced Plan</span>
+                    <span class="pricing-card-span-2">Starting From</span>
+                    <span class="pricing-card-span-3"
+                      >$79<span class="pricing-card-span-33">/mo</span></span
+                    >
+                  </div>
+                  <ul>
+                    <li class="pricing-card-list-item">
+                      <i class="fa fa-check-circle"></i>Bookkeeping
+                    </li>
+                    <li class="pricing-card-list-item">
+                      <i class="fa fa-check-circle"></i>Payroll services
+                    </li>
+                    <li class="pricing-card-list-item">
+                      <i class="fa fa-check-circle"></i>Sales tax
+                    </li>
+                    <li class="pricing-card-list-item">
+                      <i class="fa fa-check-circle"></i>Annual/ Quaterly/
+                      Monthly filing
+                    </li>
+                    <li class="pricing-card-list-item">
+                      <i class="fa fa-check-circle"></i>Monthly financials
+                    </li>
+                    <li class="pricing-card-list-item">
+                      <i class="fa fa-check-circle"></i>Financial Analysis / KPI
+                    </li>
+                    <li class="pricing-card-list-item">
+                      <i class="fa fa-check-circle"></i>VAT
+                    </li>
+                    <li class="pricing-card-list-item">
+                      <i class="fa fa-check-circle"></i>IRS, HMRC etc notices
+                    </li>
+                  </ul>
+                </div>
+                <button class="pricing-card-btn">Learn more</button>
+              </div>
+            </div>
+          </div>
+          <div class="w-full h-full flex flex-row gap-5 pricing-card-pricing">
+            <div class="w-2/5 flex flex-col justify-between">
+              <div class="flex flex-col items-start gap-5">
+                <div class="img-box w-fit p-2.5 rounded-lg">
+                  <img src="./assets/images/enterprise/database2.png" alt="" />
+                </div>
+                <span class="pricing-card-span-1 text-white"
+                  >Enterprise Plan</span
+                >
+              </div>
+              <button class="pricing-card-btn">Speak with a consultant</button>
+            </div>
+            <div class="w-3/5 text-white">
+              <ul class="flex flex-col gap-2.5">
+                <li class="pricing-card-list-item">
+                  <i class="fa fa-check-circle"></i>CFO-Level Advisory
+                </li>
+                <li class="pricing-card-list-item">
+                  <i class="fa fa-check-circle"></i>Financial Training
+                </li>
+                <li class="pricing-card-list-item">
+                  <i class="fa fa-check-circle"></i>International Tax Planning
+                </li>
+                <li class="pricing-card-list-item">
+                  <i class="fa fa-check-circle"></i>Mergers and Acquisitions
+                  Support
+                </li>
+                <li class="pricing-card-list-item">
+                  <i class="fa fa-check-circle"></i>Staff Outsourcing
+                </li>
+                <li class="pricing-card-list-item">
+                  <i class="fa fa-check-circle"></i>Financial Software
+                  Integration
+                </li>
+                <li class="pricing-card-list-item">
+                  <i class="fa fa-check-circle"></i>Budget Forecasting
+                </li>
+                <li class="pricing-card-list-item">
+                  <i class="fa fa-check-circle"></i>Custom Financial Solutions
+                </li>
+              </ul>
+            </div>
+          </div>
+          <img
+            src="./assets/images/enterprise/pricingAbsoluteImage.png"
+            alt=""
+            class="absolute right-0 top-64"
+          />
+        </div>
+      </div>
+
+      <!-- Consultation Section -->
+      <div class="px-20 pb-20">
+        <div class="flex flex-row justify-between px-7 mt-20">
+          <div class="w-5/12 flex flex-col gap-2.5">
+            <span class="text-gray-950 consultation-span"
+              >Book your free
+              <span class="consultation-span-secondary"
+                >Consultation today</span
+              >
+            </span>
+            <p class="consultation-para">
+              Schedule your consultation with us, and rest assured that our
+              Customer Support team will promptly return your call within 24
+              hours
+            </p>
+          </div>
+          <div class="w-5/12">
+            <form class="w-full flex flex-col gap-5">
+              <div class="w-full flex flex-row gap-5">
+                <input
+                  type="text"
+                  placeholder="Full Name*"
+                  class="w-5/12 name-form-field"
+                  required
+                />
+                <input
+                  type="text"
+                  placeholder="Email*"
+                  class="w-5/12 email-form-field"
+                  required
+                />
+              </div>
+              <div class="w-full flex flex-row gap-5">
+                <input
+                  type="text"
+                  placeholder="Subject*"
+                  class="w-5/12 subject-form-field"
+                  required
+                />
+                <input
+                  type="text"
+                  placeholder="Phone Number"
+                  class="w-5/12 phone-form-field"
+                  required
+                />
+              </div>
+              <textarea
+                name="message"
+                id="message"
+                placeholder="Message*"
+                class="w-full message-form-field"
+                required
+              ></textarea>
+              <button type="submit" class="consultation-form-field">
+                Submit Now
+              </button>
+            </form>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
 
-  <!-- Hero Section -->
-  <div class="flex flex-col items-center justify-center gap-2.5 py-20">
-    <h2 class="hero-heading-pricing">
-      Our <span class="hero-secondary-heading">Pricing</span> Plans
-    </h2>
-    <p class="hero-para-pricing w-1/2">
-      Our pricing plans provide affordable and flexible options to access expert
-      financial support that streamlines operations and boosts productivity. We
-      offer customizable packages for businesses of all sizes, with transparent
-      pricing and no hidden fees. From accounting and payroll to strategic
-      financial planning, we offer a range of services designed to drive your
-      success
-    </p>
-    <button class="hero-btn">Book A Demo</button>
-  </div>
-
-  <!-- Pricing Cards -->
-  <div class="px-20">
-    <div
-      class="flex flex-col items-center justify-center gap-5 px-20 py-10 pricing-cards-div relative"
-    >
-      <div class="w-full flex flex-row justify-between gap-5">
-        <div class="pricing-card-pricing">
-          <div
-            class="h-full flex flex-col items-between justify-between gap-5 p-4 rounded-lg hover:bg-white text-white hover:text-black pricing-card-child"
-          >
-            <div class="flex flex-col items-start gap-5">
-              <div class="img-box-primary w-fit p-2.5 rounded-lg">
-                <img src="./assets/images/enterprise/database1.png" alt="" />
-              </div>
-              <div class="flex flex-col gap-2">
-                <span class="pricing-card-span-1">Personal Plan</span>
-                <span class="pricing-card-span-2">Starting From</span>
-                <span class="pricing-card-span-3"
-                  >$79<span class="pricing-card-span-33">/mo</span></span
-                >
-              </div>
-              <ul>
-                <li class="pricing-card-list-item">
-                  <i class="fa fa-check-circle"></i>Personal monetary evaluation
-                </li>
-                <li class="pricing-card-list-item">
-                  <i class="fa fa-check-circle"></i>Bookkeeping
-                </li>
-                <li class="pricing-card-list-item">
-                  <i class="fa fa-check-circle"></i>Financial statements
-                  preparation
-                </li>
-                <li class="pricing-card-list-item">
-                  <i class="fa fa-check-circle"></i>Budgeting and cashflow
-                </li>
-                <li class="pricing-card-list-item">
-                  <i class="fa fa-check-circle"></i>Financial Planning
-                </li>
-              </ul>
-            </div>
-            <button class="pricing-card-btn">Learn more</button>
-          </div>
+    <!-- Footer Section -->
+    <div class="w-full footer-div px-20">
+      <div
+        class="w-full border border-t-0 border-r-0 border-l-0 border-b-1 border-gray-300 footer-inner-div pb-5"
+      >
+        <div class="w-1/4 footer-col-1">
+          <img src="./assets/images/footerImage1.png" alt="" />
+          <p>
+            Our team at RAHA is dedicated to ensuring your books are accurate,
+            compliance is maintained, and your financial decisions are backed by
+            strategic insights.
+          </p>
+          <img src="./assets/images/footerImage2.png" alt="" />
         </div>
-
-        <div class="pricing-card-pricing">
-          <div
-            class="h-full flex flex-col items-between justify-between gap-5 p-4 rounded-lg hover:bg-white text-white hover:text-black pricing-card-child"
-          >
-            <div class="flex flex-col items-start gap-5">
-              <div class="img-box-secondary w-fit p-2.5 rounded-lg">
-                <img src="./assets/images/enterprise/database4.png" alt="" />
-              </div>
-              <div class="flex flex-col gap-2">
-                <span class="pricing-card-span-1">Standard Plan</span>
-                <span class="pricing-card-span-2">Starting From</span>
-                <span class="pricing-card-span-3"
-                  >$149<span class="pricing-card-span-33">/mo</span></span
-                >
-              </div>
-              <ul>
-                <li class="pricing-card-list-item">
-                  <i class="fa fa-check-circle"></i>Bookkeeping
-                </li>
-                <li class="pricing-card-list-item">
-                  <i class="fa fa-check-circle"></i>Accounts receivable
-                </li>
-                <li class="pricing-card-list-item">
-                  <i class="fa fa-check-circle"></i>Accounts payable
-                </li>
-                <li class="pricing-card-list-item">
-                  <i class="fa fa-check-circle"></i>Monthly financials
-                </li>
-              </ul>
-            </div>
-            <button class="pricing-card-btn">Learn more</button>
-          </div>
-        </div>
-        <div class="pricing-card-pricing">
-          <div
-            class="h-full flex flex-col items-between gap-5 p-4 rounded-lg hover:bg-white text-white pricing-card-child"
-          >
-            <div class="flex flex-col items-start gap-5">
-              <div class="img-box w-fit p-2.5 rounded-lg">
-                <img src="./assets/images/enterprise/database3.png" alt="" />
-              </div>
-              <div class="flex flex-col gap-2">
-                <span class="pricing-card-span-1">Advanced Plan</span>
-                <span class="pricing-card-span-2">Starting From</span>
-                <span class="pricing-card-span-3"
-                  >$79<span class="pricing-card-span-33">/mo</span></span
-                >
-              </div>
-              <ul>
-                <li class="pricing-card-list-item">
-                  <i class="fa fa-check-circle"></i>Bookkeeping
-                </li>
-                <li class="pricing-card-list-item">
-                  <i class="fa fa-check-circle"></i>Payroll services
-                </li>
-                <li class="pricing-card-list-item">
-                  <i class="fa fa-check-circle"></i>Sales tax
-                </li>
-                <li class="pricing-card-list-item">
-                  <i class="fa fa-check-circle"></i>Annual/ Quaterly/ Monthly
-                  filing
-                </li>
-                <li class="pricing-card-list-item">
-                  <i class="fa fa-check-circle"></i>Monthly financials
-                </li>
-                <li class="pricing-card-list-item">
-                  <i class="fa fa-check-circle"></i>Financial Analysis / KPI
-                </li>
-                <li class="pricing-card-list-item">
-                  <i class="fa fa-check-circle"></i>VAT
-                </li>
-                <li class="pricing-card-list-item">
-                  <i class="fa fa-check-circle"></i>IRS, HMRC etc notices
-                </li>
-              </ul>
-            </div>
-            <button class="pricing-card-btn">Learn more</button>
-          </div>
-        </div>
-      </div>
-      <div class="w-full h-full flex flex-row gap-5 pricing-card-pricing">
-        <div class="w-2/5 flex flex-col justify-between">
-          <div class="flex flex-col items-start gap-5">
-            <div class="img-box w-fit p-2.5 rounded-lg">
-              <img src="./assets/images/enterprise/database2.png" alt="" />
-            </div>
-            <span class="pricing-card-span-1 text-white">Enterprise Plan</span>
-          </div>
-          <button class="pricing-card-btn">Speak with a consultant</button>
-        </div>
-        <div class="w-3/5 text-white">
-          <ul class="flex flex-col gap-2.5">
-            <li class="pricing-card-list-item">
-              <i class="fa fa-check-circle"></i>CFO-Level Advisory
-            </li>
-            <li class="pricing-card-list-item">
-              <i class="fa fa-check-circle"></i>Financial Training
-            </li>
-            <li class="pricing-card-list-item">
-              <i class="fa fa-check-circle"></i>International Tax Planning
-            </li>
-            <li class="pricing-card-list-item">
-              <i class="fa fa-check-circle"></i>Mergers and Acquisitions Support
-            </li>
-            <li class="pricing-card-list-item">
-              <i class="fa fa-check-circle"></i>Staff Outsourcing
-            </li>
-            <li class="pricing-card-list-item">
-              <i class="fa fa-check-circle"></i>Financial Software Integration
-            </li>
-            <li class="pricing-card-list-item">
-              <i class="fa fa-check-circle"></i>Budget Forecasting
-            </li>
-            <li class="pricing-card-list-item">
-              <i class="fa fa-check-circle"></i>Custom Financial Solutions
-            </li>
+        <div class="w-1/5 footer-col-2">
+          <span class="footer-link-heading">Quick Links</span>
+          <ul>
+            <li class="footer-link-item">Services</li>
+            <li class="footer-link-item">Industries</li>
+            <li class="footer-link-item">Insights</li>
+            <li class="footer-link-item">Pricing</li>
+            <li class="footer-link-item">Contact</li>
           </ul>
         </div>
-      </div>
-      <img
-        src="./assets/images/enterprise/pricingAbsoluteImage.png"
-        alt=""
-        class="absolute right-0 top-64"
-      />
-    </div>
-  </div>
-
-  <!-- Consultation Section -->
-  <div class="px-20 pb-20">
-    <div class="flex flex-row justify-between px-7 mt-20">
-      <div class="w-5/12 flex flex-col gap-2.5">
-        <span class="text-gray-950 consultation-span"
-          >Book your free
-          <span class="consultation-span-secondary">Consultation today</span>
-        </span>
-        <p class="consultation-para">
-          Schedule your consultation with us, and rest assured that our Customer
-          Support team will promptly return your call within 24 hours
-        </p>
-      </div>
-      <div class="w-5/12">
-        <form class="w-full flex flex-col gap-5">
-          <div class="w-full flex flex-row gap-5">
+        <div class="w-5/12 footer-col-3">
+          <span class="footer-form-heading">Reach out to us</span>
+          <div class="w-full footer-form-div">
             <input
               type="text"
-              placeholder="Full Name*"
-              class="w-5/12 name-form-field"
-              required
+              placeholder="Full Name"
+              class="w-1/2 footer-name-field"
             />
             <input
-              type="text"
-              placeholder="Email*"
-              class="w-5/12 email-form-field"
-              required
-            />
-          </div>
-          <div class="w-full flex flex-row gap-5">
-            <input
-              type="text"
-              placeholder="Subject*"
-              class="w-5/12 subject-form-field"
-              required
-            />
-            <input
-              type="text"
-              placeholder="Phone Number"
-              class="w-5/12 phone-form-field"
-              required
+              type="email"
+              placeholder="Email"
+              class="w-1/2 footer-email-field"
             />
           </div>
           <textarea
             name="message"
             id="message"
-            placeholder="Message*"
-            class="w-full message-form-field"
-            required
+            placeholder="Message"
+            class="w-full footer-message-field"
           ></textarea>
-          <button type="submit" class="consultation-form-field">
-            Submit Now
-          </button>
-        </form>
+          <button class="footer-submit-btn">Submit</button>
+          <form></form>
+        </div>
       </div>
+      <span class="footer-span"
+        >©️ 2017 - 2023 RAHA Financials LLC All rights reserved. RAHA Financials
+        refers to the RAHA Financials network and/or one or more of its member
+        firms, each of which is a separate legal entity.</span
+      >
     </div>
-  </div>
-</div>
+  </body>
+</html>

@@ -16,6 +16,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <script src="./scripts.js"></script>
   </head>
   <body class="overflow-x-hidden">
     <div id="content">
@@ -23,7 +24,7 @@
     </div>
 
     <!-- Services Page -->
-    <div id="services">
+    <div>
       <!-- Navbar -->
       <div class="px-20 py-2.5 navbar-background">
         <div
@@ -38,9 +39,9 @@
           <div
             class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse"
           >
-            <button type="button" class="hidden md:block contact-btn">
+            <a href="./information1.html" class="hidden md:block contact-btn">
               Contact Us
-            </button>
+            </a>
             <button
               data-collapse-toggle="navbar-sticky"
               type="button"
@@ -74,40 +75,16 @@
               class="flex flex-col gap-x-9 font-medium rounded-lg rtl:space-x-reverse md:flex-row md:mt-0"
             >
               <li>
-                <a
-                  href="#services"
-                  class="block navlink"
-                  data-page="services"
-                  data-section="services"
-                  >Services</a
-                >
+                <a href="#services" class="block navlink">Services</a>
               </li>
               <li>
-                <a
-                  href="#industry"
-                  class="block navlink"
-                  data-page="services"
-                  data-section="industry"
-                  >Industries</a
-                >
+                <a href="#industry" class="block navlink">Industries</a>
               </li>
               <li>
-                <a
-                  href="#blogs"
-                  class="block navlink"
-                  data-page="blogs"
-                  data-section="blogs"
-                  >Insights</a
-                >
+                <a href="./blogs.html" class="block navlink">Insights</a>
               </li>
               <li>
-                <a
-                  href="#pricing"
-                  class="block navlink"
-                  data-page="pricing"
-                  data-section="pricing"
-                  >Pricing</a
-                >
+                <a href="./pricing.html" class="block navlink">Pricing</a>
               </li>
             </ul>
           </div>
@@ -148,6 +125,7 @@
 
         <!-- Accounting Solution Section -->
         <div
+          id="services"
           class="w-full mt-16 flex flex-col items-center gap-2.5 accounting-solution-div"
         >
           <h2 class="accounting-heading">
@@ -157,9 +135,8 @@
             Full-service accounting solutions for enterprises and small
             businesses. Tax, bookkeeping, payroll, and more.
           </p>
-
           <div class="flex flex-row justify-center flex-wrap gap-5 mt-12">
-            <div class="flex-item-div-primary">
+            <a href="./bookKeeping.html" class="flex-item-div-primary">
               <div
                 class="flex flex-col gap-5 flex-item-inner-div"
                 id="bookKeeping"
@@ -177,8 +154,8 @@
                   </p>
                 </div>
               </div>
-            </div>
-            <div class="flex-item-div-primary">
+            </a>
+            <a href="./softwareSelection.html" class="flex-item-div-primary">
               <div
                 class="flex flex-col gap-5 flex-item-inner-div"
                 id="softwareSelection"
@@ -198,8 +175,8 @@
                   </p>
                 </div>
               </div>
-            </div>
-            <div class="flex-item-div-primary">
+            </a>
+            <a href="./llcRegistration.html" class="flex-item-div-primary">
               <div
                 class="flex flex-col gap-5 flex-item-inner-div"
                 id="llcRegistration"
@@ -218,8 +195,8 @@
                   </p>
                 </div>
               </div>
-            </div>
-            <div class="flex-item-div-primary">
+            </a>
+            <a href="./payrollProcessing.html" class="flex-item-div-primary">
               <div
                 class="flex flex-col gap-5 flex-item-inner-div"
                 id="payrollProcessing"
@@ -240,8 +217,8 @@
                   </p>
                 </div>
               </div>
-            </div>
-            <div class="flex-item-div-primary">
+            </a>
+            <a href="./itin.html" class="flex-item-div-primary">
               <div class="flex flex-col gap-5 flex-item-inner-div" id="itin">
                 <img
                   src="./assets/images/accountingImage2.png"
@@ -256,8 +233,8 @@
                   </p>
                 </div>
               </div>
-            </div>
-            <div class="flex-item-div-primary">
+            </a>
+            <a href="./taxFiling.html" class="flex-item-div-primary">
               <div
                 class="flex flex-col gap-5 flex-item-inner-div"
                 id="taxFiling"
@@ -275,8 +252,8 @@
                   </p>
                 </div>
               </div>
-            </div>
-            <div class="flex-item-div-primary">
+            </a>
+            <a href="./financialReporting.html" class="flex-item-div-primary">
               <div
                 class="flex flex-col gap-5 flex-item-inner-div"
                 id="financialReporting"
@@ -296,8 +273,8 @@
                   </p>
                 </div>
               </div>
-            </div>
-            <div class="flex-item-div-primary">
+            </a>
+            <a href="./businessBudgeting.html" class="flex-item-div-primary">
               <div
                 class="flex flex-col gap-5 flex-item-inner-div"
                 id="businessBudgeting"
@@ -317,7 +294,7 @@
                   </p>
                 </div>
               </div>
-            </div>
+            </a>
           </div>
 
           <div class="flex flex-row justify-center gap-2.5 mt-10">
@@ -916,13 +893,5 @@
         firms, each of which is a separate legal entity.</span
       >
     </div>
-
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/signature_pad/1.3.5/signature_pad.min.js"
-      integrity="sha512-kw/nRM/BMR2XGArXnOoxKOO5VBHLdITAW00aG8qK4zBzcLVZ4nzg7/oYCaoiwc8U9zrnsO9UHqpyljJ8+iqYiQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script src="scripts.js"></script>
   </body>
 </html>

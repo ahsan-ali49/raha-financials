@@ -1,260 +1,282 @@
-<div id="information1">
-  <!-- Navbar -->
-  <div class="px-20 py-2.5 navbar-background">
-    <!-- Navbar -->
-    <div
-      class="flex flex-wrap items-center justify-between mx-auto rounded-xl w-full pl-6 pr-2.5 py-2.5 navbar-link"
-    >
-      <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-        <img src="./assets/images/navbarLogo.svg" alt="raha Financials logo" />
-      </a>
-      <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-        <button
-          type="button"
-          class="hidden md:block hover:bg-blue-800 dark:hover:bg-blue-500 contact-btn"
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Client Information</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="enterpriseStyle.css" />
+    <link rel="stylesheet" href="pricingStyle.css" />
+    <link rel="stylesheet" href="informationStyle.css" />
+    <link rel="stylesheet" href="servicesStyle.css" />
+    <link rel="stylesheet" href="blog.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div id="information1">
+      <!-- Navbar -->
+      <div class="px-20 py-2.5 navbar-background">
+        <!-- Navbar -->
+        <div
+          class="flex flex-wrap items-center justify-between mx-auto rounded-xl w-full pl-6 pr-2.5 py-2.5 navbar-link"
         >
-          Contact Us
-        </button>
-        <button
-          data-collapse-toggle="navbar-sticky"
-          type="button"
-          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-          aria-controls="navbar-sticky"
-          aria-expanded="false"
-        >
-          <span class="sr-only">Open main menu</span>
-          <svg
-            class="w-5 h-5"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 17 14"
+          <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img
+              src="./assets/images/navbarLogo.svg"
+              alt="raha Financials logo"
+            />
+          </a>
+          <div
+            class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse"
           >
-            <path
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M1 1h15M1 7h15M1 13h15"
-            />
-          </svg>
-        </button>
+            <a
+              href="./information1.html"
+              class="hidden md:block hover:bg-blue-800 dark:hover:bg-blue-500 contact-btn"
+            >
+              Contact Us
+            </a>
+            <button
+              data-collapse-toggle="navbar-sticky"
+              type="button"
+              class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+              aria-controls="navbar-sticky"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Open main menu</span>
+              <svg
+                class="w-5 h-5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 17 14"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 1h15M1 7h15M1 13h15"
+                />
+              </svg>
+            </button>
+          </div>
+          <div
+            class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+            id="navbar-sticky"
+          >
+            <ul
+              class="flex flex-col gap-x-9 font-medium rounded-lg rtl:space-x-reverse md:flex-row md:mt-0"
+            >
+              <li>
+                <a href="./index.html#services" class="block navlink"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a href="./index.html#industry" class="block navlink"
+                  >Industries</a
+                >
+              </li>
+              <li>
+                <a href="./blogs.html" class="block navlink">Insights</a>
+              </li>
+              <li>
+                <a href="./pricing.html" class="block navlink">Pricing</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
+
       <div
-        class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
-        id="navbar-sticky"
+        class="w-full px-20 py-20 flex flex-col items-center gap-16"
+        id="insights"
       >
-        <ul
-          class="flex flex-col gap-x-9 font-medium rounded-lg rtl:space-x-reverse md:flex-row md:mt-0"
-        >
-          <li>
-            <a
-              href="#services"
-              class="block navlink"
-              data-page="services"
-              data-section="services"
-              >Services</a
-            >
-          </li>
-          <li>
-            <a
-              href="#industry"
-              class="block navlink"
-              data-page="services"
-              data-section="industry"
-              >Industries</a
-            >
-          </li>
+        <h2 class="information-heading">
+          Client <span class="hero-secondary-heading">Information</span>
+        </h2>
+        <div class="w-full flex flex-row justify-between">
+          <div class="w-3/5 information-form-div flex flex-col gap-7">
+            <form class="information-form py-5 px-9 flex flex-col gap-5">
+              <span class="information-form-span">1. Client Information</span>
+              <div class="form-fields-div">
+                <input
+                  type="text"
+                  class="information-name-field"
+                  placeholder="Full Name*"
+                  value=""
+                  required
+                />
+                <input
+                  type="email"
+                  class="information-secondary-field"
+                  placeholder="Email*"
+                  required
+                />
+              </div>
+              <div class="form-fields-div">
+                <input
+                  type="text"
+                  class="information-secondary-field"
+                  placeholder="Date of Birth"
+                />
+                <input
+                  type="text"
+                  class="information-secondary-field"
+                  placeholder="Phone Number"
+                />
+              </div>
+              <input
+                type="text"
+                class="information-secondary-field w-full"
+                placeholder="Business Name (if applicable)"
+                id="information-company-name"
+                value=""
+              />
+              <input
+                type="text"
+                class="information-secondary-field w-full"
+                placeholder="Home Address (if different)"
+              />
+              <div class="form-fields-div">
+                <input
+                  type="text"
+                  class="information-secondary-field"
+                  placeholder="City"
+                />
+                <input
+                  type="text"
+                  class="information-secondary-field"
+                  placeholder="State/ Province"
+                />
+              </div>
+              <div class="form-fields-div">
+                <input
+                  type="text"
+                  class="information-secondary-field"
+                  placeholder="Postal Code"
+                />
+                <input
+                  type="text"
+                  class="information-secondary-field"
+                  placeholder="Country"
+                />
+              </div>
+              <div class="form-fields-div">
+                <input
+                  type="text"
+                  class="information-secondary-field"
+                  placeholder="Citizenship Status"
+                />
+                <input
+                  type="text"
+                  class="information-secondary-field"
+                  placeholder="Country of Citizenship"
+                />
+              </div>
+              <div class="flex flex-col gap-2.5">
+                <p class="font-bold">Are you a U.S. tax resident?</p>
 
-          <li>
-            <a
-              href="#blogs"
-              class="block navlink"
-              data-page="blogs"
-              data-section="blogs"
-              >Insights</a
-            >
-          </li>
-          <li>
-            <a
-              href="#pricing"
-              class="block navlink"
-              data-page="pricing"
-              data-section="pricing"
-              >Pricing</a
-            >
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
+                <div>
+                  <input type="radio" id="yes" name="ustr" value="yes" />
+                  <label for="yes" class="font-bold">Yes</label>
+                </div>
 
-  <div
-    class="w-full px-20 py-20 flex flex-col items-center gap-16"
-    id="insights"
-  >
-    <h2 class="information-heading">
-      Client <span class="hero-secondary-heading">Information</span>
-    </h2>
-    <div class="w-full flex flex-row justify-between">
-      <div class="w-3/5 information-form-div flex flex-col gap-7">
-        <form class="information-form py-5 px-9 flex flex-col gap-5">
-          <span class="information-form-span">1. Client Information</span>
-          <div class="form-fields-div">
-            <input
-              type="text"
-              class="information-name-field"
-              placeholder="Full Name*"
-              value=""
-              required
-            />
-            <input
-              type="email"
-              class="information-secondary-field"
-              placeholder="Email*"
-              required
-            />
-          </div>
-          <div class="form-fields-div">
-            <input
-              type="text"
-              class="information-secondary-field"
-              placeholder="Date of Birth"
-            />
-            <input
-              type="text"
-              class="information-secondary-field"
-              placeholder="Phone Number"
-            />
-          </div>
-          <input
-            type="text"
-            class="information-secondary-field w-full"
-            placeholder="Business Name (if applicable)"
-            id="information-company-name"
-            value=""
-          />
-          <input
-            type="text"
-            class="information-secondary-field w-full"
-            placeholder="Home Address (if different)"
-          />
-          <div class="form-fields-div">
-            <input
-              type="text"
-              class="information-secondary-field"
-              placeholder="City"
-            />
-            <input
-              type="text"
-              class="information-secondary-field"
-              placeholder="State/ Province"
-            />
-          </div>
-          <div class="form-fields-div">
-            <input
-              type="text"
-              class="information-secondary-field"
-              placeholder="Postal Code"
-            />
-            <input
-              type="text"
-              class="information-secondary-field"
-              placeholder="Country"
-            />
-          </div>
-          <div class="form-fields-div">
-            <input
-              type="text"
-              class="information-secondary-field"
-              placeholder="Citizenship Status"
-            />
-            <input
-              type="text"
-              class="information-secondary-field"
-              placeholder="Country of Citizenship"
-            />
-          </div>
-          <div class="flex flex-col gap-2.5">
-            <p class="font-bold">Are you a U.S. tax resident?</p>
+                <div>
+                  <input type="radio" id="no" name="ustr" value="no" />
+                  <label for="no" class="font-bold">No</label>
+                </div>
+              </div>
 
-            <div>
-              <input type="radio" id="yes" name="ustr" value="yes" />
-              <label for="yes" class="font-bold">Yes</label>
-            </div>
+              <fieldset>
+                <p class="font-bold">Opted Services</p>
 
-            <div>
-              <input type="radio" id="no" name="ustr" value="no" />
-              <label for="no" class="font-bold">No</label>
-            </div>
-          </div>
+                <div>
+                  <input type="checkbox" id="bk" name="bk" />
+                  <label for="bk" class="font-medium">Bookkeeping</label>
+                </div>
 
-          <fieldset>
-            <p class="font-bold">Opted Services</p>
+                <div>
+                  <input type="checkbox" id="fs" name="fs" checked />
+                  <label for="fs" class="font-medium"
+                    >Financial Statements</label
+                  >
+                </div>
 
-            <div>
-              <input type="checkbox" id="bk" name="bk" />
-              <label for="bk" class="font-medium">Bookkeeping</label>
-            </div>
+                <div>
+                  <input type="checkbox" id="tpf" name="tpf" checked />
+                  <label for="tpf" class="font-medium"
+                    >Tax Preparation and Filing</label
+                  >
+                </div>
 
-            <div>
-              <input type="checkbox" id="fs" name="fs" checked />
-              <label for="fs" class="font-medium">Financial Statements</label>
-            </div>
+                <div>
+                  <input type="checkbox" id="ad" name="ad" />
+                  <label for="ad" class="font-medium">Auditing</label>
+                </div>
 
-            <div>
-              <input type="checkbox" id="tpf" name="tpf" checked />
-              <label for="tpf" class="font-medium"
-                >Tax Preparation and Filing</label
+                <div>
+                  <input type="checkbox" id="pp" name="pp" />
+                  <label for="pp" class="font-medium">Payroll Processing</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="br" name="br" />
+                  <label for="br" class="font-medium"
+                    >Business Registration</label
+                  >
+                </div>
+
+                <div>
+                  <input type="checkbox" id="itin" name="itin" />
+                  <label for="itin" class="font-medium"
+                    >ITIN Registration (if applicable)</label
+                  >
+                </div>
+
+                <div>
+                  <input type="checkbox" id="nwe" name="nwe" />
+                  <label for="nwe" class="font-medium"
+                    >Net Worth Evaluation</label
+                  >
+                </div>
+              </fieldset>
+              <textarea
+                placeholder="If no, please specify your tax residency:"
+                class="information-tertiary-field w-full"
+                rows="4"
+              ></textarea>
+              <a
+                href="./information2.html"
+                class="hero-btn w-fit"
+                id="info-1-btn"
+                >Next</a
               >
+            </form>
+            <div class="form-step-div">
+              <span class="font-bold">2. Privary Agreement</span>
             </div>
-
-            <div>
-              <input type="checkbox" id="ad" name="ad" />
-              <label for="ad" class="font-medium">Auditing</label>
+            <div class="form-step-div">
+              <span class="font-bold">3. Engagement Letter</span>
             </div>
-
-            <div>
-              <input type="checkbox" id="pp" name="pp" />
-              <label for="pp" class="font-medium">Payroll Processing</label>
+          </div>
+          <div class="w-1/3 flex flex-col gap-5">
+            <div class="client-information-primary-bar">Client Information</div>
+            <div class="client-information-secondary-bar">
+              Privacy Agreement
             </div>
-
-            <div>
-              <input type="checkbox" id="br" name="br" />
-              <label for="br" class="font-medium">Business Registration</label>
+            <div class="client-information-secondary-bar">
+              Engagement Letter
             </div>
-
-            <div>
-              <input type="checkbox" id="itin" name="itin" />
-              <label for="itin" class="font-medium"
-                >ITIN Registration (if applicable)</label
-              >
-            </div>
-
-            <div>
-              <input type="checkbox" id="nwe" name="nwe" />
-              <label for="nwe" class="font-medium">Net Worth Evaluation</label>
-            </div>
-          </fieldset>
-          <textarea
-            placeholder="If no, please specify your tax residency:"
-            class="information-tertiary-field w-full"
-            rows="4"
-          ></textarea>
-          <button class="hero-btn w-fit" id="info-1-btn">Next</button>
-        </form>
-        <div class="form-step-div">
-          <span class="font-bold">2. Privary Agreement</span>
-        </div>
-        <div class="form-step-div">
-          <span class="font-bold">3. Engagement Letter</span>
+          </div>
         </div>
       </div>
-      <div class="w-1/3 flex flex-col gap-5">
-        <div class="client-information-primary-bar">Client Information</div>
-        <div class="client-information-secondary-bar">Privacy Agreement</div>
-        <div class="client-information-secondary-bar">Engagement Letter</div>
-      </div>
     </div>
-  </div>
-</div>
+    <script src="./scripts.js"></script>
+  </body>
+</html>

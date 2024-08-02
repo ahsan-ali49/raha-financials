@@ -109,34 +109,6 @@ const loadPage = (page, section) => {
             loadPage(serviceId, `${serviceId}-section`);
           });
         });
-        // const links = document.querySelectorAll('.navlink');
-        // console.log(links);
-        // const serviceModal = document.getElementById('navbar-modal');
-        // const IndustryModal = document.getElementById('industry-modal');
-
-        // links[0].addEventListener('mouseenter', (e) => {
-        //     serviceModal.classList.remove('hidden');
-        // });
-
-        // links[0].addEventListener('mouseleave', () => {
-        //     serviceModal.classList.add('hidden');
-        // });
-
-        // links[1].addEventListener('mouseenter', (e) => {
-        //     IndustryModal.classList.remove('hidden');
-        // });
-
-        // links[1].addEventListener('mouseleave', () => {
-        //     IndustryModal.classList.add('hidden');
-        // });
-
-        // modal.addEventListener('mouseenter', () => {
-        //     modal.classList.remove('hidden');
-        // });
-
-        // modal.addEventListener('mouseleave', () => {
-        //     modal.classList.add('hidden');
-        // });
       } else if (page == "blogs") {
         console.log(page);
         const blogListItems = document.querySelectorAll(".blog-flex-item");
@@ -146,32 +118,6 @@ const loadPage = (page, section) => {
             console.log(blogId);
             loadPage(blogId, blogId);
           });
-        });
-      } else if (page == "information3") {
-        var canvas = document.getElementById("signature-pad");
-
-        function resizeCanvas() {
-          var ratio = Math.max(window.devicePixelRatio || 1, 1);
-          canvas.width = canvas.offsetWidth * ratio;
-          canvas.height = canvas.offsetHeight * ratio;
-          canvas.getContext("2d").scale(ratio, ratio);
-        }
-        window.onresize = resizeCanvas;
-        resizeCanvas();
-
-        var signaturePad = new SignaturePad(canvas, {
-          backgroundColor: "rgb(250,250,250)",
-        });
-
-        const clientNameSpan = document.querySelector(".client-name-span");
-        clientNameSpan.innerHTML = clientName;
-        const servicesListRender = document.querySelector(
-          ".services-list-render"
-        );
-        isChecked.forEach((checkbox) => {
-          servicesListRender.innerHTML += `<li>${
-            selectedServices[checkbox.id]
-          }</li>`;
         });
       }
     })
@@ -276,19 +222,19 @@ const attachEventListeners = () => {
   });
 };
 
-contenLoader = () => {
-  const links = document.querySelectorAll(".navlink");
-  const content = document.getElementById("content");
+// contenLoader = () => {
+//   const links = document.querySelectorAll(".navlink");
+//   const content = document.getElementById("content");
 
-  links.forEach((link) => {
-    link.addEventListener("click", (e) => {
-      e.preventDefault();
-      const page = link.getAttribute("data-page");
-      const section = link.getAttribute("data-section");
-      loadPage(page, section);
-    });
-  });
-};
+//   links.forEach((link) => {
+//     link.addEventListener("click", (e) => {
+//       e.preventDefault();
+//       const page = link.getAttribute("data-page");
+//       const section = link.getAttribute("data-section");
+//       loadPage(page, section);
+//     });
+//   });
+// };
 
 // Initial page load
 // loadPage('');
