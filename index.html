@@ -16,17 +16,15 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <script src="./scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <!-- <script src="./particles.js"></script> -->
   </head>
   <body class="overflow-x-hidden">
-    <div id="content">
-      <!-- Content will be loaded here -->
-    </div>
-
     <!-- Services Page -->
     <div>
       <!-- Navbar -->
-      <div class="px-20 py-2.5 navbar-background">
+      <div class="px-4 md:px-20 py-2.5 navbar-background">
         <div
           class="flex flex-wrap items-center justify-between mx-auto rounded-xl w-full pl-6 pr-2.5 py-2.5 navbar-link"
         >
@@ -91,10 +89,38 @@
         </div>
       </div>
 
+      <!-- Mobile Menu -->
+      <div class="md:hidden" id="mobile-menu">
+        <ul class="flex flex-col gap-y-2 font-medium">
+          <li>
+            <a href="#services" class="block navlink">Services</a>
+          </li>
+          <li>
+            <a href="#industry" class="block navlink">Industries</a>
+          </li>
+          <li>
+            <a href="./blogs.html" class="block navlink">Insights</a>
+          </li>
+          <li>
+            <a href="./pricing.html" class="block navlink">Pricing</a>
+          </li>
+          <li>
+            <a href="./information1.html" class="block navlink">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+
       <!-- Hero Section -->
-      <div class="px-20 py-2.5">
-        <div class="w-full flex flex-col items-center gap-5 pt-20">
-          <div class="flex flex-col items-center gap-2.5">
+      <div class="px-1 md:px-20 py-2.5">
+        <div
+          class="content-container w-full flex flex-col items-center gap-5 relative"
+        >
+          <div
+            id="particles-js"
+            class="particles-container"
+            style="position: absolute; width: 100%; height: 100%; z-index: 1"
+          ></div>
+          <div class="flex flex-col items-center gap-2.5 pt-20">
             <span class="iamm">I am a</span>
             <div
               class="w-full flex flex-row justify-center gap-2.5 hero-btn-div"
@@ -107,9 +133,10 @@
               <a href="./enterprise.html" class="hero-entr-btn">Enterprise</a>
             </div>
           </div>
-          <div class="flex flex-col items-center gap-3">
+
+          <div class="flex flex-col items-center gap-3 pb-16">
             <div class="flex flex-col items-center justify-center">
-              <span class="hero-primary-heading"
+              <span class="hero-primary-heading md:text-6xl"
                 >What our Accounting Offers</span
               >
               <span class="hero-secondary-heading">IRS Notice Resolution</span>
@@ -126,7 +153,7 @@
         <!-- Accounting Solution Section -->
         <div
           id="services"
-          class="w-full mt-16 flex flex-col items-center gap-2.5 accounting-solution-div"
+          class="w-full flex flex-col items-center gap-2.5 accounting-solution-div relative"
         >
           <h2 class="accounting-heading">
             Our Suite of Business and Accounting Solutions
@@ -306,7 +333,7 @@
           <img
             src="./assets/images/accountingImage5.png"
             alt=""
-            class="absolute right-0 mr-20 mt-96"
+            class="absolute right-0 top-96 mt-24"
           />
         </div>
 
@@ -1253,11 +1280,17 @@
         <div class="w-1/5 footer-col-2">
           <span class="footer-link-heading">Quick Links</span>
           <ul>
-            <li class="footer-link-item">Services</li>
-            <li class="footer-link-item">Industries</li>
-            <li class="footer-link-item">Insights</li>
-            <li class="footer-link-item">Pricing</li>
-            <li class="footer-link-item">Contact</li>
+            <li class="footer-link-item"><a href="#services">Services</a></li>
+            <li class="footer-link-item"><a href="#industry">Industries</a></li>
+            <li class="footer-link-item">
+              <a href="./blogs.html">Insights</a>
+            </li>
+            <li class="footer-link-item">
+              <a href="./pricing.html">Pricing</a>
+            </li>
+            <li class="footer-link-item">
+              <a href="./information1.html">Contact</a>
+            </li>
           </ul>
         </div>
         <div class="w-5/12 footer-col-3">
@@ -1281,7 +1314,6 @@
             class="w-full footer-message-field"
           ></textarea>
           <button class="footer-submit-btn">Submit</button>
-          <form></form>
         </div>
       </div>
       <span class="footer-span"
@@ -1290,5 +1322,7 @@
         firms, each of which is a separate legal entity.</span
       >
     </div>
+    <script src="./app.js"></script>
+    <script src="./scripts.js"></script>
   </body>
 </html>

@@ -14,6 +14,8 @@ const selectedServices = {
 };
 const modalLoader = () => {
   const links = document.querySelectorAll(".navlink");
+  console.log(links);
+
   const serviceModal = document.getElementById("navbar-modal");
   const industryModal = document.getElementById("industry-modal");
 
@@ -77,55 +79,65 @@ const modalLoader = () => {
 
 modalLoader();
 
-const loadPage = (page, section) => {
-  fetch(`${page}.html`)
-    .then((response) => response.text())
-    .then((data) => {
-      // Remove the slide-in class to reset the animation
-      // content.classList.remove('slide-in');
+const carouselContainer = document.querySelector(".carousel-container");
 
-      content.innerHTML = data;
-      // Re-attach the event listener after content is loaded
-      attachEventListeners();
+carouselContainer.addEventListener("mousemove", (e) => {
+  const rect = carouselContainer.getBoundingClientRect();
+  const x = e.clientX - rect.left; // x position within the element
+  const walk =
+    (x / rect.width) * carouselContainer.scrollWidth - rect.width / 2;
+  carouselContainer.scrollLeft = walk;
+});
 
-      if (section) {
-        const sectionElement = document.getElementById(section);
-        if (sectionElement) {
-          sectionElement.scrollIntoView({ behavior: "smooth" });
-        }
-      }
+// const loadPage = (page, section) => {
+//   fetch(`${page}.html`)
+//     .then((response) => response.text())
+//     .then((data) => {
+//       // Remove the slide-in class to reset the animation
+//       // content.classList.remove('slide-in');
 
-      contenLoader();
-      console.log(page);
-      if (page == "services") {
-        console.log(page);
-        const serviceListItems = document.querySelectorAll(
-          ".flex-item-inner-div"
-        );
-        serviceListItems.forEach((item) => {
-          item.addEventListener("click", () => {
-            const serviceId = item.getAttribute("id");
-            console.log(serviceId);
-            loadPage(serviceId, `${serviceId}-section`);
-          });
-        });
-      } else if (page == "blogs") {
-        console.log(page);
-        const blogListItems = document.querySelectorAll(".blog-flex-item");
-        blogListItems.forEach((item) => {
-          item.addEventListener("click", () => {
-            const blogId = item.getAttribute("id");
-            console.log(blogId);
-            loadPage(blogId, blogId);
-          });
-        });
-      }
-    })
-    .catch((error) => {
-      content.innerHTML = "<p>Sorry, the content could not be loaded.</p>";
-      console.error("Error loading page:", error);
-    });
-};
+//       content.innerHTML = data;
+//       // Re-attach the event listener after content is loaded
+//       attachEventListeners();
+
+//       if (section) {
+//         const sectionElement = document.getElementById(section);
+//         if (sectionElement) {
+//           sectionElement.scrollIntoView({ behavior: "smooth" });
+//         }
+//       }
+
+//       contenLoader();
+//       console.log(page);
+//       if (page == "services") {
+//         console.log(page);
+//         const serviceListItems = document.querySelectorAll(
+//           ".flex-item-inner-div"
+//         );
+//         serviceListItems.forEach((item) => {
+//           item.addEventListener("click", () => {
+//             const serviceId = item.getAttribute("id");
+//             console.log(serviceId);
+//             loadPage(serviceId, `${serviceId}-section`);
+//           });
+//         });
+//       } else if (page == "blogs") {
+//         console.log(page);
+//         const blogListItems = document.querySelectorAll(".blog-flex-item");
+//         blogListItems.forEach((item) => {
+//           item.addEventListener("click", () => {
+//             const blogId = item.getAttribute("id");
+//             console.log(blogId);
+//             loadPage(blogId, blogId);
+//           });
+//         });
+//       }
+//     })
+//     .catch((error) => {
+//       content.innerHTML = "<p>Sorry, the content could not be loaded.</p>";
+//       console.error("Error loading page:", error);
+//     });
+// };
 
 const attachEventListeners = () => {
   const information1Button = document.querySelector("#info-1-btn");
@@ -222,21 +234,11 @@ const attachEventListeners = () => {
   });
 };
 
-// contenLoader = () => {
-//   const links = document.querySelectorAll(".navlink");
-//   const content = document.getElementById("content");
+document.addEventListener("DOMContentLoaded", function () {
+  const toggleButton = document.querySelector("[data-collapse-toggle]");
+  const mobileMenu = document.getElementById("mobile-menu");
 
-//   links.forEach((link) => {
-//     link.addEventListener("click", (e) => {
-//       e.preventDefault();
-//       const page = link.getAttribute("data-page");
-//       const section = link.getAttribute("data-section");
-//       loadPage(page, section);
-//     });
-//   });
-// };
-
-// Initial page load
-// loadPage('');
-
-document.addEventListener("DOMContentLoaded", contenLoader);
+  toggleButton.addEventListener("click", function () {
+    mobileMenu.classList.toggle("hidden");
+  });
+});

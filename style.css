@@ -24,6 +24,14 @@ body::-webkit-scrollbar,
 .carousel-container {
   -ms-overflow-style: none; /* Internet Explorer 10+ */
   scrollbar-width: none; /* Firefox */
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding-left: 20px; /* pl-20 equivalent */
+  gap: 1.25rem; /* gap-x-5 equivalent */
+  background-color: transparent;
+  scroll-behavior: smooth; /* Optional: for smooth scrolling effect */
+  cursor: pointer; /* Optional: change cursor to indicate interaction */
 }
 
 .contact-btn {
@@ -229,7 +237,7 @@ body::-webkit-scrollbar,
   /* font-family: 'Uncut Sans'; */
   font-style: normal;
   font-weight: 600;
-  font-size: 95px;
+  /* font-size: 95px; */
   line-height: 100px;
   /* identical to box height, or 105% */
   text-align: center;
