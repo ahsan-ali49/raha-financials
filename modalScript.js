@@ -64,3 +64,12 @@ const modalLoader = () => {
 };
 
 modalLoader();
+
+document.addEventListener("DOMContentLoaded", function () {
+  const toggleButton = document.querySelector("[data-collapse-toggle]");
+  const mobileMenu = document.getElementById("mobile-menu");
+
+  toggleButton.addEventListener("click", function () {
+    mobileMenu.classList.toggle("hidden");
+  });
+});

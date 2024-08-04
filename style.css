@@ -27,7 +27,6 @@ body::-webkit-scrollbar,
   display: flex;
   overflow-x: auto;
   white-space: nowrap;
-  /* padding-left: 20px; pl-20 equivalent */
   gap: 1.25rem; /* gap-x-5 equivalent */
   background-color: transparent;
   scroll-behavior: smooth; /* Optional: for smooth scrolling effect */

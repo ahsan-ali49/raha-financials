@@ -80,7 +80,7 @@
 
 .service-img-cards-2 {
   padding: 25px;
-  width: 48%;
+  width: 100%;
   background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
   border: 1px solid #dadada;
   filter: drop-shadow(0px 100px 40px rgba(176, 176, 176, 0.01))
@@ -88,6 +88,12 @@
     drop-shadow(0px 25px 25px rgba(176, 176, 176, 0.09))
     drop-shadow(0px 6px 14px rgba(176, 176, 176, 0.1));
   border-radius: 15px;
+}
+
+@media (min-width: 640px) { /* For screens 640px and larger */
+  .service-img-cards-2 {
+    width: 48%;
+  }
 }
 
 .service-img-cards-2:hover {
@@ -139,7 +145,7 @@
 .service-work-heading {
   font-style: normal;
   font-weight: 600;
-  font-size: 64px;
+  /* font-size: 64px; */
   line-height: 80px;
   /* identical to box height */
   text-align: center;
