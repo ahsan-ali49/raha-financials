@@ -90,8 +90,8 @@
       </div>
 
       <!-- Mobile Menu -->
-      <div class="md:hidden" id="mobile-menu">
-        <ul class="flex flex-col gap-y-2 font-medium">
+      <div class="hidden md:hidden" id="mobile-menu">
+        <ul class="flex flex-col items-end mr-6 md:mr-0 gap-y-2 font-medium">
           <li>
             <a href="#services" class="block navlink">Services</a>
           </li>
@@ -120,7 +120,7 @@
             class="particles-container"
             style="position: absolute; width: 100%; height: 100%; z-index: 1"
           ></div>
-          <div class="flex flex-col items-center gap-2.5 pt-20">
+          <div class="flex flex-col items-center gap-2.5 pt-5 md:pt-20">
             <span class="iamm">I am a</span>
             <div
               class="w-full flex flex-row justify-center gap-2.5 hero-btn-div"
@@ -136,12 +136,14 @@
 
           <div class="flex flex-col items-center gap-3 pb-16">
             <div class="flex flex-col items-center justify-center">
-              <span class="hero-primary-heading md:text-6xl"
+              <span class="hero-primary-heading text-xl md:text-6xl"
                 >What our Accounting Offers</span
               >
-              <span class="hero-secondary-heading">IRS Notice Resolution</span>
+              <span class="hero-secondary-heading text-xl md:text-6xl"
+                >IRS Notice Resolution</span
+              >
             </div>
-            <p class="hero-para w-3/5">
+            <p class="hero-para w-full md:w-3/5">
               Let us take care of your books, taxes, and payroll while you focus
               on growing your business. Our expert accountants specialize in
               helping small businesses thrive.
@@ -153,16 +155,18 @@
         <!-- Accounting Solution Section -->
         <div
           id="services"
-          class="w-full flex flex-col items-center gap-2.5 accounting-solution-div relative"
+          class="w-full flex flex-col items-center gap-2.5 accounting-solution-div py-4 md:py-8 px-1 md:px-20 relative"
         >
-          <h2 class="accounting-heading">
+          <h2 class="accounting-heading text-xl md:text-6xl w-full md:w-3/5">
             Our Suite of Business and Accounting Solutions
           </h2>
-          <p class="accounting-para">
+          <p class="accounting-para text-md md:text-xl w-full md:w-1/2">
             Full-service accounting solutions for enterprises and small
             businesses. Tax, bookkeeping, payroll, and more.
           </p>
-          <div class="flex flex-row justify-center flex-wrap gap-5 mt-12">
+          <div
+            class="flex flex-row justify-center flex-wrap gap-5 px-1 md:px-0 mt-12"
+          >
             <a href="./bookKeeping.html" class="flex-item-div-primary">
               <div
                 class="flex flex-col gap-5 flex-item-inner-div"
@@ -324,35 +328,37 @@
             </a>
           </div>
 
-          <div class="flex flex-row justify-center gap-2.5 mt-10">
-            <button class="request-consultation-btn">
+          <div class="flex flex-row justify-center gap-2.5 mt-5 md:mt-10">
+            <button class="request-consultation-btn text-sm md:text-xl">
               Request Consultation
             </button>
-            <button class="call-us-btn">Call Us</button>
+            <button class="call-us-btn text-sm md:text-xl">Call Us</button>
           </div>
           <img
             src="./assets/images/accountingImage5.png"
             alt=""
-            class="absolute right-0 top-96 mt-24"
+            class="absolute right-0 top-96 mt-24 hidden md:block"
           />
         </div>
 
         <!-- Booking Section -->
-        <div class="flex flex-row justify-between px-7 mt-20">
-          <div class="w-5/12 flex flex-col gap-2.5">
-            <p class="text-gray-950 consultation-span">
+        <div
+          class="flex flex-row justify-between flex-wrap gap-y-2 md:gap-y-4 px-1 md:px-7 mt-5 md:mt-20"
+        >
+          <div class="w-full md:w-5/12 flex flex-col gap-2.5">
+            <p class="text-gray-950 consultation-span text-4xl md:text-6xl">
               Book your free
               <span class="consultation-span-secondary pr-1"
                 >Consultation today
               </span>
             </p>
-            <p class="consultation-para">
+            <p class="consultation-para text-xl md:text-xl">
               Schedule your consultation with us, and rest assured that our
               Customer Support team will promptly return your call within 24
               hours
             </p>
           </div>
-          <div class="w-5/12">
+          <div class="w-full md:w-5/12 mt-5 md:mt-0">
             <form class="w-full flex flex-col gap-5">
               <div class="w-full flex flex-row gap-5">
                 <input
@@ -397,9 +403,11 @@
         </div>
 
         <!-- Testimony Section -->
-        <div class="flex flex-col gap-4 items-center px-7">
+        <div class="flex flex-col gap-4 items-center px-1 md:px-7">
           <span class="mt-8 testimony-span pr-1">TRUSTED BY</span>
-          <div class="w-full flex flex-row justify-between px-7">
+          <div
+            class="w-full flex flex-row justify-between items-center gap-5 md:gap-0 px-0 md:px-7"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="120"
@@ -580,6 +588,7 @@
               height="28"
               viewBox="0 0 120 28"
               fill="none"
+              class="hidden md:block"
             >
               <g clip-path="url(#clip0_88_1393)">
                 <path
@@ -606,6 +615,7 @@
               height="35"
               viewBox="0 0 145 35"
               fill="none"
+              class="hidden md:block"
             >
               <g
                 clip-path="url(#clip0_88_1395)"
@@ -688,6 +698,7 @@
               height="22"
               viewBox="0 0 162 22"
               fill="none"
+              class="hidden md:block"
             >
               <g clip-path="url(#clip0_88_1403)">
                 <path
@@ -766,10 +777,14 @@
         <div
           class="relative w-full h-full flex flex-col items-center justify-center gap-3 content text-center text-white"
         >
-          <h2 class="w-3/5 foreground-heading text-6xl font-bold">
+          <h2
+            class="w-full md:w-3/5 foreground-heading text-2xl md:text-6xl font-bold"
+          >
             Why Outsourced Accounting Makes a Difference
           </h2>
-          <p class="w-3/5 foreground-para text-xl">
+          <p
+            class="w-full md:w-3/5 foreground-para text-lg md:text-xl px-1 md:px-0"
+          >
             In today’s fast-paced business landscape, staying ahead demands
             focus, innovation, and agility. However, managing your financial
             operations can become a time-consuming and complex endeavor that
@@ -777,25 +792,33 @@
             business. This is where outsourced accounting steps in to create a
             tailor made financial strategy for your business.
           </p>
-          <div class="flex flex-row justify-center gap-5 mt-3">
-            <button class="foreground-btn">Who we are</button>
-            <button class="foreground-btn">Our Services</button>
-            <button class="foreground-btn">Contact us</button>
+          <div class="flex flex-row justify-center gap-2 md:gap-5 mt-3">
+            <button class="foreground-btn px-2 md:py-4 md:px-6">
+              Who we are
+            </button>
+            <button class="foreground-btn px-2 md:py-4 md:px-6">
+              Our Services
+            </button>
+            <button class="foreground-btn px-2 md:py-4 md:px-6">
+              Contact us
+            </button>
           </div>
         </div>
       </div>
 
       <!-- Industry Section -->
-      <div class="px-20 py-2.5" id="industry">
-        <div class="w-full flex flex-col items-center gap-12 industry-section">
+      <div class="px-0 md:px-20 py-2.5" id="industry">
+        <div class="w-full flex flex-col items-center gap-12">
           <div class="flex flex-col items-center gap-2.5">
-            <h2 class="industry-heading">
+            <h2
+              class="industry-heading w-4/5 md:w-7/12 text-left md:text-center pl-0 md:pl-0 text-3xl md:text-6xl"
+            >
               Where We Make Waves:
-              <span class="consultation-span-secondary px-1"
+              <span class="consultation-span-secondary px-0"
                 >Our Industry Spectrum</span
               >
             </h2>
-            <p class="industry-para">
+            <p class="industry-para w-full md:w-3/5">
               Industry-specific accounting services for construction,
               healthcare, hospitality, and non-profit organizations.
             </p>
@@ -805,7 +828,7 @@
 
       <!-- Carousel Section -->
       <div
-        class="my-12 flex overflow-x-auto whitespace-nowrap pl-20 gap-x-5 mb-12 carousel-container bg-transparent"
+        class="my-12 flex overflow-x-auto whitespace-nowrap pl-20 gap-x-5 mb-12 carousel-container bg-transparent p-0 md:pl-20"
       >
         <!-- Carousel items -->
         <div class="carousel-item carousel-item-div-primary inline-block w-1/4">
@@ -993,19 +1016,21 @@
 
       <div class="flex flex-col items-center gap-12">
         <div class="flex flex-col items-center gap-2.5">
-          <h2 class="financials-heading">
+          <h2 class="financials-heading text-2xl md:text-6xl">
             Transforming Finances: <br />
             <span class="financials-heading-secondary px-1"
               >RAHA Financials Client Experiences</span
             >
           </h2>
 
-          <p class="financials-para">
+          <p class="financials-para w-full md:w-3/4 text-xl">
             Don't just take our word for it. See what our satisfied customers
             have to say about our services.
           </p>
         </div>
-        <div class="w-full flex flex-row justify-center px-2 gap-1">
+        <div
+          class="w-full flex flex-row justify-center flex-wrap px-2 gap-1 gap-y-5"
+        >
           <div class="flex flex-col gap-3.5 financial-div">
             <div class="financial-inner-div">
               <p class="financial-inner-div-text">
@@ -1264,11 +1289,11 @@
     </div>
 
     <!-- Footer Section -->
-    <div class="w-full footer-div px-20">
+    <div class="w-full footer-div px-1 md:px-20">
       <div
         class="w-full border border-t-0 border-r-0 border-l-0 border-b-1 border-gray-300 footer-inner-div pb-5"
       >
-        <div class="w-1/4 footer-col-1">
+        <div class="w-full md:w-1/4 footer-col-1">
           <img src="./assets/images/footerImage1.png" alt="" />
           <p>
             Our team at RAHA is dedicated to ensuring your books are accurate,
@@ -1277,7 +1302,7 @@
           </p>
           <img src="./assets/images/footerImage2.png" alt="" />
         </div>
-        <div class="w-1/5 footer-col-2">
+        <div class="w-1/5 footer-col-2 hidden md:block">
           <span class="footer-link-heading">Quick Links</span>
           <ul>
             <li class="footer-link-item"><a href="#services">Services</a></li>
@@ -1293,9 +1318,9 @@
             </li>
           </ul>
         </div>
-        <div class="w-5/12 footer-col-3">
-          <span class="footer-form-heading">Reach out to us</span>
-          <div class="w-full footer-form-div">
+        <div class="w-5/12 hidden md:block footer-col-3 flex flex-col gap-2.5">
+          <span class="footer-form-heading mb-2.5">Reach out to us</span>
+          <div class="w-full footer-form-div my-2.5">
             <input
               type="text"
               placeholder="Full Name"
@@ -1311,7 +1336,7 @@
             name="message"
             id="message"
             placeholder="Message"
-            class="w-full footer-message-field"
+            class="w-full footer-message-field mb-2.5"
           ></textarea>
           <button class="footer-submit-btn">Submit</button>
         </div>

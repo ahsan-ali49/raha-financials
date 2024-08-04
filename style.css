@@ -27,7 +27,7 @@ body::-webkit-scrollbar,
   display: flex;
   overflow-x: auto;
   white-space: nowrap;
-  padding-left: 20px; /* pl-20 equivalent */
+  /* padding-left: 20px; pl-20 equivalent */
   gap: 1.25rem; /* gap-x-5 equivalent */
   background-color: transparent;
   scroll-behavior: smooth; /* Optional: for smooth scrolling effect */
@@ -230,14 +230,8 @@ body::-webkit-scrollbar,
 }
 
 .hero-primary-heading {
-  /* Financial team that’s */
-
-  /* height: 100px; */
-
-  /* font-family: 'Uncut Sans'; */
   font-style: normal;
   font-weight: 600;
-  /* font-size: 95px; */
   line-height: 100px;
   /* identical to box height, or 105% */
   text-align: center;
@@ -248,14 +242,8 @@ body::-webkit-scrollbar,
 }
 
 .hero-secondary-heading {
-  /* naunced */
-
-  /* height: 100px; */
-
-  /* font-family: 'Uncut Sans'; */
   font-style: normal;
   font-weight: 600;
-  font-size: 95px;
   line-height: 100px;
   /* identical to box height, or 105% */
   text-align: center;
@@ -270,13 +258,9 @@ body::-webkit-scrollbar,
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  /* text-fill-color: transparent; */
 }
 
 .hero-para {
-  /* Let us take care of your books, taxes, and payroll while you focus on growing your business. Our expert accountants specialize in helping small businesses thrive. */
-
-  /* font-family: 'Uncut Sans'; */
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -307,8 +291,6 @@ body::-webkit-scrollbar,
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
-  /* line-height: 25px; */
-  /* identical to box height */
   letter-spacing: -0.02em;
   color: white;
 
@@ -327,10 +309,6 @@ body::-webkit-scrollbar,
 }
 
 .accounting-solution-div {
-  /* Frame 10 */
-
-  /* Auto layout */
-  padding: 35px 75px;
   isolation: isolate;
 
   background: radial-gradient(
@@ -343,46 +321,21 @@ body::-webkit-scrollbar,
   background-blend-mode: normal, lighten, normal;
   border-radius: 25px;
 
-  /* Inside auto layout */
-  flex: none;
-  order: 1;
-  align-self: stretch;
-  flex-grow: 0;
 }
 
 .accounting-heading {
-  /* Our Suite of Business and Accounting Solutions */
 
-  width: 857px;
-  /* height: 160px; */
-
-  /* font-family: 'Uncut Sans'; */
   font-style: normal;
   font-weight: 600;
-  font-size: 64px;
-  line-height: 80px;
   text-align: center;
   letter-spacing: -0.05em;
-
   /* White */
   color: #ffffff;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
 }
 
 .accounting-para {
-  /* Full-service accounting solutions for enterprises and small businesses. Tax, bookkeeping, payroll, and more. */
-
-  width: 634px;
-  height: 50px;
-
-  /* font-family: 'Uncut Sans'; */
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
   line-height: 25px;
   text-align: center;
   letter-spacing: -0.03em;
@@ -397,7 +350,7 @@ body::-webkit-scrollbar,
   /* Auto layout */
   padding: 10px;
 
-  width: 32%;
+  /* width: 32%; */
   /* height: 239px; */
 
   background: rgba(255, 255, 255, 0.1);
@@ -412,6 +365,17 @@ body::-webkit-scrollbar,
 .flex-item-div-primary:hover {
   border: 1.5px solid white;
 }
+
+.flex-item-div-primary {
+  width: 100%; /* Default for mobile screens */
+}
+
+@media (min-width: 640px) { /* For screens 640px and larger */
+  .flex-item-div-primary {
+    width: 32%;
+  }
+}
+
 
 .flex-item-div-secondary {
   /* Frame 1000003020 */
@@ -558,12 +522,8 @@ body::-webkit-scrollbar,
   padding: 15px 25px;
   gap: 10px;
 
-  width: 246px;
-  height: 55px;
-
   font-style: normal;
   font-weight: 600;
-  font-size: 20px;
   line-height: 25px;
   /* identical to box height */
   letter-spacing: -0.02em;
@@ -593,12 +553,8 @@ body::-webkit-scrollbar,
   padding: 15px 25px;
   gap: 10px;
 
-  width: 114px;
-  height: 55px;
-
   font-style: normal;
   font-weight: 600;
-  font-size: 20px;
   line-height: 25px;
   /* identical to box height */
   letter-spacing: -0.02em;
@@ -617,20 +573,11 @@ body::-webkit-scrollbar,
 }
 
 .consultation-span {
-  /* Book your free Consultation today */
 
-  width: 521px;
-  height: 160px;
-
-  /* font-family: 'Uncut Sans'; */
   font-style: normal;
   font-weight: 600;
-  font-size: 64px;
   line-height: 80px;
   letter-spacing: -0.05em;
-
-  /* Black */
-  /* color: #000000; */
 
   /* Inside auto layout */
   flex: none;
@@ -654,13 +601,13 @@ body::-webkit-scrollbar,
 .consultation-para {
   /* Schedule your consultation with us, and rest assured that our Customer Support team will promptly return your call within 24 hours */
 
-  width: 451px;
-  height: 75px;
+  /* width: 451px;
+  height: 75px; */
 
   /* font-family: 'Uncut Sans'; */
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
+  /* font-size: 20px; */
   line-height: 25px;
   letter-spacing: -0.03em;
 
@@ -829,8 +776,7 @@ body::-webkit-scrollbar,
   padding: 15px 25px;
   gap: 10px;
 
-  width: 162px;
-  height: 55px;
+  width: fit-content;
 
   font-style: normal;
   font-weight: 600;
@@ -904,8 +850,7 @@ body::-webkit-scrollbar,
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 15px 25px;
-  gap: 10px;
+  /* padding: 15px 25px; */
 
   height: 55px;
 
@@ -1002,35 +947,19 @@ body::-webkit-scrollbar,
 }
 
 .industry-heading {
-  /* Where We Make Waves: Our Industry Spectrum */
-
-  width: 638px;
-  height: 160px;
-
-  /* font-family: 'Uncut Sans'; */
   font-style: normal;
   font-weight: 600;
-  font-size: 64px;
+  /* font-size: 64px; */
   line-height: 80px;
   text-align: center;
   letter-spacing: -0.05em;
 
   /* Black */
   color: #000000;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
 }
 
 .industry-para {
-  /* Industry-specific accounting services for construction, healthcare, hospitality, and non-profit organizations. */
 
-  width: 634px;
-  height: 50px;
-
-  /* font-family: 'Uncut Sans'; */
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -1095,10 +1024,7 @@ body::-webkit-scrollbar,
 }
 
 .carousel-item-heading-secondary {
-  /* In hospitality and food services, where guest experiences meet delectable creations, financial finesse is a must. */
-  /* height: 69px; */
 
-  /* font-family: 'Uncut Sans'; */
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -1196,25 +1122,14 @@ body::-webkit-scrollbar,
 }
 
 .financials-heading {
-  /* Transforming Finances: RAHA Financials Client Experiences */
-
-  /* width: 1028px; */
-  height: 160px;
-
-  /* font-family: 'Uncut Sans'; */
   font-style: normal;
   font-weight: 600;
-  font-size: 64px;
+  /* font-size: 64px; */
   line-height: 80px;
   text-align: center;
   letter-spacing: -0.05em;
 
   color: black;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
 }
 
 .financials-heading-secondary {
@@ -1231,15 +1146,13 @@ body::-webkit-scrollbar,
 }
 
 .financials-para {
-  /* Don't just take our word for it. See what our satisfied customers have to say about our services. */
 
-  width: 600px;
   height: 50px;
 
   /* font-family: 'Uncut Sans'; */
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
+  /* font-size: 20px; */
   line-height: 25px;
   text-align: center;
   letter-spacing: -0.03em;
