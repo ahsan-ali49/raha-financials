@@ -1828,8 +1828,8 @@ font-family: "Uncut Sans"; */
 
 .financial-carousel-item {
   display: inline-block;
-  /* width: 100%; */
-  /* flex: 0 0 auto; */
+  width: 100%;
+  flex: 0 0 auto;
 }
 
 .financial-carousel-item img {
