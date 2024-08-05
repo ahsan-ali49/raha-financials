@@ -125,45 +125,10 @@ body::-webkit-scrollbar,
   flex-grow: 0;
 }
 
-.hero-btn-div {
-  padding: 5px;
-  border-radius: 39px;
-  opacity: 0px;
-  background: #ececec;
-}
-
-.hero-indv-btn {
-  /* Frame 7 */
-
-  box-sizing: border-box;
-
-  /* Auto layout */
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 10px 15px;
-  gap: 10px;
-
-  width: 237px;
-  /* height: 50px; */
-
-  /* White */
-  background: #ffffff;
-  border: 1.5px solid #1445c2;
-  border-radius: 31px;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  align-self: stretch;
-  flex-grow: 0;
-}
-
 .hero-indv-btn-text {
   /* Individual/Small Business */
 
-  width: 207px;
+  /* width: 207px; */
   /* height: 23px; */
 
   /* font-family: 'Uncut Sans'; */
@@ -191,120 +156,700 @@ body::-webkit-scrollbar,
   flex-grow: 0;
 }
 
-.hero-entr-btn {
-  /* Frame 1000003054 */
-
-  /* Auto layout */
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 10px 20px;
-  gap: 10px;
-
-  width: 124px;
-  height: 50px;
-
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 22px;
-  /* identical to box height */
-  letter-spacing: -0.02em;
-  color: white;
-
-  /* Main Radial */
-  background: radial-gradient(
-    46.19% 50.94% at 50% 100%,
-    #587edb 0%,
-    #1445c2 100%
-  );
-  border-radius: 100px;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 1;
-  align-self: stretch;
-  flex-grow: 0;
-}
-
 .hero-primary-heading {
+  color: var(--Black, #000);
+  text-align: center;
+  /* font-family: "Uncut Sans"; */
+  font-size: 38px;
   font-style: normal;
   font-weight: 600;
-  line-height: 100px;
-  /* identical to box height, or 105% */
-  text-align: center;
-  letter-spacing: -0.06em;
-
-  /* Black */
-  color: #000000;
+  line-height: 100%; /* 38px */
+  letter-spacing: -2.28px;
 }
 
 .hero-secondary-heading {
-  font-style: normal;
-  font-weight: 600;
-  line-height: 100px;
-  /* identical to box height, or 105% */
-  text-align: center;
-  letter-spacing: -0.06em;
-
-  /* Main Radial */
-  background: radial-gradient(
-    46.19% 50.94% at 50% 100%,
-    #587edb 0%,
-    #1445c2 100%
+  background: var(
+    --Main-Radial,
+    radial-gradient(46.19% 50.94% at 50% 100%, #587edb 0%, #1445c2 100%)
   );
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-clip: text;
+  /* font-family: "Uncut Sans"; */
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: -2.28px;
 }
 
 .hero-para {
+  color: var(--Black, #000);
+  text-align: center;
+  /* font-family: "Uncut Sans"; */
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 22px;
-  text-align: center;
-  letter-spacing: -0.03em;
+  line-height: normal;
+  letter-spacing: -0.48px;
+}
 
-  /* Black */
-  color: #000000;
+.hero-btn-div {
+  display: flex;
+  height: 45px;
+  padding: 4px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 29.25px;
+  background: #ececec;
+}
 
-  /* Inside auto layout */
-  flex: none;
-  order: 1;
-  flex-grow: 0;
+.hero-indv-btn {
+  display: flex;
+  padding: 6px 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 7.5px;
+  align-self: stretch;
+  border-radius: 23.25px;
+  border: 1.125px solid var(--Main-Radial, #587edb);
+  background: var(--White, #fff);
+}
+
+.hero-entr-btn {
+  display: flex;
+  padding: 6px 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 7.5px;
+  align-self: stretch;
+  border-radius: 75px;
+  background: var(
+    --Main-Radial,
+    radial-gradient(46.19% 50.94% at 50% 100%, #587edb 0%, #1445c2 100%)
+  );
+  color: var(--White, #fff);
+  /* font-family: "Uncut Sans"; */
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.28px;
 }
 
 .hero-btn {
-  /* Frame 4 */
-
-  /* Auto layout */
   display: flex;
-  flex-direction: row;
+  padding: 10px 20px;
   align-items: center;
-  padding: 15px 25px;
   gap: 10px;
-
-  height: 55px;
+  border-radius: 10px;
+  background: var(
+    --Main-Radial,
+    radial-gradient(46.19% 50.94% at 50% 100%, #587edb 0%, #1445c2 100%)
+  );
+  color: var(--White, #fff);
+  /* font-family: "Uncut Sans"; */
+  font-size: 16px;
   font-style: normal;
   font-weight: 600;
-  font-size: 20px;
-  letter-spacing: -0.02em;
-  color: white;
+  line-height: normal;
+  letter-spacing: -0.32px;
+}
 
-  /* Main Radial */
-  background: radial-gradient(
-    46.19% 50.94% at 50% 100%,
-    #587edb 0%,
-    #1445c2 100%
-  );
+.accounting-heading {
+  color: var(--White, #fff);
+  text-align: center;
+  /* font-family: "Uncut Sans"; */
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -1.6px;
+}
+
+.accounting-para {
+  color: var(--White, #fff);
+  text-align: center;
+  /* font-family: "Uncut Sans"; */
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.48px;
+}
+.div-item-span {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.54px;
+}
+
+.div-item-para {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.42px;
+  opacity: 0.7;
+}
+
+.request-consultation-btn {
+  display: flex;
+  padding: 10px 20px;
+  align-items: center;
+  gap: 10px;
   border-radius: 10px;
+  background: var(--White, #fff);
+  color: var(--Black, #000);
+  /* font-family: "Uncut Sans"; */
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.32px;
+}
 
-  /* Inside auto layout */
-  flex: none;
-  order: 2;
-  flex-grow: 0;
+.call-us-btn {
+  display: flex;
+  padding: 10px 20px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  border: 2px solid var(--White, #fff);
+  color: var(--White, #fff);
+  /* font-family: "Uncut Sans"; */
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.32px;
+}
+
+.consultation-span {
+  color: var(--Black, #000);
+  text-align: center;
+  /* font-family: "Uncut Sans"; */
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -1.6px;
+}
+.consultation-span-secondary {
+  background: var(
+    --Main-Radial,
+    radial-gradient(46.19% 50.94% at 50% 100%, #587edb 0%, #1445c2 100%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* font-family: "Uncut Sans"; */
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -1.6px;
+}
+
+.consultation-para {
+  color: var(--Black, #000);
+  text-align: center;
+  /* font-family: "Uncut Sans"; */
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.48px;
+}
+
+.consultation-form-field {
+  display: flex;
+  padding: 10px 20px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  background: var(
+    --Main-Radial,
+    radial-gradient(46.19% 50.94% at 50% 100%, #587edb 0%, #1445c2 100%)
+  );
+  color: var(--White, #fff);
+  width: fit-content;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.32px;
+}
+
+.foreground-heading {
+  color: var(--White, #fff);
+  text-align: center;
+  /* font-family: "Uncut Sans"; */
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -1.6px;
+}
+
+.foreground-btn {
+  display: flex;
+  /* width: 134px; */
+  padding: 10px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  background: #f6f6f6;
+  color: var(--Black, #000);
+  /* font-family: "Uncut Sans"; */
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.32px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.foreground-para {
+  color: var(--White, #fff);
+  text-align: center;
+  /* font-family: "Uncut Sans"; */
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.48px;
+}
+
+.industry-heading {
+  color: var(--Black, #000);
+  text-align: center;
+  /* font-family: "Uncut Sans"; */
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -1.6px;
+}
+
+.industry-para {
+  color: var(--Black, #000);
+  text-align: center;
+  /* font-family: "Uncut Sans"; */
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.48px;
+}
+.request-consultation-btn-secondary {
+  display: flex;
+  padding: 10px 20px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  background: var(--Main-Radial, radial-gradient(46.19% 50.94% at 50% 100%, #587EDB 0%, #1445C2 100%));
+  color: var(--White, #FFF);
+  /* font-family: "Uncut Sans"; */
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.32px;
+}
+.request-call-btn{
+  display: flex;
+  padding: 10px 20px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  border: 1.6px solid var(--Main-Radial, #587EDB);
+  color: #587EDB;
+}
+.financials-heading {
+  color: var(--Black, #000);
+text-align: center;
+/* font-family: "Uncut Sans"; */
+font-size: 32px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: -1.6px;
+}
+.financials-para {
+  color: var(--Black, #000);
+  text-align: center;
+  /* font-family: "Uncut Sans"; */
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.48px;
+}
+.financials-heading-secondary {
+  background: var(--Main-Radial, radial-gradient(46.19% 50.94% at 50% 100%, #587EDB 0%, #1445C2 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* font-family: "Uncut Sans"; */
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -1.6px;
+}
+
+@media (min-width: 640px) {
+  /* For screens 640px and larger */
+  .financials-para {
+    color: var(--Black, #000);
+    text-align: center;
+    /* font-family: "Uncut Sans"; */
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.6px;
+  }
+  .financials-heading-secondary {
+    background: var(--Main-Radial, radial-gradient(46.19% 50.94% at 50% 100%, #587EDB 0%, #1445C2 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* font-family: "Uncut Sans"; */
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -3.2px;
+  }
+  .financials-heading {
+    color: var(--Black, #000);
+    text-align: center;
+    /* font-family: "Uncut Sans"; */
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -3.2px;
+  }
+  .request-call-btn {
+    display: flex;
+    padding: 15px 25px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    border: 1.6px solid var(--Main-Radial, #587EDB);
+    /* font-family: "Uncut Sans"; */
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.4px;
+    color: #587EDB;
+  }
+  .request-consultation-btn-secondary {
+    display: flex;
+    /* width: 246px; */
+    padding: 15px 25px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    background: var(
+      --Main-Radial,
+      radial-gradient(46.19% 50.94% at 50% 100%, #587edb 0%, #1445c2 100%)
+    );
+    color: var(--White, #FFF);
+    /* font-family: "Uncut Sans"; */
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.4px;
+  }
+  .industry-para {
+    color: var(--Black, #000);
+    text-align: center;
+    /* font-family: "Uncut Sans"; */
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.6px;
+  }
+  .industry-heading {
+    color: var(--Black, #000);
+    text-align: center;
+    /* font-family: "Uncut Sans"; */
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -3.2px;
+  }
+  .foreground-para {
+    color: var(--White, #fff);
+    text-align: center;
+    /* font-family: "Uncut Sans"; */
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.6px;
+  }
+
+  .foreground-btn {
+    display: flex;
+    padding: 15px 25px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    background: #f6f6f6;
+    color: var(--Black, #000);
+    /* font-family: "Uncut Sans"; */
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.4px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  .foreground-heading {
+    color: var(--White, #fff);
+    text-align: center;
+    /* font-family: "Uncut Sans"; */
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -3.2px;
+  }
+  .consultation-form-field {
+    width: fit-content;
+    padding: 15px 25px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    background: var(
+      --Main-Radial,
+      radial-gradient(46.19% 50.94% at 50% 100%, #587edb 0%, #1445c2 100%)
+    );
+    color: var(--White, #fff);
+    /* font-family: "Uncut Sans"; */
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.4px;
+  }
+
+  .consultation-para {
+    color: var(--Black, #000);
+    /* font-family: "Uncut Sans"; */
+    text-align: left;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.6px;
+  }
+
+  .consultation-span-secondary {
+    background: var(
+      --Main-Radial,
+      radial-gradient(46.19% 50.94% at 50% 100%, #587edb 0%, #1445c2 100%)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* font-family: "Uncut Sans"; */
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -3.2px;
+  }
+  .consultation-span {
+    color: var(--Black, #000);
+    /* font-family: "Uncut Sans"; */
+    text-align: left;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -3.2px;
+  }
+  .call-us-btn {
+    display: flex;
+    padding: 15px 25px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    border: 2px solid var(--White, #fff);
+    /* color: var(--White, #FFF);
+font-family: "Uncut Sans"; */
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.4px;
+  }
+  .request-consultation-btn {
+    display: flex;
+    /* width: 246px; */
+    padding: 15px 25px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    background: var(--White, #fff);
+    color: var(--Black, #000);
+    /* font-family: "Uncut Sans"; */
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.4px;
+  }
+  .div-item-para {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.54px;
+    opacity: 0.7;
+  }
+  .div-item-span {
+    /* color: var(--Black, #000); */
+    /* font-family: "Uncut Sans"; */
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.66px;
+  }
+  .accounting-para {
+    color: var(--White, #fff);
+    text-align: center;
+    /* font-family: "Uncut Sans"; */
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.6px;
+  }
+  .accounting-heading {
+    color: var(--White, #fff);
+    text-align: center;
+    /* font-family: "Uncut Sans"; */
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -3.2px;
+  }
+
+  .hero-btn {
+    display: flex;
+    padding: 15px 25px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    background: var(
+      --Main-Radial,
+      radial-gradient(46.19% 50.94% at 50% 100%, #587edb 0%, #1445c2 100%)
+    );
+    color: var(--White, #fff);
+    /* font-family: "Uncut Sans"; */
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.4px;
+  }
+  .hero-entr-btn {
+    display: flex;
+    padding: 10px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    border-radius: 100px;
+    background: var(
+      --Main-Radial,
+      radial-gradient(46.19% 50.94% at 50% 100%, #587edb 0%, #1445c2 100%)
+    );
+    color: var(--White, #fff);
+    /* font-family: "Uncut Sans"; */
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.36px;
+  }
+
+  .hero-indv-btn {
+    display: flex;
+    padding: 10px 15px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    border-radius: 31px;
+    border: 1.5px solid var(--Main-Radial, #587edb);
+    background: var(--White, #fff);
+  }
+
+  .hero-primary-heading {
+    color: var(--Black, #000);
+    text-align: center;
+    /* font-family: "Uncut Sans"; */
+    font-size: 95px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100px; /* 105.263% */
+    letter-spacing: -5.7px;
+  }
+  .hero-secondary-heading {
+    text-align: center;
+    /* font-family: "Uncut Sans"; */
+    font-size: 95px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100px; /* 105.263% */
+    letter-spacing: -5.7px;
+    background: var(
+      --Main-Radial,
+      radial-gradient(46.19% 50.94% at 50% 100%, #587edb 0%, #1445c2 100%)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .hero-para {
+    color: var(--Black, #000);
+    text-align: center;
+    /* font-family: "Uncut Sans"; */
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.54px;
+  }
+
+  .hero-btn-div {
+    display: flex;
+    height: 60px;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 39px;
+    background: #ececec;
+  }
 }
 
 .accounting-solution-div {
@@ -319,28 +864,6 @@ body::-webkit-scrollbar,
     url(.jpg);
   background-blend-mode: normal, lighten, normal;
   border-radius: 25px;
-
-}
-
-.accounting-heading {
-
-  font-style: normal;
-  font-weight: 600;
-  text-align: center;
-  letter-spacing: -0.05em;
-  /* White */
-  color: #ffffff;
-}
-
-.accounting-para {
-  font-style: normal;
-  font-weight: 400;
-  line-height: 25px;
-  text-align: center;
-  letter-spacing: -0.03em;
-
-  /* White */
-  color: #ffffff;
 }
 
 .flex-item-div-primary {
@@ -369,12 +892,12 @@ body::-webkit-scrollbar,
   width: 100%; /* Default for mobile screens */
 }
 
-@media (min-width: 640px) { /* For screens 640px and larger */
+@media (min-width: 640px) {
+  /* For screens 640px and larger */
   .flex-item-div-primary {
     width: 32%;
   }
 }
-
 
 .flex-item-div-secondary {
   /* Frame 1000003020 */
@@ -415,30 +938,6 @@ body::-webkit-scrollbar,
   background: white;
   color: black;
 }
-
-.div-item-span {
-  /* Bookkeeping */
-
-  width: 100%;
-
-  /* font-family: 'Uncut Sans'; */
-  font-style: normal;
-  font-weight: 600;
-  font-size: 22px;
-  line-height: 28px;
-  /* identical to box height */
-  letter-spacing: -0.03em;
-
-  /* Black */
-  /* color: white; */
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  align-self: stretch;
-  flex-grow: 0;
-}
-
 .div-item-span-secondary {
   /* Software Selection and Setup */
 
@@ -458,30 +957,6 @@ body::-webkit-scrollbar,
   /* Inside auto layout */
   flex: none;
   order: 0;
-  align-self: stretch;
-  flex-grow: 0;
-}
-
-.div-item-para {
-  /* This is the foundation of good financial management, tracking income and expenses. */
-
-  width: 100%;
-
-  /* font-family: 'Uncut Sans'; */
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 22px;
-  letter-spacing: -0.03em;
-
-  /* Black */
-  /* color: white; */
-
-  opacity: 0.7;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 1;
   align-self: stretch;
   flex-grow: 0;
 }
@@ -507,115 +982,6 @@ body::-webkit-scrollbar,
   flex: none;
   order: 1;
   align-self: stretch;
-  flex-grow: 0;
-}
-
-.request-consultation-btn {
-  /* Frame 4 */
-
-  /* Auto layout */
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  padding: 15px 25px;
-  gap: 10px;
-
-  font-style: normal;
-  font-weight: 600;
-  line-height: 25px;
-  /* identical to box height */
-  letter-spacing: -0.02em;
-
-  /* Black */
-  color: #000000;
-
-  /* White */
-  background: #ffffff;
-  border-radius: 10px;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-}
-
-.call-us-btn {
-  /* Frame 1000003023 */
-
-  box-sizing: border-box;
-
-  /* Auto layout */
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 15px 25px;
-  gap: 10px;
-
-  font-style: normal;
-  font-weight: 600;
-  line-height: 25px;
-  /* identical to box height */
-  letter-spacing: -0.02em;
-
-  /* White */
-  color: #ffffff;
-
-  /* White */
-  border: 2px solid #ffffff;
-  border-radius: 10px;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-}
-
-.consultation-span {
-
-  font-style: normal;
-  font-weight: 600;
-  line-height: 80px;
-  letter-spacing: -0.05em;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-}
-
-.consultation-span-secondary {
-  /* Main Radial */
-  background: radial-gradient(
-    46.19% 50.94% at 50% 100%,
-    #587edb 0%,
-    #1445c2 100%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  /* text-fill-color: transparent; */
-}
-
-.consultation-para {
-  /* Schedule your consultation with us, and rest assured that our Customer Support team will promptly return your call within 24 hours */
-
-  /* width: 451px;
-  height: 75px; */
-
-  /* font-family: 'Uncut Sans'; */
-  font-style: normal;
-  font-weight: 400;
-  /* font-size: 20px; */
-  line-height: 25px;
-  letter-spacing: -0.03em;
-
-  /* Black */
-  color: #000000;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 1;
   flex-grow: 0;
 }
 
@@ -765,37 +1131,6 @@ body::-webkit-scrollbar,
   border-radius: 15px;
 }
 
-.consultation-form-field {
-  /* Frame 4 */
-
-  /* Auto layout */
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 15px 25px;
-  gap: 10px;
-
-  width: fit-content;
-
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 25px;
-  /* identical to box height */
-  letter-spacing: -0.02em;
-
-  /* White */
-  color: #ffffff;
-
-  /* Main Radial */
-  background: radial-gradient(
-    46.19% 50.94% at 50% 100%,
-    #587edb 0%,
-    #1445c2 100%
-  );
-  border-radius: 10px;
-}
-
 .testimony-span {
   /* Main Radial */
   background: radial-gradient(
@@ -829,47 +1164,6 @@ body::-webkit-scrollbar,
   position: relative;
   z-index: 1;
   background-color: rgba(0, 0, 0, 0.5);
-}
-
-.foreground-heading {
-  margin: 0;
-  padding: 0;
-}
-
-.foreground-para {
-  font-style: normal;
-  font-weight: 400;
-  line-height: 25px;
-  text-align: center;
-
-  color: #ffffff;
-}
-
-.foreground-btn {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  /* padding: 15px 25px; */
-
-  height: 55px;
-
-  background: #f6f6f6;
-  border-radius: 10px;
-
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 25px;
-
-  letter-spacing: -0.02em;
-
-  color: #000000;
-
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-
-  transition: background-color 0.3s, color 0.3s;
 }
 
 .foreground-btn:hover {
@@ -945,36 +1239,6 @@ body::-webkit-scrollbar,
   color: #fff;
 }
 
-.industry-heading {
-  font-style: normal;
-  font-weight: 600;
-  /* font-size: 64px; */
-  line-height: 80px;
-  text-align: center;
-  letter-spacing: -0.05em;
-
-  /* Black */
-  color: #000000;
-}
-
-.industry-para {
-
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 25px;
-  text-align: center;
-  letter-spacing: -0.03em;
-
-  /* Black */
-  color: #000000;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-}
-
 .carousel-item-div-primary {
   background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%),
     radial-gradient(
@@ -1023,7 +1287,6 @@ body::-webkit-scrollbar,
 }
 
 .carousel-item-heading-secondary {
-
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -1034,61 +1297,6 @@ body::-webkit-scrollbar,
   color: #000000;
 
   opacity: 0.7;
-}
-
-.request-consultation-btn {
-  padding: 15px 25px;
-
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 25px;
-  /* identical to box height */
-  letter-spacing: -0.02em;
-
-  /* White */
-  color: #ffffff;
-
-  /* Main Radial */
-  background: radial-gradient(
-    46.19% 50.94% at 50% 100%,
-    #587edb 0%,
-    #1445c2 100%
-  );
-  border-radius: 10px;
-}
-
-.request-call-btn {
-  /* Frame 1000003096 */
-
-  box-sizing: border-box;
-
-  /* Auto layout */
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 15px 25px;
-  gap: 10px;
-
-  width: 114px;
-  height: 55px;
-
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 25px;
-  /* identical to box height */
-  letter-spacing: -0.02em;
-  color: #1445c2;
-
-  border-radius: 10px;
-  background-color: white;
-  border: 1.3px solid #1445c2;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 1;
-  flex-grow: 0;
 }
 
 .request-call-btn:hover {
@@ -1118,51 +1326,6 @@ body::-webkit-scrollbar,
   -webkit-text-fill-color: transparent;
   background-clip: text;
   /* text-fill-color: transparent; */
-}
-
-.financials-heading {
-  font-style: normal;
-  font-weight: 600;
-  /* font-size: 64px; */
-  line-height: 80px;
-  text-align: center;
-  letter-spacing: -0.05em;
-
-  color: black;
-}
-
-.financials-heading-secondary {
-  /* Main Radial */
-  background: radial-gradient(
-    46.19% 50.94% at 50% 100%,
-    #587edb 0%,
-    #1445c2 100%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  /* text-fill-color: transparent; */
-}
-
-.financials-para {
-
-  height: 50px;
-
-  /* font-family: 'Uncut Sans'; */
-  font-style: normal;
-  font-weight: 400;
-  /* font-size: 20px; */
-  line-height: 25px;
-  text-align: center;
-  letter-spacing: -0.03em;
-
-  /* Black */
-  color: #000000;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 1;
-  flex-grow: 0;
 }
 
 .financial-div {
