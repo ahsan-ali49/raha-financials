@@ -1829,7 +1829,7 @@ font-family: "Uncut Sans"; */
 .financial-carousel-item {
   display: inline-block;
   /* width: 100%; */
-  flex: 0 0 auto;
+  /* flex: 0 0 auto; */
 }
 
 .financial-carousel-item img {
@@ -1837,8 +1837,8 @@ font-family: "Uncut Sans"; */
   border-radius: 0.375rem 0.375rem 0 0;
 }
 
-@media (min-width: 768px) {
-  /* .financial-carousel-item {
-    width: 25%;
-  } */
+@media (min-width: 640px) {
+  .financial-carousel-item {
+    width: 18%;
+  }
 }
