@@ -81,63 +81,61 @@ modalLoader();
 
 const carouselContainer = document.querySelector(".carousel-container");
 
-carouselContainer.addEventListener("mousemove", (e) => {
-  const rect = carouselContainer.getBoundingClientRect();
-  const x = e.clientX - rect.left; // x position within the element
-  const walk =
-    (x / rect.width) * carouselContainer.scrollWidth - rect.width / 2;
-  carouselContainer.scrollLeft = walk;
+let isDown = false;
+let startX;
+let scrollLeft;
+
+// Mouse events for desktop
+carouselContainer.addEventListener("mousedown", (e) => {
+  isDown = true;
+  carouselContainer.classList.add("active");
+  startX = e.pageX - carouselContainer.offsetLeft;
+  scrollLeft = carouselContainer.scrollLeft;
 });
 
-// const loadPage = (page, section) => {
-//   fetch(`${page}.html`)
-//     .then((response) => response.text())
-//     .then((data) => {
-//       // Remove the slide-in class to reset the animation
-//       // content.classList.remove('slide-in');
+carouselContainer.addEventListener("mouseleave", () => {
+  isDown = false;
+  carouselContainer.classList.remove("active");
+});
 
-//       content.innerHTML = data;
-//       // Re-attach the event listener after content is loaded
-//       attachEventListeners();
+carouselContainer.addEventListener("mouseup", () => {
+  isDown = false;
+  carouselContainer.classList.remove("active");
+});
 
-//       if (section) {
-//         const sectionElement = document.getElementById(section);
-//         if (sectionElement) {
-//           sectionElement.scrollIntoView({ behavior: "smooth" });
-//         }
-//       }
+carouselContainer.addEventListener("mousemove", (e) => {
+  if (!isDown) {
+    const rect = carouselContainer.getBoundingClientRect();
+    const x = e.clientX - rect.left; // x position within the element
+    const walk = (x / rect.width) * carouselContainer.scrollWidth - rect.width / 2;
+    carouselContainer.scrollLeft = walk;
+  } else {
+    e.preventDefault();
+    const x = e.pageX - carouselContainer.offsetLeft;
+    const walk = (x - startX) * 2; // Adjust scroll speed
+    carouselContainer.scrollLeft = scrollLeft - walk;
+  }
+});
 
-//       contenLoader();
-//       console.log(page);
-//       if (page == "services") {
-//         console.log(page);
-//         const serviceListItems = document.querySelectorAll(
-//           ".flex-item-inner-div"
-//         );
-//         serviceListItems.forEach((item) => {
-//           item.addEventListener("click", () => {
-//             const serviceId = item.getAttribute("id");
-//             console.log(serviceId);
-//             loadPage(serviceId, `${serviceId}-section`);
-//           });
-//         });
-//       } else if (page == "blogs") {
-//         console.log(page);
-//         const blogListItems = document.querySelectorAll(".blog-flex-item");
-//         blogListItems.forEach((item) => {
-//           item.addEventListener("click", () => {
-//             const blogId = item.getAttribute("id");
-//             console.log(blogId);
-//             loadPage(blogId, blogId);
-//           });
-//         });
-//       }
-//     })
-//     .catch((error) => {
-//       content.innerHTML = "<p>Sorry, the content could not be loaded.</p>";
-//       console.error("Error loading page:", error);
-//     });
-// };
+// Touch events for mobile
+carouselContainer.addEventListener("touchstart", (e) => {
+  isDown = true;
+  startX = e.touches[0].pageX - carouselContainer.offsetLeft;
+  scrollLeft = carouselContainer.scrollLeft;
+});
+
+carouselContainer.addEventListener("touchend", () => {
+  isDown = false;
+});
+
+carouselContainer.addEventListener("touchmove", (e) => {
+  if (!isDown) return;
+  e.preventDefault();
+  const x = e.touches[0].pageX - carouselContainer.offsetLeft;
+  const walk = (x - startX) * 2; // Adjust scroll speed
+  carouselContainer.scrollLeft = scrollLeft - walk;
+});
+
 
 const attachEventListeners = () => {
   const information1Button = document.querySelector("#info-1-btn");
