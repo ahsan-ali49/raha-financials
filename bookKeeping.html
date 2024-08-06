@@ -18,82 +18,93 @@
 
   </head>
   <body>
-    <div id="bookKeeping-section">
-      <div class="px-20 py-2.5 navbar-background">
-        <!-- Navbar -->
-        <div
-          class="flex flex-wrap items-center justify-between mx-auto rounded-xl w-full pl-6 pr-2.5 py-2.5 navbar-link"
-        >
-          <a
-            href="./index.html"
-            class="flex items-center space-x-3 rtl:space-x-reverse"
-          >
-            <img
-              src="./assets/images/navbarLogo.svg"
-              alt="raha Financials logo"
-            />
-          </a>
-          <div
-            class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse"
-          >
-            <a
-              href="./information1.html"
-              class="hidden md:block hover:bg-blue-800 dark:hover:bg-blue-500 contact-btn"
-            >
-              Contact Us
-            </a>
-            <button
-              data-collapse-toggle="navbar-sticky"
-              type="button"
-              class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-              aria-controls="navbar-sticky"
-              aria-expanded="false"
-            >
-              <span class="sr-only">Open main menu</span>
-              <svg
-                class="w-5 h-5"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 17 14"
+    <div>
+            <!-- Navbar -->
+            <div class="px-4 md:px-20 py-2.5 navbar-background">
+              <div
+                class="flex flex-wrap items-center justify-between mx-auto rounded-xl w-full pl-6 pr-2.5 py-2.5 navbar-link"
               >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M1 1h15M1 7h15M1 13h15"
-                />
-              </svg>
-            </button>
-          </div>
-          <div
-            class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
-            id="navbar-sticky"
-          >
-            <ul
-              class="flex flex-col gap-x-9 font-medium rounded-lg rtl:space-x-reverse md:flex-row md:mt-0"
-            >
-              <li>
-                <a href="./index.html#services" class="block navlink"
-                  >Services</a
+                <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                  <img
+                    src="./assets/images/navbarLogo.svg"
+                    alt="raha Financials logo"
+                  />
+                </a>
+                <div
+                  class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse"
                 >
-              </li>
-              <li>
-                <a href="./index.html#industry" class="block navlink"
-                  >Industries</a
+                  <a href="./information1.html" class="hidden md:block contact-btn">
+                    Contact Us
+                  </a>
+                  <button
+                    data-collapse-toggle="navbar-sticky"
+                    type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    aria-controls="navbar-sticky"
+                    aria-expanded="false"
+                  >
+                    <span class="sr-only">Open main menu</span>
+                    <svg
+                      class="w-5 h-5"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 17 14"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M1 1h15M1 7h15M1 13h15"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div
+                  class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+                  id="navbar-sticky"
                 >
-              </li>
-              <li>
-                <a href="./blogs.html" class="block navlink">Insights</a>
-              </li>
-              <li>
-                <a href="./pricing.html" class="block navlink">Pricing</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
+                  <ul
+                    class="flex flex-col gap-x-9 font-medium rounded-lg rtl:space-x-reverse md:flex-row md:mt-0"
+                  >
+                    <li>
+                      <a href="#services" class="block navlink">Services</a>
+                    </li>
+                    <li>
+                      <a href="#industry" class="block navlink">Industries</a>
+                    </li>
+                    <li>
+                      <a href="./blogs.html" class="block navlink">Insights</a>
+                    </li>
+                    <li>
+                      <a href="./pricing.html" class="block navlink">Pricing</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Mobile Menu -->
+            <div class="hidden md:hidden" id="mobile-menu">
+              <ul class="flex flex-col items-end mr-6 md:mr-0 gap-y-2 font-medium">
+                <li>
+                  <a href="#services" class="block navlink">Services</a>
+                </li>
+                <li>
+                  <a href="#industry" class="block navlink">Industries</a>
+                </li>
+                <li>
+                  <a href="./blogs.html" class="block navlink">Insights</a>
+                </li>
+                <li>
+                  <a href="./pricing.html" class="block navlink">Pricing</a>
+                </li>
+                <li>
+                  <a href="./information1.html" class="block navlink">Contact Us</a>
+                </li>
+              </ul>
+            </div>
 
       <!-- Hero Section -->
       <div class="px-1 md:px-20 py-10 flex flex-col gap-16 w-full">
@@ -568,7 +579,7 @@
       </div>
 
     <!-- Footer Section -->
-    <div class="w-full footer-div px-1 md:px-20">
+    <div class="w-full footer-div px-1 md:px-20 mt-5 md:mt-0">
       <div
         class="w-full border border-t-0 border-r-0 border-l-0 border-b-1 border-gray-300 footer-inner-div pb-5 flex-wrap"
       >
