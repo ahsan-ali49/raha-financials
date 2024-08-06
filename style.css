@@ -691,7 +691,7 @@ letter-spacing: -1.6px;
     border-radius: 10px;
     border: 2px solid var(--White, #fff);
     /* color: var(--White, #FFF);
-font-family: "Uncut Sans"; */
+    font-family: "Uncut Sans"; */
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
@@ -751,7 +751,6 @@ font-family: "Uncut Sans"; */
     line-height: normal;
     letter-spacing: -3.2px;
   }
-
   .hero-btn {
     display: flex;
     padding: 15px 25px;
