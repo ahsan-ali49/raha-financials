@@ -1485,7 +1485,7 @@ letter-spacing: -1.6px;
   padding: 50px 0px 20px 0px;
   gap: 25px;
 
-  height: 406px;
+  /* height: 406px; */
 
   background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
   border-top: 1px solid #dadada;
@@ -1516,7 +1516,7 @@ letter-spacing: -1.6px;
 .footer-span {
   /* ©️ 2017 - 2023 RAHA Financials LLC All rights reserved. RAHA Financials refers to the RAHA Financials network and/or one or more of its member firms, each of which is a separate legal entity. */
 
-  width: 1280px;
+  /* width: 1280px; */
   height: 18px;
 
   /* font-family: 'Uncut Sans'; */
