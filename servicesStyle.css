@@ -94,6 +94,26 @@ letter-spacing: -0.48px;
   letter-spacing: -0.48px;
 }
 
+.service-img-card-price {
+  color: var(--Black, #000);
+  /* font-family: "Uncut Sans"; */
+  font-size: 20.8px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.624px;
+}
+
+.service-img-card-title {
+  color: var(--Black, #000);
+  /* font-family: "Uncut Sans"; */
+  font-size: 14.3px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.429px;
+}
+
 @media (min-width: 640px) { /* For screens 640px and larger */
   .service-work-para {
     color: var(--White, #FFF);
@@ -173,26 +193,25 @@ letter-spacing: -0.48px;
   .service-img-cards-2 {
     width: 48%;
   }
-}
-
-.service-img-card-price {
-  color: var(--Black, #000);
-  /* font-family: "Uncut Sans"; */
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  letter-spacing: -0.96px;
-}
-.service-img-card-title {
-  color: var(--Black, #000);
-  /* font-family: "Uncut Sans"; */
-  font-size: 22px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: -0.66px;
-  opacity: 0.7;
+  .service-img-card-price {
+    color: var(--Black, #000);
+    /* font-family: "Uncut Sans"; */
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.96px;
+  }
+  .service-img-card-title {
+    color: var(--Black, #000);
+    /* font-family: "Uncut Sans"; */
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.66px;
+    opacity: 0.7;
+  }
 }
 
 .service-info-para {
