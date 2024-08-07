@@ -1,10 +1,25 @@
+/* styles.css */
+@font-face {
+  font-family: "Uncut Sans";
+  src: url("assets/Webfonts/UncutSans-Regular.woff2") format("woff2"),
+    url("assets/Webfonts/fonts/UncutSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Apply the custom font to the body or specific elements */
+body {
+  font-family: "Uncut Sans", sans-serif;
+}
+
 body {
   width: 100vw;
   background-color: #f7f9fd;
 }
 
 body::-webkit-scrollbar,
-.carousel-container::-webkit-scrollbar, .financial-carousel-container::-webkit-scrollbar {
+.carousel-container::-webkit-scrollbar,
+.financial-carousel-container::-webkit-scrollbar {
   display: none;
 }
 
@@ -12,12 +27,32 @@ body::-webkit-scrollbar,
     animation: slide 1s linear;
 } */
 
-@keyframes slide {
+/* Add these styles to your CSS file */
+#index,
+#enterprise {
+  animation: fadeOut 2s forwards;
+}
+
+@keyframes fadeOut {
   from {
-    transform: translateX(-100%);
+    opacity: 1;
   }
   to {
-    transform: translateX(0);
+    opacity: 0;
+  }
+}
+
+#index,
+#enterprise {
+  animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 
@@ -180,6 +215,7 @@ body::-webkit-scrollbar,
   font-style: normal;
   font-weight: 600;
   line-height: 100%;
+  padding-right: 1px;
   letter-spacing: -2.28px;
 }
 
@@ -451,8 +487,11 @@ body::-webkit-scrollbar,
   align-items: center;
   gap: 10px;
   border-radius: 10px;
-  background: var(--Main-Radial, radial-gradient(46.19% 50.94% at 50% 100%, #587EDB 0%, #1445C2 100%));
-  color: var(--White, #FFF);
+  background: var(
+    --Main-Radial,
+    radial-gradient(46.19% 50.94% at 50% 100%, #587edb 0%, #1445c2 100%)
+  );
+  color: var(--White, #fff);
   /* font-family: "Uncut Sans"; */
   font-size: 16px;
   font-style: normal;
@@ -460,24 +499,24 @@ body::-webkit-scrollbar,
   line-height: normal;
   letter-spacing: -0.32px;
 }
-.request-call-btn{
+.request-call-btn {
   display: flex;
   padding: 10px 20px;
   align-items: center;
   gap: 10px;
   border-radius: 10px;
-  border: 1.6px solid var(--Main-Radial, #587EDB);
-  color: #587EDB;
+  border: 1.6px solid var(--Main-Radial, #587edb);
+  color: #587edb;
 }
 .financials-heading {
   color: var(--Black, #000);
-text-align: center;
-/* font-family: "Uncut Sans"; */
-font-size: 32px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-letter-spacing: -1.6px;
+  text-align: center;
+  /* font-family: "Uncut Sans"; */
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -1.6px;
 }
 .financials-para {
   color: var(--Black, #000);
@@ -490,7 +529,10 @@ letter-spacing: -1.6px;
   letter-spacing: -0.48px;
 }
 .financials-heading-secondary {
-  background: var(--Main-Radial, radial-gradient(46.19% 50.94% at 50% 100%, #587EDB 0%, #1445C2 100%));
+  background: var(
+    --Main-Radial,
+    radial-gradient(46.19% 50.94% at 50% 100%, #587edb 0%, #1445c2 100%)
+  );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -515,7 +557,10 @@ letter-spacing: -1.6px;
     letter-spacing: -0.6px;
   }
   .financials-heading-secondary {
-    background: var(--Main-Radial, radial-gradient(46.19% 50.94% at 50% 100%, #587EDB 0%, #1445C2 100%));
+    background: var(
+      --Main-Radial,
+      radial-gradient(46.19% 50.94% at 50% 100%, #587edb 0%, #1445c2 100%)
+    );
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -542,14 +587,14 @@ letter-spacing: -1.6px;
     align-items: center;
     gap: 10px;
     border-radius: 10px;
-    border: 1.6px solid var(--Main-Radial, #587EDB);
+    border: 1.6px solid var(--Main-Radial, #587edb);
     /* font-family: "Uncut Sans"; */
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
     letter-spacing: -0.4px;
-    color: #587EDB;
+    color: #587edb;
   }
   .request-consultation-btn-secondary {
     display: flex;
@@ -562,7 +607,7 @@ letter-spacing: -1.6px;
       --Main-Radial,
       radial-gradient(46.19% 50.94% at 50% 100%, #587edb 0%, #1445c2 100%)
     );
-    color: var(--White, #FFF);
+    color: var(--White, #fff);
     /* font-family: "Uncut Sans"; */
     font-size: 20px;
     font-style: normal;
@@ -816,6 +861,7 @@ letter-spacing: -1.6px;
     text-align: center;
     /* font-family: "Uncut Sans"; */
     font-size: 95px;
+    padding-right: 5px;
     font-style: normal;
     font-weight: 600;
     line-height: 100px; /* 105.263% */
@@ -1812,7 +1858,6 @@ letter-spacing: -1.6px;
   display: none;
 }
 
-
 /* Carousel */
 .financial-carousel-container {
   display: flex;
@@ -1840,4 +1885,37 @@ letter-spacing: -1.6px;
   .financial-carousel-item {
     width: 18%;
   }
+}
+
+.financial-carousel-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.financial-carousel-wrapper::before,
+.financial-carousel-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 250px; /* adjust width as needed */
+  z-index: 1;
+}
+
+.financial-carousel-wrapper::before {
+  left: 0;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0)
+  );
+}
+
+.financial-carousel-wrapper::after {
+  right: 0;
+  background: linear-gradient(
+    to left,
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0)
+  );
 }

@@ -1,32 +1,91 @@
 .hero-heading-pricing {
+  color: var(--Black, #000);
+  text-align: center;
+  /* font-family: "Uncut Sans"; */
+  font-size: 38px;
   font-style: normal;
   font-weight: 600;
-  font-size: 95px;
-  line-height: 100px;
+  line-height: 100%; /* 38px */
+  letter-spacing: -2.28px;
+}
 
-  text-align: center;
-  letter-spacing: -0.06em;
-
-  color: #000000;
-
-  flex: none;
-  order: 0;
-  flex-grow: 0;
+.hero-secondary-heading {
+  background: var(
+    --Main-Radial,
+    radial-gradient(46.19% 50.94% at 50% 100%, #587edb 0%, #1445c2 100%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* font-family: "Uncut Sans"; */
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: -2.28px;
 }
 
 .hero-para-pricing {
+  color: var(--Black, #000);
+  text-align: center;
+  /* font-family: "Uncut Sans"; */
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 22px;
-  text-align: center;
-  letter-spacing: -0.03em;
+  line-height: normal;
+  letter-spacing: -0.48px;
+}
 
-  color: #000000;
+.pricing-card-pricing {
+  width: 100%;
+  padding: 10px;
 
-  flex: none;
-  order: 1;
-  flex-grow: 0;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2.5px solid #ffffff;
+  box-shadow: inset 0px 4px 15.9px rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(4.5px);
+  border-radius: 20px;
+}
+
+@media (min-width: 640px) {
+  .hero-heading-pricing {
+    color: var(--Black, #000);
+    text-align: center;
+    /* font-family: "Uncut Sans"; */
+    font-size: 95px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100px; /* 105.263% */
+    letter-spacing: -5.7px;
+  }
+  .hero-secondary-heading {
+    background: var(
+      --Main-Radial,
+      radial-gradient(46.19% 50.94% at 50% 100%, #587edb 0%, #1445c2 100%)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* font-family: "Uncut Sans"; */
+    font-size: 95px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100px;
+    letter-spacing: -5.7px;
+  }
+  .hero-para-pricing {
+    color: var(--Black, #000);
+    text-align: center;
+    /* font-family: "Uncut Sans"; */
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.54px;
+  }
+  .pricing-card-pricing {
+    width: 33%;
+  }
 }
 
 .pricing-cards-div {
@@ -55,17 +114,6 @@
   background: white;
   color: #1445c2;
   border-radius: 12.5px;
-}
-
-.pricing-card-pricing {
-  width: 33%;
-  padding: 10px;
-
-  background: rgba(255, 255, 255, 0.1);
-  border: 2.5px solid #ffffff;
-  box-shadow: inset 0px 4px 15.9px rgba(255, 255, 255, 0.25);
-  backdrop-filter: blur(4.5px);
-  border-radius: 20px;
 }
 
 .pricing-card-child:hover .pricing-card-btn {

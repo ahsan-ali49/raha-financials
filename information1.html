@@ -20,7 +20,7 @@
   <body>
     <div id="information1">
       <!-- Navbar -->
-      <div class="px-20 py-2.5 navbar-background">
+      <div class="px-1 md:px-20 py-2.5 navbar-background">
         <!-- Navbar -->
         <div
           class="flex flex-wrap items-center justify-between mx-auto rounded-xl w-full pl-6 pr-2.5 py-2.5 navbar-link"
@@ -97,40 +97,42 @@
       </div>
 
       <div
-        class="w-full px-20 py-20 flex flex-col items-center gap-16"
+        class="w-full px-1 md:px-20 py-20 flex flex-col items-center gap-16"
         id="insights"
       >
-        <h2 class="information-heading">
+        <h2 class="hero-primary-heading">
           Client <span class="hero-secondary-heading">Information</span>
         </h2>
         <div class="w-full flex flex-row justify-between">
-          <div class="w-3/5 information-form-div flex flex-col gap-7">
-            <form class="information-form py-5 px-9 flex flex-col gap-5">
+          <div class="w-full md:w-3/5 information-form-div flex flex-col gap-7">
+            <form
+              class="information-form py-5 px-9 flex flex-col gap-0 md:gap-5"
+            >
               <span class="information-form-span">1. Client Information</span>
-              <div class="form-fields-div">
+              <div class="form-fields-div flex-wrap">
                 <input
                   type="text"
-                  class="information-name-field"
+                  class="information-name-field w-full md:w-1/2"
                   placeholder="Full Name*"
                   value=""
                   required
                 />
                 <input
                   type="email"
-                  class="information-secondary-field"
+                  class="information-secondary-field w-full md:w-1/2"
                   placeholder="Email*"
                   required
                 />
               </div>
-              <div class="form-fields-div">
+              <div class="form-fields-div flex-wrap">
                 <input
                   type="text"
-                  class="information-secondary-field"
+                  class="information-secondary-field w-full md:w-1/2"
                   placeholder="Date of Birth"
                 />
                 <input
                   type="text"
-                  class="information-secondary-field"
+                  class="information-secondary-field w-full md:w-1/2"
                   placeholder="Phone Number"
                 />
               </div>
@@ -146,45 +148,44 @@
                 class="information-secondary-field w-full"
                 placeholder="Home Address (if different)"
               />
-              <div class="form-fields-div">
+              <div class="form-fields-div flex-wrap">
                 <input
                   type="text"
-                  class="information-secondary-field"
+                  class="information-secondary-field w-full md:w-1/2"
                   placeholder="City"
                 />
                 <input
                   type="text"
-                  class="information-secondary-field"
+                  class="information-secondary-field w-full md:w-1/2"
                   placeholder="State/ Province"
                 />
               </div>
-              <div class="form-fields-div">
+              <div class="form-fields-div flex-wrap">
                 <input
                   type="text"
-                  class="information-secondary-field"
+                  class="information-secondary-field w-full md:w-1/2"
                   placeholder="Postal Code"
                 />
                 <input
                   type="text"
-                  class="information-secondary-field"
+                  class="information-secondary-field w-full md:w-1/2"
                   placeholder="Country"
                 />
               </div>
-              <div class="form-fields-div">
+              <div class="form-fields-div flex-wrap">
                 <input
                   type="text"
-                  class="information-secondary-field"
+                  class="information-secondary-field w-full md:w-1/2"
                   placeholder="Citizenship Status"
                 />
                 <input
                   type="text"
-                  class="information-secondary-field"
+                  class="information-secondary-field w-full md:w-1/2"
                   placeholder="Country of Citizenship"
                 />
               </div>
-              <div class="flex flex-col gap-2.5">
+              <div class="flex flex-col gap-2.5 mt-2 md:mt-0">
                 <p class="font-bold">Are you a U.S. tax resident?</p>
-
                 <div>
                   <input type="radio" id="yes" name="ustr" value="yes" />
                   <label for="yes" class="font-bold">Yes</label>
@@ -268,7 +269,7 @@
               <span class="font-bold">3. Engagement Letter</span>
             </div>
           </div>
-          <div class="w-1/3 flex flex-col gap-5">
+          <div class="w-1/3 flex flex-col gap-5 hidden md:block">
             <div class="client-information-primary-bar">Client Information</div>
             <div class="client-information-secondary-bar">
               Privacy Agreement
