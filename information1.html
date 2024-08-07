@@ -20,8 +20,7 @@
   <body>
     <div id="information1">
       <!-- Navbar -->
-      <div class="px-1 md:px-20 py-2.5 navbar-background">
-        <!-- Navbar -->
+      <div class="px-4 md:px-20 py-2.5 navbar-background">
         <div
           class="flex flex-wrap items-center justify-between mx-auto rounded-xl w-full pl-6 pr-2.5 py-2.5 navbar-link"
         >
@@ -37,10 +36,7 @@
           <div
             class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse"
           >
-            <a
-              href="./information1.html"
-              class="hidden md:block hover:bg-blue-800 dark:hover:bg-blue-500 contact-btn"
-            >
+            <a href="./contactus.html" class="hidden md:block contact-btn">
               Contact Us
             </a>
             <button
@@ -96,6 +92,27 @@
         </div>
       </div>
 
+      <!-- Mobile Menu -->
+      <div class="hidden md:hidden" id="mobile-menu">
+        <ul class="flex flex-col items-end mr-6 md:mr-0 gap-y-2 font-medium">
+          <li>
+            <a href="./index.html#services" class="block navlink">Services</a>
+          </li>
+          <li>
+            <a href="./index.html#industry" class="block navlink">Industries</a>
+          </li>
+          <li>
+            <a href="./blogs.html" class="block navlink">Insights</a>
+          </li>
+          <li>
+            <a href="./pricing.html" class="block navlink">Pricing</a>
+          </li>
+          <li>
+            <a href="./information1.html" class="block navlink">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+
       <div
         class="w-full px-1 md:px-20 py-20 flex flex-col items-center gap-16"
         id="insights"
@@ -103,36 +120,38 @@
         <h2 class="hero-primary-heading">
           Client <span class="hero-secondary-heading">Information</span>
         </h2>
-        <div class="w-full flex flex-row justify-between">
-          <div class="w-full md:w-3/5 information-form-div flex flex-col gap-7">
+        <div class="w-full flex flex-row justify-between flex-wrap">
+          <div
+            class="w-full md:w-3/5 information-form-div flex flex-col gap-7 order-2 md:order-1"
+          >
             <form
-              class="information-form py-5 px-9 flex flex-col gap-0 md:gap-5"
+              class="information-form py-5 px-9 flex flex-col gap-1.5 md:gap-5"
             >
               <span class="information-form-span">1. Client Information</span>
-              <div class="form-fields-div flex-wrap">
+              <div class="form-fields-div flex-wrap gap-y-1.5">
                 <input
                   type="text"
-                  class="information-name-field w-full md:w-1/2"
+                  class="information-name-field w-full md:w-[49%]"
                   placeholder="Full Name*"
                   value=""
                   required
                 />
                 <input
                   type="email"
-                  class="information-secondary-field w-full md:w-1/2"
+                  class="information-secondary-field w-full md:w-[49%]"
                   placeholder="Email*"
                   required
                 />
               </div>
-              <div class="form-fields-div flex-wrap">
+              <div class="form-fields-div flex-wrap gap-y-1.5">
                 <input
                   type="text"
-                  class="information-secondary-field w-full md:w-1/2"
+                  class="information-secondary-field w-full md:w-[49%]"
                   placeholder="Date of Birth"
                 />
                 <input
                   type="text"
-                  class="information-secondary-field w-full md:w-1/2"
+                  class="information-secondary-field w-full md:w-[49%]"
                   placeholder="Phone Number"
                 />
               </div>
@@ -148,39 +167,39 @@
                 class="information-secondary-field w-full"
                 placeholder="Home Address (if different)"
               />
-              <div class="form-fields-div flex-wrap">
+              <div class="form-fields-div flex-wrap gap-y-1.5">
                 <input
                   type="text"
-                  class="information-secondary-field w-full md:w-1/2"
+                  class="information-secondary-field w-full md:w-[49%]"
                   placeholder="City"
                 />
                 <input
                   type="text"
-                  class="information-secondary-field w-full md:w-1/2"
+                  class="information-secondary-field w-full md:w-[49%]"
                   placeholder="State/ Province"
                 />
               </div>
-              <div class="form-fields-div flex-wrap">
+              <div class="form-fields-div flex-wrap gap-y-1.5">
                 <input
                   type="text"
-                  class="information-secondary-field w-full md:w-1/2"
+                  class="information-secondary-field w-full md:w-[49%]"
                   placeholder="Postal Code"
                 />
                 <input
                   type="text"
-                  class="information-secondary-field w-full md:w-1/2"
+                  class="information-secondary-field w-full md:w-[49%]"
                   placeholder="Country"
                 />
               </div>
-              <div class="form-fields-div flex-wrap">
+              <div class="form-fields-div flex-wrap gap-y-1.5">
                 <input
                   type="text"
-                  class="information-secondary-field w-full md:w-1/2"
+                  class="information-secondary-field w-full md:w-[49%]"
                   placeholder="Citizenship Status"
                 />
                 <input
                   type="text"
-                  class="information-secondary-field w-full md:w-1/2"
+                  class="information-secondary-field w-full md:w-[49%]"
                   placeholder="Country of Citizenship"
                 />
               </div>
@@ -269,12 +288,16 @@
               <span class="font-bold">3. Engagement Letter</span>
             </div>
           </div>
-          <div class="w-1/3 flex flex-col gap-5 hidden md:block">
-            <div class="client-information-primary-bar">Client Information</div>
-            <div class="client-information-secondary-bar">
+          <div
+            class="w-full md:w-1/3 flex flex-row md:flex-col gap-2 md:gap-0 order-1 md:order-2"
+          >
+            <div class="client-information-primary-bar mb-6 w-1/2 md:w-full">
+              Client Information
+            </div>
+            <div class="client-information-secondary-bar mb-6 w-1/2 md:w-full">
               Privacy Agreement
             </div>
-            <div class="client-information-secondary-bar">
+            <div class="client-information-secondary-bar hidden md:block">
               Engagement Letter
             </div>
           </div>
@@ -283,11 +306,11 @@
     </div>
 
     <!-- Footer Section -->
-    <div class="w-full footer-div px-20">
+    <div class="w-full footer-div px-1 md:px-20 mt-0 md:mt-10">
       <div
-        class="w-full border border-t-0 border-r-0 border-l-0 border-b-1 border-gray-300 footer-inner-div pb-5"
+        class="w-full border border-t-0 border-r-0 border-l-0 border-b-1 border-gray-300 footer-inner-div pb-5 flex-wrap"
       >
-        <div class="w-1/4 footer-col-1">
+        <div class="w-full md:w-1/4 footer-col-1">
           <img src="./assets/images/footerImage1.png" alt="" />
           <p>
             Our team at RAHA is dedicated to ensuring your books are accurate,
@@ -296,15 +319,11 @@
           </p>
           <img src="./assets/images/footerImage2.png" alt="" />
         </div>
-        <div class="w-1/5 footer-col-2">
+        <div class="w-full md:w-1/5 footer-col-2">
           <span class="footer-link-heading">Quick Links</span>
           <ul>
-            <li class="footer-link-item">
-              <a href="./index.html#services">Services</a>
-            </li>
-            <li class="footer-link-item">
-              <a href="./index.html#industry">Industries</a>
-            </li>
+            <li class="footer-link-item"><a href="#services">Services</a></li>
+            <li class="footer-link-item"><a href="#industry">Industries</a></li>
             <li class="footer-link-item">
               <a href="./blogs.html">Insights</a>
             </li>
@@ -316,9 +335,9 @@
             </li>
           </ul>
         </div>
-        <div class="w-5/12 footer-col-3">
-          <span class="footer-form-heading">Reach out to us</span>
-          <div class="w-full footer-form-div">
+        <div class="w-full md:w-5/12 footer-col-3 flex flex-col gap-2.5">
+          <span class="footer-form-heading mb-2.5">Reach out to us</span>
+          <div class="w-full footer-form-div my-2.5">
             <input
               type="text"
               placeholder="Full Name"
@@ -334,10 +353,9 @@
             name="message"
             id="message"
             placeholder="Message"
-            class="w-full footer-message-field"
+            class="w-full footer-message-field mb-2.5"
           ></textarea>
           <button class="footer-submit-btn">Submit</button>
-          <form></form>
         </div>
       </div>
       <span class="footer-span"
@@ -346,6 +364,192 @@
         firms, each of which is a separate legal entity.</span
       >
     </div>
-    <script src="./scripts.js"></script>
+    <!-- Navbar Modal -->
+    <div id="navbar-modal" class="hidden">
+      <div
+        class="modal-content h-1/2 mx-auto flex justify-center px-10 py-7 bg-white"
+      >
+        <div
+          id="modal-content-inner"
+          class="flex flex-row justify-between w-full"
+        >
+          <div
+            class="flex flex-col gap-3 items-start w-2/12 border-0 border-r-2 border-gray-200"
+          >
+            <span class="modal-list-head font-bold"
+              >Accounting and Bookkeeping Services</span
+            >
+            <ul class="flex flex-col gap-2">
+              <li>Full Service Booking</li>
+              <li>Accounts Payable and Receivable</li>
+              <li>General Ledger and Management</li>
+              <li>Bank Reconciliation</li>
+            </ul>
+          </div>
+          <div
+            class="flex flex-col gap-4 items-start w-2/12 border-0 border-r-2 border-gray-200"
+          >
+            <span class="modal-list-head font-bold"
+              >Software Setup and Integration</span
+            >
+            <ul class="flex flex-col gap-2">
+              <li>Setting up Xero and Quickbooks</li>
+              <li>Accounting Software Integration</li>
+              <li>Process Automation Implementation</li>
+              <li>Financial Reporting and Dashboard Configuration</li>
+            </ul>
+          </div>
+          <div
+            class="flex flex-col gap-4 items-start w-2/12 border-0 border-r-2 border-gray-200"
+          >
+            <span class="modal-list-head font-bold">Tax Services</span>
+            <ul class="flex flex-col gap-2">
+              <li>Tax Planning and Filing</li>
+              <li>International Tax Compliance</li>
+              <li>Indirect Tax Management</li>
+            </ul>
+          </div>
+          <div
+            class="flex flex-col gap-4 items-start w-2/12 border-0 border-r-2 border-gray-200"
+          >
+            <span class="modal-list-head font-bold">Global Services</span>
+            <ul class="flex flex-col gap-2">
+              <li>GLobal Payroll Management</li>
+              <li>International Tax Compliance</li>
+              <li>Multi-Country Financial Reporting</li>
+              <li>Currency Management</li>
+            </ul>
+          </div>
+          <div class="flex flex-col gap-4 items-start w-2/12">
+            <span class="modal-list-head font-bold"
+              >Financial Management and Consulting</span
+            >
+            <ul class="flex flex-col gap-2">
+              <li>Financial Planning and Analysis</li>
+              <li>Strategic Financial Consulting</li>
+              <li>Budgeting and Forecasting</li>
+              <li>Cash Flow Management</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Industry Modal -->
+    <div id="industry-modal" class="hidden">
+      <div
+        class="modal-content mx-auto flex flex-col justify-center px-10 py-7 bg-white"
+      >
+        <div
+          id="modal-content-inner"
+          class="flex flex-row justify-between flex-wrap w-full pb-7"
+        >
+          <div
+            class="flex flex-col gap-3 items-start border-0 border-r-2 border-gray-200 w-1/5"
+          >
+            <span class="modal-list-head font-bold"
+              >Hospitality and Food Services</span
+            >
+            <ul class="flex flex-col gap-2">
+              <li>Restaurants and Cafes</li>
+              <li>Hotels and Resorts</li>
+              <li>Catering Services</li>
+              <li>Event Management</li>
+            </ul>
+          </div>
+          <div
+            class="flex flex-col gap-4 items-start border-0 border-r-2 border-gray-200 w-1/5"
+          >
+            <span class="modal-list-head font-bold">E-commerse and Retail</span>
+            <ul class="flex flex-col gap-2">
+              <li>Online Marketplaces</li>
+              <li>Fashion and Apparel Retailers</li>
+              <li>Electronics and Gadgets</li>
+              <li>Speciality Stores</li>
+            </ul>
+          </div>
+          <div
+            class="flex flex-col gap-4 items-start border-0 border-r-2 border-gray-200 w-1/5"
+          >
+            <span class="modal-list-head font-bold">Real Estate</span>
+            <ul class="flex flex-col gap-2">
+              <li>Property Management</li>
+              <li>Real Estate Development</li>
+              <li>Rental Services</li>
+              <li>Commercial Real Estate</li>
+            </ul>
+          </div>
+          <div class="flex flex-col gap-4 items-start w-1/5">
+            <span class="modal-list-head font-bold"
+              >Technology and Startups</span
+            >
+            <ul class="flex flex-col gap-2">
+              <li>Software Development</li>
+              <li>IT Services</li>
+              <li>Mobile App Development</li>
+              <li>Artificial Intelligence</li>
+            </ul>
+          </div>
+        </div>
+
+        <!--  -->
+        <div
+          id="modal-content-inner"
+          class="flex flex-row justify-between flex-wrap w-full border-0 border-t-2 border-gray-200 pt-7"
+        >
+          <div
+            class="flex flex-col gap-3 items-start border-0 border-r-2 border-gray-200 w-1/5"
+          >
+            <span class="modal-list-head font-bold"
+              >Healthcare and Medical Services</span
+            >
+            <ul class="flex flex-col gap-2">
+              <li>Hospitals and Clinics</li>
+              <li>Medical Device Manufecturers</li>
+              <li>Telehealth Services</li>
+              <li>Pharmaceutical Companies</li>
+            </ul>
+          </div>
+          <div
+            class="flex flex-col gap-4 items-start border-0 border-r-2 border-gray-200 w-1/5"
+          >
+            <span class="modal-list-head font-bold">Energy and Utilities</span>
+            <ul class="flex flex-col gap-2">
+              <li>Renewable Energy Companies</li>
+              <li>Utilities Providers</li>
+              <li>Oil and Gas Industry</li>
+              <li>Sustainable Technologies</li>
+            </ul>
+          </div>
+          <div
+            class="flex flex-col gap-4 items-start border-0 border-r-2 border-gray-200 w-1/5"
+          >
+            <span class="modal-list-head font-bold"
+              >Agriculture and Farming</span
+            >
+            <ul class="flex flex-col gap-2">
+              <li>Crop Farming</li>
+              <li>Livestock Farming</li>
+              <li>Agribusiness</li>
+              <li>Agricultural Equipment Manufacturing</li>
+            </ul>
+          </div>
+          <div class="flex flex-col gap-4 items-start w-1/5">
+            <span class="modal-list-head font-bold"
+              >Construction and Infrastructure</span
+            >
+            <ul class="flex flex-col gap-2">
+              <li>Commercial Construction</li>
+              <li>Residential Construction</li>
+              <li>Infrastructure Development</li>
+              <li>Engineering Services</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <script src="./scripts.js"></script> -->
+    <script src="./modalScript.js"></script>
   </body>
 </html>

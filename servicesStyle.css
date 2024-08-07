@@ -179,6 +179,9 @@
   }
   .service-below-hero {
     background: url(./assets/images/services/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     display: flex;
     height: 477px;
     /* padding: 35px 75px; */
@@ -350,4 +353,10 @@
 .service-img-cards-2-img-4 {
   width: 75px;
   height: 75px;
+}
+
+.how-it-works {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-top: 40px;
 }

@@ -23,11 +23,6 @@ body::-webkit-scrollbar,
   display: none;
 }
 
-/* #content, #pricing, #information1, #information2, #information3, #enterprise, #services, #bookKeeping-section, #payrollProcessing-section, #llcRegistration-section, #itin-section, #taxFiling-section, #businessBudgeting-section {
-    animation: slide 1s linear;
-} */
-
-/* Add these styles to your CSS file */
 #index,
 #enterprise {
   animation: fadeOut 2s forwards;
@@ -104,9 +99,6 @@ body::-webkit-scrollbar,
 }
 
 .navlink {
-  /* Services */
-
-  /* width: 78px; */
   height: 25px;
 
   /* font-family: 'Uncut Sans'; */
@@ -143,7 +135,7 @@ body::-webkit-scrollbar,
 
   height: 25px;
 
-  /* font-family: 'Uncut Sans'; */
+  font-family: "Uncut Sans";
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
@@ -161,12 +153,7 @@ body::-webkit-scrollbar,
 }
 
 .hero-indv-btn-text {
-  /* Individual/Small Business */
-
-  /* width: 207px; */
-  /* height: 23px; */
-
-  /* font-family: 'Uncut Sans'; */
+  font-family: "Uncut Sans";
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -194,7 +181,7 @@ body::-webkit-scrollbar,
 .hero-primary-heading {
   color: var(--Black, #000);
   text-align: center;
-  /* font-family: "Uncut Sans"; */
+  font-family: "Uncut Sans";
   font-size: 38px;
   font-style: normal;
   font-weight: 600;
@@ -210,7 +197,7 @@ body::-webkit-scrollbar,
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  /* font-family: "Uncut Sans"; */
+  font-family: "Uncut Sans";
   font-size: 38px;
   font-style: normal;
   font-weight: 600;
@@ -222,7 +209,7 @@ body::-webkit-scrollbar,
 .hero-para {
   color: var(--Black, #000);
   text-align: center;
-  /* font-family: "Uncut Sans"; */
+  font-family: "Uncut Sans";
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -266,7 +253,7 @@ body::-webkit-scrollbar,
     radial-gradient(46.19% 50.94% at 50% 100%, #587edb 0%, #1445c2 100%)
   );
   color: var(--White, #fff);
-  /* font-family: "Uncut Sans"; */
+  font-family: "Uncut Sans";
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
@@ -285,7 +272,7 @@ body::-webkit-scrollbar,
     radial-gradient(46.19% 50.94% at 50% 100%, #587edb 0%, #1445c2 100%)
   );
   color: var(--White, #fff);
-  /* font-family: "Uncut Sans"; */
+  font-family: "Uncut Sans";
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -296,7 +283,7 @@ body::-webkit-scrollbar,
 .accounting-heading {
   color: var(--White, #fff);
   text-align: center;
-  /* font-family: "Uncut Sans"; */
+  font-family: "Uncut Sans";
   font-size: 32px;
   font-style: normal;
   font-weight: 600;
@@ -307,7 +294,7 @@ body::-webkit-scrollbar,
 .accounting-para {
   color: var(--White, #fff);
   text-align: center;
-  /* font-family: "Uncut Sans"; */
+  font-family: "Uncut Sans";
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -339,7 +326,7 @@ body::-webkit-scrollbar,
   border-radius: 10px;
   background: var(--White, #fff);
   color: var(--Black, #000);
-  /* font-family: "Uncut Sans"; */
+  font-family: "Uncut Sans";
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -355,7 +342,7 @@ body::-webkit-scrollbar,
   border-radius: 10px;
   border: 2px solid var(--White, #fff);
   color: var(--White, #fff);
-  /* font-family: "Uncut Sans"; */
+  font-family: "Uncut Sans";
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -366,7 +353,7 @@ body::-webkit-scrollbar,
 .consultation-span {
   color: var(--Black, #000);
   text-align: center;
-  /* font-family: "Uncut Sans"; */
+  font-family: "Uncut Sans";
   font-size: 32px;
   font-style: normal;
   font-weight: 600;
@@ -381,7 +368,7 @@ body::-webkit-scrollbar,
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  /* font-family: "Uncut Sans"; */
+  font-family: "Uncut Sans";
   font-size: 32px;
   font-style: normal;
   font-weight: 600;
@@ -392,7 +379,7 @@ body::-webkit-scrollbar,
 .consultation-para {
   color: var(--Black, #000);
   text-align: center;
-  /* font-family: "Uncut Sans"; */
+  font-family: "Uncut Sans";
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -422,7 +409,7 @@ body::-webkit-scrollbar,
 .foreground-heading {
   color: var(--White, #fff);
   text-align: center;
-  /* font-family: "Uncut Sans"; */
+  font-family: "Uncut Sans";
   font-size: 32px;
   font-style: normal;
   font-weight: 600;
@@ -440,7 +427,7 @@ body::-webkit-scrollbar,
   border-radius: 10px;
   background: #f6f6f6;
   color: var(--Black, #000);
-  /* font-family: "Uncut Sans"; */
+  font-family: "Uncut Sans";
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -452,7 +439,7 @@ body::-webkit-scrollbar,
 .foreground-para {
   color: var(--White, #fff);
   text-align: center;
-  /* font-family: "Uncut Sans"; */
+  font-family: "Uncut Sans";
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -463,7 +450,7 @@ body::-webkit-scrollbar,
 .industry-heading {
   color: var(--Black, #000);
   text-align: center;
-  /* font-family: "Uncut Sans"; */
+  font-family: "Uncut Sans";
   font-size: 32px;
   font-style: normal;
   font-weight: 600;
@@ -474,7 +461,7 @@ body::-webkit-scrollbar,
 .industry-para {
   color: var(--Black, #000);
   text-align: center;
-  /* font-family: "Uncut Sans"; */
+  font-family: "Uncut Sans";
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -492,7 +479,7 @@ body::-webkit-scrollbar,
     radial-gradient(46.19% 50.94% at 50% 100%, #587edb 0%, #1445c2 100%)
   );
   color: var(--White, #fff);
-  /* font-family: "Uncut Sans"; */
+  font-family: "Uncut Sans";
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -511,7 +498,7 @@ body::-webkit-scrollbar,
 .financials-heading {
   color: var(--Black, #000);
   text-align: center;
-  /* font-family: "Uncut Sans"; */
+  font-family: "Uncut Sans";
   font-size: 32px;
   font-style: normal;
   font-weight: 600;
@@ -521,7 +508,7 @@ body::-webkit-scrollbar,
 .financials-para {
   color: var(--Black, #000);
   text-align: center;
-  /* font-family: "Uncut Sans"; */
+  font-family: "Uncut Sans";
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -536,7 +523,7 @@ body::-webkit-scrollbar,
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  /* font-family: "Uncut Sans"; */
+  font-family: "Uncut Sans";
   font-size: 32px;
   font-style: normal;
   font-weight: 600;
@@ -544,12 +531,127 @@ body::-webkit-scrollbar,
   letter-spacing: -1.6px;
 }
 
+.heading-container {
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  height: 150px; /*Adjust as necessary*/
+}
+
+.rotating-text-container {
+  position: relative;
+  height: 100%; /* Adjust to the height of a single text element */
+  /* overflow: hidden; */
+}
+
+.rotating-text {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(100%);
+  animation: rotateText 10s infinite;
+  height: 100%;
+}
+
+@keyframes rotateText {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  30% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  40% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+}
+
+.rotating-text:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.rotating-text:nth-child(2) {
+  animation-delay: 4s;
+}
+
+.rotating-text:nth-child(3) {
+  animation-delay: 7s;
+}
+
 @media (min-width: 640px) {
   /* For screens 640px and larger */
+  .heading-container {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    height: 210px; /*Adjust as necessary*/
+  }
+
+  .rotating-text-container {
+    position: relative;
+    height: 100%; /* Adjust to the height of a single text element */
+    /* overflow: hidden; */
+  }
+
+  .rotating-text {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(100%);
+    animation: rotateText 10s infinite;
+    height: 100%;
+  }
+
+  @keyframes rotateText {
+    0% {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+    10% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    30% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    40% {
+      opacity: 0;
+      transform: translateY(-100%);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(-100%);
+    }
+  }
+
+  .rotating-text:nth-child(1) {
+    animation-delay: 0s;
+  }
+
+  .rotating-text:nth-child(2) {
+    animation-delay: 4s;
+  }
+
+  .rotating-text:nth-child(3) {
+    animation-delay: 7s;
+  }
   .financials-para {
     color: var(--Black, #000);
     text-align: center;
-    /* font-family: "Uncut Sans"; */
+    font-family: "Uncut Sans";
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -909,6 +1011,7 @@ body::-webkit-scrollbar,
     url(.jpg);
   background-blend-mode: normal, lighten, normal;
   border-radius: 25px;
+  /* margin-top: 40px; */
 }
 
 .flex-item-div-primary {
@@ -1892,6 +1995,13 @@ body::-webkit-scrollbar,
   overflow: hidden;
 }
 
+.financial-carousel-container {
+  display: flex;
+  flex-direction: row;
+  /* gap: 2rem; adjust based on your design */
+  position: relative; /*  Add this to position the container correctly */
+}
+
 .financial-carousel-wrapper::before,
 .financial-carousel-wrapper::after {
   content: "";
@@ -1900,6 +2010,7 @@ body::-webkit-scrollbar,
   bottom: 0;
   width: 250px; /* adjust width as needed */
   z-index: 1;
+  pointer-events: none; /* Ensures the gradient does not interfere with interactions */
 }
 
 .financial-carousel-wrapper::before {
@@ -1919,3 +2030,5 @@ body::-webkit-scrollbar,
     rgba(255, 255, 255, 0)
   );
 }
+
+/* Add more styles and delays for additional text elements */

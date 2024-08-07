@@ -1,3 +1,188 @@
+.blog-hero-primary-heading {
+  color: var(--Black, #000);
+  text-align: center;
+  font-family: "Uncut Sans";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%; /* 41.6px */
+  letter-spacing: -1.92px;
+}
+.blog-hero-secondary-heading {
+  background: var(
+    --Main-Radial,
+    radial-gradient(46.19% 50.94% at 50% 100%, #587edb 0%, #1445c2 100%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Uncut Sans";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: -1.92px;
+}
+.blogs-date {
+  color: var(--Black, #000);
+  text-align: center;
+  font-family: "Uncut Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.48px;
+}
+
+.blog-date {
+  color: var(--Black, #000);
+  text-align: center;
+  font-family: "Uncut Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.48px;
+}
+
+.blog-list-span {
+  color: var(--Black, #000);
+  font-family: "Uncut Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.54px;
+}
+.blog-para {
+  color: var(--Black, #000);
+  font-family: "Uncut Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.48px;
+}
+.blog-span {
+  color: var(--Black, #000);
+  font-family: "Uncut Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.48px;
+}
+.blog-previous-btn {
+  display: flex;
+  padding: 10px 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  border-radius: 10px;
+  border: 1px solid #dadada;
+  background: linear-gradient(180deg, #fff 0%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: 0px 156px 44px 0px rgba(176, 176, 176, 0),
+    0px 100px 40px 0px rgba(176, 176, 176, 0.01),
+    0px 56px 34px 0px rgba(176, 176, 176, 0.05),
+    0px 25px 25px 0px rgba(176, 176, 176, 0.09),
+    0px 6px 14px 0px rgba(176, 176, 176, 0.1);
+  color: var(--Black, #000);
+  font-family: "Uncut Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.32px;
+}
+
+@media (min-width: 640px) {
+  /* For screens 640px and larger */
+  .blog-previous-btn {
+    display: flex;
+    width: 128px;
+    padding: 15px 25px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    border-radius: 10px;
+    border: 1px solid #dadada;
+    background: linear-gradient(180deg, #fff 0%, rgba(255, 255, 255, 0) 100%);
+    box-shadow: 0px 156px 44px 0px rgba(176, 176, 176, 0),
+      0px 100px 40px 0px rgba(176, 176, 176, 0.01),
+      0px 56px 34px 0px rgba(176, 176, 176, 0.05),
+      0px 25px 25px 0px rgba(176, 176, 176, 0.09),
+      0px 6px 14px 0px rgba(176, 176, 176, 0.1);
+    color: var(--Black, #000);
+    font-family: "Uncut Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.4px;
+  }
+  .blog-list-span {
+    color: var(--Black, #000);
+    font-family: "Uncut Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.54px;
+  }
+  .blog-para {
+    color: var(--Black, #000);
+    font-family: "Uncut Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.54px;
+  }
+  .blog-span {
+    color: var(--Black, #000);
+    font-family: "Uncut Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.6px;
+  }
+  .blog-date {
+    color: var(--Black, #000);
+    font-family: "Uncut Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.54px;
+  }
+  .blog-hero-primary-heading {
+    color: var(--Black, #000);
+    text-align: center;
+    font-family: "Uncut Sans";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -3.84px;
+  }
+  .blog-hero-secondary-heading {
+    background: var(
+      --Main-Radial,
+      radial-gradient(46.19% 50.94% at 50% 100%, #587edb 0%, #1445c2 100%)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Uncut Sans";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -3.84px;
+  }
+}
+
 .blog-heading {
   font-style: normal;
   font-weight: 600;
@@ -7,29 +192,6 @@
   letter-spacing: -0.06em;
 
   color: #000000;
-}
-
-.blog-hero-primary-heading {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 64px;
-  line-height: 80px;
-  text-align: center;
-  letter-spacing: -0.06em;
-
-  /* Black */
-  color: #000000;
-}
-
-.blog-hero-secondary-heading {
-  background: radial-gradient(
-    46.19% 50.94% at 50% 100%,
-    #587edb 0%,
-    #1445c2 100%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
 }
 
 .blog-flex-item {
@@ -42,9 +204,6 @@
   justify-content: space-between;
   padding: 5px 5px 20px;
   gap: 15px;
-
-  width: 32%;
-  /* height: 363px; */
 
   filter: drop-shadow(0px 100px 40px rgba(176, 176, 176, 0.01))
     drop-shadow(0px 56px 34px rgba(176, 176, 176, 0.05))
@@ -109,66 +268,4 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
   /* text-fill-color: transparent; */
-}
-
-.blog-para {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 22px;
-  /* identical to box height */
-  letter-spacing: -0.03em;
-
-  /* Black */
-  color: #000000;
-
-  opacity: 0.7;
-}
-
-.blog-span {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 25px;
-  letter-spacing: -0.03em;
-
-  /* Black */
-  color: #000000;
-}
-
-.blog-list-span {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 25px;
-  letter-spacing: -0.03em;
-
-  /* Black */
-  color: #000000;
-}
-
-.blog-previous-btn {
-  /* Frame 4 */
-
-  box-sizing: border-box;
-
-  padding: 15px 25px;
-
-  background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
-  border: 1px solid #dadada;
-  filter: drop-shadow(0px 100px 40px rgba(176, 176, 176, 0.01))
-    drop-shadow(0px 56px 34px rgba(176, 176, 176, 0.05))
-    drop-shadow(0px 25px 25px rgba(176, 176, 176, 0.09))
-    drop-shadow(0px 6px 14px rgba(176, 176, 176, 0.1));
-  border-radius: 10px;
-
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 25px;
-  /* identical to box height */
-  letter-spacing: -0.02em;
-
-  /* Black */
-  color: #000000;
 }
