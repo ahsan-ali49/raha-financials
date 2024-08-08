@@ -19,7 +19,7 @@
   </head>
   <body>
     <div id="enterprise">
-      <div class="px-20 py-2.5 navbar-background-enterprise">
+      <div class="px-2 md:px-20 py-2.5 navbar-background-enterprise">
         <!-- Navbar -->
         <div
           class="flex flex-wrap items-center justify-between mx-auto rounded-xl w-full pl-6 pr-2.5 py-2.5 navbar-link-enterprise"
@@ -37,7 +37,7 @@
             class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse"
           >
             <a
-              href="./information1.html"
+              href="./contactus.html"
               class="hidden md:block hover:bg-blue-800 dark:hover:bg-blue-500 contact-btn contact-btn-enterprise"
             >
               Contact Us
@@ -107,7 +107,7 @@
 
       <!-- Hero Section -->
       <div
-        class="w-full relative flex flex-col items-center gap-5 pt-20 pb-40 hero-div-enterprise"
+        class="w-full relative flex flex-col items-center gap-5 pt-10 md:pt-20 pb-40 hero-div-enterprise"
       >
         <div class="flex flex-col items-center gap-2.5">
           <span class="iam-enterprise">I am a</span>
@@ -124,11 +124,11 @@
             >
           </div>
         </div>
-        <div class="flex flex-col items-center gap-3 w-3/5">
+        <div class="flex flex-col items-center gap-3 w-full md:w-3/4">
           <span class="hero-primary-heading-enterprise"
             >What we Provide for the Success of your Business</span
           >
-          <p class="hero-para-enterpise w-8/12">
+          <p class="hero-para-enterpise w-full md:w-8/12">
             From consolidated reporting to industry expertise, we deliver
             data-driven insights and actionable strategies for success.
           </p>
@@ -137,15 +137,18 @@
         <img
           src="./assets/images/enterprise/absoluteImage.png"
           alt=""
-          class="absolute right-0 top-8"
+          class="absolute right-0 top-8 hidden md:block"
         />
       </div>
 
       <!-- Cards Section -->
-      <div class="relative z-10 px-20 -mt-32" id="services">
+      <div class="relative z-10 px-2 md:px-20 -mt-32" id="services">
         <div class="cards-background">
           <div class="flex flex-row justify-center gap-5 flex-wrap pb-20">
-            <a href="./auditAssurance.html" class="card-enterprise w-1/4">
+            <a
+              href="./auditAssurance.html"
+              class="card-enterprise w-full md:w-1/4"
+            >
               <div class="flex flex-col gap-y-2.5">
                 <span class="card-span">Audit and Assurance</span>
                 <p class="card-para">
@@ -164,7 +167,7 @@
             </a>
             <a
               href="./businessPaymentCollection.html"
-              class="card-enterprise w-1/4"
+              class="card-enterprise w-full md:w-1/4"
             >
               <div class="flex flex-col gap-y-2.5">
                 <span class="card-span">Business Payment Collection</span>
@@ -184,7 +187,7 @@
             </a>
             <a
               href="./hrManagementOutsourcing.html"
-              class="card-enterprise w-1/4"
+              class="card-enterprise w-full md:w-1/4"
             >
               <div class="flex flex-col gap-y-2.5">
                 <span class="card-span">HR Management & Outsourcing</span>
@@ -202,7 +205,10 @@
                 />
               </div>
             </a>
-            <a href="payrollAdvisory.html" class="card-enterprise w-1/4">
+            <a
+              href="payrollAdvisory.html"
+              class="card-enterprise w-full md:w-1/4"
+            >
               <div class="flex flex-col gap-y-2.5">
                 <span class="card-span">Payroll Advisory</span>
                 <p class="card-para">
@@ -219,7 +225,10 @@
                 />
               </div>
             </a>
-            <a href="./companyRestructuring.html" class="card-enterprise w-1/4">
+            <a
+              href="./companyRestructuring.html"
+              class="card-enterprise w-full md:w-1/4"
+            >
               <div class="flex flex-col gap-y-2.5">
                 <span class="card-span">Company restructuring</span>
                 <p class="card-para">
@@ -236,7 +245,10 @@
                 />
               </div>
             </a>
-            <a href="./budgetForecasting.html" class="card-enterprise w-1/4">
+            <a
+              href="./budgetForecasting.html"
+              class="card-enterprise w-full md:w-1/4"
+            >
               <div class="flex flex-col gap-y-2.5">
                 <span class="card-span">Budget forecasting</span>
                 <p class="card-para">
@@ -253,7 +265,7 @@
                 />
               </div>
             </a>
-            <div class="opacity-0 card-enterprise w-1/4">
+            <div class="opacity-0 card-enterprise hidden md:block">
               <div class="flex flex-col gap-y-2.5">
                 <span class="card-span">Risk Advisory</span>
                 <p class="card-para">
@@ -270,7 +282,10 @@
                 />
               </div>
             </div>
-            <a href="./budgetForecasting.html" class="card-enterprise w-1/4">
+            <a
+              href="./budgetForecasting.html"
+              class="card-enterprise w-full md:w-1/4"
+            >
               <div class="flex flex-col gap-y-2.5">
                 <span class="card-span">Risk Advisory</span>
                 <p class="card-para">
@@ -287,7 +302,7 @@
                 />
               </div>
             </a>
-            <div class="opacity-0 card-enterprise w-1/4">
+            <div class="opacity-0 card-enterprise hidden md:block">
               <div class="flex flex-col gap-y-2.5">
                 <span class="card-span">Risk Advisory</span>
                 <p class="card-para">
@@ -309,50 +324,130 @@
       </div>
 
       <!-- Video Section -->
-      <div class="w-full outsourced-accounting-enterprise mt-10">
-        <video autoplay loop muted class="w-full h-full object-cover">
+      <div class="w-full outsourced-accounting-enterprise mt-0">
+        <video autoplay loop muted class="w-full h-[500px] object-cover">
           <source
             src="./assets/videos/enterprise/backgroundVideo.mp4"
             type="video/mp4"
           />
         </video>
         <div
-          class="w-full h-full flex flex-col items-center justify-center gap-3 content-enterprise text-center text-white"
+          class="w-full h-full px-10 md:px-0 py-0 flex flex-col items-center justify-center gap-3 content-enterprise"
         >
-          <h2 class="w-2/5 foreground-heading-enterprise text-6xl font-bold">
+          <h2 class="w-full md:w-1/2 foreground-heading-enterprise">
             Connecting the dots. It's what we do.
           </h2>
-          <p class="w-1/2 foreground-para-enterprise text-xl">
+          <p class="w-full md:w-1/2 foreground-para-enterprise">
             Since the beginning, we have been about creating connections. With
             our clients, our team, and our communities. Connecting accounting
             has, for and, been changing the world's leading enterprises into
             partners.
           </p>
-          <div class="flex flex-row justify-center gap-5 mt-3">
-            <button class="foreground-btn-enterprise">Who we are</button>
-            <button class="foreground-btn-enterprise">Our Services</button>
-            <button class="foreground-btn-enterprise">Contact us</button>
+          <div class="flex flex-row justify-center flex-wrap gap-5 mt-3">
+            <button class="foreground-btn">Who we are</button>
+            <button class="foreground-btn">Our Services</button>
+            <button class="foreground-btn">Contact us</button>
           </div>
         </div>
       </div>
-
-      <!-- Client Experience -->
-      <div class="flex flex-col items-center gap-12 py-20">
+      <div class="flex flex-col items-center gap-12 mt-20">
         <div class="flex flex-col items-center gap-2.5">
-          <h2 class="financials-heading">
+          <h2 class="financials-heading text-2xl md:text-6xl">
             Transforming Finances: <br />
-            <span class="financials-heading-secondary"
+            <span class="financials-heading-secondary px-1"
               >RAHA Financials Client Experiences</span
             >
           </h2>
 
-          <p class="financials-para">
+          <p class="financials-para w-full md:w-3/4">
             Don't just take our word for it. See what our satisfied customers
             have to say about our services.
           </p>
         </div>
-        <div class="w-full flex flex-row justify-center px-2 gap-1">
-          <div class="flex flex-col gap-3.5 financial-div">
+        <div class="financial-carousel-wrapper hidden md:block">
+          <div
+            class="w-full flex flex-row justify-between px-0 gap-2 md:gap-2 gap-y-5 financial-carousel-container"
+          >
+            <div
+              class="flex flex-col gap-3.5 financial-div financial-carousel-item"
+            >
+              <div class="financial-inner-div">
+                <p class="financial-inner-div-text">
+                  We've been working with Raha Financials for years and they've
+                  always provided us with top-notch service. Their expertise and
+                  attention to detail have been invaluable to our business.
+                </p>
+              </div>
+              <div class="financial-inner-div-2">
+                <img src="./assets/images/financialDivImage1.png" alt="" />
+                <div class="financial-inner-div-2-inner">
+                  <span class="financial-span-1">Cody Fisher</span>
+                  <span class="financial-span-2">Deloitte</span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex flex-col gap-3.5 financial-div financial-carousel-item"
+            >
+              <div class="financial-inner-div">
+                <p class="financial-inner-div-text">
+                  We've been working with Raha Financials for years and they've
+                  always provided us with top-notch service. Their expertise and
+                  attention to detail have been invaluable to our business.
+                </p>
+              </div>
+              <div class="financial-inner-div-2">
+                <img src="./assets/images/financialDivImage2.png" alt="" />
+                <div class="financial-inner-div-2-inner">
+                  <span class="financial-span-1">Jenny Wilson</span>
+                  <span class="financial-span-2">Behance</span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex flex-col gap-3.5 financial-div financial-carousel-item"
+            >
+              <div class="financial-inner-div">
+                <p class="financial-inner-div-text">
+                  We've been working with Raha Financials for years and they've
+                  always provided us with top-notch service. Their expertise and
+                  attention to detail have been invaluable to our business.
+                </p>
+              </div>
+              <div class="financial-inner-div-2">
+                <img src="./assets/images/financialDivImage3.png" alt="" />
+                <div class="financial-inner-div-2-inner">
+                  <span class="financial-span-1">Ronald Richards</span>
+                  <span class="financial-span-2">Razer</span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex flex-col gap-3.5 financial-div financial-carousel-item"
+            >
+              <div class="financial-inner-div">
+                <p class="financial-inner-div-text">
+                  We've been working with Raha Financials for years and they've
+                  always provided us with top-notch service. Their expertise and
+                  attention to detail have been invaluable to our business.
+                </p>
+              </div>
+              <div class="financial-inner-div-2">
+                <img src="./assets/images/financialDivImage4.png" alt="" />
+                <div class="financial-inner-div-2-inner">
+                  <span class="financial-span-1">Eleanor Pena</span>
+                  <span class="financial-span-2">Eleanor Pena</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="w-full flex flex-row justify-between px-0 gap-2 md:gap-2 gap-y-5 financial-carousel-container block md:hidden"
+        >
+          <div
+            class="flex flex-col gap-3.5 financial-div financial-carousel-item"
+          >
             <div class="financial-inner-div">
               <p class="financial-inner-div-text">
                 We've been working with Raha Financials for years and they've
@@ -368,7 +463,9 @@
               </div>
             </div>
           </div>
-          <div class="flex flex-col gap-3.5 financial-div">
+          <div
+            class="flex flex-col gap-3.5 financial-div financial-carousel-item"
+          >
             <div class="financial-inner-div">
               <p class="financial-inner-div-text">
                 We've been working with Raha Financials for years and they've
@@ -384,7 +481,9 @@
               </div>
             </div>
           </div>
-          <div class="flex flex-col gap-3.5 financial-div">
+          <div
+            class="flex flex-col gap-3.5 financial-div financial-carousel-item"
+          >
             <div class="financial-inner-div">
               <p class="financial-inner-div-text">
                 We've been working with Raha Financials for years and they've
@@ -400,7 +499,9 @@
               </div>
             </div>
           </div>
-          <div class="flex flex-col gap-3.5 financial-div">
+          <div
+            class="flex flex-col gap-3.5 financial-div financial-carousel-item"
+          >
             <div class="financial-inner-div">
               <p class="financial-inner-div-text">
                 We've been working with Raha Financials for years and they've
@@ -417,10 +518,13 @@
             </div>
           </div>
         </div>
-        <div class="flex flex-row justify-center gap-2.5">
-          <a href="./consultation.html" class="request-consultation-btn"
-            >Request Consulation</a
+        <div class="flex flex-row justify-center gap-2.5 mb-12">
+          <a
+            href="./consultation.html"
+            class="request-consultation-btn-secondary"
           >
+            Request Consulation
+          </a>
           <button class="request-call-btn">Call Us</button>
         </div>
       </div>

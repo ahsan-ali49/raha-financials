@@ -1345,15 +1345,6 @@ body::-webkit-scrollbar,
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.foreground-heading-enterprise {
-  font-size: 3rem;
-  font-weight: bold;
-}
-
-.foreground-para-enterprise {
-  font-size: 1.25rem;
-}
-
 .foreground-btn-enterprise {
   display: flex;
   flex-direction: row;

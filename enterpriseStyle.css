@@ -1,3 +1,117 @@
+.hero-primary-heading-enterprise {
+  color: var(--White, #fff);
+  text-align: center;
+  font-family: "Uncut Sans";
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 38px */
+  letter-spacing: -2.28px;
+}
+.hero-para-enterpise {
+  color: var(--White, #fff);
+  text-align: center;
+  font-family: "Uncut Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.48px;
+}
+.hero-btn-enterprise {
+  display: flex;
+  padding: 10px 20px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  background: var(--White, #fff);
+  color: var(--Black, #000);
+  font-family: "Uncut Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.32px;
+}
+.foreground-heading-enterprise {
+  color: var(--White, #fff);
+  text-align: center;
+  font-family: "Uncut Sans";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -1.6px;
+}
+.foreground-para-enterprise {
+  color: var(--White, #fff);
+  text-align: center;
+  font-family: "Uncut Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.48px;
+}
+@media (min-width: 640px) {
+  /* For screens 640px and larger */
+  .foreground-para-enterprise {
+    color: var(--White, #fff);
+    text-align: center;
+    font-family: "Uncut Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.6px;
+  }
+  .foreground-heading-enterprise {
+    color: var(--White, #fff);
+    text-align: center;
+    font-family: "Uncut Sans";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -3.2px;
+  }
+  .hero-btn-enterprise {
+    display: flex;
+    padding: 15px 25px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    background: #f6f6f6;
+    color: var(--Black, #000);
+    font-family: "Uncut Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.4px;
+  }
+  .hero-para-enterpise {
+    color: var(--White, #fff);
+    text-align: center;
+    font-family: "Uncut Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.54px;
+  }
+  .hero-primary-heading-enterprise {
+    color: var(--White, #fff);
+    text-align: center;
+    font-family: "Uncut Sans";
+    font-size: 95px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100px; /* 105.263% */
+    letter-spacing: -5.7px;
+  }
+}
+
 .navbar-background-enterprise {
   background: #1445c2;
 }
@@ -203,84 +317,6 @@ top: 0px; */
   /* Inside auto layout */
   flex: none;
   order: 1;
-  flex-grow: 0;
-}
-
-.hero-primary-heading-enterprise {
-  /* What we Provide for the Success of your Business */
-
-  width: 100%;
-  /* height: 200px; */
-
-  /* font-family: 'Uncut Sans'; */
-  font-style: normal;
-  font-weight: 600;
-  font-size: 95px;
-  line-height: 100px;
-  /* or 105% */
-  text-align: center;
-  letter-spacing: -0.06em;
-
-  /* White */
-  color: #ffffff;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-}
-
-.hero-para-enterpise {
-  /* From consolidated reporting to industry expertise, we deliver data-driven insights and actionable strategies for success. */
-
-  /* width: 634px;
-    height: 46px;
-
-    font-family: 'Uncut Sans'; */
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 22px;
-  text-align: center;
-  letter-spacing: -0.03em;
-
-  /* White */
-  color: #ffffff;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-}
-
-.hero-btn-enterprise {
-  /* Frame 4 */
-
-  /* Auto layout */
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 15px 25px;
-  gap: 10px;
-
-  height: 55px;
-
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 25px;
-  /* identical to box height */
-  letter-spacing: -0.02em;
-
-  /* Black */
-  color: #000000;
-
-  background: #f6f6f6;
-  border-radius: 10px;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 2;
   flex-grow: 0;
 }
 
