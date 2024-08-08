@@ -103,19 +103,20 @@ carouselContainer.addEventListener("mouseup", () => {
   carouselContainer.classList.remove("active");
 });
 
-carouselContainer.addEventListener("mousemove", (e) => {
-  if (!isDown) {
-    const rect = carouselContainer.getBoundingClientRect();
-    const x = e.clientX - rect.left; // x position within the element
-    const walk = (x / rect.width) * carouselContainer.scrollWidth - rect.width / 2;
-    carouselContainer.scrollLeft = walk;
-  } else {
-    e.preventDefault();
-    const x = e.pageX - carouselContainer.offsetLeft;
-    const walk = (x - startX) * 2; // Adjust scroll speed
-    carouselContainer.scrollLeft = scrollLeft - walk;
-  }
-});
+// carouselContainer.addEventListener("mousemove", (e) => {
+//   if (!isDown) {
+//     const rect = carouselContainer.getBoundingClientRect();
+//     const x = e.clientX; // x position within the element
+//     const walk =
+//       (x / rect.width) * carouselContainer.scrollWidth - rect.width / 2;
+//     carouselContainer.scrollLeft = walk;
+//   } else {
+//     e.preventDefault();
+//     const x = e.pageX - carouselContainer.offsetLeft;
+//     const walk = x - startX; // Adjust scroll speed
+//     carouselContainer.scrollLeft = scrollLeft - walk;
+//   }
+// });
 
 // Touch events for mobile
 carouselContainer.addEventListener("touchstart", (e) => {
@@ -135,7 +136,6 @@ carouselContainer.addEventListener("touchmove", (e) => {
   const walk = (x - startX) * 2; // Adjust scroll speed
   carouselContainer.scrollLeft = scrollLeft - walk;
 });
-
 
 const attachEventListeners = () => {
   const information1Button = document.querySelector("#info-1-btn");
@@ -241,7 +241,9 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-const financialCarouselContainer = document.querySelector(".financial-carousel-container");
+const financialCarouselContainer = document.querySelector(
+  ".financial-carousel-container"
+);
 
 let isDown1 = false;
 let startX1;
