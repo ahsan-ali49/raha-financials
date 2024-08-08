@@ -126,18 +126,20 @@
           >
             <form
               class="information-form py-5 px-9 flex flex-col gap-1.5 md:gap-5"
+              id="clientForm"
             >
               <span class="information-form-span">1. Client Information</span>
               <div class="form-fields-div flex-wrap gap-y-1.5">
                 <input
                   type="text"
+                  id="fullName"
                   class="information-name-field w-full md:w-[49%]"
                   placeholder="Full Name*"
-                  value=""
                   required
                 />
                 <input
                   type="email"
+                  id="email"
                   class="information-secondary-field w-full md:w-[49%]"
                   placeholder="Email*"
                   required
@@ -146,35 +148,39 @@
               <div class="form-fields-div flex-wrap gap-y-1.5">
                 <input
                   type="text"
+                  id="dob"
                   class="information-secondary-field w-full md:w-[49%]"
                   placeholder="Date of Birth"
                 />
                 <input
                   type="text"
+                  id="phoneNumber"
                   class="information-secondary-field w-full md:w-[49%]"
                   placeholder="Phone Number"
                 />
               </div>
               <input
                 type="text"
+                id="businessName"
                 class="information-secondary-field w-full"
                 placeholder="Business Name (if applicable)"
-                id="information-company-name"
-                value=""
               />
               <input
                 type="text"
+                id="homeAddress"
                 class="information-secondary-field w-full"
                 placeholder="Home Address (if different)"
               />
               <div class="form-fields-div flex-wrap gap-y-1.5">
                 <input
                   type="text"
+                  id="city"
                   class="information-secondary-field w-full md:w-[49%]"
                   placeholder="City"
                 />
                 <input
                   type="text"
+                  id="state"
                   class="information-secondary-field w-full md:w-[49%]"
                   placeholder="State/ Province"
                 />
@@ -182,11 +188,13 @@
               <div class="form-fields-div flex-wrap gap-y-1.5">
                 <input
                   type="text"
+                  id="postalCode"
                   class="information-secondary-field w-full md:w-[49%]"
                   placeholder="Postal Code"
                 />
                 <input
                   type="text"
+                  id="country"
                   class="information-secondary-field w-full md:w-[49%]"
                   placeholder="Country"
                 />
@@ -194,11 +202,13 @@
               <div class="form-fields-div flex-wrap gap-y-1.5">
                 <input
                   type="text"
+                  id="citizenshipStatus"
                   class="information-secondary-field w-full md:w-[49%]"
                   placeholder="Citizenship Status"
                 />
                 <input
                   type="text"
+                  id="countryOfCitizenship"
                   class="information-secondary-field w-full md:w-[49%]"
                   placeholder="Country of Citizenship"
                 />
@@ -209,59 +219,49 @@
                   <input type="radio" id="yes" name="ustr" value="yes" />
                   <label for="yes" class="font-bold">Yes</label>
                 </div>
-
                 <div>
                   <input type="radio" id="no" name="ustr" value="no" />
                   <label for="no" class="font-bold">No</label>
                 </div>
               </div>
-
               <fieldset>
                 <p class="font-bold">Opted Services</p>
-
                 <div>
                   <input type="checkbox" id="bk" name="bk" />
                   <label for="bk" class="font-medium">Bookkeeping</label>
                 </div>
-
                 <div>
                   <input type="checkbox" id="fs" name="fs" checked />
                   <label for="fs" class="font-medium"
                     >Financial Statements</label
                   >
                 </div>
-
                 <div>
                   <input type="checkbox" id="tpf" name="tpf" checked />
                   <label for="tpf" class="font-medium"
                     >Tax Preparation and Filing</label
                   >
                 </div>
-
                 <div>
                   <input type="checkbox" id="ad" name="ad" />
                   <label for="ad" class="font-medium">Auditing</label>
                 </div>
-
                 <div>
                   <input type="checkbox" id="pp" name="pp" />
                   <label for="pp" class="font-medium">Payroll Processing</label>
                 </div>
-
                 <div>
                   <input type="checkbox" id="br" name="br" />
                   <label for="br" class="font-medium"
                     >Business Registration</label
                   >
                 </div>
-
                 <div>
                   <input type="checkbox" id="itin" name="itin" />
                   <label for="itin" class="font-medium"
                     >ITIN Registration (if applicable)</label
                   >
                 </div>
-
                 <div>
                   <input type="checkbox" id="nwe" name="nwe" />
                   <label for="nwe" class="font-medium"
@@ -270,17 +270,16 @@
                 </div>
               </fieldset>
               <textarea
+                id="taxResidency"
                 placeholder="If no, please specify your tax residency:"
                 class="information-tertiary-field w-full"
                 rows="4"
               ></textarea>
-              <a
-                href="./information2.html"
-                class="hero-btn w-fit"
-                id="info-1-btn"
-                >Next</a
-              >
+              <button type="button" class="hero-btn w-fit" id="info-1-btn">
+                Submit
+              </button>
             </form>
+
             <div class="form-step-div">
               <span class="font-bold">2. Privary Agreement</span>
             </div>
@@ -550,6 +549,7 @@
     </div>
 
     <!-- <script src="./scripts.js"></script> -->
+    <script src="./informationScript.js"></script>
     <script src="./modalScript.js"></script>
   </body>
 </html>
