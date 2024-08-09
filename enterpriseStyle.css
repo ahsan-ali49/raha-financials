@@ -53,8 +53,83 @@
   line-height: normal;
   letter-spacing: -0.48px;
 }
+.market-expansion-heading {
+  color: var(--White, #fff);
+  text-align: center;
+  font-family: "Uncut Sans";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -1.6px;
+}
+.market-expansion-para {
+  color: var(--White, #fff);
+  text-align: center;
+  font-family: "Uncut Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.48px;
+}
+.market-expansion-btn {
+  display: flex;
+  padding: 10px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  background: #f6f6f6;
+  color: var(--Black, #000);
+  text-align: center;
+  font-family: "Uncut Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.32px;
+}
+
 @media (min-width: 640px) {
   /* For screens 640px and larger */
+  .market-expansion-btn {
+    display: flex;
+    padding: 15px 25px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    background: #f6f6f6;
+    color: var(--Black, #000);
+    text-align: center;
+    font-family: "Uncut Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.4px;
+  }
+  .market-expansion-para {
+    color: var(--White, #fff);
+    text-align: center;
+    font-family: "Uncut Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.6px;
+  }
+  .market-expansion-heading {
+    color: var(--White, #fff);
+    text-align: center;
+    font-family: "Uncut Sans";
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -2.8px;
+  }
   .foreground-para-enterprise {
     color: var(--White, #fff);
     text-align: center;
@@ -418,60 +493,4 @@ top: 0px; */
     #1445c2 100%
   );
   border-radius: 22px;
-}
-
-.market-expansion-heading {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 56px;
-  line-height: 70px;
-  text-align: center;
-  letter-spacing: -0.05em;
-
-  color: #ffffff;
-
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-}
-
-.market-expansion-para {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 25px;
-  text-align: center;
-  letter-spacing: -0.03em;
-
-  color: #ffffff;
-
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-}
-
-.market-expansion-btn {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 15px 25px;
-  gap: 10px;
-
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 25px;
-
-  text-align: center;
-  letter-spacing: -0.02em;
-
-  color: #000000;
-
-  background: #f6f6f6;
-  border-radius: 10px;
-
-  flex: none;
-  order: 1;
-  flex-grow: 0;
 }
