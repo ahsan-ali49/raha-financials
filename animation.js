@@ -22,6 +22,14 @@ document
 
     // Redirect to the new page after the animation duration
     setTimeout(function () {
-      window.location.href = "./enterprise.html";
+      // Get the full path of the current page
+      let fullPath = window.location.pathname;
+
+      // Extract the file name from the full path
+      let fileName = fullPath.substring(fullPath.lastIndexOf("/") + 1);
+
+      console.log(fileName); // This will log the current file name
+      if (fileName == "enterprise.html") window.location.href = "./index.html";
+      else window.location.href = "./enterprise.html";
     }, 1200); // Match this duration with the CSS transition time
   });
