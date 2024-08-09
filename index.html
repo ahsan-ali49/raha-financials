@@ -21,6 +21,10 @@
     <!-- <script src="./particles.js"></script> -->
   </head>
   <body class="overflow-x-hidden" id="index">
+    <div id="transition-layer"></div>
+    <div id="transition-layer-1"></div>
+    <div id="transition-layer-2"></div>
+
     <!-- Services Page -->
     <div>
       <!-- Navbar -->
@@ -130,7 +134,11 @@
                   >Individual/Small Business</span
                 >
               </a>
-              <a href="./enterprise.html" class="hero-entr-btn">Enterprise</a>
+              <a href="#" id="hero-entr-btn" class="hero-entr-btn"
+                >Enterprise</a
+              >
+
+              <!-- <a href="./enterprise.html" class="hero-entr-btn">Enterprise</a> -->
             </div>
           </div>
 
@@ -1442,6 +1450,7 @@
     </div>
     <script src="./app.js"></script>
     <script src="./scripts.js"></script>
+    <script src="./animation.js"></script>
     <script>
       const rotatingTexts = document.querySelectorAll(".rotating-text");
       let index = 0;

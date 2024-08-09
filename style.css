@@ -23,10 +23,10 @@ body::-webkit-scrollbar,
   display: none;
 }
 
-#index,
+/* #index,
 #enterprise {
   animation: fadeOut 2s forwards;
-}
+} */
 
 @keyframes fadeOut {
   from {
@@ -34,20 +34,6 @@ body::-webkit-scrollbar,
   }
   to {
     opacity: 0;
-  }
-}
-
-#index,
-#enterprise {
-  animation: fadeIn 2s forwards;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
   }
 }
 
@@ -2023,3 +2009,57 @@ body::-webkit-scrollbar,
 }
 
 /* Add more styles and delays for additional text elements */
+
+#transition-layer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000; /* You can change this to any color or gradient */
+  z-index: 9999;
+  transform: translateX(-100%);
+  transition: transform 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+#transition-layer-1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #1445c2; /* You can change this to any color or gradient */
+  z-index: 9999;
+  transform: translateX(-100%);
+  transition: transform 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+#transition-layer-2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: blue; /* You can change this to any color or gradient */
+  z-index: 9999;
+  transform: translateX(-100%);
+  transition: transform 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+#transition-layer.active,
+#transition-layer-1.active,
+#transition-layer-2.active {
+  transform: translateX(0);
+}
+
+#enterprise,
+#index {
+  animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
