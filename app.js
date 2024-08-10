@@ -64,7 +64,7 @@ particlesJS(
       line_linked: {
         enable: false,
         distance: 150,
-        color: "#ffffff",
+        color: "#1445C2",
         opacity: 0.4,
         width: 1,
       },
@@ -87,7 +87,7 @@ particlesJS(
       events: {
         onhover: {
           enable: true,
-          mode: "repulse",
+          mode: "grab",
         },
         onclick: {
           enable: true,
