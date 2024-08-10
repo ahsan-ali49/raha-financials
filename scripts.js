@@ -198,46 +198,46 @@ let startX1;
 let scrollLeft1;
 
 // Mouse events for desktop
-financialCarouselContainer.addEventListener("mousedown", (e) => {
-  isDown1 = true;
-  financialCarouselContainer.classList.add("active");
-  startX1 = e.pageX - financialCarouselContainer.offsetLeft;
-  scrollLeft1 = financialCarouselContainer.scrollLeft1;
-});
+// financialCarouselContainer.addEventListener("mousedown", (e) => {
+//   isDown1 = true;
+//   financialCarouselContainer.classList.add("active");
+//   startX1 = e.pageX - financialCarouselContainer.offsetLeft;
+//   scrollLeft1 = financialCarouselContainer.scrollLeft1;
+// });
 
-financialCarouselContainer.addEventListener("mouseleave", () => {
-  isDown1 = false;
-  financialCarouselContainer.classList.remove("active");
-});
+// financialCarouselContainer.addEventListener("mouseleave", () => {
+//   isDown1 = false;
+//   financialCarouselContainer.classList.remove("active");
+// });
 
-financialCarouselContainer.addEventListener("mouseup", () => {
-  isDown1 = false;
-  financialCarouselContainer.classList.remove("active");
-});
+// financialCarouselContainer.addEventListener("mouseup", () => {
+//   isDown1 = false;
+//   financialCarouselContainer.classList.remove("active");
+// });
 
-financialCarouselContainer.addEventListener("mousemove", (e) => {
-  if (!isDown1) return;
-  e.preventDefault();
-  const x = e.pageX - financialCarouselContainer.offsetLeft;
-  const walk = (x - startX1) * 2; // Adjust scroll speed
-  financialCarouselContainer.scrollLeft1 = scrollLeft1 - walk;
-});
+// financialCarouselContainer.addEventListener("mousemove", (e) => {
+//   if (!isDown1) return;
+//   e.preventDefault();
+//   const x = e.pageX - financialCarouselContainer.offsetLeft;
+//   const walk = (x - startX1) * 2; // Adjust scroll speed
+//   financialCarouselContainer.scrollLeft1 = scrollLeft1 - walk;
+// });
 
 // Touch events for mobile
-financialCarouselContainer.addEventListener("touchstart", (e) => {
-  isDown1 = true;
-  startX1 = e.touches[0].pageX - financialCarouselContainer.offsetLeft;
-  scrollLeft1 = financialCarouselContainer.scrollLeft1;
-});
+// financialCarouselContainer.addEventListener("touchstart", (e) => {
+//   isDown1 = true;
+//   startX1 = e.touches[0].pageX - financialCarouselContainer.offsetLeft;
+//   scrollLeft1 = financialCarouselContainer.scrollLeft1;
+// });
 
-financialCarouselContainer.addEventListener("touchend", () => {
-  isDown1 = false;
-});
+// financialCarouselContainer.addEventListener("touchend", () => {
+//   isDown1 = false;
+// });
 
-financialCarouselContainer.addEventListener("touchmove", (e) => {
-  if (!isDown1) return;
-  e.preventDefault();
-  const x = e.touches[0].pageX - financialCarouselContainer.offsetLeft;
-  const walk = (x - startX1) * 2; // Adjust scroll speed
-  financialCarouselContainer.scrollLeft1 = scrollLeft1 - walk;
-});
+// financialCarouselContainer.addEventListener("touchmove", (e) => {
+//   if (!isDown1) return;
+//   e.preventDefault();
+//   const x = e.touches[0].pageX - financialCarouselContainer.offsetLeft;
+//   const walk = (x - startX1) * 2; // Adjust scroll speed
+//   financialCarouselContainer.scrollLeft1 = scrollLeft1 - walk;
+// });
