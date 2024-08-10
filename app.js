@@ -17,7 +17,7 @@ particlesJS(
   {
     particles: {
       number: {
-        value: 150,
+        value: 380,
         density: {
           enable: true,
           value_area: 800,
@@ -52,7 +52,7 @@ particlesJS(
         },
       },
       size: {
-        value: 5,
+        value: 3,
         random: true,
         anim: {
           enable: false,
@@ -65,16 +65,17 @@ particlesJS(
         enable: true,
         distance: 150,
         color: "#1445C2",
-        opacity: 0.3,
+        opacity: 0.4,
         width: 1,
       },
       move: {
         enable: true,
-        speed: 3,
+        speed: 6,
         direction: "none",
         random: false,
         straight: false,
         out_mode: "out",
+        bounce: false,
         attract: {
           enable: false,
           rotateX: 600,
@@ -97,7 +98,7 @@ particlesJS(
       },
       modes: {
         grab: {
-          distance: 300,
+          distance: 140,
           line_linked: {
             opacity: 1,
           },
@@ -111,6 +112,7 @@ particlesJS(
         },
         repulse: {
           distance: 200,
+          duration: 0.4,
         },
         push: {
           particles_nb: 4,
@@ -121,13 +123,5 @@ particlesJS(
       },
     },
     retina_detect: true,
-    config_demo: {
-      hide_card: false,
-      background_color: "#b61924",
-      background_image: "",
-      background_position: "50% 50%",
-      background_repeat: "no-repeat",
-      background_size: "cover",
-    },
   }
 );

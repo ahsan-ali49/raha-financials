@@ -85,58 +85,6 @@ let isDown = false;
 let startX;
 let scrollLeft;
 
-// Mouse events for desktop
-// carouselContainer.addEventListener("mousedown", (e) => {
-//   isDown = true;
-//   carouselContainer.classList.add("active");
-//   startX = e.pageX - carouselContainer.offsetLeft;
-//   scrollLeft = carouselContainer.scrollLeft;
-// });
-
-// carouselContainer.addEventListener("mouseleave", () => {
-//   isDown = false;
-//   carouselContainer.classList.remove("active");
-// });
-
-// carouselContainer.addEventListener("mouseup", () => {
-//   isDown = false;
-//   carouselContainer.classList.remove("active");
-// });
-
-// carouselContainer.addEventListener("mousemove", (e) => {
-//   if (!isDown) {
-//     const rect = carouselContainer.getBoundingClientRect();
-//     const x = e.clientX; // x position within the element
-//     const walk =
-//       (x / rect.width) * carouselContainer.scrollWidth - rect.width / 2;
-//     carouselContainer.scrollLeft = walk;
-//   } else {
-//     e.preventDefault();
-//     const x = e.pageX - carouselContainer.offsetLeft;
-//     const walk = x - startX; // Adjust scroll speed
-//     carouselContainer.scrollLeft = scrollLeft - walk;
-//   }
-// });
-
-// Touch events for mobile
-// carouselContainer.addEventListener("touchstart", (e) => {
-//   isDown = true;
-//   startX = e.touches[0].pageX - carouselContainer.offsetLeft;
-//   scrollLeft = carouselContainer.scrollLeft;
-// });
-
-// carouselContainer.addEventListener("touchend", () => {
-//   isDown = false;
-// });
-
-// carouselContainer.addEventListener("touchmove", (e) => {
-//   if (!isDown) return;
-//   e.preventDefault();
-//   const x = e.touches[0].pageX - carouselContainer.offsetLeft;
-//   const walk = (x - startX) * 2; // Adjust scroll speed
-//   carouselContainer.scrollLeft = scrollLeft - walk;
-// });
-
 const attachEventListeners = () => {
   const information1Button = document.querySelector("#info-1-btn");
   if (information1Button) {
