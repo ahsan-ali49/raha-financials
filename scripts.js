@@ -86,22 +86,22 @@ let startX;
 let scrollLeft;
 
 // Mouse events for desktop
-carouselContainer.addEventListener("mousedown", (e) => {
-  isDown = true;
-  carouselContainer.classList.add("active");
-  startX = e.pageX - carouselContainer.offsetLeft;
-  scrollLeft = carouselContainer.scrollLeft;
-});
+// carouselContainer.addEventListener("mousedown", (e) => {
+//   isDown = true;
+//   carouselContainer.classList.add("active");
+//   startX = e.pageX - carouselContainer.offsetLeft;
+//   scrollLeft = carouselContainer.scrollLeft;
+// });
 
-carouselContainer.addEventListener("mouseleave", () => {
-  isDown = false;
-  carouselContainer.classList.remove("active");
-});
+// carouselContainer.addEventListener("mouseleave", () => {
+//   isDown = false;
+//   carouselContainer.classList.remove("active");
+// });
 
-carouselContainer.addEventListener("mouseup", () => {
-  isDown = false;
-  carouselContainer.classList.remove("active");
-});
+// carouselContainer.addEventListener("mouseup", () => {
+//   isDown = false;
+//   carouselContainer.classList.remove("active");
+// });
 
 // carouselContainer.addEventListener("mousemove", (e) => {
 //   if (!isDown) {
@@ -119,23 +119,23 @@ carouselContainer.addEventListener("mouseup", () => {
 // });
 
 // Touch events for mobile
-carouselContainer.addEventListener("touchstart", (e) => {
-  isDown = true;
-  startX = e.touches[0].pageX - carouselContainer.offsetLeft;
-  scrollLeft = carouselContainer.scrollLeft;
-});
+// carouselContainer.addEventListener("touchstart", (e) => {
+//   isDown = true;
+//   startX = e.touches[0].pageX - carouselContainer.offsetLeft;
+//   scrollLeft = carouselContainer.scrollLeft;
+// });
 
-carouselContainer.addEventListener("touchend", () => {
-  isDown = false;
-});
+// carouselContainer.addEventListener("touchend", () => {
+//   isDown = false;
+// });
 
-carouselContainer.addEventListener("touchmove", (e) => {
-  if (!isDown) return;
-  e.preventDefault();
-  const x = e.touches[0].pageX - carouselContainer.offsetLeft;
-  const walk = (x - startX) * 2; // Adjust scroll speed
-  carouselContainer.scrollLeft = scrollLeft - walk;
-});
+// carouselContainer.addEventListener("touchmove", (e) => {
+//   if (!isDown) return;
+//   e.preventDefault();
+//   const x = e.touches[0].pageX - carouselContainer.offsetLeft;
+//   const walk = (x - startX) * 2; // Adjust scroll speed
+//   carouselContainer.scrollLeft = scrollLeft - walk;
+// });
 
 const attachEventListeners = () => {
   const information1Button = document.querySelector("#info-1-btn");
