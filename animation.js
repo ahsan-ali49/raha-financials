@@ -3,9 +3,18 @@ document
   .addEventListener("click", function (event) {
     event.preventDefault(); // Prevent the default link behavior
     const body = document.querySelector("body");
-    const transitionLayer = document.getElementById("transition-layer");
-    const transitionLayer1 = document.getElementById("transition-layer-1");
-    const transitionLayer2 = document.getElementById("transition-layer-2");
+    let transitionLayer = document.getElementById("transition-layer");
+    let transitionLayer1 = document.getElementById("transition-layer-1");
+    let transitionLayer2 = document.getElementById("transition-layer-2");
+    if (!transitionLayer) {
+      transitionLayer = document.getElementById("enterprise-transition-layer");
+      transitionLayer1 = document.getElementById(
+        "enterprise-transition-layer-1"
+      );
+      transitionLayer2 = document.getElementById(
+        "enterprise-transition-layer-2"
+      );
+    }
 
     // Add the active class to start the animation
     transitionLayer.classList.add("active");
