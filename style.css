@@ -521,7 +521,7 @@ body::-webkit-scrollbar,
   position: relative;
   text-align: center;
   overflow: hidden;
-  height: 120px; /*Adjust as necessary*/
+  height: 118px; /*Adjust as necessary*/
 }
 
 .rotating-text-container {

@@ -179,12 +179,12 @@
 }
 
 .pricing-card-list-item {
+  font-family: "Uncut Sans";
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 22px;
-  /* identical to box height */
-  letter-spacing: -0.03em;
+  line-height: normal;
+  letter-spacing: -0.48px;
 }
 
 .fa {
