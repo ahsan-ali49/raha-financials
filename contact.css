@@ -26,7 +26,7 @@
 .contact-bar {
   display: flex;
   padding: 15px;
-  align-items: flex-end;
+  align-items: center;
   gap: 10px;
   align-self: stretch;
   border-radius: 15px;
