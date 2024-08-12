@@ -246,7 +246,17 @@
   margin-left: 0px;
   margin-top: 0px;
 }
-.pricing-card-child:hover .img-box-secondary,
+/* .pricing-card-child:hover .img-box-secondary,
 .pricing-card-child:hover .img-box {
   background-color: #1445c2; /* bluish color */
+/* } */
+
+.pricing-card-pricing:hover {
+  background-color: white;
+  color: black;
+}
+
+.pricing-card-pricing:hover .pricing-card-btn {
+  background-color: blue;
+  color: white;
 }
