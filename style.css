@@ -1748,26 +1748,13 @@ body::-webkit-scrollbar,
 }
 
 .footer-link-heading {
-  /* Quick Links */
-
-  width: 112px;
-  height: 28px;
-
-  /* font-family: 'Uncut Sans'; */
-  font-style: normal;
-  font-weight: 500;
+  color: var(--Black, #000);
+  font-family: "Uncut Sans";
   font-size: 22px;
-  line-height: 28px;
-  /* identical to box height */
-  letter-spacing: -0.03em;
-
-  /* Black */
-  color: #000000;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.66px;
 }
 
 .footer-link-item {
@@ -1794,26 +1781,13 @@ body::-webkit-scrollbar,
 }
 
 .footer-form-heading {
-  /* Reach out to us */
-
-  width: 148px;
-  height: 28px;
-
-  /* font-family: 'Uncut Sans'; */
-  font-style: normal;
-  font-weight: 500;
+  color: var(--Black, #000);
+  font-family: "Uncut Sans";
   font-size: 22px;
-  line-height: 28px;
-  /* identical to box height */
-  letter-spacing: -0.03em;
-
-  /* Black */
-  color: #000000;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.66px;
 }
 
 .footer-form-div {
