@@ -99,85 +99,8 @@ const attachEventListeners = () => {
         console.log(checkbox.id);
         console.log(selectedServices[checkbox.id]);
       });
-
-      loadPage("information2", "privacy-agreement");
     });
   }
-
-  const information2Button = document.querySelector("#info-2-btn");
-  if (information2Button) {
-    information2Button.addEventListener("click", () => {
-      // const formValue = document.getElementById('privacy-agreement-form').elements["privacy-agreement"].value;
-      loadPage("information3", "engagement-form");
-    });
-  }
-
-  const information2PreviousButton = document.querySelector(
-    "#info-2-previous-btn"
-  );
-  if (information2PreviousButton) {
-    information2PreviousButton.addEventListener("click", () => {
-      loadPage("information1", "information1");
-    });
-  }
-
-  const information3PreviousButton = document.querySelector(
-    "#info-3-previous-btn"
-  );
-  if (information3PreviousButton) {
-    information3PreviousButton.addEventListener("click", () => {
-      loadPage("information2", "information2");
-    });
-  }
-
-  const blog1PreviousButton = document.querySelector("#blog-previous-1-btn");
-  if (blog1PreviousButton) {
-    blog1PreviousButton.addEventListener("click", () => {
-      loadPage("blogItem3", "blogItem3");
-    });
-  }
-
-  const blog1NextButton = document.querySelector("#blog-next-1-btn");
-  if (blog1NextButton) {
-    blog1NextButton.addEventListener("click", () => {
-      loadPage("blogItem2", "blogItem2");
-    });
-  }
-
-  const blog2PreviousButton = document.querySelector("#blog-previous-2-btn");
-  if (blog2PreviousButton) {
-    blog2PreviousButton.addEventListener("click", () => {
-      loadPage("blogItem1", "blogItem1");
-    });
-  }
-
-  const blog2NextButton = document.querySelector("#blog-next-2-btn");
-  if (blog2NextButton) {
-    blog2NextButton.addEventListener("click", () => {
-      loadPage("blogItem3", "blogItem3");
-    });
-  }
-
-  const blog3PreviousButton = document.querySelector("#blog-previous-3-btn");
-  if (blog3PreviousButton) {
-    blog3PreviousButton.addEventListener("click", () => {
-      loadPage("blogItem2", "blogItem2");
-    });
-  }
-
-  const blog3NextButton = document.querySelector("#blog-next-3-btn");
-  if (blog3NextButton) {
-    blog3NextButton.addEventListener("click", () => {
-      loadPage("blogItem1", "blogItem1");
-    });
-  }
-
-  const contactBtns = document.querySelectorAll(".contact-btn");
-  contactBtns.forEach((btn) => {
-    btn.addEventListener("click", () => {
-      loadPage("information1", "information1");
-    });
-  });
 };
 
 document.addEventListener("DOMContentLoaded", function () {

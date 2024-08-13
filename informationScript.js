@@ -1,10 +1,12 @@
 const form = document.getElementById("info-1-btn");
+let formData;
+
 if (form) {
   form.addEventListener("click", function (event) {
     event.preventDefault(); // Prevent the default form submission
     // Check the button text to determine the action
     if (form.innerText === "Submit") {
-      const formData = {
+      formData = {
         fullName: document.getElementById("fullName").value,
         email: document.getElementById("email").value,
         dob: document.getElementById("dob").value,
@@ -66,3 +68,5 @@ if (form) {
     servicesListRender.innerHTML += `<li>${selectedServices[checkbox.id]}</li>`;
   });
 }
+
+export { formData };
