@@ -68,5 +68,3 @@ if (form) {
     servicesListRender.innerHTML += `<li>${selectedServices[checkbox.id]}</li>`;
   });
 }
-
-export { formData };

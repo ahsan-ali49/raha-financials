@@ -261,3 +261,47 @@ canvas#signature-pad {
     drop-shadow(0px 6px 14px rgba(176, 176, 176, 0.1));
   border-radius: 15px;
 }
+
+/* Industry */
+.industry-heading-para {
+  color: var(--Black, #000);
+  text-align: center;
+  font-family: "Uncut Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.6px;
+}
+
+.industry-flex-item {
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  border-radius: 15px;
+  border: 1px solid #dadada;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+  box-shadow: 0px 156px 44px 0px rgba(176, 176, 176, 0),
+    0px 100px 40px 0px rgba(176, 176, 176, 0.01),
+    0px 56px 34px 0px rgba(176, 176, 176, 0.05),
+    0px 25px 25px 0px rgba(176, 176, 176, 0.09),
+    0px 6px 14px 0px rgba(176, 176, 176, 0.1);
+}
+
+.industry-flex-item:hover {
+  border-radius: 15px;
+  border: 2px solid var(--Main-Radial, #587edb);
+  background: linear-gradient(180deg, #fff 0%, rgba(255, 255, 255, 0) 100%),
+    radial-gradient(
+      46.19% 50.94% at 50% 100%,
+      rgba(88, 126, 219, 0.1) 0%,
+      rgba(20, 69, 194, 0.1) 100%
+    );
+  box-shadow: 0px 156px 44px 0px rgba(176, 176, 176, 0),
+    0px 100px 40px 0px rgba(176, 176, 176, 0.01),
+    0px 56px 34px 0px rgba(176, 176, 176, 0.05),
+    0px 25px 25px 0px rgba(176, 176, 176, 0.09),
+    0px 6px 14px 0px rgba(176, 176, 176, 0.1);
+}
