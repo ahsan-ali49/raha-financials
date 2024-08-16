@@ -180,11 +180,11 @@
 
 .pricing-card-list-item {
   font-family: "Uncut Sans";
-  font-size: 16px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  letter-spacing: -0.48px;
+  letter-spacing: -0.54px;
 }
 
 .fa {
@@ -196,7 +196,8 @@
   color: black;
 }
 
-.pricing-card-child:hover .fa {
+.pricing-card-child:hover .fa,
+.pricing-card-pricing:hover .fa {
   color: #1445c2;
 }
 
