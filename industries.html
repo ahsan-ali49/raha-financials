@@ -276,27 +276,41 @@
             </li>
           </ul>
         </div>
+
         <div class="w-full md:w-5/12 footer-col-3 flex flex-col gap-2.5">
-          <span class="footer-form-heading mb-2.5">Reach out to us</span>
-          <div class="w-full footer-form-div my-2.5">
-            <input
-              type="text"
-              placeholder="Full Name"
-              class="w-1/2 footer-name-field"
-            />
-            <input
-              type="email"
-              placeholder="Email"
-              class="w-1/2 footer-email-field"
-            />
-          </div>
-          <textarea
-            name="message"
-            id="message"
-            placeholder="Message"
-            class="w-full footer-message-field mb-2.5"
-          ></textarea>
-          <button class="footer-submit-btn">Submit</button>
+          <form method="post" action="formsubmit.php">
+            <span class="footer-form-heading mb-2.5">Reach out to us</span>
+            <div class="w-full footer-form-div my-2.5">
+              <input
+                type="text"
+                name="name"
+                required
+                placeholder="Full Name"
+                class="w-1/2 footer-name-field"
+              />
+              <input
+                type="email"
+                name="email"
+                required
+                placeholder="Email"
+                class="w-1/2 footer-email-field"
+              />
+            </div>
+            <textarea
+              name="message"
+              id="message"
+              required
+              placeholder="Message"
+              class="w-full footer-message-field mb-2.5"
+            ></textarea>
+            <button
+              type="submit"
+              name="submit_from_footer"
+              class="footer-submit-btn"
+            >
+              Submit
+            </button>
+          </form>
         </div>
       </div>
       <span class="footer-span"

@@ -320,11 +320,14 @@
               </div>
             </div>
           </div>
-          <div class="flex flex-row justify-center gap-2.5">
-            <a href="./consultation.html" class="request-consultation-btn">
-              Request Consultation
+          <div class="flex flex-row justify-center gap-2.5 mb-12 mt-[50px]">
+            <a
+              href="./consultation.html"
+              class="request-consultation-btn-secondary"
+            >
+              Request Consulation
             </a>
-            <button class="call-us-btn">Call Us</button>
+            <button class="request-call-btn">Call Us</button>
           </div>
           <img
             src="./assets/images/services/serviceAbsoluteImage.png"
@@ -614,7 +617,7 @@
     </div>
 
     <!-- Footer Section -->
-    <div class="w-full footer-div px-1 md:px-20 mt-5 md:mt-10">
+    <div class="w-full footer-div px-1 md:px-20 mt-0 md:mt-10">
       <div
         class="w-full border border-t-0 border-r-0 border-l-0 border-b-1 border-gray-300 footer-inner-div pb-5 flex-wrap"
       >
@@ -635,9 +638,7 @@
             <li class="footer-link-item">
               <a href="./index.html#services">Services</a>
             </li>
-            <li class="footer-link-item">
-              <a href="./industries.html">Industries</a>
-            </li>
+            <li class="footer-link-item"><a href="#industry">Industries</a></li>
             <li class="footer-link-item">
               <a href="./blogs.html">Insights</a>
             </li>
@@ -649,27 +650,41 @@
             </li>
           </ul>
         </div>
+
         <div class="w-full md:w-5/12 footer-col-3 flex flex-col gap-2.5">
-          <span class="footer-form-heading mb-2.5">Reach out to us</span>
-          <div class="w-full footer-form-div my-2.5">
-            <input
-              type="text"
-              placeholder="Full Name"
-              class="w-1/2 footer-name-field"
-            />
-            <input
-              type="email"
-              placeholder="Email"
-              class="w-1/2 footer-email-field"
-            />
-          </div>
-          <textarea
-            name="message"
-            id="message"
-            placeholder="Message"
-            class="w-full footer-message-field mb-2.5"
-          ></textarea>
-          <button class="footer-submit-btn">Submit</button>
+          <form method="post" action="formsubmit.php">
+            <span class="footer-form-heading mb-2.5">Reach out to us</span>
+            <div class="w-full footer-form-div my-2.5">
+              <input
+                type="text"
+                name="name"
+                required
+                placeholder="Full Name"
+                class="w-1/2 footer-name-field"
+              />
+              <input
+                type="email"
+                name="email"
+                required
+                placeholder="Email"
+                class="w-1/2 footer-email-field"
+              />
+            </div>
+            <textarea
+              name="message"
+              id="message"
+              required
+              placeholder="Message"
+              class="w-full footer-message-field mb-2.5"
+            ></textarea>
+            <button
+              type="submit"
+              name="submit_from_footer"
+              class="footer-submit-btn"
+            >
+              Submit
+            </button>
+          </form>
         </div>
       </div>
       <span class="footer-span"

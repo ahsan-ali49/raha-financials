@@ -83,7 +83,7 @@
   letter-spacing: -0.48px;
 }
 .service-work-heading {
-  color: var(--White, #fff);
+  color: black;
   text-align: center;
   /* font-family: "Uncut Sans"; */
   font-size: 32px;
@@ -93,7 +93,7 @@
   letter-spacing: -1.6px;
 }
 .service-work-para {
-  color: var(--White, #fff);
+  color: black;
   text-align: center;
   /* font-family: "Uncut Sans"; */
   font-size: 16px;
@@ -126,7 +126,7 @@
 @media (min-width: 640px) {
   /* For screens 640px and larger */
   .service-work-para {
-    color: var(--White, #fff);
+    color: black;
     text-align: center;
     /* font-family: "Uncut Sans"; */
     font-size: 20px;
@@ -136,7 +136,7 @@
     letter-spacing: -0.6px;
   }
   .service-work-heading {
-    color: var(--White, #fff);
+    color: black;
     text-align: center;
     /* font-family: "Uncut Sans"; */
     font-size: 64px;
