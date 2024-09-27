@@ -1,0 +1,264 @@
+.hero-heading-pricing {
+  color: var(--Black, #000);
+  text-align: center;
+  /* font-family: "Uncut Sans"; */
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 38px */
+  letter-spacing: -2.28px;
+}
+
+.hero-secondary-heading {
+  background: var(
+    --Main-Radial,
+    radial-gradient(46.19% 50.94% at 50% 100%, #587edb 0%, #1445c2 100%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* font-family: "Uncut Sans"; */
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: -2.28px;
+}
+
+.hero-para-pricing {
+  color: var(--Black, #000);
+  text-align: center;
+  /* font-family: "Uncut Sans"; */
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.48px;
+}
+
+.pricing-card-pricing {
+  width: 100%;
+  padding: 10px 0px;
+
+  background: rgba(255, 255, 255, 0.1);
+  border: 2.5px solid #ffffff;
+  box-shadow: inset 0px 4px 15.9px rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(4.5px);
+  border-radius: 20px;
+}
+
+@media (min-width: 640px) {
+  .hero-heading-pricing {
+    color: var(--Black, #000);
+    text-align: center;
+    /* font-family: "Uncut Sans"; */
+    font-size: 95px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100px; /* 105.263% */
+    letter-spacing: -5.7px;
+  }
+  .hero-secondary-heading {
+    background: var(
+      --Main-Radial,
+      radial-gradient(46.19% 50.94% at 50% 100%, #587edb 0%, #1445c2 100%)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* font-family: "Uncut Sans"; */
+    font-size: 95px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100px;
+    letter-spacing: -5.7px;
+  }
+  .hero-para-pricing {
+    color: var(--Black, #000);
+    text-align: center;
+    /* font-family: "Uncut Sans"; */
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.54px;
+  }
+  .pricing-card-pricing {
+    width: 33%;
+  }
+}
+
+.pricing-cards-div {
+  background: radial-gradient(
+      46.19% 50.94% at 50% 100%,
+      rgba(88, 126, 219, 0.9) 0%,
+      rgba(20, 69, 194, 0.9) 100%
+    ),
+    radial-gradient(46.19% 50.94% at 50% 100%, #587edb 0%, #1445c2 100%),
+    url(.jpg);
+  background-blend-mode: normal, lighten, normal;
+  border-radius: 25px;
+}
+
+.pricing-card-btn {
+  padding: 15px 25px;
+
+  width: 100%;
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: -0.02em;
+
+  background: white;
+  color: #1445c2;
+  border-radius: 12.5px;
+}
+
+.pricing-card-child:hover .pricing-card-btn {
+  /* background: radial-gradient(
+    46.19% 50.94% at 50% 100%,
+    #587edb 0%,
+    #1445c2 100%
+  ); */
+  background-color: white;
+  color: #1445c2;
+}
+
+.pricing-card-child:hover .pricing-card-span-3 {
+  color: white;
+}
+
+.pricing-card-span-33 {
+  color: white;
+}
+
+.pricing-card-child:hover .pricing-card-span-33 {
+  color: white;
+}
+
+.pricing-card-span-1 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 28px;
+  letter-spacing: -0.03em;
+}
+
+.img-box {
+  background-color: white;
+}
+
+.pricing-card-child:hover .img-box {
+  background-color: #1445c2;
+}
+
+.img-box-primary {
+  background-color: #1445c2;
+}
+
+.img-box-secondary {
+  background-color: white;
+}
+
+.pricing-card-span-2 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: -0.03em;
+}
+
+.pricing-card-span-3 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 33px;
+  line-height: 41px;
+  letter-spacing: -0.03em;
+  color: white;
+}
+
+.pricing-card-list-item {
+  font-family: "Uncut Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.54px;
+}
+
+.fa {
+  font-size: 24px;
+  margin-right: 8px;
+}
+
+.pricing-card-child:hover {
+  color: white;
+}
+
+.pricing-card-child:hover .fa,
+.pricing-card-pricing:hover .fa {
+  color: white;
+}
+
+.pricing-card-child {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.img-box-secondary img,
+.img-box img {
+  transition: opacity 0.3s ease;
+}
+
+.img-box-secondary,
+.img-box {
+  transition: background-color 0.3s ease;
+}
+
+.pricing-card-child:hover .img-box-secondary img,
+.pricing-card-child:hover .img-box img {
+  opacity: 0;
+}
+
+.pricing-card-child:hover .img-box-secondary::before,
+.pricing-card-child:hover .img-box::before {
+  content: url("./assets/images/enterprise/Vector.png");
+  position: absolute;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  margin-left: 7px;
+  margin-top: 4px;
+}
+
+.pricing-card-child:hover .imgbox::before {
+  content: url("./assets/images/enterprise/Vector.png");
+  position: absolute;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  margin-left: 0px;
+  margin-top: 0px;
+}
+
+.pricing-card-child-4:hover .img-box::before {
+  content: url("./assets/images/enterprise/database4-2.png");
+  position: absolute;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  margin-left: 0px;
+  margin-top: 0px;
+}
+/* .pricing-card-child:hover .img-box-secondary,
+.pricing-card-child:hover .img-box {
+  background-color: #1445c2; /* bluish color */
+/* } */
+
+.pricing-card-pricing:hover {
+  background-color: white;
+  color: white;
+}
+
+.pricing-card-pricing:hover .pricing-card-btn {
+  background-color: white;
+  color: #000080;
+}
