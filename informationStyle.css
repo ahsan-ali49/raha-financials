@@ -121,51 +121,6 @@
   border-radius: 15px;
 }
 
-.client-information-primary-bar {
-  display: flex;
-  padding: 15px 20px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 15px;
-  border-radius: 10px;
-  border: 2px solid #fff;
-  background: var(
-    --Main-Radial,
-    radial-gradient(46.19% 50.94% at 50% 100%, #587edb 0%, #1445c2 100%)
-  );
-  box-shadow: 0px 156px 44px 0px rgba(176, 176, 176, 0),
-    0px 100px 40px 0px rgba(176, 176, 176, 0.01),
-    0px 56px 34px 0px rgba(176, 176, 176, 0.05),
-    0px 25px 25px 0px rgba(176, 176, 176, 0.09),
-    0px 6px 14px 0px rgba(176, 176, 176, 0.1);
-  color: var(--White, #fff);
-  font-family: "Uncut Sans";
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  letter-spacing: -0.54px;
-}
-.client-information-secondary-bar {
-  padding: 15px 20px;
-  border-radius: 10px;
-  border: 1px solid #dadada;
-  background: linear-gradient(180deg, #fff 0%, rgba(255, 255, 255, 0) 100%);
-  box-shadow: 0px 156px 44px 0px rgba(176, 176, 176, 0),
-    0px 100px 40px 0px rgba(176, 176, 176, 0.01),
-    0px 56px 34px 0px rgba(176, 176, 176, 0.05),
-    0px 25px 25px 0px rgba(176, 176, 176, 0.09),
-    0px 6px 14px 0px rgba(176, 176, 176, 0.1);
-  color: var(--Black, #000);
-  font-family: "Uncut Sans";
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  letter-spacing: -0.54px;
-}
-
 @media (min-width: 640px) {
   .client-information-secondary-bar {
     display: flex;
@@ -218,6 +173,48 @@
     line-height: normal;
     letter-spacing: -0.72px;
   }
+}
+
+.client-information-primary-bar {
+  padding: 15px 20px;
+  border-radius: 10px;
+  border: 1px solid #fff;
+  background: radial-gradient(
+    46.19% 50.94% at 50% 100%,
+    #587edb 0%,
+    #1445c2 100%
+  );
+  box-shadow: 0px 156px 44px 0px rgba(176, 176, 176, 0),
+    0px 100px 40px 0px rgba(176, 176, 176, 0.01),
+    0px 56px 34px 0px rgba(176, 176, 176, 0.05),
+    0px 25px 25px 0px rgba(176, 176, 176, 0.09),
+    0px 6px 14px 0px rgba(176, 176, 176, 0.1);
+  color: #fff;
+  font-family: "Uncut Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.54px;
+}
+
+.client-information-secondary-bar {
+  padding: 15px 20px;
+  border-radius: 10px;
+  border: 1px solid #dadada;
+  background: linear-gradient(180deg, #fff 0%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: 0px 156px 44px 0px rgba(176, 176, 176, 0),
+    0px 100px 40px 0px rgba(176, 176, 176, 0.01),
+    0px 56px 34px 0px rgba(176, 176, 176, 0.05),
+    0px 25px 25px 0px rgba(176, 176, 176, 0.09),
+    0px 6px 14px 0px rgba(176, 176, 176, 0.1);
+  color: #000;
+  font-family: "Uncut Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.54px;
 }
 
 .information-previous-btn {

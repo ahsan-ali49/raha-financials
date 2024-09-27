@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog | Raha Financials</title>
+  <link rel="icon" type="image/x-icon" href="./assets/images/favIcon.svg" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="enterpriseStyle.css" />
+  <link rel="stylesheet" href="pricingStyle.css" />
+  <link rel="stylesheet" href="informationStyle.css" />
+  <link rel="stylesheet" href="servicesStyle.css" />
+  <link rel="stylesheet" href="blog.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+  <!-- Navbar -->
+  <div class="px-4 md:px-20 py-2.5 navbar-background">
+    <div class="flex flex-wrap items-center justify-between mx-auto rounded-xl w-full pl-6 pr-2.5 py-2.5 navbar-link">
+      <a href="./index.php" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <img src="./assets/images/navbarLogo.svg" alt="raha Financials logo" />
+      </a>
+      <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+        <a href="./contactus" class="hidden md:block contact-btn">
+          Contact Us
+        </a>
+        <button data-collapse-toggle="navbar-sticky" type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-sticky" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15" />
+          </svg>
+        </button>
+      </div>
+      <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+        <ul class="flex flex-col gap-x-9 font-medium rounded-lg rtl:space-x-reverse md:flex-row md:mt-0">
+          <li>
+            <a href="./index.php#services" class="block navlink">Services</a>
+          </li>
+          <li>
+            <a href="./index.php#industry" class="block navlink">Industries</a>
+          </li>
+          <li>
+            <a href="./blogs" class="block navlink">Insights</a>
+          </li>
+          <li>
+            <a href="./pricing" class="block navlink">Pricing</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div class="w-full hidden md:hidden mobile-menu" id="mobile-menu">
+    <ul class="w-full flex flex-col items-start mr-6 md:mr-0 gap-y-2.5">
+      <li class="w-full">
+        <a href="./index.php" class="block navlink p-2.5">Services</a>
+      </li>
+      <li class="w-full">
+        <a href="./industries" class="block navlink">Industries</a>
+      </li>
+      <li class="w-full">
+        <a href="./blogs" class="block navlink">Insights</a>
+      </li>
+      <li class="w-full" id="pricing-navlink">
+        <a href="./pricing" class="block navlink">Pricing</a>
+      </li>
+      <li class="w-full">
+        <a href="./contactus" class="block navlink-btn w-full">Contact Us</a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Content Section -->
+  <div class="px-1 md:px-20 py-10 w-full flex flex-col items-center gap-10">
+    <span class="blog-hero-primary-heading w-full md:w-4/5">
+      Accounting and Bookkeeping Services in
+      <span class="blog-hero-secondary-heading px-1">USA</span>
+    </span>
+    <span class="blog-data -mt-10">Feb 5, 2024</span>
+
+    <div class="px-2 md:px-10 w-full">
+      <img src="./assets/images/blogs/blog1Image.png" alt="" class="w-full" />
+    </div>
+    <div class="px-1 md:px-10 w-full flex flex-col gap-5">
+      <p class="blog-span">How Accounting Services Drive Business Success</p>
+      <p class="blog-para">
+        Accounting & bookkeeping services in USA are vital for businesses,
+        serving as the systematic recording, summarizing, analyzing, and
+        reporting of financial transactions. This ensures accuracy,
+        transparency, and obedience with regulatory standards.
+      </p>
+      <p class="blog-para">
+        In the USA, accounting has moved beyond just analyzing data to become
+        a valuable tool for making smart decisions. Professionals not only
+        maintain records but also interpret data for strategic planning, tax
+        compliance, and resource allocation, contributing to financial
+        stability and long-term success in the dynamic business landscape.
+      </p>
+      <span class="blog-span">Why Bookkeeping Matters:</span>
+      <p class="blog-para">
+        Bookkeeping is the foundation of effective financial management in a
+        company, involving the systematic recording of all financial
+        transactions to create an accurate record of financial activities. It
+        acts as a daily log, precisely tracking every incoming and outgoing
+        dollar, forming the groundwork for advanced financial analysis.
+      </p>
+      <p class="blog-para">
+        In the United States, careful bookkeeping is essential for navigating
+        the complex financial situations, ensuring compliance with U.S.
+        accounting standards. As a crucial aspect of accounting, it provides
+        the data for financial statements and audits, contributing
+        significantly to a business’s overall financial well-being and
+        stability. Thorough record-keeping guarantees accuracy and
+        accessibility, supporting healthy monetary procedures and informed
+        decision-making.
+      </p>
+      <span class="blog-span">Navigating Accounting and Bookkeeping Services in USA</span>
+      <p class="blog-para">
+        The USA boasts diverse options when it comes to accounting and
+        bookkeeping services. Whether you’re a solo entrepreneur or a national
+        corporation, there’s an ideal match for every business size and
+        budget. Consider accounting and bookkeeping services in USA as the
+        base of your financial activities. They shoulder the responsibility of
+        managing complex financial tasks, lifting the burden from your
+        shoulders.
+      </p>
+      <span class="blog-span">Wondering where to begin?</span>
+      <p class="blog-para">
+        In the USA, there are different options for accounting and bookkeeping
+        services. Whether you’re a small business or a big company, there’s a
+        good match for your needs and budget.
+      </p>
+      <p class="blog-para">Start by looking at the different categories:</p>
+      <span class="blog-span">Accounting and Bookkeeping Services in USA:</span>
+      <p class="blog-para">
+        Accounting services in the USA encompass a range of vital financial
+        activities. These experts specialize in accurately creating and
+        maintaining detailed financial reports, navigating intricate tax
+        regulations for effective tax preparation, and contributing to
+        strategic financial planning. Beyond analyzing figures, accounting
+        services play a pivotal role in ensuring financial clarity,
+        compliance, and guiding businesses toward long-term financial success.
+      </p>
+      <span class="blog-span">List of Accounting and Bookkeeping Services in USA:</span>
+      <p class="blog-para">
+        Online lists gather information about accounting and bookkeeping
+        services in the USA. They help businesses find the right match by
+        showing where the service is located, what it specializes in, and how
+        much it charges. It’s like a one-stop-shop for businesses looking for
+        financial help.
+      </p>
+      <span class="blog-span">Free Accounting and Bookkeeping Services in USA:</span>
+      <p class="blog-para">
+        Certain government or non-profit groups in the USA provide free
+        bookkeeping assistance to eligible businesses. This means that some
+        organizations offer basic help with keeping track of financial
+        transactions without charging any fees. It’s a helpful option for
+        businesses that may have limited resources and need support in
+        managing their financial records without incurring additional costs.
+      </p>
+      <span class="blog-span">Best Accounting and Bookkeeping Services in USA:</span>
+      <p class="blog-para">
+        Finding the best accounting and bookkeeping services in the USA is a
+        personal decision. When choosing, consider factors like how much
+        experience the service has, what other clients say about them, and
+        whether they understand the specific needs of your business. It’s like
+        picking a service that fits well with what you’re looking for and what
+        other people have found helpful.
+      </p>
+      <span class="blog-span">Top Accounting and Bookkeeping Services in USA:</span>
+      <p class="blog-para">
+        Awards and magazines can give ideas about the top accounting and
+        bookkeeping services in the USA. It’s like a recommendation that these
+        services are recognized for doing a good job. However, it’s essential
+        to check and choose carefully before deciding on a provider. Just
+        because they have received an award doesn’t mean they’re the perfect
+        fit for your specific needs, so it’s a good idea to do a bit more
+        research before making a decision.
+      </p>
+      <span class="blog-span">Discovering the Ideal Financial Ally</span>
+      <p class="blog-para">
+        Embarking on the journey to financial success involves discovering a
+        strategic ally in accounting and bookkeeping services personalized to
+        the unique needs and objectives of your business. This quest is about
+        more than just managing numbers; it’s about finding a partner that
+        comprehends the workings of your operations and aligns seamlessly with
+        your main goals. In this pursuit, several crucial elements come into
+        play:
+      </p>
+      <ul class="list-disc pl-6 flex flex-col gap-2.5">
+        <li>
+          <span class="blog-list-span">Understanding Your Unique Needs:</span>
+          When looking for help with your finances, the first step is to
+          understand exactly what your business needs. Do you just need basic
+          assistance in keeping track of your money, or do you require help
+          with more complicated things like taxes? By figuring out what
+          challenges you’re facing and what kind of support you need, you can
+          start searching for the right kind of help that fits your business
+          perfectly. It’s like knowing where it hurts so you can find the
+          right medicine.
+        </li>
+        <li>
+          <span class="blog-list-span">Navigating Location and Communication Dynamics:</span>
+          Consider whether virtual or local services better suit your
+          preferences and align with state-specific regulations. The choice
+          between virtual and local partnerships carries implications for
+          communication dynamics, and establishing an open line of
+          communication is crucial to a successful and collaborative
+          relationship.
+        </li>
+
+        <li>
+          <span class="blog-list-span">Experience and Expertise:</span> When
+          picking someone to help with your accounting and bookkeeping needs,
+          it’s important to look into their past. Check if they have
+          experience working with businesses like yours. If they’ve helped
+          others and understand the specific challenges your type of business
+          faces regarding bookkeeping or accounting services, that’s a good
+          sign they can be trusted.
+        </li>
+        <li>
+          Think of it like checking reviews before trying a new restaurant –
+          seeing what others say helps you know if they’re good at what they
+          do. So, checking online reviews and asking for references can give
+          you a good idea of whether they’re reliable and capable of helping
+          your business in terms to your accounting and bookkeeping
+          intricacies.
+        </li>
+        <li>
+          <span class="blog-list-span">Cost and Transparency:</span> Evaluate
+          the financial aspect of the partnership by comparing different
+          pricing structures and service packages of various accounting and
+          bookkeeping service providers. Look for providers who communicate
+          transparently about fees and potential additional charges. This
+          ensures that there are no surprises down the line, fostering a
+          relationship built on trust and clarity.
+        </li>
+      </ul>
+      <span class="blog-span">Here’s how RAHA Financials can help you:</span>
+      <ul class="list-disc pl-6 flex flex-col gap-2.5">
+        <li>
+          <span class="blog-list-span">Accurate and Efficient Bookkeeping:</span>
+          We eliminate the burden of daily data entry and record-keeping,
+          ensuring your books are meticulously maintained and always
+          up-to-date. We help you implement best practices for accounting
+          software like QuickBooks, Xero, Sage and Fresh Books, maximizing
+          their efficiency and minimizing errors. We provide regular insights
+          and analysis of your financial data, uncovering trends and potential
+          areas for improvement.
+        </li>
+        <li>
+          <span class="blog-list-span">Tax Guidance and Preparation:</span> We
+          ensure you comply with all federal and state tax regulations,
+          helping you avoid costly penalties and maximize your tax benefits.
+          Our experienced tax professionals prepare your individual and
+          business tax returns accurately and efficiently, saving you time and
+          stress. We stay updated on the latest tax laws and changes, ensuring
+          you always benefit from the most current policies.
+        </li>
+        <li>
+          <span class="blog-list-span">Financial Expertise and Support:</span>
+          We offer financial consulting services to help you make informed
+          decisions about your business and personal finances. We provide
+          budgeting and forecasting tools to plan for the future and ensure
+          your financial sustainability. We’re always available to answer your
+          questions and offer expert advice whenever you need it.
+        </li>
+        <li>
+          <span class="blog-list-span">Tailored Solutions for Your Unique Needs:</span>
+          We understand that every business and individual has unique
+          financial requirements. That’s why we tailor our services to your
+          specific needs and goals. We offer flexible package options and
+          competitive rates to ensure you get the best value for your
+          investment. We communicate clearly and transparently, keeping you
+          informed about every step of the process.
+        </li>
+      </ul>
+      <span class="blog-span">Here are some ways that RAHA Financials can benefit your Accounting
+        and Bookkeeping in USA:</span>
+      <ul class="list-disc pl-6 flex flex-col gap-2.5">
+        <li>
+          <span class="blog-list-span">Streamline your payroll processing:</span>
+          Ensure accurate and timely payments to your employees while
+          complying with all labor laws.
+        </li>
+        <li>
+          <span class="blog-list-span">Manage your accounts payable and receivable:</span>
+          Stay on top of your bills and invoices, improve cash flow, and avoid
+          any late fees.
+        </li>
+        <li>
+          <span class="blog-list-span">Reconcile your bank statements:</span>
+          Guarantee the accuracy of your financial records and identify any
+          discrepancies.
+        </li>
+        <li>
+          <span class="blog-list-span">Generate financial reports:</span> Gain
+          valuable insights into your business performance and make
+          data-driven decisions.
+        </li>
+        <li>
+          <span class="blog-list-span">Prepare for audits:</span> Ensure your
+          records are in order and minimize the stress of any potential IRS
+          audits.
+        </li>
+      </ul>
+      <p class="blog-para">
+        By partnering with RAHA Financials, you can confidently navigate the
+        complexities of accounting and bookkeeping in USA, freeing up your
+        time and energy to focus on what matters most – growing your business
+        or achieving your personal financial goals.
+      </p>
+
+      <span class="blog-span">Concluding Insights on Accounting and Bookkeeping Services in
+        USA</span>
+      <p class="blog-para">
+        In the world of business, accounting and bookkeeping services are like
+        your reliable guides, helping weave accuracy, compliance, and smart
+        financial decisions into the journey of success. As we wrap up our
+        discussion on these essential accounting and bookkeeping services in
+        the USA, remember that finding the perfect financial partner means
+        understanding your business needs, considering experience, and keeping
+        communication clear.
+      </p>
+      <p class="blog-para">
+        Just like every business is unique, so are the challenges it faces. By
+        choosing RAHA Financials as your financial support and a trustworthy
+        partner, businesses can confidently navigate the financial landscape
+        and pave the way for long-lasting success.
+      </p>
+    </div>
+    <div class="flex flex-row justify-between w-full px-10">
+      <a href="./blogItem3" class="blog-previous-btn w-fit" id="blog-previous-1-btn">
+        Previous
+      </a>
+      <a href="./blogItem2" class="hero-btn w-fit" id="blog-next-1-btn">Next</a>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <div class="w-full footer-div px-1 md:px-20 mt-0 md:mt-10">
+    <div
+      class="w-full border border-t-0 border-r-0 border-l-0 border-b-1 border-gray-300 footer-inner-div pb-5 flex-wrap">
+      <div class="w-full md:w-1/4 footer-col-1">
+        <img src="./assets/images/footerImage1.png" alt="" />
+        <p>
+          Our team at RAHA is dedicated to ensuring your books are accurate,
+          compliance is maintained, and your financial decisions are backed by
+          strategic insights.
+        </p>
+        <img src="./assets/images/footerImage2.png" alt="" />
+      </div>
+      <div class="w-full md:w-1/5 footer-col-2">
+        <span class="footer-link-heading">Quick Links</span>
+        <ul>
+          <li class="footer-link-item"><a href="#services">Services</a></li>
+          <li class="footer-link-item"><a href="#industry">Industries</a></li>
+          <li class="footer-link-item">
+            <a href="./blogs">Insights</a>
+          </li>
+          <li class="footer-link-item">
+            <a href="./pricing">Pricing</a>
+          </li>
+          <li class="footer-link-item">
+            <a href="./clientInformation.php">Contact</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="w-full md:w-5/12 footer-col-3 flex flex-col gap-2.5">
+        <form method="post" action="formsubmit.php">
+          <span class="footer-form-heading mb-2.5">Reach out to us</span>
+          <div class="w-full footer-form-div my-2.5">
+            <input type="text" name="name" placeholder="Full Name" class="w-1/2 footer-name-field" required />
+            <input type="email" name="email" placeholder="Email" required class="w-1/2 footer-email-field" />
+          </div>
+          <textarea name="message" id="message" placeholder="Message" required
+            class="w-full footer-message-field mb-2.5"></textarea>
+          <input type="hidden" name="url" class="url">
+          <button type="submit" name="submit" class="footer-submit-btn">
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+    <div class="flex flex-row justify-between w-full">
+      <span class="footer-span">
+        ©️ 2017 - 2023 RAHA Financials LLC All rights reserved. RAHA
+        Financials refers to the RAHA Financials network and/or one or more of
+        its member
+      </span>
+      <div>
+        <a href="./privacy-policy">Privacy Policy</a>,
+        <a href="./terms-conditions">Terms and Conditions</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar Modal -->
+  <div id="navbar-modal" class="hidden">
+    <div class="modal-content h-1/2 mx-auto flex justify-center px-10 py-7 bg-white">
+      <div id="modal-content-inner" class="flex flex-row justify-between w-full">
+        <a href="./bookKeeping" class="flex flex-col gap-3 items-start w-2/12 border-0 border-r-2 border-gray-200">
+          <span class="modal-list-head font-bold">Accounting and Bookkeeping Services</span>
+          <ul class="flex flex-col gap-2">
+            <li>Full Service Booking</li>
+            <li>Accounts Payable and Receivable</li>
+            <li>General Ledger and Management</li>
+            <li>Bank Reconciliation</li>
+          </ul>
+        </a>
+        <a href="./softwareSelection"
+          class="flex flex-col gap-4 items-start w-2/12 border-0 border-r-2 border-gray-200">
+          <span class="modal-list-head font-bold">Software Setup and Integration</span>
+          <ul class="flex flex-col gap-2">
+            <li>Setting up Xero and Quickbooks</li>
+            <li>Accounting Software Integration</li>
+            <li>Process Automation Implementation</li>
+            <li>Financial Reporting and Dashboard Configuration</li>
+          </ul>
+        </a>
+        <a href="./taxFiling" class="flex flex-col gap-4 items-start w-2/12 border-0 border-r-2 border-gray-200">
+          <span class="modal-list-head font-bold">Tax Services</span>
+          <ul class="flex flex-col gap-2">
+            <li>Tax Planning and Filing</li>
+            <li>International Tax Compliance</li>
+            <li>Indirect Tax Management</li>
+          </ul>
+        </a>
+        <a href="./globalServices" class="flex flex-col gap-4 items-start w-2/12 border-0 border-r-2 border-gray-200">
+          <span class="modal-list-head font-bold">Global Services</span>
+          <ul class="flex flex-col gap-2">
+            <li>GLobal Payroll Management</li>
+            <li>International Tax Compliance</li>
+            <li>Multi-Country Financial Reporting</li>
+            <li>Currency Management</li>
+          </ul>
+        </a>
+        <a href="./financialManagement" class="flex flex-col gap-4 items-start w-2/12">
+          <span class="modal-list-head font-bold">Financial Management and Consulting</span>
+          <ul class="flex flex-col gap-2">
+            <li>Financial Planning and Analysis</li>
+            <li>Strategic Financial Consulting</li>
+            <li>Budgeting and Forecasting</li>
+            <li>Cash Flow Management</li>
+          </ul>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Industry Modal -->
+  <div id="industry-modal" class="hidden">
+    <div class="modal-content mx-auto flex flex-col justify-center px-10 py-7 bg-white">
+      <div id="modal-content-inner" class="flex flex-row justify-between flex-wrap w-full pb-7">
+        <a href="./hospitalityPage" class="flex flex-col gap-3 items-start border-0 border-r-2 border-gray-200 w-1/5">
+          <span class="modal-list-head font-bold">Hospitality and Food Services</span>
+          <ul class="flex flex-col gap-2">
+            <li>Restaurants and Cafes</li>
+            <li>Hotels and Resorts</li>
+            <li>Catering Services</li>
+            <li>Event Management</li>
+          </ul>
+        </a>
+        <a href="./eCommerce" class="flex flex-col gap-4 items-start border-0 border-r-2 border-gray-200 w-1/5">
+          <span class="modal-list-head font-bold">E-commerse and Retail</span>
+          <ul class="flex flex-col gap-2">
+            <li>Online Marketplaces</li>
+            <li>Fashion and Apparel Retailers</li>
+            <li>Electronics and Gadgets</li>
+            <li>Speciality Stores</li>
+          </ul>
+        </a>
+        <a href="./realEstate" class="flex flex-col gap-4 items-start border-0 border-r-2 border-gray-200 w-1/5">
+          <span class="modal-list-head font-bold">Real Estate</span>
+          <ul class="flex flex-col gap-2">
+            <li>Property Management</li>
+            <li>Real Estate Development</li>
+            <li>Rental Services</li>
+            <li>Commercial Real Estate</li>
+          </ul>
+        </a>
+        <a href="./technologyStartup" class="flex flex-col gap-4 items-start w-1/5">
+          <span class="modal-list-head font-bold">Technology and Startups</span>
+          <ul class="flex flex-col gap-2">
+            <li>Software Development</li>
+            <li>IT Services</li>
+            <li>Mobile App Development</li>
+            <li>Artificial Intelligence</li>
+          </ul>
+        </a>
+      </div>
+
+      <!--  -->
+      <div id="modal-content-inner"
+        class="flex flex-row justify-between flex-wrap w-full border-0 border-t-2 border-gray-200 pt-7">
+        <a href="./healthcareMedical" class="flex flex-col gap-3 items-start border-0 border-r-2 border-gray-200 w-1/5">
+          <span class="modal-list-head font-bold">Healthcare and Medical Services</span>
+          <ul class="flex flex-col gap-2">
+            <li>Hospitals and Clinics</li>
+            <li>Medical Device Manufecturers</li>
+            <li>Telehealth Services</li>
+            <li>Pharmaceutical Companies</li>
+          </ul>
+        </a>
+        <a href="./energyUtilities" class="flex flex-col gap-4 items-start border-0 border-r-2 border-gray-200 w-1/5">
+          <span class="modal-list-head font-bold">Energy and Utilities</span>
+          <ul class="flex flex-col gap-2">
+            <li>Renewable Energy Companies</li>
+            <li>Utilities Providers</li>
+            <li>Oil and Gas Industry</li>
+            <li>Sustainable Technologies</li>
+          </ul>
+        </a>
+        <a href="./agricultureFarming"
+          class="flex flex-col gap-4 items-start border-0 border-r-2 border-gray-200 w-1/5">
+          <span class="modal-list-head font-bold">Agriculture and Farming</span>
+          <ul class="flex flex-col gap-2">
+            <li>Crop Farming</li>
+            <li>Livestock Farming</li>
+            <li>Agribusiness</li>
+            <li>Agricultural Equipment Manufacturing</li>
+          </ul>
+        </a>
+        <a href="./constructionInfrastructure" class="flex flex-col gap-4 items-start w-1/5">
+          <span class="modal-list-head font-bold">Construction and Infrastructure</span>
+          <ul class="flex flex-col gap-2">
+            <li>Commercial Construction</li>
+            <li>Residential Construction</li>
+            <li>Infrastructure Development</li>
+            <li>Engineering Services</li>
+          </ul>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="./modalScript.js"></script>
+  <script src="./url.js"></script>
+  <script src="./livechat.js"></script>
+
+  <!-- <script src="scripts.js"></script> -->
+  
+<!-- Start of LiveChat (www.livechat.com) code -->
+<script>
+    window.__lc = window.__lc || {};
+    window.__lc.license = 18500763;
+    window.__lc.integration_name = "manual_channels";
+    window.__lc.product_name = "livechat";
+    ;(function(n,t,c){function i(n){return e._h?e._h.apply(null,n):e._q.push(n)}var e={_q:[],_h:null,_v:"2.0",on:function(){i(["on",c.call(arguments)])},once:function(){i(["once",c.call(arguments)])},off:function(){i(["off",c.call(arguments)])},get:function(){if(!e._h)throw new Error("[LiveChatWidget] You can't use getters before load.");return i(["get",c.call(arguments)])},call:function(){i(["call",c.call(arguments)])},init:function(){var n=t.createElement("script");n.async=!0,n.type="text/javascript",n.src="https://cdn.livechatinc.com/tracking.js",t.head.appendChild(n)}};!n.__lc.asyncInit&&e.init(),n.LiveChatWidget=n.LiveChatWidget||e}(window,document,[].slice))
+</script>
+<noscript><a href="https://www.livechat.com/chat-with/18500763/" rel="nofollow">Chat with us</a>, powered by <a href="https://www.livechat.com/?welcome" rel="noopener nofollow" target="_blank">LiveChat</a></noscript>
+<!-- End of LiveChat code -->
+</body>
+
+</html>

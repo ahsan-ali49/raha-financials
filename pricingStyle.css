@@ -38,7 +38,7 @@
 
 .pricing-card-pricing {
   width: 100%;
-  padding: 10px;
+  padding: 10px 0px;
 
   background: rgba(255, 255, 255, 0.1);
   border: 2.5px solid #ffffff;
@@ -117,16 +117,17 @@
 }
 
 .pricing-card-child:hover .pricing-card-btn {
-  background: radial-gradient(
+  /* background: radial-gradient(
     46.19% 50.94% at 50% 100%,
     #587edb 0%,
     #1445c2 100%
-  );
-  color: white;
+  ); */
+  background-color: white;
+  color: #1445c2;
 }
 
 .pricing-card-child:hover .pricing-card-span-3 {
-  color: #1445c2;
+  color: white;
 }
 
 .pricing-card-span-33 {
@@ -134,7 +135,7 @@
 }
 
 .pricing-card-child:hover .pricing-card-span-33 {
-  color: black;
+  color: white;
 }
 
 .pricing-card-span-1 {
@@ -193,12 +194,12 @@
 }
 
 .pricing-card-child:hover {
-  color: black;
+  color: white;
 }
 
 .pricing-card-child:hover .fa,
 .pricing-card-pricing:hover .fa {
-  color: #1445c2;
+  color: white;
 }
 
 .pricing-card-child {
@@ -254,10 +255,10 @@
 
 .pricing-card-pricing:hover {
   background-color: white;
-  color: black;
+  color: white;
 }
 
 .pricing-card-pricing:hover .pricing-card-btn {
-  background-color: blue;
-  color: white;
+  background-color: white;
+  color: #000080;
 }

@@ -22,11 +22,8 @@ document
     setTimeout(function () {
       transitionLayer1.classList.add("active");
     }, 200); // Match this duration with the CSS transition time
-    // Add the active class to start the animation
-    // transitionLayer.classList.add("active");
     setTimeout(function () {
       transitionLayer2.classList.add("active");
-      //   body.style.backgroundColor = "blue";
     }, 400); // Match this duration with the CSS transition time
 
     // Redirect to the new page after the animation duration
@@ -38,7 +35,7 @@ document
       let fileName = fullPath.substring(fullPath.lastIndexOf("/") + 1);
 
       console.log(fileName); // This will log the current file name
-      if (fileName == "enterprise.html") window.location.href = "./index.html";
-      else window.location.href = "./enterprise.html";
+      if (fileName == "enterprise") window.location.href = "./";
+      else window.location.href = "./enterprise";
     }, 1200); // Match this duration with the CSS transition time
   });

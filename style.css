@@ -19,7 +19,8 @@ body {
 
 body::-webkit-scrollbar,
 .carousel-container::-webkit-scrollbar,
-.financial-carousel-container::-webkit-scrollbar {
+.financial-carousel-container::-webkit-scrollbar,
+*::-webkit-scrollbar {
   display: none;
 }
 
@@ -536,7 +537,7 @@ body::-webkit-scrollbar,
   text-align: center;
   opacity: 0;
   transform: translateY(100%);
-  animation: rotateText 10s infinite;
+  animation: rotateText 14s infinite;
   height: 100%;
 }
 
@@ -545,15 +546,15 @@ body::-webkit-scrollbar,
     opacity: 0;
     transform: translateY(100%);
   }
-  10% {
+  12.5% {
     opacity: 1;
     transform: translateY(0);
   }
-  30% {
+  25% {
     opacity: 1;
     transform: translateY(0);
   }
-  40% {
+  37.5% {
     opacity: 0;
     transform: translateY(-100%);
   }
@@ -568,14 +569,60 @@ body::-webkit-scrollbar,
 }
 
 .rotating-text:nth-child(2) {
-  animation-delay: 4s;
+  animation-delay: 3.5s;
 }
 
 .rotating-text:nth-child(3) {
   animation-delay: 7s;
 }
 
+.rotating-text:nth-child(4) {
+  animation-delay: 10.5s;
+}
+
+.about-header {
+  color: var(--Black, #000);
+  text-align: center;
+  font-family: "Uncut Sans";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -1.6px;
+}
+
+.about-para {
+  color: var(--Black, #000);
+  text-align: center;
+  font-family: "Uncut Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.48px;
+}
+
 @media (min-width: 640px) {
+  .about-para {
+    color: var(--Black, #000);
+    text-align: center;
+    font-family: Uncut Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.54px;
+  }
+  .about-header {
+    color: var(--Black, #000);
+    text-align: center;
+    font-family: "Uncut Sans";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -3.2px;
+  }
   /* For screens 640px and larger */
   .heading-container {
     position: relative;
@@ -596,7 +643,7 @@ body::-webkit-scrollbar,
     text-align: center;
     opacity: 0;
     transform: translateY(100%);
-    animation: rotateText 10s infinite;
+    animation: rotateText 14s infinite;
     height: 100%;
   }
 
@@ -605,15 +652,15 @@ body::-webkit-scrollbar,
       opacity: 0;
       transform: translateY(100%);
     }
-    10% {
+    12.5% {
       opacity: 1;
       transform: translateY(0);
     }
-    30% {
+    25% {
       opacity: 1;
       transform: translateY(0);
     }
-    40% {
+    37.5% {
       opacity: 0;
       transform: translateY(-100%);
     }
@@ -628,12 +675,17 @@ body::-webkit-scrollbar,
   }
 
   .rotating-text:nth-child(2) {
-    animation-delay: 4s;
+    animation-delay: 3.5s;
   }
 
   .rotating-text:nth-child(3) {
     animation-delay: 7s;
   }
+
+  .rotating-text:nth-child(4) {
+    animation-delay: 10.5s;
+  }
+
   .financials-para {
     color: var(--Black, #000);
     text-align: center;
@@ -1016,8 +1068,6 @@ body::-webkit-scrollbar,
   /* Auto layout */
   padding: 10px;
   color: black;
-  /* width: 32%; */
-  /* height: 239px; */
 
   border-radius: 15px;
   border: 1px solid transparent;
@@ -1027,7 +1077,9 @@ body::-webkit-scrollbar,
     0px 56px 34px 0px rgba(176, 176, 176, 0.05),
     0px 25px 25px 0px rgba(176, 176, 176, 0.09),
     0px 6px 14px 0px rgba(176, 176, 176, 0.1);
-  transition: all 1s ease;
+  transition: all 0.3s ease;
+  background-color: white;
+  z-index: 10;
 }
 .flex-item-div-primary:hover {
   color: white;
@@ -1038,7 +1090,6 @@ body::-webkit-scrollbar,
   );
   box-shadow: 0px 4px 15.9px 0px rgba(255, 255, 255, 0.25) inset;
   backdrop-filter: blur(4.5px);
-  /* transition: all 1s ease; */
 }
 .flex-item-div-primary:hover .flex-item-inner-div {
   color: white;
@@ -1107,7 +1158,7 @@ body::-webkit-scrollbar,
 
   height: 100%;
   border-radius: 7.5px;
-  /* transition: all 1s ease; */
+  transition: all 0.3s ease;
 }
 .div-item-span-secondary {
   /* Software Selection and Setup */
@@ -1516,12 +1567,12 @@ body::-webkit-scrollbar,
   width: 370px;
   height: 155px;
 
-  background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+  /* background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%); */
   border: 1px solid #dadada;
-  filter: drop-shadow(0px 100px 40px rgba(176, 176, 176, 0.01))
+  /* filter: drop-shadow(0px 100px 40px rgba(176, 176, 176, 0.01))
     drop-shadow(0px 56px 34px rgba(176, 176, 176, 0.05))
     drop-shadow(0px 25px 25px rgba(176, 176, 176, 0.09))
-    drop-shadow(0px 6px 14px rgba(176, 176, 176, 0.1));
+    drop-shadow(0px 6px 14px rgba(176, 176, 176, 0.1)); */
   border-radius: 15px;
 
   /* Inside auto layout */
@@ -1533,7 +1584,7 @@ body::-webkit-scrollbar,
 .financial-inner-div-text {
   /* We've been working with Raha Financials for years and they've always provided us with top-notch service. Their expertise and attention to detail have been invaluable to our business. */
 
-  width: 330px;
+  width: 340px !important;
   height: 115px;
 
   /* font-family: 'Uncut Sans'; */
@@ -1680,7 +1731,7 @@ body::-webkit-scrollbar,
   /* ©️ 2017 - 2023 RAHA Financials LLC All rights reserved. RAHA Financials refers to the RAHA Financials network and/or one or more of its member firms, each of which is a separate legal entity. */
 
   /* width: 1280px; */
-  height: 18px;
+  /* height: 18px; */
 
   /* font-family: 'Uncut Sans'; */
   font-style: normal;
@@ -1694,12 +1745,6 @@ body::-webkit-scrollbar,
   color: #000000;
 
   opacity: 0.5;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 2;
-  align-self: stretch;
-  flex-grow: 0;
 }
 
 .footer-col-1 {
@@ -1982,14 +2027,6 @@ body::-webkit-scrollbar,
   position: relative;
   /* overflow: hidden; */
 }
-
-.financial-carousel-container {
-  display: flex;
-  flex-direction: row;
-  /* gap: 2rem; adjust based on your design */
-  position: relative; /*  Add this to position the container correctly */
-}
-
 .financial-carousel-wrapper::before,
 .financial-carousel-wrapper::after {
   content: "";
@@ -2000,23 +2037,29 @@ body::-webkit-scrollbar,
   z-index: 1;
   pointer-events: none; /* Ensures the gradient does not interfere with interactions */
 }
-
 .financial-carousel-wrapper::before {
   left: 0;
-  background: linear-gradient(
+  /* background: linear-gradient(
     to right,
     rgba(255, 255, 255, 1),
     rgba(255, 255, 255, 0)
-  );
+  ); */
 }
 
 .financial-carousel-wrapper::after {
   right: 0;
-  background: linear-gradient(
+  /* background: linear-gradient(
     to left,
     rgba(255, 255, 255, 1),
     rgba(255, 255, 255, 0)
-  );
+  ); */
+}
+
+.financial-carousel-container {
+  display: flex;
+  flex-direction: row;
+  /* gap: 2rem; adjust based on your design */
+  position: relative; /*  Add this to position the container correctly */
 }
 
 /* Add more styles and delays for additional text elements */
@@ -2184,3 +2227,96 @@ body::-webkit-scrollbar,
   text-align: center;
 }
 
+/* Additional */
+
+.financial-inner-div-text {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.financial-inner-div {
+  /* max-width: 100%; */
+  overflow: hidden;
+  text-overflow: ellipsis; /* Optional: Adds "..." to the overflowed text */
+}
+.financial-div {
+  /* flex: 1 1 auto; */
+}
+
+.financial-carousel-item {
+  flex: 0 0 auto;
+  width: 100%; /* Make items take full width on smaller screens */
+  max-width: 370px;
+  box-sizing: border-box;
+  height: auto; /* Ensure the height adapts to the content */
+  overflow: visible; /* Allow content to overflow if necessary */
+}
+
+.financial-inner-div {
+  overflow: visible; /* Ensure inner content is not clipped */
+  height: auto; /* Let the height adjust based on content */
+}
+
+.financial-inner-div-text {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+
+@media (min-width: 640px) {
+  .financial-carousel-item {
+    width: 48%; /* Adjust this value as needed */
+  }
+}
+
+@media (min-width: 1024px) {
+  .financial-carousel-item {
+    width: 18%; /* Adjust this value as needed for larger screens */
+  }
+}
+
+.financial-carousel-container {
+  display: flex;
+  flex-wrap: nowrap;
+  animation: scroll 25s linear infinite;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* About page */
+.credibility-div {
+  display: flex;
+  padding: 25px 0px;
+  align-items: flex-start;
+  justify-content: space-between;
+  /* gap: 50px; */
+  align-self: stretch;
+  border-radius: 15px;
+  border: 1px solid #dadada;
+  background: linear-gradient(180deg, #fff 0%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: 0px 156px 44px 0px rgba(176, 176, 176, 0),
+    0px 100px 40px 0px rgba(176, 176, 176, 0.01),
+    0px 56px 34px 0px rgba(176, 176, 176, 0.05),
+    0px 25px 25px 0px rgba(176, 176, 176, 0.09),
+    0px 6px 14px 0px rgba(176, 176, 176, 0.1);
+}
+
+#demoForm div {
+  flex-wrap: wrap;
+}
+
+.terms-text {
+  color: var(--Black, #000);
+  font-family: "Uncut Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.6px;
+}
